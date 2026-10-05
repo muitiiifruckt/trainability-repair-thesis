@@ -1,0 +1,38 @@
+[
+  {
+    "id": "pyatko2025ppo_interventions",
+    "title": "Data, Auxiliary Losses, or Normalization Layers for Plasticity? A case study with PPO on Atari",
+    "authors": ["Daniil Pyatko", "Andrea Miele", "Skander Moalla", "Caglar Gulcehre"],
+    "year": 2025,
+    "venue": "EWRL 2025; author page confirms acceptance, PDF labelled preprint",
+    "url": "https://openreview.net/pdf?id=6CViR7tKj2",
+    "verified_level": "full_text",
+    "mechanism": "PPO nonstationarity and representation degradation.",
+    "intervention": "18 data/loss/normalization interventions; CHAIN-SP.",
+    "diagnostic": "Rank, dead units, capacity probe, norms.",
+    "limitations": "Three Atari games; tuned run-level configurations, no checkpoint selector in checked protocol.",
+    "relevance": "Direct prior for heterogeneous intervention comparison; narrower selector contribution remains possible.",
+    "evidence_location": "Section 3, Table 2, Section 3.2, Appendix D.3",
+    "verification_note": "Relevant primary full-text passages indexed by search; direct PDF presents verification challenge. Exact code URL unverified; author-page arXiv link points to an unrelated paper.",
+    "metadata_source": "https://www.andreamiele.fr/",
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "moalla2024no_representation",
+    "title": "No Representation, No Trust: Connecting Representation, Collapse, and Trust Issues in PPO",
+    "authors": ["Skander Moalla", "Andrea Miele", "Daniil Pyatko", "Razvan Pascanu", "Caglar Gulcehre"],
+    "year": 2024,
+    "venue": "NeurIPS 37",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/81166fbd9cc5adf14031cdb69d3fd6a8-Abstract-Conference.html",
+    "full_text_url": "https://arxiv.org/html/2405.00662v3",
+    "code_url": "https://github.com/CLAIRE-Labo/no-representation-no-trust",
+    "verified_level": "full_text",
+    "mechanism": "PPO representation collapse can weaken trust-region protection.",
+    "intervention": "PFO; Adam moment resets and beta2 ablations.",
+    "diagnostic": "Fixed-budget checkpoint capacity probe with fresh optimizer; representation metrics.",
+    "limitations": "Empirical relations vary across environments; fixed configurations rather than repair selection.",
+    "relevance": "Prior for trainability measurement; fresh optimizer conditions what that probe diagnoses.",
+    "evidence_location": "Sections 2–4; Appendix B.2",
+    "verified_at": "2026-10-05"
+  }
+]

@@ -1,0 +1,1130 @@
+[
+  {
+    "id": "rice1976selection",
+    "title": "The Algorithm Selection Problem",
+    "authors": [
+      "John R. Rice"
+    ],
+    "year": 1976,
+    "venue": "Advances in Computers, volume 15, pages 65–118",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0065245808605203",
+    "doi": "10.1016/S0065-2458(08)60520-3",
+    "verified_level": "abstract",
+    "verified_at": "2026-10-05",
+    "evidence_location": "Publisher metadata and summary",
+    "mechanism": "Selection of algorithms based on instance features and performance criteria.",
+    "intervention": "General algorithm-selection model.",
+    "diagnostic": "Instance features.",
+    "limitations": "Not RL and not a plasticity study; full chapter not read.",
+    "relevance": "Conceptual framing for per-checkpoint repair selection.",
+    "source_files": [
+      "core.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "bischl2016aslib",
+    "title": "ASlib: A Benchmark Library for Algorithm Selection",
+    "authors": [
+      "Bernd Bischl",
+      "Pascal Kerschke",
+      "Lars Kotthoff",
+      "Marius Lindauer",
+      "Yuri Malitsky",
+      "Alexandre Frechette",
+      "Holger Hoos",
+      "Frank Hutter",
+      "Kevin Leyton-Brown",
+      "Kevin Tierney",
+      "Joaquin Vanschoren"
+    ],
+    "year": 2016,
+    "first_release_year": 2015,
+    "venue": "Artificial Intelligence; checked arXiv v3 accepted-version metadata",
+    "url": "https://arxiv.org/abs/1506.02465v3",
+    "verified_level": "abstract",
+    "verified_at": "2026-10-05",
+    "evidence_location": "arXiv v3 abstract, author list and accepted-publication comment",
+    "mechanism": "Per-instance algorithm selection and standardized scenarios.",
+    "intervention": "Benchmark format and common selection interface.",
+    "diagnostic": "Algorithm-selection scenario features.",
+    "limitations": "No application to RL plasticity is established by this paper.",
+    "relevance": "Inspiration for recording action outcomes and feature costs.",
+    "source_files": [
+      "core.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "young2019minatar",
+    "title": "MinAtar: An Atari-Inspired Testbed for Thorough and Reproducible Reinforcement Learning Experiments",
+    "authors": [
+      "Kenny Young",
+      "Tian Tian"
+    ],
+    "year": 2019,
+    "venue": "arXiv preprint, 2019",
+    "url": "https://arxiv.org/abs/1903.03176",
+    "code_url": "https://github.com/kenjyoung/MinAtar",
+    "verified_level": "abstract",
+    "verified_at": "2026-10-05",
+    "evidence_location": "Paper abstract and author repository environment wrapper",
+    "mechanism": "Simplified Atari-inspired environment representations.",
+    "intervention": "Testbed, not repair method.",
+    "diagnostic": "Benchmark learning performance.",
+    "limitations": "Does not establish plasticity loss in our proposed DQN setup.",
+    "relevance": "Candidate inexpensive pilot domain; feasibility must be tested.",
+    "source_files": [
+      "core.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "ash2020warmstart",
+    "title": "On Warm-Starting Neural Network Training",
+    "authors": [
+      "Jordan T. Ash",
+      "Ryan P. Adams"
+    ],
+    "year": 2020,
+    "first_publication_year": 2019,
+    "venue": "NeurIPS 2020",
+    "url": "https://papers.nips.cc/paper/2020/hash/288cd2567953f06e460a33951f55daaf-Abstract.html",
+    "code_url": "https://github.com/JordanAsh/warm_start",
+    "verified_level": "abstract",
+    "verification_note": "Проверены conference abstract и README авторского кода; полный PDF в этой сессии не загрузился.",
+    "mechanism": "Warm-start generalization gap на растущем supervised dataset при сходном training loss.",
+    "intervention": "Shrink-perturb initialization: масштабирование старых weights плюс random component.",
+    "diagnostic": "Сравнение warm start и fresh initialization; общего prospective diagnostic не заявляется.",
+    "limitations": "Исходная проблема generalization, а не доказанная неспособность оптимизировать RL targets.",
+    "relevance": "Базовый источник S+P; требуется отдельно специфицировать periodic и continuous variants.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "agarwal2021evaluation",
+    "title": "Deep Reinforcement Learning at the Edge of the Statistical Precipice",
+    "authors": [
+      "Rishabh Agarwal",
+      "Max Schwarzer",
+      "Pablo Samuel Castro",
+      "Aaron Courville",
+      "Marc G. Bellemare"
+    ],
+    "year": 2021,
+    "venue": "NeurIPS 2021",
+    "url": "https://arxiv.org/abs/2108.13264",
+    "full_text_url": "https://papers.nips.cc/paper/2021/file/f514cec81cb148559cf475e7426eed5e-Paper.pdf",
+    "code_url": "https://github.com/google-research/rliable",
+    "verified_level": "abstract",
+    "verified_at": "2026-10-05",
+    "evidence_location": "Author arXiv abstract and publication comment",
+    "mechanism": "Uncertainty in aggregate deep RL evaluation with few runs.",
+    "intervention": "Interval estimates, IQM and performance profiles.",
+    "diagnostic": "Aggregate performance uncertainty.",
+    "limitations": "Not a causal plasticity or selector study; hierarchical checkpoint dependence needs separate handling.",
+    "relevance": "Evaluation methodology for repair utility.",
+    "source_files": [
+      "core.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "kumar2021underparameterization",
+    "title": "Implicit Under-Parameterization Inhibits Data-Efficient Deep Reinforcement Learning",
+    "authors": [
+      "Aviral Kumar",
+      "Rishabh Agarwal",
+      "Dibya Ghosh",
+      "Sergey Levine"
+    ],
+    "year": 2021,
+    "first_publication_year": 2020,
+    "venue": "ICLR 2021",
+    "url": "https://research.google/pubs/implicit-under-parameterization-inhibits-data-efficient-deep-reinforcement-learning/",
+    "full_text_url": "https://arxiv.org/pdf/2010.14498",
+    "verified_level": "full_text",
+    "mechanism": "Bootstrapping с gradient optimization может понижать effective rank value features.",
+    "intervention": "Spectral feature regularization против rank collapse.",
+    "diagnostic": "Threshold-based effective feature rank из singular values.",
+    "limitations": "Теория kernel/deep-linear abstractions; связь rank и performance не задаёт универсального diagnostic.",
+    "relevance": "Rank как baseline predictor; предупреждение о mixed target/parameter mechanism.",
+    "source_files": [
+      "parameters.json",
+      "optimizer_targets.json"
+    ],
+    "aliases": [
+      "kumar2021_implicit_underparameterization"
+    ],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "kumar2022_dr3",
+    "title": "DR3: Value-Based Deep Reinforcement Learning Requires Explicit Regularization",
+    "authors": [
+      "Aviral Kumar",
+      "Rishabh Agarwal",
+      "Tengyu Ma",
+      "Aaron Courville",
+      "George Tucker",
+      "Sergey Levine"
+    ],
+    "year": 2022,
+    "venue": "ICLR 2022",
+    "url": "https://arxiv.org/pdf/2112.04716",
+    "verified_level": "full_text",
+    "mechanism": "TD implicit regularization и consecutive-feature co-adaptation.",
+    "intervention": "DR3 dot-product regularizer; MC/SARSA/TD comparisons.",
+    "diagnostic": "Feature dot products; rank; cosine менее информативен.",
+    "limitations": "Главная постановка offline RL; отсутствует repair selector.",
+    "relevance": "Fixed data не исключают вредную bootstrap dynamics.",
+    "source_files": [
+      "optimizer_targets.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "nikishin2022primacy",
+    "title": "The Primacy Bias in Deep Reinforcement Learning",
+    "authors": [
+      "Evgenii Nikishin",
+      "Max Schwarzer",
+      "Pierluca D'Oro",
+      "Pierre-Luc Bacon",
+      "Aaron Courville"
+    ],
+    "year": 2022,
+    "venue": "ICML 2022, PMLR 162",
+    "url": "https://proceedings.mlr.press/v162/nikishin22a.html",
+    "full_text_url": "https://proceedings.mlr.press/v162/nikishin22a/nikishin22a.pdf",
+    "verified_level": "full_text",
+    "mechanism": "Primacy bias: непропорциональное влияние раннего опыта; особенно при интенсивном data reuse.",
+    "intervention": "Периодический reset частей сетей с сохранением replay; appendix сравнивает optimizer-only и parameter-only reset.",
+    "diagnostic": "Heavy priming и response после reset; optimizer decomposition в Fig. 9.",
+    "limitations": "Reset меняет predictions и exploration. Optimizer-only не помог в четырёх исследованных DMC задачах; это не универсальный отрицательный результат.",
+    "relevance": "Прямой предшественник clone/intervene и обязательный baseline для разделения weights/optimizer.",
+    "source_files": [
+      "parameters.json",
+      "data_selection.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05",
+    "code_url": "https://github.com/evgenii-nikishin/rl_with_resets",
+    "evidence_location": "Sections 4–5; Appendix B"
+  },
+  {
+    "id": "nikishin2023injection",
+    "title": "Deep Reinforcement Learning with Plasticity Injection",
+    "authors": [
+      "Evgenii Nikishin",
+      "Junhyuk Oh",
+      "Georg Ostrovski",
+      "Clare Lyle",
+      "Razvan Pascanu",
+      "Will Dabney",
+      "Andre Barreto"
+    ],
+    "year": 2023,
+    "venue": "NeurIPS 2023",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/75101364dc3aa7772d27528ea504472b-Abstract-Conference.html",
+    "full_text_url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/75101364dc3aa7772d27528ea504472b-Paper-Conference.pdf",
+    "verified_level": "full_text",
+    "mechanism": "Parameter trainability предлагается проверять counterfactual intervention, уменьшающим immediate exploration confound.",
+    "intervention": "Frozen old head + trainable random head − frozen identical random head; initial predictions сохраняются.",
+    "diagnostic": "Sec. 5.2: скопировать agent, inject plasticity, сравнить continuation curves.",
+    "limitations": "Диагноз после вмешательства; общее число parameters и compute растут; дальнейшая occupancy не фиксирована.",
+    "relevance": "Самый близкий предшественник intervention-based diagnosis; граница новизны — prospective repair selection.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "abbas2023continualrl",
+    "title": "Loss of Plasticity in Continual Deep Reinforcement Learning",
+    "authors": [
+      "Zaheer Abbas",
+      "Rosie Zhao",
+      "Joseph Modayil",
+      "Adam White",
+      "Marlos C. Machado"
+    ],
+    "year": 2023,
+    "venue": "CoLLAs 2023, PMLR 232",
+    "url": "https://proceedings.mlr.press/v232/abbas23a.html",
+    "full_text_url": "https://proceedings.mlr.press/v232/abbas23a/abbas23a.pdf",
+    "verified_level": "full_text",
+    "mechanism": "Sparse activation footprint и уменьшающиеся gradients в continual Atari.",
+    "intervention": "CReLU activations.",
+    "diagnostic": "Weight movement, gradient norms, activations в циклических task sequences.",
+    "limitations": "Value-based continual setting; перенос CReLU на on-policy RL не гарантирован.",
+    "relevance": "Activation diagnostic и архитектурный prevention baseline; не готовый checkpoint-compatible repair.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "asadi2023_optimizer_reset",
+    "title": "Resetting the Optimizer in Deep RL: An Empirical Study",
+    "authors": [
+      "Kavosh Asadi",
+      "Rasool Fakoor",
+      "Shoham Sabach"
+    ],
+    "year": 2023,
+    "venue": "NeurIPS 2023",
+    "url": "https://arxiv.org/html/2306.17833v2",
+    "verified_level": "full_text",
+    "mechanism": "Несоответствие Adam moments новому objective после target sync.",
+    "intervention": "Full, first-only и second-only moment resets.",
+    "diagnostic": "Cosine gradient/first moment до и после target update.",
+    "limitations": "Заданное расписание; partial-reset clock semantics и exact author patch не подтверждены; configs/target schedules отличаются в сравнениях.",
+    "audit_note": "notes/code_audit_optimizer.md",
+    "relevance": "Основа optimizer arms; положительный reset не идентифицирует единственную причину.",
+    "source_files": [
+      "optimizer_targets.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "sokar2023dormant",
+    "title": "The Dormant Neuron Phenomenon in Deep Reinforcement Learning",
+    "authors": [
+      "Ghada Sokar",
+      "Rishabh Agarwal",
+      "Pablo Samuel Castro",
+      "Utku Evci"
+    ],
+    "year": 2023,
+    "venue": "ICML 2023, PMLR 202",
+    "url": "https://proceedings.mlr.press/v202/sokar23a.html",
+    "full_text_url": "https://proceedings.mlr.press/v202/sokar23a/sokar23a.pdf",
+    "code_url": "https://github.com/google/dopamine/tree/master/dopamine/labs/redo",
+    "verified_level": "full_text",
+    "mechanism": "Рост низкоактивных units; ablations связывают dormancy с меняющимися targets и replay ratio.",
+    "intervention": "ReDo: reset входящих weights dormant units, zero исходящих.",
+    "diagnostic": "Нормированная средняя абсолютная активация на выбранном input distribution.",
+    "limitations": "Dormancy зависит от probe data и threshold; при положительном threshold output меняется.",
+    "relevance": "Естественный дешёвый diagnostic для выбора адресного параметрного ремонта.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "lyle2023understanding",
+    "title": "Understanding Plasticity in Neural Networks",
+    "authors": [
+      "Clare Lyle",
+      "Zeyu Zheng",
+      "Evgenii Nikishin",
+      "Bernardo Avila Pires",
+      "Razvan Pascanu",
+      "Will Dabney"
+    ],
+    "year": 2023,
+    "venue": "ICML 2023, PMLR 202",
+    "url": "https://proceedings.mlr.press/v202/lyle23b.html",
+    "full_text_url": "https://proceedings.mlr.press/v202/lyle23b/lyle23b.pdf",
+    "verified_level": "full_text",
+    "mechanism": "Curvature и gradient interference; plasticity loss может возникать без saturated units.",
+    "intervention": "LayerNorm, resets, weight decay, Shrink-and-Perturb, spectral normalization, output encoding.",
+    "diagnostic": "Eq. 5: финальный probe loss после заданного optimization algorithm/budget; Hessian и gradient covariance.",
+    "limitations": "ALE gains LayerNorm не однозначно доказывают mitigation plasticity; вмешательства зависят от architecture и loss.",
+    "relevance": "Основной prior art для finite-budget trainability; контрпример универсальности dead-unit diagnostic.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "juliani2024onpolicy",
+    "title": "A Study of Plasticity Loss in On-Policy Deep Reinforcement Learning",
+    "authors": [
+      "Arthur Juliani",
+      "Jordan T. Ash"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 2024",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/ce7984e36d58659211a8dc7d5457cd6f-Abstract-Conference.html",
+    "full_text_url": "https://arxiv.org/html/2405.19153v2",
+    "code_url": "https://github.com/awjuliani/deep-rl-plasticity",
+    "verified_level": "full_text",
+    "mechanism": "PPO domain-shift degradation; диагностические correlates отличаются от off-policy результатов.",
+    "intervention": "Resets, ReDo, S+P/soft S+P, injection, CReLU, regularization и LayerNorm combinations.",
+    "diagnostic": "Sec. 4.2 correlations и GLM final rewards по final metrics; 27 aggregate observations.",
+    "limitations": "Post-training association, не before-repair held-out selector. Некоторые off-policy repairs ухудшают PPO.",
+    "relevance": "Ближайший repair-comparison/diagnostic prior art и мотивация переносимости и неоднородности repairs.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "ellis2024_adam_rel",
+    "title": "Adam on Local Time: Addressing Nonstationarity in RL with Relative Adam Timesteps",
+    "authors": [
+      "Benjamin Ellis",
+      "Matthew T. Jackson",
+      "Andrei Lupu",
+      "Alexander D. Goldie",
+      "Mattie Fellows",
+      "Shimon Whiteson",
+      "Jakob N. Foerster"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 2024",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/f2733d3b0dde1d74995f35a9cf442d38-Abstract-Conference.html",
+    "code_url": "https://anonymous.4open.science/r/cleanrl-8719/",
+    "verified_level": "full_text",
+    "mechanism": "Gradient-scale jumps вызывают нестабильные Adam updates.",
+    "intervention": "Сброс t без сброса moments; сравнение с Adam-MR.",
+    "diagnostic": "Gradient norm, update norm и maximum update.",
+    "limitations": "Эффект также связан с LR schedule; headline PPO configs меняют LR/clipping/GAE; авторские anonymous code URLs expired на дату аудита.",
+    "code_status": "repository_expired; not code-verified",
+    "audit_note": "notes/code_audit_optimizer.md",
+    "relevance": "Нужен t-only arm; полный reset может вредить.",
+    "source_files": [
+      "optimizer_targets.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "goldie2024_open",
+    "title": "Can Learned Optimization Make Reinforcement Learning Less Difficult?",
+    "authors": [
+      "Alexander D. Goldie",
+      "Chris Lu",
+      "Matthew T. Jackson",
+      "Shimon Whiteson",
+      "Jakob N. Foerster"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 2024",
+    "url": "https://papers.nips.cc/paper/2024/file/09e1944b7f2372f9f81866470c59b663-Paper-Conference.pdf",
+    "code_url": "https://github.com/AlexGoldie/rl-learned-optimization",
+    "verified_level": "full_text",
+    "mechanism": "Learned optimizer адаптируется к nonstationarity/plasticity/exploration.",
+    "intervention": "Meta-learned continuous updates и actor noise.",
+    "diagnostic": "Gradients, moments, dormancy, layer/training proportions как inputs.",
+    "limitations": "Дорогой meta-training; отсутствуют discrete repairs и causal classification.",
+    "relevance": "Близкий adaptive baseline с OOS environments/architectures.",
+    "source_files": [
+      "optimizer_targets.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "hussing2024_value_divergence",
+    "title": "Dissecting Deep RL with High Update Ratios: Combatting Value Divergence",
+    "authors": [
+      "Marcel Hussing",
+      "Claas Voelcker",
+      "Igor Gilitschenski",
+      "Amir-massoud Farahmand",
+      "Eric Eaton"
+    ],
+    "year": 2024,
+    "venue": "Reinforcement Learning Journal / RLC 2024",
+    "url": "https://arxiv.org/html/2403.05996v3",
+    "verified_level": "full_text",
+    "mechanism": "Unseen-action overestimation, Adam statistics, Q divergence.",
+    "intervention": "Output Feature Normalization; priming optimizer ablations; reset comparisons.",
+    "diagnostic": "Q scale, returns и effective feature dimension.",
+    "limitations": "High-UTD SAC/priming; interventions затрагивают разные компоненты.",
+    "relevance": "Показывает взаимодействие optimizer/targets/data; rank иногда восстанавливается.",
+    "source_files": [
+      "optimizer_targets.json",
+      "data_selection.json"
+    ],
+    "aliases": [
+      "hussing2024value_divergence"
+    ],
+    "verified_at": "2026-10-05",
+    "evidence_location": "Full text https://arxiv.org/html/2403.05996, sections 3–5"
+  },
+  {
+    "id": "dohare2024plasticity",
+    "title": "Loss of plasticity in deep continual learning",
+    "authors": [
+      "Shibhansh Dohare",
+      "J. Fernando Hernandez-Garcia",
+      "Qingfeng Lan",
+      "Parash Rahman",
+      "A. Rupam Mahmood",
+      "Richard S. Sutton"
+    ],
+    "year": 2024,
+    "venue": "Nature 632, 768–774",
+    "url": "https://doi.org/10.1038/s41586-024-07711-7",
+    "full_text_url": "https://arxiv.org/pdf/2306.13812",
+    "code_url": "https://github.com/shibhansh/loss-of-plasticity",
+    "verified_level": "full_text",
+    "verification_note": "Published metadata, cached article text и author code проверены; детальная utility/Adam процедура прочитана в predecessor Maintaining Plasticity in Deep Continual Learning, arXiv2306.13812v3, чья author list отличается.",
+    "mechanism": "Inactive units, norm growth и effective rank — correlates длительной деградации.",
+    "intervention": "Continual backpropagation заменяет малую долю less-useful mature units; для Adam сбрасывается associated state.",
+    "diagnostic": "Contribution/adaptation utility, activity, weights и rank.",
+    "limitations": "Utility heuristic; prevention ≠ one-shot repair. Weight replacement при Adam имеет optimizer coupling.",
+    "relevance": "Prior art для local diagnostics-driven repair и обязательный coupled-intervention baseline.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "moalla2024no_representation",
+    "title": "No Representation, No Trust: Connecting Representation, Collapse, and Trust Issues in PPO",
+    "authors": [
+      "Skander Moalla",
+      "Andrea Miele",
+      "Daniil Pyatko",
+      "Razvan Pascanu",
+      "Caglar Gulcehre"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 37",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/81166fbd9cc5adf14031cdb69d3fd6a8-Abstract-Conference.html",
+    "full_text_url": "https://arxiv.org/html/2405.00662v3",
+    "code_url": "https://github.com/CLAIRE-Labo/no-representation-no-trust",
+    "verified_level": "full_text",
+    "mechanism": "PPO representation collapse can weaken trust-region protection.",
+    "intervention": "PFO; Adam moment resets and beta2 ablations.",
+    "diagnostic": "Fixed-budget checkpoint capacity probe with fresh optimizer; representation metrics.",
+    "limitations": "Empirical relations vary across environments; fixed configurations rather than repair selection.",
+    "relevance": "Prior for trainability measurement; fresh optimizer conditions what that probe diagnoses.",
+    "evidence_location": "Sections 2–4; Appendix B.2",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "additional.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "galashov2024soft_reset",
+    "title": "Non-Stationary Learning of Neural Networks with Automatic Soft Parameter Reset",
+    "authors": [
+      "Alexandre Galashov",
+      "Michalis K. Titsias",
+      "András György",
+      "Clare Lyle",
+      "Razvan Pascanu",
+      "Yee Whye Teh",
+      "Maneesh Sahani"
+    ],
+    "year": 2024,
+    "venue": "NeurIPS 37",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/978cc34c539fd26f0e8afb7e3905f34a-Paper-Conference.pdf",
+    "verified_level": "full_text",
+    "mechanism": "Learned OU drift models changing parameters/non-stationarity.",
+    "intervention": "Adaptive soft reset plus learning-rate adjustment.",
+    "diagnostic": "Predictive likelihood optimized on data; fresh chunks in SAC.",
+    "limitations": "One intervention family; RL Hopper/Humanoid with three seeds; higher Bayesian compute.",
+    "relevance": "Strong prior for learning when/how strongly to intervene from data.",
+    "evidence_location": "Full text https://arxiv.org/html/2411.04034v1, sections 3 and 5.1",
+    "code_status": "No release claimed: paper checklist cites IP constraints.",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "data_selection.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "ma2024adaptive_rr",
+    "title": "Revisiting Plasticity in Visual Reinforcement Learning: Data, Modules and Training Stages",
+    "authors": [
+      "Guozheng Ma",
+      "Lu Li",
+      "Sen Zhang",
+      "Zixuan Liu",
+      "Zhen Wang",
+      "Yixin Chen",
+      "Li Shen",
+      "Xueqian Wang",
+      "Dacheng Tao"
+    ],
+    "year": 2024,
+    "venue": "ICLR",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2024/hash/5647763d4245b23e6a1cb0a8947b38c9-Abstract-Conference.html",
+    "code_url": "https://github.com/Guozheng-Ma/Adaptive-Replay-Ratio",
+    "verified_level": "full_text",
+    "mechanism": "Augmentation and critic activity interact with training stage and replay ratio.",
+    "intervention": "Critic-FAU rule switches low replay ratio to high.",
+    "diagnostic": "Fraction of Active Units and change between checkpoints.",
+    "limitations": "Single-knob hand-designed rule; FAU is a proxy, not isolated trainability.",
+    "relevance": "Direct prior for diagnostics→adaptive intervention; factorial data×reset experiment.",
+    "evidence_location": "Sections 3–6; Appendix C",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "data_selection.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "li2024roer",
+    "title": "ROER: Regularized Optimal Experience Replay",
+    "authors": [
+      "Changling Li",
+      "Zhang-Wei Hong",
+      "Pulkit Agrawal",
+      "Divyansh Garg",
+      "Joni Pajarinen"
+    ],
+    "year": 2024,
+    "venue": "Reinforcement Learning Journal 4:1598–1618 / RLC",
+    "url": "https://rlj.cs.umass.edu/2024/papers/Paper198.html",
+    "code_url": "https://github.com/XavierChanglingLi/Regularized-Optimal-Experience-Replay",
+    "verified_level": "full_text",
+    "mechanism": "Links replay prioritization to regularized occupancy optimization.",
+    "intervention": "TD-error-derived replay reweighting with KL-divergence regularization.",
+    "diagnostic": "TD error/occupancy ratios; no plasticity diagnosis.",
+    "limitations": "Not a repair selector; priorities depend on learner and targets.",
+    "relevance": "Concrete data-distribution intervention; distinguishes effective sampling from collection.",
+    "evidence_location": "Full text https://arxiv.org/html/2407.03995",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "data_selection.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "farebrother2024_stop_regressing",
+    "title": "Stop Regressing: Training Value Functions via Classification for Scalable Deep RL",
+    "authors": [
+      "Jesse Farebrother",
+      "Jordi Orbay",
+      "Quan Vuong",
+      "Adrien Ali Taiga",
+      "Yevgen Chebotar",
+      "Ted Xiao",
+      "Alex Irpan",
+      "Sergey Levine",
+      "Pablo Samuel Castro",
+      "Aleksandra Faust",
+      "Aviral Kumar",
+      "Rishabh Agarwal"
+    ],
+    "year": 2024,
+    "venue": "ICML 2024",
+    "url": "https://proceedings.mlr.press/v235/farebrother24a.html",
+    "verified_level": "full_text",
+    "mechanism": "Value-loss sensitivity к target noise, scale и nonstationarity.",
+    "intervention": "MSE, HL-Gauss, two-hot и C51 comparisons.",
+    "diagnostic": "Growing-target probe, frozen-feature evaluation, noisy-target experiments.",
+    "limitations": "Head/loss/encoding и hyperparameters могут меняться совместно.",
+    "relevance": "Основа target/loss arms; categorical switch не чистый target repair.",
+    "source_files": [
+      "optimizer_targets.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "pyatko2025ppo_interventions",
+    "title": "Data, Auxiliary Losses, or Normalization Layers for Plasticity? A case study with PPO on Atari",
+    "authors": [
+      "Daniil Pyatko",
+      "Andrea Miele",
+      "Skander Moalla",
+      "Caglar Gulcehre"
+    ],
+    "year": 2025,
+    "venue": "EWRL 2025; author page confirms acceptance, PDF labelled preprint",
+    "url": "https://openreview.net/pdf?id=6CViR7tKj2",
+    "verified_level": "full_text",
+    "mechanism": "PPO nonstationarity and representation degradation.",
+    "intervention": "18 data/loss/normalization interventions; CHAIN-SP.",
+    "diagnostic": "Rank, dead units, capacity probe, norms.",
+    "limitations": "Three Atari games; tuned run-level configurations, no checkpoint selector in checked protocol.",
+    "relevance": "Direct prior for heterogeneous intervention comparison; narrower selector contribution remains possible.",
+    "evidence_location": "Section 3, Table 2, Section 3.2, Appendix D.3",
+    "verification_note": "Relevant primary full-text passages indexed by search; direct PDF presents verification challenge. Exact code URL unverified; author-page arXiv link points to an unrelated paper.",
+    "metadata_source": "https://www.andreamiele.fr/",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "additional.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "lyle2024disentangling",
+    "title": "Disentangling the Causes of Plasticity Loss in Neural Networks",
+    "authors": [
+      "Clare Lyle",
+      "Zeyu Zheng",
+      "Khimya Khetarpal",
+      "Hado van Hasselt",
+      "Razvan Pascanu",
+      "James Martens",
+      "Will Dabney"
+    ],
+    "year": 2025,
+    "first_publication_year": 2024,
+    "conference_year": 2024,
+    "venue": "CoLLAs 2024; PMLR 274 proceedings published 2025",
+    "url": "https://proceedings.mlr.press/v274/lyle25a.html",
+    "full_text_url": "https://arxiv.org/html/2402.18762v1",
+    "verified_level": "full_text",
+    "mechanism": "Target magnitude, preactivation shifts, unit death/linearization и norm growth — несколько путей деградации.",
+    "intervention": "Изолированные и совместные mitigations, особенно LayerNorm + weight decay.",
+    "diagnostic": "Empirical NTK degeneracy и layer statistics.",
+    "limitations": "Авторская independence — возможность разных failure paths, не независимость всех измеряемых компонент RL state.",
+    "relevance": "Центральный prior art для decomposition и repair combinations; selector должен выходить за этот вклад.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "zang2025pame",
+    "title": "Loss of Plasticity: A New Perspective on Solving Multi-Agent Exploration for Sparse Reward Tasks",
+    "authors": [
+      "Zehua Zang",
+      "Chuxiong Sun",
+      "Lixiang Liu",
+      "Fuchun Sun",
+      "Changwen Zheng"
+    ],
+    "year": 2025,
+    "venue": "AAMAS 2025, Research Paper Track, pp.2299–2308",
+    "url": "https://ifaamas.csc.liv.ac.uk/Proceedings/aamas2025/pdfs/p2299.pdf",
+    "verified_level": "full_text",
+    "mechanism": "Plasticity bottlenecks can prevent learning from novel experience in MARL.",
+    "intervention": "PAME selectively injects plasticity into affected modules.",
+    "diagnostic": "FAU decline relative to anchor and intrinsic-novelty threshold.",
+    "limitations": "Hand-designed triggers; one repair family; SMAC/GRF settings.",
+    "relevance": "Direct prior for diagnosis-driven choice of module and intervention timing.",
+    "evidence_location": "Sections 6–7; recovery-target ablations",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "followup.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "hafner2025_dreamerv3",
+    "title": "Mastering diverse control tasks through world models",
+    "authors": [
+      "Danijar Hafner",
+      "Jurgis Pasukonis",
+      "Jimmy Ba",
+      "Timothy Lillicrap"
+    ],
+    "year": 2025,
+    "venue": "Nature",
+    "url": "https://www.nature.com/articles/s41586-025-08744-2",
+    "code_url": "https://github.com/danijar/dreamerv3",
+    "verified_level": "full_text",
+    "mechanism": "Target-scale robustness через symlog и symexp two-hot.",
+    "intervention": "Loss transforms; Nature Methods также LaProp/adaptive clipping.",
+    "diagnostic": "Cross-domain robustness; direct repair diagnosis отсутствует.",
+    "limitations": "ArXiv v2 полный текст и Nature Methods search excerpt; версии различаются.",
+    "relevance": "Scale/encoding controls; не checkpoint recovery evidence.",
+    "source_files": [
+      "optimizer_targets.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "tang2025_churn",
+    "title": "Mitigating Plasticity Loss in Continual Reinforcement Learning by Reducing Churn",
+    "authors": [
+      "Hongyao Tang",
+      "Johan Obando-Ceron",
+      "Pablo Samuel Castro",
+      "Aaron Courville",
+      "Glen Berseth"
+    ],
+    "year": 2025,
+    "venue": "ICML 2025",
+    "url": "https://proceedings.mlr.press/v267/tang25g.html",
+    "code_url": "https://github.com/bluecontra/C-CHAIN",
+    "verified_level": "full_text",
+    "mechanism": "NTK collapse усиливает churn и gradient correlation.",
+    "intervention": "C-CHAIN auxiliary churn reduction.",
+    "diagnostic": "Out-of-batch output change и empirical NTK.",
+    "limitations": "Reference-data dependence; continual mitigation, а не checkpoint diagnosis.",
+    "relevance": "Кандидат diagnostic и regularization baseline.",
+    "source_files": [
+      "optimizer_targets.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "farias2025snr",
+    "title": "Self-Normalized Resets for Plasticity in Continual Learning",
+    "authors": [
+      "Vivek Farias",
+      "Adam Jozefiak"
+    ],
+    "year": 2025,
+    "venue": "ICLR",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/359c0c4dc53b6bf64041b4c8334f1c11-Abstract-Conference.html",
+    "code_url": "https://github.com/ajozefiak/SelfNormalizedResets",
+    "verified_level": "full_text",
+    "mechanism": "Detects inactive neurons via history of inter-firing times.",
+    "intervention": "Neuron reset after rejection of positive firing-rate hypothesis.",
+    "diagnostic": "Self-normalized rejection percentile.",
+    "limitations": "Predominantly supervised continual-learning evaluation; single reset family.",
+    "relevance": "Prior for statistically motivated diagnostic and adaptive reset timing.",
+    "evidence_location": "Full text https://arxiv.org/html/2410.20098v2",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "data_selection.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "he2025resin",
+    "title": "Silent Neuron Theory and Plasticity Preservation for Deep Reinforcement Learning in Adaptive Video Streaming",
+    "authors": [
+      "Zhiqiang He",
+      "Zhi Liu"
+    ],
+    "year": 2025,
+    "venue": "arXiv preprint; v4 revised 2026-07-08",
+    "url": "https://arxiv.org/abs/2505.01584v4",
+    "verified_level": "full_text",
+    "mechanism": "Forward inactivity alone need not imply impaired backward learning.",
+    "intervention": "Selective perturbation/reset of neurons with low forward and backward activity.",
+    "diagnostic": "Combined outputs/gradient silence criterion.",
+    "limitations": "Domain-specific adaptive video streaming; assumptions in theoretical tracking analysis.",
+    "relevance": "Shows why dormancy alone is an unreliable causal label; targeted diagnostic repair.",
+    "evidence_location": "Full text https://arxiv.org/html/2505.01584, sections IV–V",
+    "metadata_note": "Original 2025 title: Understanding and Exploiting Plasticity for Non-stationary Network Resource Adaptation.",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "data_selection.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "zhou2025sbp",
+    "title": "Stay Hungry, Keep Learning: Sustainable Plasticity for Deep Reinforcement Learning",
+    "authors": [
+      "Huaicheng Zhou",
+      "Zifeng Zhuang",
+      "Donglin Wang"
+    ],
+    "year": 2025,
+    "venue": "ICML 2025, PMLR 267:79644–79672",
+    "url": "https://proceedings.mlr.press/v267/zhou25am.html",
+    "full_text_url": "https://openreview.net/pdf?id=hTrSxX3kiV",
+    "verified_level": "full_text",
+    "mechanism": "Reset benefits require knowledge recovery to preserve useful behavior.",
+    "intervention": "Scheduled cycle reset and inner distillation; P3O combines SBP with PPO.",
+    "diagnostic": "Distillation loss threshold controls recovery duration.",
+    "limitations": "Checked algorithm is scheduled; extra recovery computation varies; no heterogeneous selector.",
+    "relevance": "Repairs can bundle resets and target-based recovery; charge all computation.",
+    "evidence_location": "Appendix A.3 Algorithm 1; conference abstract",
+    "verification_note": "Relevant primary full-text algorithm retrieved through search index; direct PDF opening unavailable.",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "followup.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "lillo2026telapa",
+    "title": "Beyond Single-Model Optimization: Preserving Plasticity in Continual Reinforcement Learning",
+    "authors": [
+      "Lute Lillo",
+      "Nick Cheney"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint 2604.15414v2",
+    "url": "https://arxiv.org/abs/2604.15414",
+    "full_text_url": "https://arxiv.org/html/2604.15414v2",
+    "code_url": "https://anonymous.4open.science/r/telapa-map_elites-54E8",
+    "verified_level": "full_text",
+    "mechanism": "Behaviorally diverse policy neighborhoods preserve reusable transfer origins.",
+    "intervention": "Archive retrieval followed by short-probe initialization selection.",
+    "diagnostic": "Observed adaptation score, slope, AUC; learned trajectory geometry for pooling.",
+    "limitations": "Extra archive/probe cost; selection uses observed candidate responses, not heterogeneous repair prediction.",
+    "relevance": "Close discrete selection prior; compare against budgeted probing and amortized prediction.",
+    "evidence_location": "Section 3.2; Appendix D.1.1 Algorithm 3; Appendix I",
+    "verification_note": "Paper-linked code URL verified as citation, repository contents inaccessible during this check.",
+    "version_date": "2026-06-09",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "followup.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "mccutcheon2026cpr",
+    "title": "Calibrated Partial Resets: Preventing Policy Collapse in Continual Reinforcement Learning",
+    "authors": [
+      "Luc McCutcheon",
+      "Evangelos Chatzaroulas",
+      "Saber Fallah"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint, 2026-07-27",
+    "url": "https://arxiv.org/abs/2607.24996",
+    "code_url": "https://github.com/LucMc/continual-learning",
+    "verified_level": "full_text",
+    "mechanism": "Binary resets may destabilize long-horizon continual RL.",
+    "intervention": "Utility-scaled partial return to initialization.",
+    "diagnostic": "Layer-normalized EMA of incoming-weight gradient magnitude.",
+    "limitations": "Designed utility→intensity mapping with tunable reset fraction; no heterogeneous repair selector.",
+    "relevance": "Fresh direct prior for selecting how strongly to repair from measured state.",
+    "evidence_location": "Full text https://arxiv.org/html/2607.24996v1, sections 3–5",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "data_selection.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "rohani2026neumosync",
+    "title": "NeuMoSync: End-to-End Neuromodulatory Control for Plasticity and Adaptability in Continual Learning",
+    "authors": [
+      "Seyed Roozbeh Razavi Rohani",
+      "Khashayar Khajavi",
+      "Wesley Chung",
+      "Mandana Samiei",
+      "Mo Chen"
+    ],
+    "year": 2026,
+    "venue": "arXiv preprint, 2026-08-05",
+    "url": "https://arxiv.org/abs/2608.04358",
+    "code_url": "https://github.com/RoozbehRazavi/NeuMoSync",
+    "verified_level": "full_text",
+    "mechanism": "Global learned modulation coordinates activity and plasticity.",
+    "intervention": "Four per-neuron coefficients control weights/consolidation/linearity/offset.",
+    "diagnostic": "Current input plus neuron position, learned features and activation history.",
+    "limitations": "Supervised CL benchmarks; not discrete RL checkpoint repair selection.",
+    "relevance": "Closest learned-control prior; snapshot-copy fixed-budget adaptation evaluation overlaps protocol.",
+    "evidence_location": "Full text https://arxiv.org/html/2608.04358v1, sections 2–3",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "data_selection.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "yuan2026plasticine",
+    "title": "Plasticine: Accelerating Research in Plasticity-Motivated Deep Reinforcement Learning",
+    "authors": [
+      "Mingqi Yuan",
+      "Qi Wang",
+      "Guozheng Ma",
+      "Caihao Sun",
+      "Bo Li",
+      "Xin Jin",
+      "Yunbo Wang",
+      "Xiaokang Yang",
+      "Wenjun Zeng",
+      "Dacheng Tao",
+      "Jiayu Chen"
+    ],
+    "year": 2026,
+    "first_release_year": 2025,
+    "venue": "arXiv preprint, v2, 10 February 2026",
+    "url": "https://arxiv.org/abs/2504.17490v2",
+    "full_text_url": "https://arxiv.org/html/2504.17490v2",
+    "code_url": "https://github.com/RLE-Foundation/Plasticine",
+    "code_commit": "aa00b4bb18f7fe298a47e1ce36c32ba55ce064e8",
+    "verified_level": "full_text",
+    "verified_at": "2026-10-05",
+    "evidence_location": "v2 benchmark/method definitions; pinned static code audit, notes/infrastructure_and_forward_search.md",
+    "mechanism": "Benchmarking and implementation framework, not a single mechanism.",
+    "intervention": "More than 13 mitigation implementations.",
+    "diagnostic": "v2 abstract reports six evaluation metrics.",
+    "limitations": "No runtime replication. Static reset/injection paths replace parameters without optimizer rebinding; full checkpoint forks and MinAtar entrypoint absent. Old v1 summaries differ.",
+    "relevance": "Implementation catalogue; explicit state/parameter coverage checks required before port.",
+    "source_files": [
+      "core.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "klein2026survey",
+    "title": "Plasticity Loss in Deep Reinforcement Learning: A Survey",
+    "authors": [
+      "Timo Klein",
+      "Christoph Luther",
+      "Manus McAuliffe",
+      "Lukas Miklautz",
+      "Claudia Plant",
+      "Sebastian Tschiatschek"
+    ],
+    "year": 2026,
+    "first_release_year": 2024,
+    "venue": "arXiv survey, v3, 18 April 2026",
+    "url": "https://arxiv.org/abs/2411.04832v3",
+    "full_text_url": "https://arxiv.org/html/2411.04832v3",
+    "code_url": "https://github.com/Probabilistic-and-Interactive-ML/awesome-plasticity-loss",
+    "verified_level": "full_text",
+    "verified_at": "2026-10-05",
+    "evidence_location": "v3 introduction, taxonomy and methodological directions; v2 used only for discovery",
+    "mechanism": "Survey of drivers, pathologies and mitigations; not an independent causal experiment.",
+    "intervention": "Taxonomy of more than 50 mitigation strategies.",
+    "diagnostic": "Definitions and methodological discussion.",
+    "limitations": "Secondary synthesis; empirical claims should cite original papers. v3 changes author list and structure.",
+    "relevance": "Entry map for reading and forward/backward citation search.",
+    "source_files": [
+      "core.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "rosseau2026_dynamical_isometry",
+    "title": "Preserving Plasticity in Continual Learning via Dynamical Isometry",
+    "authors": [
+      "Andries Rosseau",
+      "Robert Müller",
+      "Ann Nowe"
+    ],
+    "year": 2026,
+    "venue": "ICML 2026",
+    "url": "https://proceedings.mlr.press/v306/rosseau26a.html",
+    "verified_level": "full_text",
+    "mechanism": "NTK anisotropy и layer-wise Jacobian conditioning.",
+    "intervention": "AdamO decoupled orthogonality updates; activation/architecture variants.",
+    "diagnostic": "NTK, weight и Jacobian spectra; dormancy.",
+    "limitations": "Surrogate assumptions; rectangular B^T B=I alone does not preserve every output-gradient norm; closed ReLU gates limit condition-number argument. No empirical replication.",
+    "audit_note": "notes/code_audit_optimizer.md",
+    "relevance": "Свежая mathematical foundation и combined geometry/optimizer arm.",
+    "source_files": [
+      "optimizer_targets.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "rohani2025adalin",
+    "title": "Preserving Plasticity in Continual Learning with Adaptive Linearity Injection",
+    "authors": [
+      "Seyed Roozbeh Razavi Rohani",
+      "Khashayar Khajavi",
+      "Wesley Chung",
+      "Mo Chen",
+      "Sharan Vaswani"
+    ],
+    "year": 2026,
+    "first_release_year": 2025,
+    "venue": "CoLLAs; PMLR 330:418–444 (publisher metadata year 2026)",
+    "url": "https://proceedings.mlr.press/v330/rohani26a.html",
+    "code_url": "https://github.com/RoozbehRazavi/AdaLin",
+    "verified_level": "full_text",
+    "mechanism": "Saturation limits gradient flow.",
+    "intervention": "Learned per-neuron linearity injection with derivative-based gate.",
+    "diagnostic": "Activation derivative/gating; learned strength.",
+    "limitations": "Continuous activation intervention; RL evidence checked in arXiv v1 only.",
+    "relevance": "Adaptive plasticity preservation baseline, distinct from discrete repair selection.",
+    "evidence_location": "https://arxiv.org/html/2505.09486v1, sections 2, 3.6 and Appendix D",
+    "metadata_note": "arXiv says accepted CoLLAs 2025; current PMLR labels proceedings 2026. Preserve version distinction.",
+    "verified_at": "2026-10-05",
+    "source_files": [
+      "data_selection.json"
+    ],
+    "aliases": []
+  },
+  {
+    "id": "hernandezgarcia2025weightsunits",
+    "title": "Reinitializing weights vs units for maintaining plasticity in neural networks",
+    "authors": [
+      "J. Fernando Hernandez-Garcia",
+      "Shibhansh Dohare",
+      "Jun Luo",
+      "Richard S. Sutton"
+    ],
+    "year": 2026,
+    "first_publication_year": 2025,
+    "conference_year": 2025,
+    "venue": "CoLLAs 2025; PMLR 330 proceedings published 2026",
+    "url": "https://proceedings.mlr.press/v330/hernandez-garcia26a.html",
+    "full_text_url": "https://arxiv.org/html/2508.00212v2",
+    "code_url": "https://github.com/JFernando4/collas_2025_swr_paper",
+    "verified_level": "full_text",
+    "mechanism": "Гранулярность reset взаимодействует с размером сети и LayerNorm.",
+    "intervention": "Selective weight reinitialization low-utility weights против CBP/ReDo unit reinitialization.",
+    "diagnostic": "Gradient-based weight utility; architecture, norms, dead units, rank.",
+    "limitations": "Continual supervised tasks, не deep RL. ViT plasticity полностью не восстановлена.",
+    "relevance": "Architecture как repair-effect modifier; параметрный repair нельзя считать одним универсальным действием.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "prakash2026spectralcollapse",
+    "title": "Spectral Collapse Drives Loss of Plasticity in Deep Continual Learning",
+    "authors": [
+      "Arjun Prakash",
+      "Naicheng He",
+      "Kaicheng Guo",
+      "Saket Tiwari",
+      "Tyrone Serapio",
+      "Ruo Yu Tao",
+      "Amy Greenwald",
+      "George Konidaris"
+    ],
+    "year": 2026,
+    "first_publication_year": 2025,
+    "venue": "ICML 2026, PMLR 306",
+    "url": "https://proceedings.mlr.press/v306/prakash26b.html",
+    "full_text_url": "https://arxiv.org/html/2509.22335v3",
+    "code_url": "https://github.com/KevinGuo27/lop-jax",
+    "verified_level": "full_text",
+    "mechanism": "Потеря usable curvature directions; linearized residual contractions зависят от spectrum и alignment.",
+    "intervention": "L2-ER: L2 вместе с effective feature rank regularization.",
+    "diagnostic": "Hessian/GGN/NTK spectrum; fast eigenspace threshold зависит от update budget и learning rate.",
+    "limitations": "Теория linearized fixed-gate networks; universal live-RL causal interpretation не следует автоматически.",
+    "relevance": "Сильная актуальная математическая опора finite-budget diagnostic; rank-only baseline недостаточен.",
+    "source_files": [
+      "parameters.json"
+    ],
+    "aliases": [],
+    "verified_at": "2026-10-05"
+  },
+  {
+    "id": "wu2026sampleweightdecay",
+    "title": "The Rank and Gradient Lost in Non-stationarity: Sample Weight Decay for Mitigating Plasticity Loss in Reinforcement Learning",
+    "authors": [
+      "Zihao Wu",
+      "Hongyao Tang",
+      "Yi Ma",
+      "Jiashun Liu",
+      "Yan Zheng",
+      "Jianye Hao"
+    ],
+    "year": 2026,
+    "venue": "ICLR 2026",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/2886558a03d11f95d4020a460fe4a390-Abstract-Conference.html",
+    "full_text_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/2886558a03d11f95d4020a460fe4a390-Paper-Conference.pdf",
+    "code_url": "https://github.com/wzhhasadream/CleanRL-JAX",
+    "code_commit": "18ca645a72d4e78d4d4a63a5f6745f17837dd935",
+    "verified_level": "full_text",
+    "verified_at": "2026-10-05",
+    "evidence_location": "Proposition 1, Theorem 3, Appendix B.3; static replay code audit, notes/code_audit_optimizer.md",
+    "mechanism": "Theoretical rank collapse and gradient attenuation under input/target nonstationarity.",
+    "intervention": "Sample Weight Decay.",
+    "diagnostic": "NTK Gram rank and gradient magnitude.",
+    "limitations": "Growing replay and exact previous minimizer in proof; 1/k distribution term does not remove target drift. Pinned code is fixed-capacity SAC/TD3; paper-run correspondence unconfirmed.",
+    "relevance": "Theory and sampling-distribution intervention; assumptions matter for gradient-attenuation claims.",
+    "source_files": [
+      "core.json"
+    ],
+    "aliases": []
+  }
+]
