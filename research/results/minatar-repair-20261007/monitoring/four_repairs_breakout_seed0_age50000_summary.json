@@ -1,0 +1,79 @@
+{
+  "checkpoint_id": "natural_breakout_seed0_age50000",
+  "mode": "natural",
+  "budget_env_steps": 50000,
+  "completed_repeats_per_action": {
+    "continue": 2,
+    "optimizer_reset": 2,
+    "head_reset": 2,
+    "head_and_optimizer_reset": 2
+  },
+  "paired_final_effects": [
+    {
+      "action": "optimizer_reset",
+      "repeat": 0,
+      "effect": -0.75,
+      "immediate_effect": 0.0,
+      "recovery_gain_effect": -0.75
+    },
+    {
+      "action": "optimizer_reset",
+      "repeat": 1,
+      "effect": -1.0,
+      "immediate_effect": 0.0,
+      "recovery_gain_effect": -1.0
+    },
+    {
+      "action": "head_reset",
+      "repeat": 0,
+      "effect": 0.5500000000000007,
+      "immediate_effect": -1.4000000000000001,
+      "recovery_gain_effect": 1.950000000000001
+    },
+    {
+      "action": "head_reset",
+      "repeat": 1,
+      "effect": 0.2999999999999998,
+      "immediate_effect": -1.7,
+      "recovery_gain_effect": 2.0
+    },
+    {
+      "action": "head_and_optimizer_reset",
+      "repeat": 0,
+      "effect": -1.2999999999999998,
+      "immediate_effect": -1.4000000000000001,
+      "recovery_gain_effect": 0.10000000000000053
+    },
+    {
+      "action": "head_and_optimizer_reset",
+      "repeat": 1,
+      "effect": -1.25,
+      "immediate_effect": -1.7,
+      "recovery_gain_effect": 0.4500000000000002
+    }
+  ],
+  "factorial_final_contrasts": [
+    {
+      "repeat": 0,
+      "head_minus_continue": 0.5500000000000007,
+      "optimizer_minus_continue": -0.75,
+      "joint_minus_continue": -1.2999999999999998,
+      "joint_minus_optimizer": -0.5499999999999998,
+      "interaction": -1.1000000000000005
+    },
+    {
+      "repeat": 1,
+      "head_minus_continue": 0.2999999999999998,
+      "optimizer_minus_continue": -1.0,
+      "joint_minus_continue": -1.25,
+      "joint_minus_optimizer": -0.25,
+      "interaction": -0.5499999999999998
+    }
+  ],
+  "factorial_interaction_rule": "joint - head - optimizer + continue",
+  "gain_decomposition_rule": "final effect = immediate effect + recovery gain effect",
+  "snapshot_sha256": "857c7fdab0bdb9cd2e067f7c2fb5b9f233532a1c053e7eecefd38cad4b74583a",
+  "plot_script_sha256": "94d2fad57dc829609733c3932d6a44dbd8ccae625e1fc3c4247c7ace3505dae1",
+  "analysis_optimizer_updates": 0,
+  "figure": "research\\results\\minatar-repair-20261007\\monitoring\\four_repairs_breakout_seed0_age50000.png"
+}
