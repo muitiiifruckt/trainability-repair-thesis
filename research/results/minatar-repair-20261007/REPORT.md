@@ -13,3 +13,11 @@ Screen проверяет полезность четырёх вмешатель
 Seaquest и Freeway разрешены для проверок API; обучение и policy evaluation открываются только после freeze протокола и подтверждения development signal.
 
 Конфигурации, сырые JSONL, версии и SHA сохранены рядом. Большие полные checkpoints и replay находятся в локальном runs/; они исключены из Git.
+
+## Первые исходные checkpoints и выполнение
+
+Промежуточный source sanity: Breakout seeds 1/2 на 50 499 transitions дают mean raw return 5.15/5.2 на 20 evaluation episodes, random anchor 0.6. Asterix seed 0: 1.0 против random 0.75. Target age во всех трёх checkpoints — 500 updates. Это ещё не результаты ремонта; остальные checkpoints и все continuation branches ожидаются.
+
+Один source worker получил MemoryError при сохранении состояния. Последний checksum-verified savepoint сохранён. Healthy workers продолжаются; supervisor повторит незавершённую очередь с прежними seeds и меньшей параллельностью. Numerical failures пока не наблюдались. Полный набор: 65 tests passed; отдельно выполнены process-spawn и crash/resume проверки.
+
+Фоновый supervisor отслеживает единственный coordinator и возобновляет очередь. Проверка в этом чате настроена каждые полчаса; сообщения только по содержательным изменениям. Текущие данные: локальный `runs/minatar-repair-20261007/progress.json`, source workers и manifest. Эта секция будет заменена очередным автоматически обновлённым отчётом после завершённой серии.

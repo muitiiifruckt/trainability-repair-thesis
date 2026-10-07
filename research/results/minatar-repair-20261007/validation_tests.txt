@@ -1,0 +1,85 @@
+test_clone_has_independent_parameter_and_moment_storage (test_controlled_probe.BranchSemanticsTests.test_clone_has_independent_parameter_and_moment_storage) ... ok
+test_continue_clones_follow_identical_trajectory (test_controlled_probe.BranchSemanticsTests.test_continue_clones_follow_identical_trajectory) ... ok
+test_full_reset_matches_fresh_optimizer (test_controlled_probe.BranchSemanticsTests.test_full_reset_matches_fresh_optimizer) ... ok
+test_head_reset_keeps_optimizer_parameter_bindings (test_controlled_probe.BranchSemanticsTests.test_head_reset_keeps_optimizer_parameter_bindings) ... ok
+test_optimizer_reset_preserves_predictions (test_controlled_probe.BranchSemanticsTests.test_optimizer_reset_preserves_predictions) ... ok
+test_t_reset_matches_learning_rate_and_epsilon_schedule (test_controlled_probe.BranchSemanticsTests.test_t_reset_matches_learning_rate_and_epsilon_schedule) ... ok
+test_empty_data_is_explicit_and_figures_are_generated_read_only (test_mechanism_analysis.MechanismAnalysisTests.test_empty_data_is_explicit_and_figures_are_generated_read_only) ... ok
+test_failed_curves_remain_raw_and_never_count_as_success (test_mechanism_analysis.MechanismAnalysisTests.test_failed_curves_remain_raw_and_never_count_as_success) ... ok
+test_histories_and_checkpoint_ages_receive_equal_weight (test_mechanism_analysis.MechanismAnalysisTests.test_histories_and_checkpoint_ages_receive_equal_weight) ... ok
+test_failed_branch_blocks_gate_and_is_not_imputed (test_rl_analysis.AnalysisTests.test_failed_branch_blocks_gate_and_is_not_imputed) ... ok
+test_finite_truncated_outcome_is_not_full_budget_success (test_rl_analysis.AnalysisTests.test_finite_truncated_outcome_is_not_full_budget_success) ... ok
+test_frozen_deploy_includes_development_extension_but_excludes_reserved (test_rl_analysis.AnalysisTests.test_frozen_deploy_includes_development_extension_but_excludes_reserved) ... ok
+test_missing_running_files_are_incomplete (test_rl_analysis.AnalysisTests.test_missing_running_files_are_incomplete) ... ok
+test_noisy_maximum_is_not_heterogeneity_signal (test_rl_analysis.AnalysisTests.test_noisy_maximum_is_not_heterogeneity_signal) ... ok
+test_paired_noise_cancels_and_history_count_is_not_checkpoint_count (test_rl_analysis.AnalysisTests.test_paired_noise_cancels_and_history_count_is_not_checkpoint_count) ... ok
+test_preprocessing_and_hyperparameter_tuning_are_outer_train_only (test_rl_analysis.AnalysisTests.test_preprocessing_and_hyperparameter_tuning_are_outer_train_only) ... ok
+test_report_defers_fitting_before_heterogeneity_gate (test_rl_analysis.AnalysisTests.test_report_defers_fitting_before_heterogeneity_gate) ... ok
+test_reserved_transfer_checkpoints_do_not_change_development_gate_or_cv (test_rl_analysis.AnalysisTests.test_reserved_transfer_checkpoints_do_not_change_development_gate_or_cv) ... ok
+test_sbs_never_uses_test_source_history (test_rl_analysis.AnalysisTests.test_sbs_never_uses_test_source_history) ... ok
+test_source_mode_and_environment_budget_are_not_pooled (test_rl_analysis.AnalysisTests.test_source_mode_and_environment_budget_are_not_pooled) ... ok
+test_evaluation_and_diagnostics_do_not_mutate_training_or_global_rng (test_rl_core.CoreTests.test_evaluation_and_diagnostics_do_not_mutate_training_or_global_rng) ... ok
+test_fractional_and_high_replay_ratios_count_actual_updates (test_rl_core.CoreTests.test_fractional_and_high_replay_ratios_count_actual_updates) ... ok
+test_full_checkpoint_reproduces_environment_replay_and_learning_trace (test_rl_core.CoreTests.test_full_checkpoint_reproduces_environment_replay_and_learning_trace) ... ok
+test_full_reset_matches_fresh_adam_and_preserves_global_target_phase (test_rl_core.CoreTests.test_full_reset_matches_fresh_adam_and_preserves_global_target_phase) ... ok
+test_function_preserving_injection_has_fresh_optimizer_group_and_restores (test_rl_core.CoreTests.test_function_preserving_injection_has_fresh_optimizer_group_and_restores) ... ok
+test_head_reset_preserves_parameter_bindings_optimizer_and_target (test_rl_core.CoreTests.test_head_reset_preserves_parameter_bindings_optimizer_and_target) ... ok
+test_optimizer_reset_preserves_weights_targets_replay_and_schedules (test_rl_core.CoreTests.test_optimizer_reset_preserves_weights_targets_replay_and_schedules) ... ok
+test_replay_batch_returns_owned_tensors_and_preserves_chronology (test_rl_core.CoreTests.test_replay_batch_returns_owned_tensors_and_preserves_chronology) ... ok
+test_restore_and_repairs_preserve_callers_global_torch_rng (test_rl_core.CoreTests.test_restore_and_repairs_preserve_callers_global_torch_rng) ... ok
+test_seeded_forks_change_rngs_but_preserve_current_world_and_clocks (test_rl_core.CoreTests.test_seeded_forks_change_rngs_but_preserve_current_world_and_clocks) ... ok
+test_snapshot_and_forks_own_independent_storage (test_rl_core.CoreTests.test_snapshot_and_forks_own_independent_storage) ... ok
+test_t_reset_matches_lr_epsilon_control_in_float64_through_target_sync (test_rl_core.CoreTests.test_t_reset_matches_lr_epsilon_control_in_float64_through_target_sync) ... ok
+test_terminal_mask_and_raw_rewards_with_truncation_bootstrap (test_rl_core.CoreTests.test_terminal_mask_and_raw_rewards_with_truncation_bootstrap) ... ok
+test_episode_disjoint_holdout_and_ordered_windows (test_rl_mechanisms.FrozenTDMechanismTests.test_episode_disjoint_holdout_and_ordered_windows) ... ok
+test_factorial_shared_tapes_costs_and_strict_json (test_rl_mechanisms.FrozenTDMechanismTests.test_factorial_shared_tapes_costs_and_strict_json) ... ok
+test_fixed_tape_no_collector_no_sync_and_no_snapshot_mutation (test_rl_mechanisms.FrozenTDMechanismTests.test_fixed_tape_no_collector_no_sync_and_no_snapshot_mutation) ... ok
+test_heldout_metrics_not_averaged_with_training_fit (test_rl_mechanisms.FrozenTDMechanismTests.test_heldout_metrics_not_averaged_with_training_fit) ... ok
+test_insufficient_episode_holdout_explicitly_skips (test_rl_mechanisms.FrozenTDMechanismTests.test_insufficient_episode_holdout_explicitly_skips) ... ok
+test_no_hidden_collector_and_nonfinite_failures_are_serializable (test_rl_mechanisms.FrozenTDMechanismTests.test_no_hidden_collector_and_nonfinite_failures_are_serializable) ... ok
+test_probe_chooser_counts_all_actions_and_preserves_global_rng (test_rl_mechanisms.FrozenTDMechanismTests.test_probe_chooser_counts_all_actions_and_preserves_global_rng) ... ok
+test_t_reset_matches_exact_lr_epsilon_schedule (test_rl_mechanisms.FrozenTDMechanismTests.test_t_reset_matches_exact_lr_epsilon_schedule) ... ok
+test_target_cache_uses_raw_rewards_and_pre_repair_models (test_rl_mechanisms.FrozenTDMechanismTests.test_target_cache_uses_raw_rewards_and_pre_repair_models) ... ok
+test_wraparound_windows_use_transition_chronology (test_rl_mechanisms.FrozenTDMechanismTests.test_wraparound_windows_use_transition_chronology) ... ok
+{"stage": "source", "trajectory_id": "natural_breakout_seed0", "job_id": "natural_breakout_seed0", "environment_steps": 0, "gradient_updates": 0, "time": 1791403446.3816705, "package_updates": 0, "package_wall_sec": 0.011251899995841086}
+{"stage": "source", "trajectory_id": "natural_breakout_seed0", "job_id": "natural_breakout_seed0", "environment_steps": 13, "gradient_updates": 6, "recent_return": 0.0, "wall_time_sec": 0.1863255999996909, "event": "checkpoint_created", "checkpoint_id": "natural_breakout_seed0_age12", "j_pre": 0.0, "random_return": 0.0, "time": 1791403446.6310692, "package_updates": 6, "package_wall_sec": 0.260647399998561}
+test_checksum_and_config_change_block_reuse (test_rl_runner.RunnerTests.test_checksum_and_config_change_block_reuse) ... ok
+{"stage": "source", "trajectory_id": "natural_breakout_seed0", "job_id": "natural_breakout_seed0", "environment_steps": 0, "gradient_updates": 0, "time": 1791403446.7284756, "package_updates": 0, "package_wall_sec": 0.01484090000303695}
+{"stage": "source", "trajectory_id": "natural_breakout_seed0", "job_id": "natural_breakout_seed0", "environment_steps": 13, "gradient_updates": 6, "recent_return": 0.0, "wall_time_sec": 0.1470400000034715, "event": "checkpoint_created", "checkpoint_id": "natural_breakout_seed0_age12", "j_pre": 0.0, "random_return": 0.0, "time": 1791403446.941346, "package_updates": 6, "package_wall_sec": 0.22771099999954458}
+{"stage": "screen", "trajectory_id": "natural_breakout_seed0", "job_id": "branch:natural:natural_breakout_seed0_age12:optimizer_reset:repeat0:h8", "environment_steps": 13, "gradient_updates": 6, "recent_return": 0.0, "wall_time_sec": 0.21314580000034766, "event": "checkpoint_created", "checkpoint_id": "natural_breakout_seed0_age12", "j_pre": 0.0, "random_return": 0.0, "action": "optimizer_reset", "repeat": 0, "completed_steps": 0, "horizon": 8, "time": 1791403447.0175223, "package_updates": 6, "package_wall_sec": 0.3038875999991433}
+{"stage": "screen", "job_id": "branch:natural:natural_breakout_seed0_age12:optimizer_reset:repeat0:h8", "checkpoint_id": "natural_breakout_seed0_age12", "action": "optimizer_reset", "repeat": 0, "completed_steps": 4, "horizon": 8, "time": 1791403447.1966546, "package_updates": 10, "package_wall_sec": 0.483020023406425}
+{"stage": "screen", "job_id": "branch:natural:natural_breakout_seed0_age12:optimizer_reset:repeat0:h8", "checkpoint_id": "natural_breakout_seed0_age12", "action": "optimizer_reset", "repeat": 0, "completed_steps": 8, "horizon": 8, "gradient_updates": 14, "recent_return": 0.0, "wall_time_sec": 0.18023489999904996, "event": "branch_complete", "j_final": 0.0, "failure_reason": null, "time": 1791403447.2966979, "package_updates": 14, "package_wall_sec": 0.5830608234100509}
+{"stage": "screen", "job_id": "branch:natural:natural_breakout_seed0_age12:optimizer_reset:repeat0:h8", "checkpoint_id": "natural_breakout_seed0_age12", "action": "optimizer_reset", "repeat": 0, "completed_steps": 0, "horizon": 8, "time": 1791403447.3651958, "package_updates": 0, "package_wall_sec": 0.01775389999966137}
+{"stage": "screen", "job_id": "branch:natural:natural_breakout_seed0_age12:optimizer_reset:repeat0:h8", "checkpoint_id": "natural_breakout_seed0_age12", "action": "optimizer_reset", "repeat": 0, "completed_steps": 8, "horizon": 8, "gradient_updates": 14, "recent_return": 0.0, "wall_time_sec": 0.12685790000250563, "event": "branch_complete", "j_final": 0.0, "failure_reason": null, "time": 1791403447.4962852, "package_updates": 8, "package_wall_sec": 0.14884289999463363}
+test_interrupted_branch_restores_trace_and_same_seeds (test_rl_runner.RunnerTests.test_interrupted_branch_restores_trace_and_same_seeds) ... ok
+{"event": "new_package", "time": 1791403447.6080818, "package_updates": 0, "package_wall_sec": 0.00173940000240691}
+test_package_rotation_and_restart_preserve_prior_cost (test_rl_runner.RunnerTests.test_package_rotation_and_restart_preserve_prior_cost) ... ok
+{"stage": "source", "trajectory_id": "natural_breakout_seed0", "job_id": "natural_breakout_seed0", "environment_steps": 0, "gradient_updates": 0, "time": 1791403447.6697323, "package_updates": 0, "package_wall_sec": 0.01038680000056047}
+{"stage": "source", "trajectory_id": "natural_breakout_seed0", "job_id": "natural_breakout_seed0", "environment_steps": 13, "gradient_updates": 6, "recent_return": 0.0, "wall_time_sec": 0.16320460000133608, "event": "checkpoint_created", "checkpoint_id": "natural_breakout_seed0_age12", "j_pre": 0.0, "random_return": 0.0, "time": 1791403447.8953383, "package_updates": 6, "package_wall_sec": 0.23599370000010822}
+{"stage": "source", "trajectory_id": "natural_breakout_seed0", "job_id": "natural_breakout_seed0", "environment_steps": 21, "gradient_updates": 14, "recent_return": 0.0, "wall_time_sec": 0.34756779999588616, "event": "checkpoint_created", "checkpoint_id": "natural_breakout_seed0_age20", "j_pre": 0.0, "random_return": 0.0, "time": 1791403448.0944054, "package_updates": 14, "package_wall_sec": 0.435060900003009}
+{"stage": "screen", "trajectory_id": "natural_breakout_seed0", "job_id": "branch:natural:natural_breakout_seed0_age12:continue:repeat0:h8", "environment_steps": 21, "gradient_updates": 14, "recent_return": 0.0, "wall_time_sec": 0.42454719999659574, "event": "checkpoint_created", "checkpoint_id": "natural_breakout_seed0_age12", "j_pre": 0.0, "random_return": 0.0, "action": "continue", "repeat": 0, "completed_steps": 0, "horizon": 8, "time": 1791403448.1093888, "package_updates": 14, "package_wall_sec": 0.4500444000004791}
+{"stage": "screen", "trajectory_id": "natural_breakout_seed0", "job_id": "branch:natural:natural_breakout_seed0_age12:continue:repeat0:h8", "environment_steps": 21, "gradient_updates": 14, "recent_return": 0.0, "wall_time_sec": 0.1256431000001612, "event": "branch_complete", "checkpoint_id": "natural_breakout_seed0_age12", "j_pre": 0.0, "random_return": 0.0, "action": "continue", "repeat": 0, "completed_steps": 8, "horizon": 8, "j_final": 0.0, "failure_reason": null, "time": 1791403448.2392302, "package_updates": 22, "package_wall_sec": 0.579885800005286}
+test_source_and_branch_resume_deduplicate_and_keep_target_age (test_rl_runner.RunnerTests.test_source_and_branch_resume_deduplicate_and_keep_target_age) ... ok
+test_conflicting_import_checksum_and_unreachable_phase_stop (test_rl_scheduler.ParallelSchedulerTests.test_conflicting_import_checksum_and_unreachable_phase_stop) ... ok
+test_lease_rejects_live_owner_and_recovers_dead_owner (test_rl_scheduler.ParallelSchedulerTests.test_lease_rejects_live_owner_and_recovers_dead_owner) ... ok
+test_package_rotations_between_bounded_waves_and_worker_config_limits (test_rl_scheduler.ParallelSchedulerTests.test_package_rotations_between_bounded_waves_and_worker_config_limits) ... ok
+test_parent_merge_once_absolute_artifacts_and_resume_no_execution (test_rl_scheduler.ParallelSchedulerTests.test_parent_merge_once_absolute_artifacts_and_resume_no_execution) ... ok
+test_progress_reader_race_is_advisory (test_rl_scheduler.ParallelSchedulerTests.test_progress_reader_race_is_advisory) ... ok
+test_real_spawn_workers_create_independent_tiny_campaigns (test_rl_scheduler.ParallelSchedulerTests.test_real_spawn_workers_create_independent_tiny_campaigns) ... ok
+test_recover_child_completed_work_after_parent_crash_without_double_cost (test_rl_scheduler.ParallelSchedulerTests.test_recover_child_completed_work_after_parent_crash_without_double_cost) ... ok
+test_waves_have_four_tasks_and_one_package_maximum (test_rl_scheduler.ParallelSchedulerTests.test_waves_have_four_tasks_and_one_package_maximum) ... ok
+test_cluster_resampling_not_repeat_resampling_or_checkpoint_overweighting (test_rl_transfer.FrozenTransferTests.test_cluster_resampling_not_repeat_resampling_or_checkpoint_overweighting) ... ok
+test_declared_budget_strata_ignore_actual_chooser_continuation_length (test_rl_transfer.FrozenTransferTests.test_declared_budget_strata_ignore_actual_chooser_continuation_length) ... ok
+test_empty_results_and_bootstrap_disabled_are_descriptive (test_rl_transfer.FrozenTransferTests.test_empty_results_and_bootstrap_disabled_are_descriptive) ... ok
+test_evaluation_before_freeze_hash_mismatch_duplicate_and_budget_rejected (test_rl_transfer.FrozenTransferTests.test_evaluation_before_freeze_hash_mismatch_duplicate_and_budget_rejected) ... ok
+test_failures_and_missing_pairs_remain_explicit (test_rl_transfer.FrozenTransferTests.test_failures_and_missing_pairs_remain_explicit) ... ok
+test_hash_timestamp_and_artifact_integrity (test_rl_transfer.FrozenTransferTests.test_hash_timestamp_and_artifact_integrity) ... ok
+test_heldout_game_fit_audit_and_ambiguous_history_are_rejected (test_rl_transfer.FrozenTransferTests.test_heldout_game_fit_audit_and_ambiguous_history_are_rejected) ... ok
+test_missing_declared_game_blocks_suite_mean (test_rl_transfer.FrozenTransferTests.test_missing_declared_game_blocks_suite_mean) ... ok
+test_paired_diagnostic_comparisons_and_input_read_only (test_rl_transfer.FrozenTransferTests.test_paired_diagnostic_comparisons_and_input_read_only) ... ok
+test_phases_and_development_reserved_roles_are_separate (test_rl_transfer.FrozenTransferTests.test_phases_and_development_reserved_roles_are_separate) ... ok
+
+----------------------------------------------------------------------
+Ran 65 tests in 32.894s
+
+OK
