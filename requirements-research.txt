@@ -1,0 +1,5 @@
+# Create .venv with --system-site-packages to reuse the validated installed torch.
+# Effective versions of torch/numpy/scipy/sklearn are recorded by each run manifest.
+MinAtar==1.0.15
+numpy==2.4.4
+pytz==2026.5

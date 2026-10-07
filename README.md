@@ -21,13 +21,19 @@
 - [Дополнение по PPO и сравнению interventions](notes/additional_onpolicy.md).
 - Аудит авторского кода: [параметры и resets](notes/code_audit_parameters.md), [optimizer и теория](notes/code_audit_optimizer.md), [Plasticine и повторный поиск](notes/infrastructure_and_forward_search.md).
 - [Журнал поиска](research/search_log.md) и [решения](research/decisions.md).
-- [Схемы будущих данных](schemas/README.md).
+- [Исполняемая исследовательская программа](docs/research_program.md), [конфигурация](configs/research_program.json) и [runner](experiments/rl_runner.py).
+- [Схемы данных и manifest](schemas/README.md).
+- [Совместимость native runtime](docs/native_runtime_compatibility.md).
 
-## Статус на 5 октября 2026
+## Статус на 7 октября 2026
 
 Тематический обзор: 41 уникальный источник, включая актуальные препринты 2026 года. Второй проход добавил TeLAPA, PAME и SBP/P3O, уточнил границы новизны и проверил несколько авторских code paths с pinned commits. Это старт исследовательской базы, не исчерпывающий systematic review. Проверка полного текста означает чтение релевантных разделов, а не воспроизведение результатов; уровень проверки указан для каждой работы.
 
-Выполнен маленький supervised control: 24 checkpoint, 288 веток, шесть tests прошли. Выведен и проверен LR/epsilon control для Adam timestep reset; наблюдены разные repair responses на искусственных задачах. **Online RL и unseen-environment selector ещё не запускались.** [Отчёт с графиком и ограничениями](docs/controlled_probe_results.md).
+Выполнен supervised control: 24 checkpoint, 288 веток. Выведен и проверен LR/epsilon control для Adam timestep reset; наблюдены разные repair responses на искусственных задачах. [Отчёт с ограничениями](docs/controlled_probe_results.md).
+
+Добавлен собственный CPU DQN с полным checkpoint, независимыми RNG streams, четырьмя основными repairs, cached-target probes и групповым анализом. Native MinAtar 1.0.15 проверен во всех пяти играх: по 500 совпадающих переходов после клонирования, включая sticky actions. Wheel SHA и версии сохранены в [проверке окружения](research/results/minatar_environment_validation.json).
+
+Smoke обучения завершён: 2 000 transitions, 1 937 optimizer updates за 15.26 секунды, около 127 updates/s на полном training loop. Это проверка инфраструктуры, не результат о деградации обучаемости. Длинные серии и gates отражаются в живом отчёте `research/results/minatar-repair-20261007/REPORT.md`; незавершённые серии не объявляются экспериментальным успехом.
 
 В директории уже был пустой локальный Git-репозиторий. Источники и документы сохранены локально; внешний remote не настроен.
 
@@ -42,3 +48,16 @@
 5. При изменении постановки обновлять обзор, протокол и журнал решений вместе.
 
 Большие checkpoints, replay buffers и результаты запусков в Git не включать. Для них хранить конфигурацию, seed, происхождение и контрольную сумму.
+
+## Запуски и возобновление
+
+Используется проектное `.venv` с native MinAtar и доступным PyTorch. Точные эффективные версии фиксируются в manifest каждого запуска.
+
+```powershell
+.venv\Scripts\python.exe -m unittest discover -s tests -v
+.venv\Scripts\python.exe -m experiments.rl_runner auto --resume
+```
+
+Можно отдельно выполнить `smoke`, `screen`, `mechanisms`, `confirm`, `synthetic`, `select`, `report`. `--resume` сохраняет прежние seeds и пропускает завершённые jobs. Конфигурация существующей кампании неизменна; для другой конфигурации нужен новый `output_root`.
+
+Живое состояние: `runs/minatar-repair-20261007/progress.json`, очередь и контрольные суммы: `manifest.json`. Полные checkpoints/replay остаются в `runs/`; компактные исходы, графики и отчёты экспортируются в Git после серий. Максимум пакета — 12M updates или 24 часа; после границы runner сохраняет отчёт и начинает следующий пакет. Reserved-game обучение разрешается только после development signal и freeze протокола.

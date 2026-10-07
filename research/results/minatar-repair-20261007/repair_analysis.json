@@ -1,0 +1,47 @@
+{
+  "kind": "online_RL",
+  "run_dir": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007",
+  "main_menu": [
+    "continue",
+    "optimizer_reset",
+    "head_reset",
+    "head_and_optimizer_reset"
+  ],
+  "missing_files": [
+    "checkpoints.jsonl",
+    "diagnostics.jsonl",
+    "outcomes.jsonl"
+  ],
+  "outcome_rows": 0,
+  "bootstrap_repeats": 1000,
+  "population_oracle_estimated": false,
+  "selection_trained": false,
+  "strata": [],
+  "worker_progress": {
+    "progress": {
+      "stage": "smoke",
+      "event": "complete",
+      "seconds": 15.257277500000782,
+      "time": 1791400526.308458,
+      "package_updates": 1937,
+      "package_wall_sec": 40.502572400000645
+    },
+    "worker_status": "running",
+    "worker_pid": 16388,
+    "manifest_updated_at": 1791401838.813963,
+    "jobs_by_status": {
+      "complete": 1
+    }
+  },
+  "provisional": true,
+  "interpretation": "descriptive_screen_with_cross_fitted_estimated_winner; raw_returns_reported_per_game",
+  "checkpoints_without_outcomes": [],
+  "reserved_checkpoint_ids_excluded_from_development_analysis": [],
+  "primary_gate": "incomplete",
+  "uncertain": true,
+  "parameter_repair_signal": {
+    "status": "see_per_stratum_signals",
+    "positive": false,
+    "uncertain": true
+  }
+}

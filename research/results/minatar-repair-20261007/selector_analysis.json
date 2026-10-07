@@ -1,0 +1,7 @@
+{
+  "kind": "online_RL",
+  "status": "deferred_before_confirmed_signal",
+  "strata": [],
+  "reason": "no_complete_natural_stratum_with_replicated_heterogeneity_gate",
+  "population_oracle_estimated": false
+}

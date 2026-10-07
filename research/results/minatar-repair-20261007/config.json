@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "program_id": "minatar-repair-20261007",
+  "kind": "online_RL",
+  "output_root": "runs/minatar-repair-20261007",
+  "main_menu": [
+    "continue",
+    "optimizer_reset",
+    "head_reset",
+    "head_and_optimizer_reset"
+  ],
+  "learner": {
+    "input_channels": 10,
+    "conv_channels": 16,
+    "hidden_size": 128,
+    "num_actions": 6,
+    "lr": 0.00025,
+    "batch_size": 32,
+    "replay_capacity": 100000,
+    "warmup": 5000,
+    "gamma": 0.99,
+    "target_period": 1000,
+    "epsilon_decay": 100000,
+    "epsilon_final": 0.1,
+    "grad_clip": 10.0,
+    "episode_cap": 10000,
+    "replay_ratio": 1,
+    "reward_scale": 1.0,
+    "optimizer": "adam",
+    "dtype": "float32",
+    "threads": 1,
+    "adam_eps": 1e-08,
+    "adam_betas": [
+      0.9,
+      0.999
+    ],
+    "sticky_action_prob": 0.1,
+    "difficulty_ramping": true
+  },
+  "screen": {
+    "games": [
+      "breakout",
+      "asterix"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "ages": [
+      50000,
+      200000
+    ],
+    "minimum_target_age": 500,
+    "repeats": [
+      0,
+      1
+    ],
+    "horizon": 50000,
+    "curve_steps": [
+      0,
+      5000,
+      20000,
+      50000
+    ],
+    "evaluation_episodes": 20
+  },
+  "confirm": {
+    "repeats": [
+      2,
+      3
+    ],
+    "additional_seeds": [
+      3,
+      4,
+      5
+    ],
+    "additional_repeats": [
+      4,
+      5
+    ]
+  },
+  "mechanisms": {
+    "seeds": [
+      0,
+      1
+    ],
+    "baseline_updates": 2000,
+    "panel_updates": 500,
+    "lr_updates": 500,
+    "curve_points": [
+      100,
+      500,
+      2000
+    ],
+    "lr_grid": [
+      6.25e-05,
+      0.000125,
+      0.00025,
+      0.0005,
+      0.001
+    ],
+    "recent_window": 5000,
+    "old_window": 5000,
+    "heldout_min": 256,
+    "heldout_max": 4096,
+    "evaluation_batch_size": 256
+  },
+  "synthetic": {
+    "continuation_lrs": [
+      0.00025,
+      0.001,
+      0.004
+    ],
+    "updates": 500,
+    "source_lr": 0.001
+  },
+  "adaptive": {
+    "source_extension_ages": [
+      500000,
+      1000000
+    ],
+    "rmsprop_control_seeds": [
+      0,
+      1
+    ],
+    "stress_games": [
+      "breakout",
+      "asterix"
+    ],
+    "stress_seeds": [
+      0,
+      1,
+      2
+    ],
+    "stress_repeats": [
+      0,
+      1
+    ],
+    "stress_horizon": 20000,
+    "stress_curve_steps": [
+      0,
+      5000,
+      10000,
+      20000
+    ],
+    "expanded_menu": [
+      "fresh_head_reset",
+      "fresh_head_and_optimizer_reset",
+      "shrink_perturb",
+      "injection"
+    ],
+    "parameter_repeats": [
+      0,
+      1
+    ],
+    "development_extension_games": [
+      "space_invaders"
+    ],
+    "reserved_games": [
+      "freeway",
+      "seaquest"
+    ],
+    "chooser_updates_per_action": 500,
+    "gate_practical_margin": 0.05,
+    "minimum_histories_for_selector": 6
+  },
+  "resources": {
+    "updates_per_package": 12000000,
+    "seconds_per_package": 86400,
+    "progress_every_seconds": 20,
+    "resume_every_steps": 5000,
+    "bootstrap_repeats": 1000
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "kind": "native_environment_semantics_validation_not_learning",
+  "date": "2026-10-07",
+  "python": "3.13.12",
+  "packages": {
+    "MinAtar": "1.0.15",
+    "numpy": "2.4.4",
+    "torch": "2.12.1+cu126",
+    "scipy": "1.18.0",
+    "matplotlib": "3.11.0",
+    "pandas": "3.0.2",
+    "seaborn": "0.13.2",
+    "scikit-learn": "1.9.0",
+    "pytz": "2026.5"
+  },
+  "wheel_url": "https://files.pythonhosted.org/packages/c6/6d/aa5ef58c2c45a8de8ac37599179df26b6fd47781d6b2614d2116b8bfca5c/MinAtar-1.0.15-py3-none-any.whl",
+  "wheel_sha256": "f40450e133c552b97222702bb7b1c5254b47758390f4bd25e411399af0b21d42",
+  "installed_files_verified": [
+    "minatar/__init__.py",
+    "minatar/environment.py",
+    "minatar/gui.py",
+    "minatar/gym.py",
+    "minatar/environments/__init__.py",
+    "minatar/environments/asterix.py",
+    "minatar/environments/breakout.py",
+    "minatar/environments/freeway.py",
+    "minatar/environments/seaquest.py",
+    "minatar/environments/space_invaders.py"
+  ],
+  "games": [
+    {
+      "game": "breakout",
+      "shape": [
+        10,
+        10,
+        4
+      ],
+      "clone_trace_steps": 500,
+      "passed": true
+    },
+    {
+      "game": "asterix",
+      "shape": [
+        10,
+        10,
+        4
+      ],
+      "clone_trace_steps": 500,
+      "passed": true
+    },
+    {
+      "game": "freeway",
+      "shape": [
+        10,
+        10,
+        7
+      ],
+      "clone_trace_steps": 500,
+      "passed": true
+    },
+    {
+      "game": "seaquest",
+      "shape": [
+        10,
+        10,
+        10
+      ],
+      "clone_trace_steps": 500,
+      "passed": true
+    },
+    {
+      "game": "space_invaders",
+      "shape": [
+        10,
+        10,
+        6
+      ],
+      "clone_trace_steps": 500,
+      "passed": true
+    }
+  ],
+  "wall_time_sec": 0.48435369999788236,
+  "note": "Reserved games were used only for API/clone tests, no learning or policy selection."
+}

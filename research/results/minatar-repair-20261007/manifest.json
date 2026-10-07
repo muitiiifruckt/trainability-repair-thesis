@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "program_id": "minatar-repair-20261007",
+  "created_at": 1791400485.7775438,
+  "jobs": {
+    "smoke": {
+      "environment_steps": 2000,
+      "gradient_updates": 1937,
+      "wall_time_sec": 15.257277500000782,
+      "updates_per_second": 126.95580846582234,
+      "tests_passed": true,
+      "status": "complete",
+      "finished_at": 1791400526.3063302
+    }
+  },
+  "packages": [],
+  "decisions": [],
+  "revisions": [
+    {
+      "time": 1791400485.7804286,
+      "code": {
+        "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+        "experiments\\rl_analysis.py": "94c77f44f653ca6ce5f76267446ede86c5d31ac5e7b09950ffd59e764579c732",
+        "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+        "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+        "experiments\\rl_runner.py": "9fa67782cf3abdeec5327601c01c37126cfb854fea1cab715177a069d5ad6c16",
+        "experiments\\rl_transfer.py": "6ad0bb3e49c902199db419ae4f9e72c64b6fa6b9c2906db27691ac03411a2295",
+        "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+      },
+      "python": "3.13.12",
+      "packages": {
+        "torch": "2.12.1+cu126",
+        "numpy": "2.4.4",
+        "MinAtar": "1.0.15",
+        "scikit-learn": "1.9.0"
+      }
+    },
+    {
+      "time": 1791401838.7712831,
+      "code": {
+        "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+        "experiments\\mechanism_analysis.py": "b29a8f73d5aa41d8c1ae9205cbf4fd1da269b2729af23e1ec80ec99d364661d1",
+        "experiments\\rl_analysis.py": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+        "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+        "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+        "experiments\\rl_runner.py": "6acf67d1196c76f8c729a52ca7c43e4ff8891b320e4c036d6b1e2c74ba219fc8",
+        "experiments\\rl_scheduler.py": "9aba244d8034e80ceac8f61cf7c6cfccfaed4377dd8099e0192e15bd2bc0a058",
+        "experiments\\rl_transfer.py": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+        "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+      },
+      "python": "3.13.12",
+      "packages": {
+        "torch": "2.12.1+cu126",
+        "numpy": "2.4.4",
+        "MinAtar": "1.0.15",
+        "scikit-learn": "1.9.0",
+        "pandas": "3.0.2",
+        "pyarrow": "24.0.0",
+        "matplotlib": "3.11.0",
+        "scipy": "1.18.0",
+        "seaborn": "0.13.2",
+        "pytz": "2026.5"
+      }
+    }
+  ],
+  "config_hash": "f3029c965f66d2100d1e8239800c580b7d4442d2b7e918d7919d1146eb66833d",
+  "worker_status": "running",
+  "environment_validation": {
+    "path": "research\\results\\minatar_environment_validation.json",
+    "sha256": "edf0d896bfcb31fc06b1dc5eb944856b1e409755446eb554f50cff6ea3628b0a"
+  },
+  "active_package": {
+    "id": 0,
+    "started_at": 1791400485.8058875,
+    "updates": 1937,
+    "wall_time_sec": 1353.0080740503327
+  },
+  "updated_at": 1791401838.813963,
+  "worker_pid": 16388,
+  "queue": {
+    "stages": [
+      "smoke",
+      "synthetic",
+      "screen",
+      "mechanisms",
+      "confirm",
+      "adaptive",
+      "select",
+      "report"
+    ],
+    "conditional_stages": {
+      "source_extension": "baseline_unlearned",
+      "additional_seeds_and_repeats": "uncertain",
+      "expanded_parameters": "positive parameter repair signal",
+      "reserved_transfer": "confirmed selection signal + protocol freeze"
+    }
+  },
+  "parallel_workers": 1
+}
