@@ -1,0 +1,23 @@
+{
+ "n_complete_pairs": 4,
+ "actions": {
+  "optimizer_reset": {
+   "mean_effect": -0.512,
+   "sd": 0.448,
+   "n_units": 4,
+   "histories_for_80pct_power": 7
+  },
+  "head_reset": {
+   "mean_effect": -0.412,
+   "sd": 1.149,
+   "n_units": 4,
+   "histories_for_80pct_power": 62
+  },
+  "head_and_optimizer_reset": {
+   "mean_effect": -1.487,
+   "sd": 0.477,
+   "n_units": 4,
+   "histories_for_80pct_power": 2
+  }
+ }
+}
