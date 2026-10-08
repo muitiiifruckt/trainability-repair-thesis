@@ -30,3 +30,12 @@
 9. **Независимый шум для probing baseline:** short-ranking stream отделён от main continuation/final evaluation. Chooser получает short outcomes, основной diagnostic predictor их не видит; final/oracle outcomes закрыты обоим.
 
 [Audit parameters](../notes/code_audit_parameters.md), [audit optimizer](../notes/code_audit_optimizer.md), [forward search](../notes/infrastructure_and_forward_search.md), [выполненный run](../docs/controlled_probe_results.md).
+
+## 2026-10-09 — результаты дебата A/B (раунд 1) и решения координатора
+
+1. **Power-оценка 2/7/62 истории отозвана** (единицы — повторы одной истории, z вместо t). `scripts/power_from_partial.py` переписан: единица — история, <3 историй -> insufficient.
+2. **Шумовой пол принят:** SE парной разности final return 0.6–1.9 при 20 eval-эпизодах (A1, воспроизведено B). Ни один эффект на единственной завершённой истории не выходит за ~2 SE; классификация остаётся «неопределённо».
+3. **AUC 0.972 `pre_future_training_loss` — утечка future labels, снято.** Baseline для будущего теста диагностик: age_only и pre_td_huber+recent_return.
+4. **Whitelist признаков (патч B) проверен, но НЕ применён к `experiments/rl_analysis.py` во время кампании.** Причина: `runs/.../dependency_manifest.json` фиксирует SHA этого файла (76315e19…); правка в середине кампании нарушила бы провенанс результатов. Проверено: 21 реальный ключ diagnostics, имена whitelist совпадают с ними; на копии `research/debate/tmp/pkg0` (текущий код) тесты утечки красные (2 failures), на `pkg` (с патчем) 13/13 зелёные. План: применить после завершения screen к новому/отдельному анализу с записью обоих SHA; selector-анализ на blacklist-версии не считать подтверждающим.
+5. **Атрибуция вреда head reset:** arm head_reset_sync как причина отвергнут (sync делает target мусором); нужны arms stale/sync/injection, вред головы — по разности stale−injection (согласование A/B в `research/debate/log.md`). Для development-probe, не для текущей кампании.
+6. **Исследователь B остановлен пользователем** во втором раунде; не перезапускался. Артефакты B (патч, тесты, stale-target эксперименты) сохранены.

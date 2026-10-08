@@ -1,0 +1,73 @@
+--- a/experiments/rl_analysis.py	2026-10-07 22:24:38.471583000 +0300
++++ b/experiments/rl_analysis.py	2026-10-09 00:08:04.651967700 +0300
+@@ -470,19 +470,30 @@
+     return result
+ 
+ 
++# Whitelist: only checkpoint-time quantities. Clock/replay-occupancy features are proxies of
++# age and live in the age baseline, not in the "diagnostic" feature set.
++DIAGNOSTIC_WHITELIST = frozenset({
++    "pre_td_huber", "pre_td_mse", "weight_norm", "gradient_norm", "m_norm", "sqrt_v_norm",
++    "gradient_m_cosine", "feature_entropy_rank_centered", "dormant_fraction_threshold_0_001",
++    "q_abs_max", "target_abs_max", "recent_return_mean"})
++CLOCK_FEATURES = frozenset({
++    "environment_steps", "gradient_updates", "target_age_updates", "optimizer_age_min",
++    "optimizer_age_max", "replay_size"})
++
++
+ def _allowed_features(data, item, age_only=False):
+     metadata = item["metadata"]
+     raw = data["features"].get(item["checkpoint_id"], {})
++    whitelist = DIAGNOSTIC_WHITELIST | frozenset(data["config"].get("diagnostic_whitelist_extra", ()))
+     if age_only:
+-        return {"nominal_age": metadata.get("nominal_age"),
+-                "environment_steps": metadata.get("environment_steps"),
+-                "recent_return": raw.get("recent_return", metadata.get("source_eval_return", metadata.get("j_pre"))),
+-                "recent_return_slope": raw.get("recent_return_slope")}
+-    forbidden = ("post", "future", "heldout", "oracle", "winner", "repair", "continuation", "j_final", "j_immediate")
++        result = {"nominal_age": metadata.get("nominal_age"),
++                  "environment_steps": metadata.get("environment_steps"),
++                  "recent_return": raw.get("recent_return", metadata.get("source_eval_return", metadata.get("j_pre"))),
++                  "recent_return_slope": raw.get("recent_return_slope")}
++        result.update({key: raw.get(key) for key in CLOCK_FEATURES if key in raw and key not in result})
++        return result
+     result = {str(key): value for key, value in raw.items()
+-              if _finite(value) or value is None
+-              if not any(word in str(key).lower() for word in forbidden)
+-              if str(key).lower() not in {"game", "game_id", "environment_id", "training_seed", "trajectory_id"}}
++              if key in whitelist and (_finite(value) or value is None)}
+     result.setdefault("nominal_age", metadata.get("nominal_age"))
+     result.setdefault("recent_return", metadata.get("source_eval_return", metadata.get("j_pre")))
+     return result
+--- a/tests/test_rl_analysis.py	2026-10-07 22:24:38.494451400 +0300
++++ b/tests/test_rl_analysis.py	2026-10-09 00:07:59.714456000 +0300
+@@ -185,3 +185,29 @@
+ 
+ if __name__ == "__main__":
+     unittest.main()
++
++
++class FeatureLeakageTests(unittest.TestCase):
++    """Diagnostic feature set must be a whitelist: unknown or outcome-like names never pass."""
++    def _item(self, raw):
++        data = {"features": {"c": raw}, "config": {}}
++        return data, {"checkpoint_id": "c", "metadata": {"nominal_age": 100, "environment_steps": 100}}
++
++    def test_unknown_outcome_like_names_are_rejected(self):
++        from experiments.rl_analysis import _allowed_features
++        raw = {"gradient_norm": 1.0, "return_after_budget": 5.0, "next_gain": 2.0, "final_score": 3.0, "lbl": 1.0}
++        data, item = self._item(raw)
++        got = _allowed_features(data, item)
++        for bad in ("return_after_budget", "next_gain", "final_score", "lbl"):
++            self.assertNotIn(bad, got)
++        self.assertIn("gradient_norm", got)
++
++    def test_clock_and_replay_features_only_in_age_baseline(self):
++        from experiments.rl_analysis import _allowed_features
++        raw = {"gradient_norm": 1.0, "environment_steps": 5, "gradient_updates": 5, "replay_size": 5,
++               "optimizer_age_min": 5, "optimizer_age_max": 5, "target_age_updates": 5}
++        data, item = self._item(raw)
++        got = _allowed_features(data, item)
++        for clock in ("environment_steps", "gradient_updates", "replay_size", "optimizer_age_min", "optimizer_age_max", "target_age_updates"):
++            self.assertNotIn(clock, got)
++        self.assertIn("replay_size", _allowed_features(data, item, age_only=True))

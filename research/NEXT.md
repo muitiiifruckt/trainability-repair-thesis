@@ -20,5 +20,10 @@
 | H-age | знак head reset зависит от возраста | proposed | age×repair в анализе |
 | H-cost | immediate drop head reset учитывать в utility selector | proposed | immediate/recovery декомпозиция |
 
+## Дебат A/B (research/debate/)
+- Раунд 1 завершён (A и B); см. `research/debate/log.md`, `accepted.md`, `rejected.md`, решения — `research/decisions.md` (2026-10-09).
+- Раунд 2: A пишет prereg диагностик + dry-run процедуры (`scripts/debate_prereg_dryrun.py`); B остановлен пользователем, не перезапущен.
+- Патч whitelist (`research/debate/patch_whitelist.diff`) отложен до конца кампании (SHA в dependency_manifest).
+
 ## Правила
 - Числа в выводах только из файлов с SHA; reserved-игры закрыты до freeze; повторы одной истории не независимы.
