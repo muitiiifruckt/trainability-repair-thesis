@@ -1,0 +1,51 @@
+{
+ "null": {
+  "n_hist": 12,
+  "n_sims": 200,
+  "positive_rate": 0.005,
+  "mean_p": 0.5187999999999999,
+  "sec": 85.3
+ },
+ "null_high_ICC": {
+  "n_hist": 12,
+  "n_sims": 200,
+  "positive_rate": 0.0,
+  "mean_p": 0.5152,
+  "sec": 82.3
+ },
+ "age_only_signal": {
+  "n_hist": 12,
+  "n_sims": 200,
+  "positive_rate": 0.0,
+  "mean_p": 0.5704,
+  "sec": 79.0
+ },
+ "age_signal_confounded_diag(rho=.7)": {
+  "n_hist": 12,
+  "n_sims": 200,
+  "positive_rate": 0.0,
+  "mean_p": 0.6049,
+  "sec": 100.5
+ },
+ "game_offset_only": {
+  "n_hist": 12,
+  "n_sims": 200,
+  "positive_rate": 0.0,
+  "mean_p": 0.53585,
+  "sec": 81.8
+ },
+ "diag_signal(b=0.8)": {
+  "n_hist": 12,
+  "n_sims": 200,
+  "positive_rate": 0.005,
+  "mean_p": 0.22685000000000002,
+  "sec": 79.5
+ },
+ "diag_signal_weak(b=0.4)": {
+  "n_hist": 12,
+  "n_sims": 200,
+  "positive_rate": 0.0,
+  "mean_p": 0.40095,
+  "sec": 77.3
+ }
+}
