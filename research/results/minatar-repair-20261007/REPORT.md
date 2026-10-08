@@ -21,7 +21,7 @@ Numerical failures: {}; missing/nonfinite finals: 0.
 
 ## Обновление 2026-10-09 (после возобновления)
 
-Кампания простояла около 22 часов (координатора и workers не было, `progress.json` не менялся) и возобновлена `scripts/research_supervisor.py` с теми же seeds и savepoints; с тех пор новых infrastructure errors нет. Импортировано 24 основных outcomes: полное меню из четырёх действий на трёх ячейках (Breakout seed 0 в возрастах 50k и 200k; seed 1 в возрасте 50k), по два repeat. Разброс шума: SE парной разности final return на ветку 0.6–1.9 при 20 evaluation episodes (`research/debate/noise_floor.json`).
+Кампания простояла около 22 часов (координатора и workers не было, `progress.json` не менялся) и возобновлена `scripts/research_supervisor.py` с теми же seeds и savepoints; с тех пор новых infrastructure errors нет. Импортировано 24 основных outcomes: полное меню из четырёх действий на трёх ячейках (Breakout seed 0 в возрастах 50k и 200k; seed 1 в возрасте 50k), по два repeat. Разброс шума: SE парной разности final return на ветку 0.6–1.9 при 20 evaluation episodes (воспроизводится `scripts/debate_noise_floor.py`, вывод в консоль; на момент записи — по ранним 16 строкам).
 
 Описательно, парные эффекты относительно continue по 6 ячейкам (checkpoint, repeat): совместный reset отрицателен во всех шести (от −0.35 до −2.2); optimizer reset и head reset имеют смешанный знак. Независимых историй две, поэтому интервалы не вычисляются (порог пять историй), а направление остаётся **неопределённым** как научный вывод. Gates, конфигурация и очередь не менялись. Анализ: `scripts/interaction_age_analysis.py`, `scripts/power_from_partial.py` (оценка мощности возможна от трёх историй), результаты в `research/results/parallel/`.
 
