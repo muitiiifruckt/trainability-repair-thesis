@@ -19,3 +19,4 @@ wandb/
 Thumbs.db
 .DS_Store
 research/external/
+research/debate/tmp/
