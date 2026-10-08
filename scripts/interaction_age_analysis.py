@@ -2,7 +2,7 @@
 
 Unit of independence = trajectory_id (full source history); repeats and ages are averaged
 within history first. Bootstrap resamples histories. Development-only, no multiplicity
-correction; with <5 histories per game intervals are wide and the verdict stays 'uncertain'.
+correction; intervals are suppressed below 5 histories (a 2-history bootstrap is not informative, see research/debate/log.md).
 """
 import json, collections, random, statistics as st, sys
 from pathlib import Path
@@ -33,7 +33,7 @@ def per_hist(g, key, ages=None):
         if vals: out.append(st.mean(vals))
     return out
 def boot(xs, n=2000, seed=0):
-    if len(xs) < 2: return None
+    if len(xs) < 5: return "suppressed(<5 histories)"
     rng = random.Random(seed); m = sorted(st.mean(rng.choices(xs, k=len(xs))) for _ in range(n))
     return [round(m[int(.025*n)], 3), round(m[int(.975*n)], 3)]
 res = {"n_complete_cells": sum(all(a in v for a in A) for v in cell.values()), "games": {}}

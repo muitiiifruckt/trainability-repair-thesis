@@ -1,14 +1,14 @@
 {
  "breakout/head_and_optimizer_reset": {
-  "n_histories": 1,
+  "n_histories": 2,
   "status": "insufficient (<3 histories)"
  },
  "breakout/head_reset": {
-  "n_histories": 1,
+  "n_histories": 2,
   "status": "insufficient (<3 histories)"
  },
  "breakout/optimizer_reset": {
-  "n_histories": 1,
+  "n_histories": 2,
   "status": "insufficient (<3 histories)"
  }
 }
