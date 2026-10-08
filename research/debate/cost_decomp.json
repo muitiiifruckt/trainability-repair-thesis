@@ -1,0 +1,218 @@
+[
+ {
+  "key": [
+   "natural_breakout_seed0",
+   50000,
+   0
+  ],
+  "action": "optimizer_reset",
+  "total": -0.75,
+  "imm": 0.0,
+  "rec": -0.75,
+  "auc": 0.482,
+  "curve_delta": [
+   0.0,
+   1.4,
+   0.95,
+   -0.75
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   50000,
+   0
+  ],
+  "action": "head_reset",
+  "total": 0.55,
+  "imm": -1.4,
+  "rec": 1.95,
+  "auc": 0.085,
+  "curve_delta": [
+   -1.4,
+   -0.95,
+   0.4,
+   0.55
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   50000,
+   0
+  ],
+  "action": "head_and_optimizer_reset",
+  "total": -1.3,
+  "imm": -1.4,
+  "rec": 0.1,
+  "auc": -1.34,
+  "curve_delta": [
+   -1.4,
+   -1.25,
+   -1.4,
+   -1.3
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   50000,
+   1
+  ],
+  "action": "optimizer_reset",
+  "total": -1.0,
+  "imm": 0.0,
+  "rec": -1.0,
+  "auc": -0.487,
+  "curve_delta": [
+   0.0,
+   0.3,
+   -0.55,
+   -1.0
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   50000,
+   1
+  ],
+  "action": "head_reset",
+  "total": 0.3,
+  "imm": -1.7,
+  "rec": 2.0,
+  "auc": -1.125,
+  "curve_delta": [
+   -1.7,
+   -1.15,
+   -2.0,
+   0.3
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   50000,
+   1
+  ],
+  "action": "head_and_optimizer_reset",
+  "total": -1.25,
+  "imm": -1.7,
+  "rec": 0.45,
+  "auc": -1.345,
+  "curve_delta": [
+   -1.7,
+   -1.5,
+   -1.3,
+   -1.25
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   200000,
+   0
+  ],
+  "action": "optimizer_reset",
+  "total": -0.3,
+  "imm": 0.0,
+  "rec": -0.3,
+  "auc": 0.175,
+  "curve_delta": [
+   0.0,
+   2.0,
+   -0.3,
+   -0.3
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   200000,
+   0
+  ],
+  "action": "head_reset",
+  "total": -0.5,
+  "imm": -5.35,
+  "rec": 4.85,
+  "auc": 0.05,
+  "curve_delta": [
+   -5.35,
+   0.65,
+   0.75,
+   -0.5
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   200000,
+   0
+  ],
+  "action": "head_and_optimizer_reset",
+  "total": -1.2,
+  "imm": -5.35,
+  "rec": 4.15,
+  "auc": -0.283,
+  "curve_delta": [
+   -5.35,
+   -0.75,
+   1.1,
+   -1.2
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   200000,
+   1
+  ],
+  "action": "optimizer_reset",
+  "total": 0.0,
+  "imm": 0.0,
+  "rec": 0.0,
+  "auc": 1.188,
+  "curve_delta": [
+   0.0,
+   0.2,
+   2.55,
+   0.0
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   200000,
+   1
+  ],
+  "action": "head_reset",
+  "total": -2.0,
+  "imm": -6.2,
+  "rec": 4.2,
+  "auc": -1.442,
+  "curve_delta": [
+   -6.2,
+   -3.45,
+   0.35,
+   -2.0
+  ]
+ },
+ {
+  "key": [
+   "natural_breakout_seed0",
+   200000,
+   1
+  ],
+  "action": "head_and_optimizer_reset",
+  "total": -2.2,
+  "imm": -6.2,
+  "rec": 4.0,
+  "auc": -1.245,
+  "curve_delta": [
+   -6.2,
+   -3.85,
+   1.1,
+   -2.2
+  ]
+ }
+]

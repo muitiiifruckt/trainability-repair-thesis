@@ -1,0 +1,66 @@
+{
+ "eff_state": {
+  "frac_helps": 0.306,
+  "n": 144,
+  "auc_pooled": {
+   "pre_future_training_loss": 0.304,
+   "weight_norm": 0.4,
+   "gradient_norm": 0.281,
+   "m_norm": 0.639,
+   "sqrt_v_norm": 0.465,
+   "gradient_m_cosine": 0.463,
+   "feature_entropy_rank_centered": 0.527,
+   "dormant_fraction_threshold_0_001": 0.479,
+   "age": 0.249
+  },
+  "auc_within_scenario_mean": {
+   "pre_future_training_loss": 0.482,
+   "weight_norm": 0.163,
+   "gradient_norm": 0.342,
+   "m_norm": 0.84,
+   "sqrt_v_norm": 0.311,
+   "gradient_m_cosine": 0.389,
+   "feature_entropy_rank_centered": 0.561,
+   "dormant_fraction_threshold_0_001": 0.51,
+   "age": 0.158
+  },
+  "helps_by_scenario": {
+   "unchanged": 0.69,
+   "target_sign_flip": 0,
+   "target_scale_drop": 0.33,
+   "input_shift": 0.19
+  }
+ },
+ "eff_head": {
+  "frac_helps": 0.549,
+  "n": 144,
+  "auc_pooled": {
+   "pre_future_training_loss": 0.972,
+   "weight_norm": 0.688,
+   "gradient_norm": 0.947,
+   "m_norm": 0.752,
+   "sqrt_v_norm": 0.718,
+   "gradient_m_cosine": 0.365,
+   "feature_entropy_rank_centered": 0.366,
+   "dormant_fraction_threshold_0_001": 0.467,
+   "age": 0.463
+  },
+  "auc_within_scenario_mean": {
+   "pre_future_training_loss": 0.784,
+   "weight_norm": 0.215,
+   "gradient_norm": 0.765,
+   "m_norm": 0.667,
+   "sqrt_v_norm": 0.44,
+   "gradient_m_cosine": 0.591,
+   "feature_entropy_rank_centered": 0.273,
+   "dormant_fraction_threshold_0_001": 0.804,
+   "age": 0.299
+  },
+  "helps_by_scenario": {
+   "unchanged": 0.08,
+   "target_sign_flip": 1,
+   "target_scale_drop": 1,
+   "input_shift": 0.11
+  }
+ }
+}
