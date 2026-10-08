@@ -1,0 +1,37 @@
+{
+ "n_complete_cells": 4,
+ "games": {
+  "breakout": {
+   "opt": {
+    "n_histories": 1,
+    "mean": -0.512,
+    "boot95": null
+   },
+   "head": {
+    "n_histories": 1,
+    "mean": -0.412,
+    "boot95": null
+   },
+   "joint": {
+    "n_histories": 1,
+    "mean": -1.487,
+    "boot95": null
+   },
+   "interaction": {
+    "n_histories": 1,
+    "mean": -0.562,
+    "boot95": null
+   },
+   "head_by_age": {
+    "50000": [
+     0.425,
+     1
+    ],
+    "200000": [
+     -1.25,
+     1
+    ]
+   }
+  }
+ }
+}
