@@ -24515,6 +24515,12 @@
       "updates": 26000,
       "status": "complete",
       "finished_at": 1791553987.18463
+    },
+    "synthetic_lr_sweep": {
+      "updates": 525600,
+      "branches": 1728,
+      "status": "complete",
+      "finished_at": 1791554444.738988
     }
   },
   "packages": [
@@ -24719,10 +24725,10 @@
   "active_package": {
     "id": 1,
     "started_at": 1791492518.3778272,
-    "updates": 4636375,
-    "wall_time_sec": 61468.82612873714
+    "updates": 5161975,
+    "wall_time_sec": 61926.36116713715
   },
-  "updated_at": 1791553987.2039576,
+  "updated_at": 1791554444.7389956,
   "worker_pid": 16652,
   "queue": {
     "stages": [
@@ -25228,6 +25234,11 @@
       "series": "first_online_screen_96_branches",
       "time": 1791551444.6009889,
       "stdout": "[codex/trainability-review ef681ab] Research: first_online_screen_96_branches\n 6 files changed, 20964 insertions(+), 191 deletions(-)"
+    },
+    {
+      "series": "fixed_TD_mechanisms",
+      "time": 1791554007.5113728,
+      "stdout": "[codex/trainability-review 0b343ad] Research: fixed_TD_mechanisms\n 34 files changed, 906753 insertions(+), 13 deletions(-)\n create mode 100644 research/results/minatar-repair-20261007/mechanism_data_target.png\n create mode 100644 research/results/minatar-repair-20261007/mechanism_fixed_td.png\n create mode 100644 research/results/minatar-repair-20261007/mechanism_lr_sweep.png\n create mode 100644 research/results/minatar-repair-20261007/mechanism_summary.json\n create mode 100644 research/results/minatar-repair-20261007/mechanism_synthetic_lr.png\n create mode 100644 research/results/minatar-repair-20261007/mechanism_t_equivalence.png\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed0_age200000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed0_age200000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed0_age50000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed0_age50000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed1_age200000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed1_age200000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed1_age50000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed1_age50000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed2_age200000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed2_age200000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed2_age50000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_asterix_seed2_age50000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed0_age200000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed0_age200000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed0_age50000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed0_age50000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed1_age200000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed1_age200000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed1_age50000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed1_age50000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed2_age200000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed2_age200000_r1.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed2_age50000_r0.json\n create mode 100644 research/results/minatar-repair-20261007/mechanisms/natural_breakout_seed2_age50000_r1.json"
     }
   ]
 }

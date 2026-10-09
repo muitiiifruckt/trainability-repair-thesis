@@ -2,9 +2,9 @@
 
 Это живой отчёт: завершённые запуски отделены от запланированных. Минимум для вывода — независимые истории обучения и continuation repeats.
 
-Обновление: 2026-10-09 16:53:26; серия: fixed_TD_mechanisms.
+Обновление: 2026-10-09 17:01:05; серия: synthetic_LR_controls.
 Checkpoints: 12. Завершённые ветки: {'screen': 96, 'confirm': 0, 'stress': 0, 'parameters': 0, 'lr_control': 0}.
-Текущий пакет: 1; optimizer updates: 4,636,375.
+Текущий пакет: 1; optimizer updates: 5,161,975.
 
 ## natural, бюджет 50000 transitions
 

@@ -1361,7 +1361,7 @@
   ],
   "worker_progress": {
     "progress": {
-      "stage": "mechanisms",
+      "stage": "synthetic_lr_controls",
       "parallel_wave_id": 17,
       "pending_tasks": [],
       "worker_progress": [
@@ -1412,18 +1412,18 @@
           }
         }
       ],
-      "job_id": "mechanisms:natural_asterix_seed2_age200000:1",
+      "job_id": "synthetic_lr_sweep",
       "event": "mechanisms_complete",
       "updates": 26000,
-      "time": 1791553987.2020743,
+      "time": 1791554007.531867,
       "package_updates": 4636375,
-      "package_wall_sec": 61468.82424723715
+      "package_wall_sec": 61489.15404043715
     },
     "worker_status": "running",
     "worker_pid": 16652,
-    "manifest_updated_at": 1791553987.2039576,
+    "manifest_updated_at": 1791554444.7389956,
     "jobs_by_status": {
-      "complete": 133
+      "complete": 134
     }
   },
   "provisional": true,
