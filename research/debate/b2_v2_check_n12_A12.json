@@ -1,0 +1,371 @@
+{
+ "null": {
+  "L2": {
+   "positive_rate": 0.005,
+   "mc95": [
+    0,
+    0.011
+   ],
+   "mean_T": -0.272,
+   "T_true": -0.229,
+   "best_pop": "game",
+   "mean_p": 0.51,
+   "frac_p_lt_alpha": 0.018,
+   "ub_below_Ttrue": 0.098,
+   "lb_above_Ttrue": 0.032,
+   "negative_rate_delta0.05": 0.613,
+   "negative_rate_delta0.1": 0.72,
+   "negative_rate_delta0.2": 0.847
+  },
+  "L1": {
+   "positive_rate": 0.005,
+   "mc95": [
+    0,
+    0.011
+   ],
+   "mean_T": -0.128,
+   "T_true": -0.116,
+   "best_pop": "game",
+   "mean_p": 0.515,
+   "frac_p_lt_alpha": 0.015,
+   "ub_below_Ttrue": 0.073,
+   "lb_above_Ttrue": 0.018,
+   "negative_rate_delta0.05": 0.528,
+   "negative_rate_delta0.1": 0.645,
+   "negative_rate_delta0.2": 0.827
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 25.9
+ },
+ "null_high_ICC": {
+  "L2": {
+   "positive_rate": 0.0033333333333333335,
+   "mc95": [
+    0,
+    0.008
+   ],
+   "mean_T": -0.242,
+   "T_true": -0.195,
+   "best_pop": "game",
+   "mean_p": 0.525,
+   "frac_p_lt_alpha": 0.025,
+   "ub_below_Ttrue": 0.127,
+   "lb_above_Ttrue": 0.038,
+   "negative_rate_delta0.05": 0.628,
+   "negative_rate_delta0.1": 0.727,
+   "negative_rate_delta0.2": 0.865
+  },
+  "L1": {
+   "positive_rate": 0.008333333333333333,
+   "mc95": [
+    0.001,
+    0.016
+   ],
+   "mean_T": -0.1,
+   "T_true": -0.091,
+   "best_pop": "game",
+   "mean_p": 0.52,
+   "frac_p_lt_alpha": 0.022,
+   "ub_below_Ttrue": 0.097,
+   "lb_above_Ttrue": 0.028,
+   "negative_rate_delta0.05": 0.555,
+   "negative_rate_delta0.1": 0.657,
+   "negative_rate_delta0.2": 0.833
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 25.7
+ },
+ "null_heavy_tail": {
+  "L2": {
+   "positive_rate": 0.0016666666666666668,
+   "mc95": [
+    0,
+    0.005
+   ],
+   "mean_T": -0.234,
+   "T_true": -0.179,
+   "best_pop": "game",
+   "mean_p": 0.512,
+   "frac_p_lt_alpha": 0.023,
+   "ub_below_Ttrue": 0.113,
+   "lb_above_Ttrue": 0.023,
+   "negative_rate_delta0.05": 0.625,
+   "negative_rate_delta0.1": 0.707,
+   "negative_rate_delta0.2": 0.855
+  },
+  "L1": {
+   "positive_rate": 0.005,
+   "mc95": [
+    0,
+    0.011
+   ],
+   "mean_T": -0.104,
+   "T_true": -0.09,
+   "best_pop": "game",
+   "mean_p": 0.497,
+   "frac_p_lt_alpha": 0.022,
+   "ub_below_Ttrue": 0.112,
+   "lb_above_Ttrue": 0.018,
+   "negative_rate_delta0.05": 0.522,
+   "negative_rate_delta0.1": 0.648,
+   "negative_rate_delta0.2": 0.81
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 25.4
+ },
+ "age_only_signal": {
+  "L2": {
+   "positive_rate": 0.0016666666666666668,
+   "mc95": [
+    0,
+    0.005
+   ],
+   "mean_T": -0.252,
+   "T_true": -0.218,
+   "best_pop": "age",
+   "mean_p": 0.503,
+   "frac_p_lt_alpha": 0.017,
+   "ub_below_Ttrue": 0.073,
+   "lb_above_Ttrue": 0.047,
+   "negative_rate_delta0.05": 0.577,
+   "negative_rate_delta0.1": 0.683,
+   "negative_rate_delta0.2": 0.825
+  },
+  "L1": {
+   "positive_rate": 0.0016666666666666668,
+   "mc95": [
+    0,
+    0.005
+   ],
+   "mean_T": -0.103,
+   "T_true": -0.1,
+   "best_pop": "age",
+   "mean_p": 0.513,
+   "frac_p_lt_alpha": 0.012,
+   "ub_below_Ttrue": 0.08,
+   "lb_above_Ttrue": 0.03,
+   "negative_rate_delta0.05": 0.483,
+   "negative_rate_delta0.1": 0.603,
+   "negative_rate_delta0.2": 0.793
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 25.8
+ },
+ "loss_signal_D_is_proxy": {
+  "L2": {
+   "positive_rate": 0.0033333333333333335,
+   "mc95": [
+    0,
+    0.008
+   ],
+   "mean_T": -0.172,
+   "T_true": -0.102,
+   "best_pop": "base_all",
+   "mean_p": 0.521,
+   "frac_p_lt_alpha": 0.02,
+   "ub_below_Ttrue": 0.125,
+   "lb_above_Ttrue": 0.025,
+   "negative_rate_delta0.05": 0.505,
+   "negative_rate_delta0.1": 0.628,
+   "negative_rate_delta0.2": 0.815
+  },
+  "L1": {
+   "positive_rate": 0.11833333333333333,
+   "mc95": [
+    0.092,
+    0.144
+   ],
+   "mean_T": 0.12,
+   "T_true": 0.127,
+   "best_pop": "age",
+   "mean_p": 0.189,
+   "frac_p_lt_alpha": 0.28,
+   "ub_below_Ttrue": 0.17,
+   "lb_above_Ttrue": 0.045,
+   "negative_rate_delta0.05": 0.098,
+   "negative_rate_delta0.1": 0.137,
+   "negative_rate_delta0.2": 0.242
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 25.5
+ },
+ "game_offset_only": {
+  "L2": {
+   "positive_rate": 0.005,
+   "mc95": [
+    0,
+    0.011
+   ],
+   "mean_T": -0.272,
+   "T_true": -0.229,
+   "best_pop": "game",
+   "mean_p": 0.51,
+   "frac_p_lt_alpha": 0.018,
+   "ub_below_Ttrue": 0.098,
+   "lb_above_Ttrue": 0.032,
+   "negative_rate_delta0.05": 0.613,
+   "negative_rate_delta0.1": 0.72,
+   "negative_rate_delta0.2": 0.847
+  },
+  "L1": {
+   "positive_rate": 0.005,
+   "mc95": [
+    0,
+    0.011
+   ],
+   "mean_T": -0.128,
+   "T_true": -0.116,
+   "best_pop": "game",
+   "mean_p": 0.515,
+   "frac_p_lt_alpha": 0.015,
+   "ub_below_Ttrue": 0.073,
+   "lb_above_Ttrue": 0.018,
+   "negative_rate_delta0.05": 0.528,
+   "negative_rate_delta0.1": 0.645,
+   "negative_rate_delta0.2": 0.827
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 25.2
+ },
+ "mech_signal_b0.4": {
+  "L2": {
+   "positive_rate": 0.013333333333333334,
+   "mc95": [
+    0.004,
+    0.023
+   ],
+   "mean_T": -0.174,
+   "T_true": -0.125,
+   "best_pop": "age",
+   "mean_p": 0.392,
+   "frac_p_lt_alpha": 0.075,
+   "ub_below_Ttrue": 0.123,
+   "lb_above_Ttrue": 0.043,
+   "negative_rate_delta0.05": 0.402,
+   "negative_rate_delta0.1": 0.493,
+   "negative_rate_delta0.2": 0.677
+  },
+  "L1": {
+   "positive_rate": 0.0016666666666666668,
+   "mc95": [
+    0,
+    0.005
+   ],
+   "mean_T": -0.111,
+   "T_true": -0.094,
+   "best_pop": "age",
+   "mean_p": 0.513,
+   "frac_p_lt_alpha": 0.017,
+   "ub_below_Ttrue": 0.087,
+   "lb_above_Ttrue": 0.028,
+   "negative_rate_delta0.05": 0.458,
+   "negative_rate_delta0.1": 0.597,
+   "negative_rate_delta0.2": 0.815
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 25.2
+ },
+ "mech_signal_b0.8": {
+  "L2": {
+   "positive_rate": 0.08666666666666667,
+   "mc95": [
+    0.064,
+    0.109
+   ],
+   "mean_T": 0.011,
+   "T_true": 0.061,
+   "best_pop": "age",
+   "mean_p": 0.207,
+   "frac_p_lt_alpha": 0.253,
+   "ub_below_Ttrue": 0.163,
+   "lb_above_Ttrue": 0.068,
+   "negative_rate_delta0.05": 0.15,
+   "negative_rate_delta0.1": 0.207,
+   "negative_rate_delta0.2": 0.338
+  },
+  "L1": {
+   "positive_rate": 0.011666666666666667,
+   "mc95": [
+    0.003,
+    0.02
+   ],
+   "mean_T": -0.101,
+   "T_true": -0.082,
+   "best_pop": "age",
+   "mean_p": 0.489,
+   "frac_p_lt_alpha": 0.023,
+   "ub_below_Ttrue": 0.088,
+   "lb_above_Ttrue": 0.032,
+   "negative_rate_delta0.05": 0.44,
+   "negative_rate_delta0.1": 0.558,
+   "negative_rate_delta0.2": 0.768
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 26.0
+ },
+ "mech_signal_b1.2": {
+  "L2": {
+   "positive_rate": 0.23333333333333334,
+   "mc95": [
+    0.199,
+    0.267
+   ],
+   "mean_T": 0.195,
+   "T_true": 0.244,
+   "best_pop": "age",
+   "mean_p": 0.092,
+   "frac_p_lt_alpha": 0.512,
+   "ub_below_Ttrue": 0.167,
+   "lb_above_Ttrue": 0.078,
+   "negative_rate_delta0.05": 0.04,
+   "negative_rate_delta0.1": 0.06,
+   "negative_rate_delta0.2": 0.137
+  },
+  "L1": {
+   "positive_rate": 0.016666666666666666,
+   "mc95": [
+    0.006,
+    0.027
+   ],
+   "mean_T": -0.09,
+   "T_true": -0.068,
+   "best_pop": "age",
+   "mean_p": 0.461,
+   "frac_p_lt_alpha": 0.04,
+   "ub_below_Ttrue": 0.118,
+   "lb_above_Ttrue": 0.037,
+   "negative_rate_delta0.05": 0.418,
+   "negative_rate_delta0.1": 0.518,
+   "negative_rate_delta0.2": 0.723
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "A",
+  "sec": 25.7
+ }
+}

@@ -1,0 +1,217 @@
+{
+ "null_hetero_coupled": {
+  "L2": {
+   "positive_rate": 0.10375,
+   "mc95": [
+    0.083,
+    0.125
+   ],
+   "mean_T": 0.185,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.356,
+   "frac_p_lt_alpha": 0.104,
+   "positive_noLB": 0.104,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "L1": {
+   "positive_rate": 0.0175,
+   "mc95": [
+    0.008,
+    0.027
+   ],
+   "mean_T": 0.103,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.499,
+   "frac_p_lt_alpha": 0.018,
+   "positive_noLB": 0.018,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 800,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 13.4
+ },
+ "null_hetero_uncoupled": {
+  "L2": {
+   "positive_rate": 0.03125,
+   "mc95": [
+    0.019,
+    0.043
+   ],
+   "mean_T": 0.1,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.531,
+   "frac_p_lt_alpha": 0.031,
+   "positive_noLB": 0.031,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "L1": {
+   "positive_rate": 0.0175,
+   "mc95": [
+    0.008,
+    0.027
+   ],
+   "mean_T": 0.103,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.499,
+   "frac_p_lt_alpha": 0.018,
+   "positive_noLB": 0.018,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 800,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 12.8
+ },
+ "null_4rep": {
+  "L2": {
+   "positive_rate": 0.01875,
+   "mc95": [
+    0.009,
+    0.028
+   ],
+   "mean_T": 0.101,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.523,
+   "frac_p_lt_alpha": 0.019,
+   "positive_noLB": 0.019,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "L1": {
+   "positive_rate": 0.0175,
+   "mc95": [
+    0.008,
+    0.027
+   ],
+   "mean_T": 0.108,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.504,
+   "frac_p_lt_alpha": 0.018,
+   "positive_noLB": 0.018,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 800,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 13.0
+ },
+ "mech_b0.4_4rep": {
+  "L2": {
+   "positive_rate": 0.13375,
+   "mc95": [
+    0.11,
+    0.157
+   ],
+   "mean_T": 0.216,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.272,
+   "frac_p_lt_alpha": 0.134,
+   "positive_noLB": 0.134,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "L1": {
+   "positive_rate": 0.02125,
+   "mc95": [
+    0.011,
+    0.031
+   ],
+   "mean_T": 0.115,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.483,
+   "frac_p_lt_alpha": 0.021,
+   "positive_noLB": 0.021,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 800,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 12.6
+ },
+ "mech_b0.8_4rep": {
+  "L2": {
+   "positive_rate": 0.55875,
+   "mc95": [
+    0.524,
+    0.593
+   ],
+   "mean_T": 0.431,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.063,
+   "frac_p_lt_alpha": 0.559,
+   "positive_noLB": 0.559,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "L1": {
+   "positive_rate": 0.035,
+   "mc95": [
+    0.022,
+    0.048
+   ],
+   "mean_T": 0.128,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.449,
+   "frac_p_lt_alpha": 0.035,
+   "positive_noLB": 0.035,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 800,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 12.8
+ }
+}

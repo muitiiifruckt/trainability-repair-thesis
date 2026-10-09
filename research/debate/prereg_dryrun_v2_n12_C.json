@@ -1,0 +1,149 @@
+{
+ "mech_signal_b0.4": {
+  "L2_primary": {
+   "positive_rate": 0.02,
+   "positive_mc95": [
+    0.001,
+    0.039
+   ],
+   "mean_T": -0.149,
+   "mean_p": 0.36,
+   "best_baseline_freq": {
+    "age": 0.42,
+    "age_return": 0.12,
+    "base_all": 0.06,
+    "game": 0.25,
+    "loss_return": 0.14
+   },
+   "util_lb_positive_rate": 0.045,
+   "negative_rate_delta0.05": 0.395,
+   "uncertain_rate_delta0.05": 0.585,
+   "negative_rate_delta0.1": 0.475,
+   "uncertain_rate_delta0.1": 0.505,
+   "negative_rate_delta0.2": 0.65,
+   "uncertain_rate_delta0.2": 0.33
+  },
+  "L1_secondary": {
+   "positive_rate": 0.01,
+   "positive_mc95": [
+    0,
+    0.024
+   ],
+   "mean_T": -0.102,
+   "mean_p": 0.502,
+   "best_baseline_freq": {
+    "age": 0.65,
+    "game": 0.35
+   },
+   "util_lb_positive_rate": 0.01,
+   "negative_rate_delta0.05": 0.515,
+   "uncertain_rate_delta0.05": 0.475,
+   "negative_rate_delta0.1": 0.61,
+   "uncertain_rate_delta0.1": 0.38,
+   "negative_rate_delta0.2": 0.79,
+   "uncertain_rate_delta0.2": 0.2
+  },
+  "n_hist": 12,
+  "n_sims": 200,
+  "legacy": false,
+  "sec": 149.9
+ },
+ "mech_signal_b0.8": {
+  "L2_primary": {
+   "positive_rate": 0.095,
+   "positive_mc95": [
+    0.054,
+    0.136
+   ],
+   "mean_T": 0.041,
+   "mean_p": 0.196,
+   "best_baseline_freq": {
+    "age": 0.36,
+    "age_return": 0.12,
+    "base_all": 0.06,
+    "game": 0.27,
+    "loss_return": 0.2
+   },
+   "util_lb_positive_rate": 0.1,
+   "negative_rate_delta0.05": 0.16,
+   "uncertain_rate_delta0.05": 0.745,
+   "negative_rate_delta0.1": 0.21,
+   "uncertain_rate_delta0.1": 0.695,
+   "negative_rate_delta0.2": 0.315,
+   "uncertain_rate_delta0.2": 0.59
+  },
+  "L1_secondary": {
+   "positive_rate": 0.0,
+   "positive_mc95": [
+    0,
+    0.0
+   ],
+   "mean_T": -0.092,
+   "mean_p": 0.473,
+   "best_baseline_freq": {
+    "age": 0.61,
+    "game": 0.39
+   },
+   "util_lb_positive_rate": 0.015,
+   "negative_rate_delta0.05": 0.435,
+   "uncertain_rate_delta0.05": 0.565,
+   "negative_rate_delta0.1": 0.56,
+   "uncertain_rate_delta0.1": 0.44,
+   "negative_rate_delta0.2": 0.76,
+   "uncertain_rate_delta0.2": 0.24
+  },
+  "n_hist": 12,
+  "n_sims": 200,
+  "legacy": false,
+  "sec": 145.4
+ },
+ "mech_signal_b1.2": {
+  "L2_primary": {
+   "positive_rate": 0.255,
+   "positive_mc95": [
+    0.195,
+    0.315
+   ],
+   "mean_T": 0.21,
+   "mean_p": 0.116,
+   "best_baseline_freq": {
+    "age": 0.33,
+    "age_return": 0.13,
+    "base_all": 0.06,
+    "game": 0.27,
+    "loss_return": 0.21
+   },
+   "util_lb_positive_rate": 0.21,
+   "negative_rate_delta0.05": 0.07,
+   "uncertain_rate_delta0.05": 0.675,
+   "negative_rate_delta0.1": 0.105,
+   "uncertain_rate_delta0.1": 0.64,
+   "negative_rate_delta0.2": 0.13,
+   "uncertain_rate_delta0.2": 0.615
+  },
+  "L1_secondary": {
+   "positive_rate": 0.0,
+   "positive_mc95": [
+    0,
+    0.0
+   ],
+   "mean_T": -0.084,
+   "mean_p": 0.445,
+   "best_baseline_freq": {
+    "age": 0.59,
+    "game": 0.41
+   },
+   "util_lb_positive_rate": 0.025,
+   "negative_rate_delta0.05": 0.395,
+   "uncertain_rate_delta0.05": 0.605,
+   "negative_rate_delta0.1": 0.53,
+   "uncertain_rate_delta0.1": 0.47,
+   "negative_rate_delta0.2": 0.705,
+   "uncertain_rate_delta0.2": 0.295
+  },
+  "n_hist": 12,
+  "n_sims": 200,
+  "legacy": false,
+  "sec": 153.8
+ }
+}

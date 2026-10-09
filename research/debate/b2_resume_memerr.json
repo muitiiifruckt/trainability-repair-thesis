@@ -1,0 +1,35 @@
+{
+ "reference_error": null,
+ "reference_arms": [
+  "continue",
+  "head_and_optimizer_reset",
+  "head_reset",
+  "optimizer_reset"
+ ],
+ "first_attempt_error": "MemoryError: ",
+ "after_first_merge_outcome_rows": [
+  "continue",
+  "optimizer_reset"
+ ],
+ "worker_resume_slot_exists_after_crash": [
+  "branch_resume.json",
+  "branch_resume.pt"
+ ],
+ "second_attempt_error": null,
+ "final_rows": 4,
+ "unique_job_ids": 4,
+ "duplicates": 0,
+ "fields_equal_reference_per_arm": {
+  "continue": true,
+  "optimizer_reset": true,
+  "head_reset": true,
+  "head_and_optimizer_reset": true
+ },
+ "worker_updates_first_second_reference": [
+  21,
+  33,
+  32
+ ],
+ "parent_package_updates": 39,
+ "leftover_worker_scratch": []
+}

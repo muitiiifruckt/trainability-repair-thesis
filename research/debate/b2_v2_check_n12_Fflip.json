@@ -1,0 +1,102 @@
+{
+ "null_hetero_coupled": {
+  "L2": {
+   "positive_rate": 0.0625,
+   "mc95": [
+    0.039,
+    0.086
+   ],
+   "mean_T": 0.189,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.434,
+   "frac_p_lt_alpha": 0.062,
+   "positive_noLB": 0.062,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 400,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 3.4
+ },
+ "null_hetero_uncoupled": {
+  "L2": {
+   "positive_rate": 0.0175,
+   "mc95": [
+    0.005,
+    0.03
+   ],
+   "mean_T": 0.109,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.5,
+   "frac_p_lt_alpha": 0.018,
+   "positive_noLB": 0.018,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 400,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 3.3
+ },
+ "null": {
+  "L2": {
+   "positive_rate": 0.025,
+   "mc95": [
+    0.01,
+    0.04
+   ],
+   "mean_T": 0.116,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.478,
+   "frac_p_lt_alpha": 0.025,
+   "positive_noLB": 0.025,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 400,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 3.3
+ },
+ "mech_b0.8": {
+  "L2": {
+   "positive_rate": 0.3,
+   "mc95": [
+    0.255,
+    0.345
+   ],
+   "mean_T": 0.346,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.139,
+   "frac_p_lt_alpha": 0.3,
+   "positive_noLB": 0.3,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 400,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 3.5
+ }
+}

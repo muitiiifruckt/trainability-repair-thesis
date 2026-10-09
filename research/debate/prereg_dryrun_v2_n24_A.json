@@ -1,0 +1,98 @@
+{
+ "null": {
+  "L2_primary": {
+   "positive_rate": 0.0,
+   "positive_mc95": [
+    0,
+    0.0
+   ],
+   "mean_T": -0.124,
+   "mean_p": 0.516,
+   "best_baseline_freq": {
+    "age": 0.1,
+    "age_return": 0.07,
+    "base_all": 0.04,
+    "game": 0.69,
+    "loss_return": 0.11
+   },
+   "util_lb_positive_rate": 0.0,
+   "negative_rate_delta0.05": 0.715,
+   "uncertain_rate_delta0.05": 0.285,
+   "negative_rate_delta0.1": 0.825,
+   "uncertain_rate_delta0.1": 0.175,
+   "negative_rate_delta0.2": 0.965,
+   "uncertain_rate_delta0.2": 0.035
+  },
+  "L1_secondary": {
+   "positive_rate": 0.0,
+   "positive_mc95": [
+    0,
+    0.0
+   ],
+   "mean_T": -0.062,
+   "mean_p": 0.507,
+   "best_baseline_freq": {
+    "age": 0.15,
+    "game": 0.85
+   },
+   "util_lb_positive_rate": 0.015,
+   "negative_rate_delta0.05": 0.64,
+   "uncertain_rate_delta0.05": 0.36,
+   "negative_rate_delta0.1": 0.79,
+   "uncertain_rate_delta0.1": 0.21,
+   "negative_rate_delta0.2": 0.96,
+   "uncertain_rate_delta0.2": 0.04
+  },
+  "n_hist": 24,
+  "n_sims": 200,
+  "legacy": false,
+  "sec": 267.8
+ },
+ "loss_signal_D_is_proxy": {
+  "L2_primary": {
+   "positive_rate": 0.005,
+   "positive_mc95": [
+    0,
+    0.015
+   ],
+   "mean_T": -0.066,
+   "mean_p": 0.531,
+   "best_baseline_freq": {
+    "age": 0.04,
+    "age_return": 0.02,
+    "base_all": 0.44,
+    "loss_return": 0.51
+   },
+   "util_lb_positive_rate": 0.0,
+   "negative_rate_delta0.05": 0.61,
+   "uncertain_rate_delta0.05": 0.385,
+   "negative_rate_delta0.1": 0.785,
+   "uncertain_rate_delta0.1": 0.21,
+   "negative_rate_delta0.2": 0.945,
+   "uncertain_rate_delta0.2": 0.05
+  },
+  "L1_secondary": {
+   "positive_rate": 0.335,
+   "positive_mc95": [
+    0.27,
+    0.4
+   ],
+   "mean_T": 0.189,
+   "mean_p": 0.039,
+   "best_baseline_freq": {
+    "age": 1.0
+   },
+   "util_lb_positive_rate": 0.1,
+   "negative_rate_delta0.05": 0.0,
+   "uncertain_rate_delta0.05": 0.665,
+   "negative_rate_delta0.1": 0.015,
+   "uncertain_rate_delta0.1": 0.65,
+   "negative_rate_delta0.2": 0.105,
+   "uncertain_rate_delta0.2": 0.56
+  },
+  "n_hist": 24,
+  "n_sims": 200,
+  "legacy": false,
+  "sec": 266.9
+ }
+}

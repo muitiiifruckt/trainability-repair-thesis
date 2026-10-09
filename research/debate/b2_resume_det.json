@@ -1,0 +1,13 @@
+{
+ "straight_digest": "e84d91b0bf9af28e",
+ "disk_roundtrip_with_eval_digest": "e84d91b0bf9af28e",
+ "disk_roundtrip_equal_straight": true,
+ "memory_snapshot_equal_straight": true,
+ "sec": 18.1,
+ "subprocess OMP/MKL/OPENBLAS=1 (как worker)": "e84d91b0bf9af28e",
+ "subprocess OMP/MKL/OPENBLAS=1 (как worker) equal": true,
+ "subprocess без переменных потоков": "e84d91b0bf9af28e",
+ "subprocess без переменных потоков equal": true,
+ "subprocess без deterministic_algorithms": "e84d91b0bf9af28e",
+ "subprocess без deterministic_algorithms equal": true
+}

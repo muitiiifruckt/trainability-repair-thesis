@@ -1,0 +1,23 @@
+{
+ "crash_raised": "simulated crash between save_state(.pt) and dump(.json)",
+ "meta_completed_steps_after_crash": 2,
+ "pt_hash_matches_meta_after_crash": false,
+ "steps_executed_after_resume": 8,
+ "horizon": 8,
+ "restarted_from_zero": true,
+ "fields_equal_reference": {
+  "j_final": true,
+  "j_immediate": true,
+  "evaluation_curve": true,
+  "continuation_seed": true,
+  "repair_seed": true,
+  "budget_gradient_updates": true,
+  "adaptation_auc": true,
+  "completed_env_steps": true
+ },
+ "outcome_rows": 1,
+ "wall_time_sec_resumed_vs_ref": [
+  0.1133,
+  0.1047
+ ]
+}

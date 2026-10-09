@@ -1,0 +1,77 @@
+{
+ "null_hetero_coupled": {
+  "L2": {
+   "positive_rate": 0.04,
+   "mc95": [
+    0.021,
+    0.059
+   ],
+   "mean_T": 0.154,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.459,
+   "frac_p_lt_alpha": 0.04,
+   "positive_noLB": 0.04,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 400,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 4.8
+ },
+ "null": {
+  "L2": {
+   "positive_rate": 0.025,
+   "mc95": [
+    0.01,
+    0.04
+   ],
+   "mean_T": 0.114,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.48,
+   "frac_p_lt_alpha": 0.025,
+   "positive_noLB": 0.025,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 400,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 3.9
+ },
+ "mech_b0.8": {
+  "L2": {
+   "positive_rate": 0.2725,
+   "mc95": [
+    0.229,
+    0.316
+   ],
+   "mean_T": 0.328,
+   "T_true": 0.0,
+   "best_pop": "base",
+   "mean_p": 0.148,
+   "frac_p_lt_alpha": 0.273,
+   "positive_noLB": 0.273,
+   "ub_below_Ttrue": 0.0,
+   "lb_above_Ttrue": 0.0,
+   "negative_rate_delta0.05": 1.0,
+   "negative_rate_delta0.1": 1.0,
+   "negative_rate_delta0.2": 1.0
+  },
+  "n_hist": 12,
+  "n_sims": 400,
+  "n_perm": 199,
+  "dgp": "B2",
+  "sec": 3.9
+ }
+}

@@ -1,0 +1,217 @@
+{
+ "null_hetero_coupled": {
+  "L2": {
+   "positive_rate": 0.008333333333333333,
+   "mc95": [
+    0.001,
+    0.016
+   ],
+   "mean_T": -0.289,
+   "T_true": -0.159,
+   "best_pop": "game",
+   "mean_p": 0.542,
+   "frac_p_lt_alpha": 0.085,
+   "positive_noLB": 0.08,
+   "ub_below_Ttrue": 0.18,
+   "lb_above_Ttrue": 0.033,
+   "negative_rate_delta0.05": 0.51,
+   "negative_rate_delta0.1": 0.58,
+   "negative_rate_delta0.2": 0.72
+  },
+  "L1": {
+   "positive_rate": 0.005,
+   "mc95": [
+    0,
+    0.011
+   ],
+   "mean_T": -0.086,
+   "T_true": -0.043,
+   "best_pop": "game",
+   "mean_p": 0.491,
+   "frac_p_lt_alpha": 0.02,
+   "positive_noLB": 0.02,
+   "ub_below_Ttrue": 0.205,
+   "lb_above_Ttrue": 0.007,
+   "negative_rate_delta0.05": 0.583,
+   "negative_rate_delta0.1": 0.7,
+   "negative_rate_delta0.2": 0.86
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "B2",
+  "sec": 25.5
+ },
+ "null_hetero_uncoupled": {
+  "L2": {
+   "positive_rate": 0.0,
+   "mc95": [
+    0,
+    0.0
+   ],
+   "mean_T": -0.178,
+   "T_true": -0.08,
+   "best_pop": "game",
+   "mean_p": 0.49,
+   "frac_p_lt_alpha": 0.017,
+   "positive_noLB": 0.015,
+   "ub_below_Ttrue": 0.263,
+   "lb_above_Ttrue": 0.005,
+   "negative_rate_delta0.05": 0.665,
+   "negative_rate_delta0.1": 0.753,
+   "negative_rate_delta0.2": 0.875
+  },
+  "L1": {
+   "positive_rate": 0.005,
+   "mc95": [
+    0,
+    0.011
+   ],
+   "mean_T": -0.086,
+   "T_true": -0.043,
+   "best_pop": "game",
+   "mean_p": 0.491,
+   "frac_p_lt_alpha": 0.02,
+   "positive_noLB": 0.02,
+   "ub_below_Ttrue": 0.205,
+   "lb_above_Ttrue": 0.007,
+   "negative_rate_delta0.05": 0.583,
+   "negative_rate_delta0.1": 0.7,
+   "negative_rate_delta0.2": 0.86
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "B2",
+  "sec": 26.2
+ },
+ "null_4rep": {
+  "L2": {
+   "positive_rate": 0.005,
+   "mc95": [
+    0,
+    0.011
+   ],
+   "mean_T": -0.27,
+   "T_true": -0.216,
+   "best_pop": "game",
+   "mean_p": 0.51,
+   "frac_p_lt_alpha": 0.032,
+   "positive_noLB": 0.032,
+   "ub_below_Ttrue": 0.097,
+   "lb_above_Ttrue": 0.043,
+   "negative_rate_delta0.05": 0.635,
+   "negative_rate_delta0.1": 0.712,
+   "negative_rate_delta0.2": 0.823
+  },
+  "L1": {
+   "positive_rate": 0.01,
+   "mc95": [
+    0.002,
+    0.018
+   ],
+   "mean_T": -0.124,
+   "T_true": -0.112,
+   "best_pop": "game",
+   "mean_p": 0.499,
+   "frac_p_lt_alpha": 0.027,
+   "positive_noLB": 0.027,
+   "ub_below_Ttrue": 0.105,
+   "lb_above_Ttrue": 0.028,
+   "negative_rate_delta0.05": 0.515,
+   "negative_rate_delta0.1": 0.63,
+   "negative_rate_delta0.2": 0.795
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "B2",
+  "sec": 25.7
+ },
+ "mech_b0.4_4rep": {
+  "L2": {
+   "positive_rate": 0.03833333333333333,
+   "mc95": [
+    0.023,
+    0.054
+   ],
+   "mean_T": -0.092,
+   "T_true": -0.036,
+   "best_pop": "age",
+   "mean_p": 0.31,
+   "frac_p_lt_alpha": 0.142,
+   "positive_noLB": 0.138,
+   "ub_below_Ttrue": 0.165,
+   "lb_above_Ttrue": 0.05,
+   "negative_rate_delta0.05": 0.272,
+   "negative_rate_delta0.1": 0.347,
+   "negative_rate_delta0.2": 0.517
+  },
+  "L1": {
+   "positive_rate": 0.011666666666666667,
+   "mc95": [
+    0.003,
+    0.02
+   ],
+   "mean_T": -0.093,
+   "T_true": -0.086,
+   "best_pop": "age",
+   "mean_p": 0.478,
+   "frac_p_lt_alpha": 0.023,
+   "positive_noLB": 0.023,
+   "ub_below_Ttrue": 0.093,
+   "lb_above_Ttrue": 0.027,
+   "negative_rate_delta0.05": 0.44,
+   "negative_rate_delta0.1": 0.555,
+   "negative_rate_delta0.2": 0.743
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "B2",
+  "sec": 25.9
+ },
+ "mech_b0.8_4rep": {
+  "L2": {
+   "positive_rate": 0.23833333333333334,
+   "mc95": [
+    0.204,
+    0.272
+   ],
+   "mean_T": 0.204,
+   "T_true": 0.257,
+   "best_pop": "age",
+   "mean_p": 0.099,
+   "frac_p_lt_alpha": 0.513,
+   "positive_noLB": 0.507,
+   "ub_below_Ttrue": 0.177,
+   "lb_above_Ttrue": 0.083,
+   "negative_rate_delta0.05": 0.038,
+   "negative_rate_delta0.1": 0.053,
+   "negative_rate_delta0.2": 0.118
+  },
+  "L1": {
+   "positive_rate": 0.013333333333333334,
+   "mc95": [
+    0.004,
+    0.023
+   ],
+   "mean_T": -0.074,
+   "T_true": -0.066,
+   "best_pop": "age",
+   "mean_p": 0.441,
+   "frac_p_lt_alpha": 0.032,
+   "positive_noLB": 0.032,
+   "ub_below_Ttrue": 0.12,
+   "lb_above_Ttrue": 0.032,
+   "negative_rate_delta0.05": 0.377,
+   "negative_rate_delta0.1": 0.487,
+   "negative_rate_delta0.2": 0.683
+  },
+  "n_hist": 12,
+  "n_sims": 600,
+  "n_perm": 99,
+  "dgp": "B2",
+  "sec": 26.7
+ }
+}

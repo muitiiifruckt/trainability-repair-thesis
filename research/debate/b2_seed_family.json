@@ -1,0 +1,92 @@
+{
+ "natural_breakout_seed0_age200000": {
+  "A_pre_family": [
+   6.69,
+   0.198
+  ],
+  "B_immediate_family": [
+   6.697,
+   0.197
+  ],
+  "C_fresh": [
+   6.673,
+   0.191
+  ],
+  "stored_j_pre_first20": 7.75
+ },
+ "natural_breakout_seed0_age50000": {
+  "A_pre_family": [
+   3.553,
+   0.077
+  ],
+  "B_immediate_family": [
+   3.66,
+   0.078
+  ],
+  "C_fresh": [
+   3.557,
+   0.078
+  ],
+  "stored_j_pre_first20": 3.9
+ },
+ "natural_breakout_seed1_age200000": {
+  "A_pre_family": [
+   7.707,
+   0.268
+  ],
+  "B_immediate_family": [
+   7.723,
+   0.276
+  ],
+  "C_fresh": [
+   7.37,
+   0.257
+  ],
+  "stored_j_pre_first20": 7.8
+ },
+ "natural_breakout_seed1_age50000": {
+  "A_pre_family": [
+   4.803,
+   0.079
+  ],
+  "B_immediate_family": [
+   4.877,
+   0.075
+  ],
+  "C_fresh": [
+   4.68,
+   0.078
+  ],
+  "stored_j_pre_first20": 5.15
+ },
+ "natural_breakout_seed2_age200000": {
+  "A_pre_family": [
+   6.327,
+   0.157
+  ],
+  "B_immediate_family": [
+   6.167,
+   0.171
+  ],
+  "C_fresh": [
+   6.457,
+   0.166
+  ],
+  "stored_j_pre_first20": 6.6
+ },
+ "natural_breakout_seed2_age50000": {
+  "A_pre_family": [
+   5.17,
+   0.094
+  ],
+  "B_immediate_family": [
+   4.813,
+   0.103
+  ],
+  "C_fresh": [
+   4.77,
+   0.101
+  ],
+  "stored_j_pre_first20": 5.2
+ }
+}
