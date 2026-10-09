@@ -28,5 +28,8 @@
 - Раунд 2: A пишет prereg диагностик + dry-run процедуры (`scripts/debate_prereg_dryrun.py`); B остановлен пользователем, не перезапущен.
 - Патч whitelist (`research/debate/patch_whitelist.diff`) отложен до конца кампании (SHA в dependency_manifest).
 
+- Проект следующей кампании (не запущен): [docs/next_campaign_proposal.md](../docs/next_campaign_proposal.md).
+- Прогноз: после screen решить, нужна ли репликация (n>=24 историй, 4 repeats, >=100 eval-эпизодов); prereg v3 финализирует A.
+
 ## Правила
 - Числа в выводах только из файлов с SHA; reserved-игры закрыты до freeze; повторы одной истории не независимы.
