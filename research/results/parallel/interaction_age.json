@@ -1,31 +1,31 @@
 {
- "n_complete_cells": 8,
+ "n_complete_cells": 10,
  "games": {
   "breakout": {
    "opt": {
-    "n_histories": 2,
-    "mean": -0.594,
+    "n_histories": 3,
+    "mean": -0.538,
     "boot95": "suppressed(<5 histories)"
    },
    "head": {
-    "n_histories": 2,
-    "mean": -0.287,
+    "n_histories": 3,
+    "mean": -0.158,
     "boot95": "suppressed(<5 histories)"
    },
    "joint": {
-    "n_histories": 2,
-    "mean": -0.931,
+    "n_histories": 3,
+    "mean": -0.896,
     "boot95": "suppressed(<5 histories)"
    },
    "interaction": {
-    "n_histories": 2,
-    "mean": -0.05,
+    "n_histories": 3,
+    "mean": -0.2,
     "boot95": "suppressed(<5 histories)"
    },
    "head_by_age": {
     "50000": [
-     0.263,
-     2
+     0.208,
+     3
     ],
     "200000": [
      -0.837,
