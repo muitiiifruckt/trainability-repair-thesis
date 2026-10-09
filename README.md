@@ -35,7 +35,7 @@
 
 Smoke обучения завершён: 2 000 transitions, 1 937 optimizer updates за 15.26 секунды, около 127 updates/s на полном training loop. Это проверка инфраструктуры, не результат о деградации обучаемости. Длинные серии и gates отражаются в живом отчёте `research/results/minatar-repair-20261007/REPORT.md`; незавершённые серии не объявляются экспериментальным успехом.
 
-В директории уже был пустой локальный Git-репозиторий. Источники и документы сохранены локально; внешний remote не настроен.
+В директории уже был пустой локальный Git-репозиторий. Источники и документы сохранены локально; репозиторий опубликован: https://github.com/muitiiifruckt/trainability-repair-thesis (ветка main = codex/trainability-review на момент публикации 2026-10-09). Большие артефакты (checkpoints, replay, runs/) в Git не входят.
 
 Рабочая ветка: `codex/trainability-review`. Author-code snapshots в `research/external/` исключены из Git; их commits и первичные ссылки записаны в audit notes. Малый synthetic результат сохранён вместе с runner/config/hash.
 
