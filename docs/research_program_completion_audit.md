@@ -34,4 +34,6 @@
 
 ## Следующий переход
 
+Дополнение после fixed-TD, 9 октября: пять из 24 float32 t-reset/control pairs превышают declared scalar-curve tolerance 1e−5 на 2000 updates (max relative L2 4.13e−4), при отсутствии FPE. Короткие float64 tests 6/9 updates не закрывают этот случай. На безопасной границе выполнить длинный matched float32/float64 control на отмеченных checkpoints с epsilon 1e−8, большими clocks, общими targets/tapes и отдельным учётом updates; не предполагать roundoff-only причину без проверки. Подробные identities, source SHA и постановка — `research/results/minatar-repair-20261007/monitoring/20261009T1410Z.md`. Runtime scientific code во время writers не менялся.
+
 Сначала завершить текущие pilot sources и 96 online branches, сохранив их как результат текущей версии. Исправления orchestration и reporting проводить на безопасной границе: никакого второго coordinator, дождаться текущих writers, указать новую revision и выполнить только связанные проверки. Scientific learner и уже собранные результаты не переписывать. Решения о полезности ремонта принимать после независимого confirmation, а проверку полноты runner — независимо от того, окажутся ли эффекты положительными.

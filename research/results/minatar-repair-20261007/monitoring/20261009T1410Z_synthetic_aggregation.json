@@ -1,0 +1,466 @@
+{
+  "source_sha256": "45317010080c82a057d4f4f12a81b4cd10050297ea08e7378afeebf04895aa43",
+  "script_sha256": "3a3ff9de770ddcaabf2ab30a904e4110a5ae6867aa2abe31936870eb32ad3f31",
+  "relative_sign": "positive means lower repaired heldout MSE",
+  "ratio_of_grand_mean_losses": "mean(b-a)/mean(b); baseline-loss-weighted panel ratios",
+  "mean_panel_ratios": "mean((b-a)/b); equal ages/repeats within seed, then equal seeds",
+  "independent_unit": "source seed, not source ages or continuation repeats",
+  "records": [
+    {
+      "lr": 0.00025,
+      "horizon": 100,
+      "baseline": "continue",
+      "repair": "optimizer_reset",
+      "absolute_advantage": -17.177634961718432,
+      "ratio_of_grand_mean_losses": -1.8698157057843554,
+      "mean_panel_ratios": -1.04065051073502,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": -16.157270946968936,
+          "baseline_loss": 9.137194218095823,
+          "mean_panel_relative_advantage": -0.917318583397265
+        },
+        "1": {
+          "absolute_advantage": -18.9987053940146,
+          "baseline_loss": 8.690988271351115,
+          "mean_panel_relative_advantage": -1.2744645745487517
+        },
+        "2": {
+          "absolute_advantage": -16.376928544171758,
+          "baseline_loss": 9.732236821256267,
+          "mean_panel_relative_advantage": -0.930168374259043
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.3342179291665068,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -2.4155189506365464,
+          "positive_pairs": 0,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.00025,
+      "horizon": 100,
+      "baseline": "head_reset",
+      "repair": "head_and_optimizer_reset",
+      "absolute_advantage": -0.04755066013415927,
+      "ratio_of_grand_mean_losses": -0.03957992567144025,
+      "mean_panel_ratios": 0.17767655297326673,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": -0.04518582659115439,
+          "baseline_loss": 1.2802055713532623,
+          "mean_panel_relative_advantage": 0.1920586023660406
+        },
+        "1": {
+          "absolute_advantage": -0.09966727547681065,
+          "baseline_loss": 1.163473673934214,
+          "mean_panel_relative_advantage": 0.09562787645717533
+        },
+        "2": {
+          "absolute_advantage": 0.002201121665487221,
+          "baseline_loss": 1.1604705347463806,
+          "mean_panel_relative_advantage": 0.24534318009658423
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.755498036962152,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -0.40014493101561854,
+          "positive_pairs": 0,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.00025,
+      "horizon": 500,
+      "baseline": "continue",
+      "repair": "optimizer_reset",
+      "absolute_advantage": -1.3990619360743475,
+      "ratio_of_grand_mean_losses": -3.9037391561833417,
+      "mean_panel_ratios": -4.183566721688629,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": -1.1422331842602917,
+          "baseline_loss": 0.3455170289153078,
+          "mean_panel_relative_advantage": -3.7415130308348883
+        },
+        "1": {
+          "absolute_advantage": -1.5936567536345874,
+          "baseline_loss": 0.3472156098237146,
+          "mean_panel_relative_advantage": -4.585385647958644
+        },
+        "2": {
+          "absolute_advantage": -1.461295870328163,
+          "baseline_loss": 0.3824380220811031,
+          "mean_panel_relative_advantage": -4.223801486272355
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.7956442414185084,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -9.162777684795767,
+          "positive_pairs": 0,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.00025,
+      "horizon": 500,
+      "baseline": "head_reset",
+      "repair": "head_and_optimizer_reset",
+      "absolute_advantage": 0.03888259985110621,
+      "ratio_of_grand_mean_losses": 0.6300646700243515,
+      "mean_panel_ratios": 0.17299053576410325,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": 0.04186405813816058,
+          "baseline_loss": 0.06689362053120657,
+          "mean_panel_relative_advantage": -0.0036376976700691066
+        },
+        "1": {
+          "absolute_advantage": 0.03818011867406101,
+          "baseline_loss": 0.05880431411864462,
+          "mean_panel_relative_advantage": 0.33877692432229606
+        },
+        "2": {
+          "absolute_advantage": 0.03660362274109703,
+          "baseline_loss": 0.05943829834796201,
+          "mean_panel_relative_advantage": 0.18383238064008278
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.848477350333429,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -0.5024962788052224,
+          "positive_pairs": 0,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.001,
+      "horizon": 100,
+      "baseline": "continue",
+      "repair": "optimizer_reset",
+      "absolute_advantage": -2.2580776444097137,
+      "ratio_of_grand_mean_losses": -3.792556515653656,
+      "mean_panel_ratios": -13.320805811110903,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": -2.0682325908294183,
+          "baseline_loss": 0.6259245126664361,
+          "mean_panel_relative_advantage": -9.629943753609812
+        },
+        "1": {
+          "absolute_advantage": -2.3550891275792054,
+          "baseline_loss": 0.5682672872095674,
+          "mean_panel_relative_advantage": -18.36065636533937
+        },
+        "2": {
+          "absolute_advantage": -2.350911214820518,
+          "baseline_loss": 0.5919998904175254,
+          "mean_panel_relative_advantage": -11.971817314383527
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.8705367639792522,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -27.512148386201055,
+          "positive_pairs": 0,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.001,
+      "horizon": 100,
+      "baseline": "head_reset",
+      "repair": "head_and_optimizer_reset",
+      "absolute_advantage": 0.15765346557099788,
+      "ratio_of_grand_mean_losses": 0.8411759346491022,
+      "mean_panel_ratios": -0.1712191561652861,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": 0.16581199657054488,
+          "baseline_loss": 0.19906261119981283,
+          "mean_panel_relative_advantage": -0.548935164754314
+        },
+        "1": {
+          "absolute_advantage": 0.1635233007498948,
+          "baseline_loss": 0.18986242124301012,
+          "mean_panel_relative_advantage": 0.1994792792611966
+        },
+        "2": {
+          "absolute_advantage": 0.14362509939255394,
+          "baseline_loss": 0.1733359372677403,
+          "mean_panel_relative_advantage": -0.1642015830027409
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.948165455116835,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -1.2906037674474073,
+          "positive_pairs": 0,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.001,
+      "horizon": 500,
+      "baseline": "continue",
+      "repair": "optimizer_reset",
+      "absolute_advantage": -0.014097907922135217,
+      "ratio_of_grand_mean_losses": -0.5171559239542877,
+      "mean_panel_ratios": -0.5572351982672025,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": -0.019074480756534846,
+          "baseline_loss": 0.01957467383154348,
+          "mean_panel_relative_advantage": -1.1037592684046102
+        },
+        "1": {
+          "absolute_advantage": -0.017839798359742306,
+          "baseline_loss": 0.025046704352751692,
+          "mean_panel_relative_advantage": -0.5269487638000245
+        },
+        "2": {
+          "absolute_advantage": -0.005379444650128497,
+          "baseline_loss": 0.037159999167081875,
+          "mean_panel_relative_advantage": -0.04099756259697275
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.25063744058253956,
+          "positive_pairs": 4,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -1.3651078371169445,
+          "positive_pairs": 0,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.001,
+      "horizon": 500,
+      "baseline": "head_reset",
+      "repair": "head_and_optimizer_reset",
+      "absolute_advantage": 0.0022267164424088805,
+      "ratio_of_grand_mean_losses": 0.17595254163548102,
+      "mean_panel_ratios": 0.14716824152061175,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": 0.002161116368894391,
+          "baseline_loss": 0.012883103205119699,
+          "mean_panel_relative_advantage": 0.12022724496433482
+        },
+        "1": {
+          "absolute_advantage": 0.0014571841166306368,
+          "baseline_loss": 0.011912929717802657,
+          "mean_panel_relative_advantage": 0.09463697267109544
+        },
+        "2": {
+          "absolute_advantage": 0.003061848841701614,
+          "baseline_loss": 0.013169598406608736,
+          "mean_panel_relative_advantage": 0.226640506926405
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.30780691475627475,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -0.01347043171505127,
+          "positive_pairs": 2,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.004,
+      "horizon": 100,
+      "baseline": "continue",
+      "repair": "optimizer_reset",
+      "absolute_advantage": 0.014551735837038303,
+      "ratio_of_grand_mean_losses": 0.2464992510498651,
+      "mean_panel_ratios": 0.0487876242114609,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": 0.006253778416531883,
+          "baseline_loss": 0.04446697378981512,
+          "mean_panel_relative_advantage": -0.18426349670890188
+        },
+        "1": {
+          "absolute_advantage": 0.011740603023471737,
+          "baseline_loss": 0.05965566748600674,
+          "mean_panel_relative_advantage": 0.21256386305112399
+        },
+        "2": {
+          "absolute_advantage": 0.025660826071111288,
+          "baseline_loss": 0.07297813012686188,
+          "mean_panel_relative_advantage": 0.11806250629216059
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.5712315928921853,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": -0.4736563444692635,
+          "positive_pairs": 2,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.004,
+      "horizon": 100,
+      "baseline": "head_reset",
+      "repair": "head_and_optimizer_reset",
+      "absolute_advantage": 0.004033837545947978,
+      "ratio_of_grand_mean_losses": 0.26311780110437755,
+      "mean_panel_ratios": 0.2462019841727163,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": 0.0029680900873379746,
+          "baseline_loss": 0.014895652247679098,
+          "mean_panel_relative_advantage": 0.17192636688581558
+        },
+        "1": {
+          "absolute_advantage": 0.0040573112776135425,
+          "baseline_loss": 0.015027455322035536,
+          "mean_panel_relative_advantage": 0.26200159322381295
+        },
+        "2": {
+          "absolute_advantage": 0.0050761112728924165,
+          "baseline_loss": 0.01606964771727305,
+          "mean_panel_relative_advantage": 0.30467799240852034
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.35264871273054255,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": 0.13975525561489,
+          "positive_pairs": 6,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.004,
+      "horizon": 500,
+      "baseline": "continue",
+      "repair": "optimizer_reset",
+      "absolute_advantage": 0.002898724782867044,
+      "ratio_of_grand_mean_losses": 0.19393453115091067,
+      "mean_panel_ratios": 0.19154726422236024,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": 0.002434780386596417,
+          "baseline_loss": 0.013462974722775753,
+          "mean_panel_relative_advantage": 0.16898722073325903
+        },
+        "1": {
+          "absolute_advantage": 0.0018114850744210525,
+          "baseline_loss": 0.013977197424152647,
+          "mean_panel_relative_advantage": 0.14819045372212525
+        },
+        "2": {
+          "absolute_advantage": 0.004449908887583663,
+          "baseline_loss": 0.017400601164525763,
+          "mean_panel_relative_advantage": 0.2574641182116964
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.36656034444866137,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": 0.016534183996059104,
+          "positive_pairs": 3,
+          "pairs": 6
+        }
+      }
+    },
+    {
+      "lr": 0.004,
+      "horizon": 500,
+      "baseline": "head_reset",
+      "repair": "head_and_optimizer_reset",
+      "absolute_advantage": 0.0032111513783287574,
+      "ratio_of_grand_mean_losses": 0.29081877681171553,
+      "mean_panel_ratios": 0.2738146365536919,
+      "by_seed": {
+        "0": {
+          "absolute_advantage": 0.0040615877415826306,
+          "baseline_loss": 0.01088588873753367,
+          "mean_panel_relative_advantage": 0.34341111535840246
+        },
+        "1": {
+          "absolute_advantage": 0.002657228729252532,
+          "baseline_loss": 0.010989087308666073,
+          "mean_panel_relative_advantage": 0.231756964914404
+        },
+        "2": {
+          "absolute_advantage": 0.0029146376641511094,
+          "baseline_loss": 0.011250306442775335,
+          "mean_panel_relative_advantage": 0.24627582938826925
+        }
+      },
+      "by_age": {
+        "100": {
+          "mean_panel_relative_advantage": 0.4498001398734449,
+          "positive_pairs": 6,
+          "pairs": 6
+        },
+        "600": {
+          "mean_panel_relative_advantage": 0.09782913323393887,
+          "positive_pairs": 6,
+          "pairs": 6
+        }
+      }
+    }
+  ]
+}

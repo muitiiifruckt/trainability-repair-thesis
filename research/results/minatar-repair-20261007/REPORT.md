@@ -1,5 +1,7 @@
 # Результаты автономной программы
 
+> При n=3 source histories/game bootstrap intervals ниже не подтверждают population effects. Актуальный ручной статус — [CURRENT_STATUS.md](CURRENT_STATUS.md); интерпретация завершённых fitting/LR controls и численных расхождений — [monitoring/20261009T1410Z.md](monitoring/20261009T1410Z.md).
+
 Это живой отчёт: завершённые запуски отделены от запланированных. Минимум для вывода — независимые истории обучения и continuation repeats.
 
 Обновление: 2026-10-09 17:01:05; серия: synthetic_LR_controls.
