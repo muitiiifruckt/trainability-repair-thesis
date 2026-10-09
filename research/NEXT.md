@@ -7,6 +7,9 @@
 - Живые данные: `runs/minatar-repair-20261007/{progress.json,outcomes.jsonl,supervisor.json}`. Конфигурацию не менять.
 - Завершено 32 из 96 основных веток (2026-10-09: Breakout seeds 0,1 x возрасты 50k/200k); живой отчёт — `research/results/minatar-repair-20261007/REPORT.md`.
 
+## Внимание: сон машины
+Кампания приостанавливается, когда Windows уходит в сон (ночью 9–10 ч); это не сбой, возобновление корректно (E1–E4 в `research/debate/log.md`). Сон от сети отключён, значит усыпление ручное. Не менять питание без решения пользователя.
+
 ## Порядок действий при возвращении
 1. Проверить `supervisor.json` (status, restarts) и что растёт `package_updates`. Если процессов Python нет — перезапустить supervisor.
 2. Пересчитать `scripts/power_from_partial.py`; при новых полных историях обновить `notes/parallel_vectors_20261008.md`.
