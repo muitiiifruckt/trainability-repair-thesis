@@ -1361,7 +1361,7 @@
   ],
   "worker_progress": {
     "progress": {
-      "stage": "parallel_branches",
+      "stage": "mechanisms",
       "parallel_wave_id": 17,
       "pending_tasks": [],
       "worker_progress": [
@@ -1412,15 +1412,18 @@
           }
         }
       ],
-      "time": 1791551423.5547655,
-      "package_updates": 4012375,
-      "package_wall_sec": 58905.176938437144
+      "job_id": "mechanisms:natural_asterix_seed2_age200000:1",
+      "event": "mechanisms_complete",
+      "updates": 26000,
+      "time": 1791553987.2020743,
+      "package_updates": 4636375,
+      "package_wall_sec": 61468.82424723715
     },
     "worker_status": "running",
     "worker_pid": 16652,
-    "manifest_updated_at": 1791551427.366826,
+    "manifest_updated_at": 1791553987.2039576,
     "jobs_by_status": {
-      "complete": 109
+      "complete": 133
     }
   },
   "provisional": true,

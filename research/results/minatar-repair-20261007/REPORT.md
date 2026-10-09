@@ -1,12 +1,10 @@
 # Результаты автономной программы
 
-> Статистическая оговорка для pilot screen: bootstrap intervals ниже при трёх независимых histories/game не используются как подтверждение population effects. Актуальная интерпретация и полный срез — [CURRENT_STATUS.md](CURRENT_STATUS.md) и [monitoring/20261009T1310Z.md](monitoring/20261009T1310Z.md). Статус остаётся неопределённым до independent confirmation и controls.
-
 Это живой отчёт: завершённые запуски отделены от запланированных. Минимум для вывода — независимые истории обучения и continuation repeats.
 
-Обновление: 2026-10-09 16:10:44; серия: first_online_screen_96_branches.
+Обновление: 2026-10-09 16:53:26; серия: fixed_TD_mechanisms.
 Checkpoints: 12. Завершённые ветки: {'screen': 96, 'confirm': 0, 'stress': 0, 'parameters': 0, 'lr_control': 0}.
-Текущий пакет: 1; optimizer updates: 4,012,375.
+Текущий пакет: 1; optimizer updates: 4,636,375.
 
 ## natural, бюджет 50000 transitions
 

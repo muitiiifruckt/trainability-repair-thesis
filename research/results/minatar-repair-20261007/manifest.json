@@ -24371,6 +24371,150 @@
       ],
       "status": "complete",
       "finished_at": 1791551423.5207286
+    },
+    "mechanisms:natural_asterix_seed0_age50000:0": {
+      "artifact_path": "mechanisms\\natural_asterix_seed0_age50000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791551545.9271488
+    },
+    "mechanisms:natural_asterix_seed0_age50000:1": {
+      "artifact_path": "mechanisms\\natural_asterix_seed0_age50000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791551646.1125805
+    },
+    "mechanisms:natural_asterix_seed0_age200000:0": {
+      "artifact_path": "mechanisms\\natural_asterix_seed0_age200000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791551748.2081697
+    },
+    "mechanisms:natural_asterix_seed0_age200000:1": {
+      "artifact_path": "mechanisms\\natural_asterix_seed0_age200000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791551850.0901709
+    },
+    "mechanisms:natural_breakout_seed2_age50000:0": {
+      "artifact_path": "mechanisms\\natural_breakout_seed2_age50000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791551951.8730698
+    },
+    "mechanisms:natural_breakout_seed2_age50000:1": {
+      "artifact_path": "mechanisms\\natural_breakout_seed2_age50000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552052.3611786
+    },
+    "mechanisms:natural_breakout_seed2_age200000:0": {
+      "artifact_path": "mechanisms\\natural_breakout_seed2_age200000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552167.0856493
+    },
+    "mechanisms:natural_breakout_seed2_age200000:1": {
+      "artifact_path": "mechanisms\\natural_breakout_seed2_age200000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552281.6823173
+    },
+    "mechanisms:natural_breakout_seed1_age50000:0": {
+      "artifact_path": "mechanisms\\natural_breakout_seed1_age50000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552382.8472834
+    },
+    "mechanisms:natural_breakout_seed1_age50000:1": {
+      "artifact_path": "mechanisms\\natural_breakout_seed1_age50000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552485.0987077
+    },
+    "mechanisms:natural_breakout_seed1_age200000:0": {
+      "artifact_path": "mechanisms\\natural_breakout_seed1_age200000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552602.5233617
+    },
+    "mechanisms:natural_breakout_seed1_age200000:1": {
+      "artifact_path": "mechanisms\\natural_breakout_seed1_age200000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552719.209273
+    },
+    "mechanisms:natural_asterix_seed1_age50000:0": {
+      "artifact_path": "mechanisms\\natural_asterix_seed1_age50000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552817.7790737
+    },
+    "mechanisms:natural_asterix_seed1_age50000:1": {
+      "artifact_path": "mechanisms\\natural_asterix_seed1_age50000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791552916.3041737
+    },
+    "mechanisms:natural_asterix_seed1_age200000:0": {
+      "artifact_path": "mechanisms\\natural_asterix_seed1_age200000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553022.470222
+    },
+    "mechanisms:natural_asterix_seed1_age200000:1": {
+      "artifact_path": "mechanisms\\natural_asterix_seed1_age200000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553128.3269987
+    },
+    "mechanisms:natural_breakout_seed0_age50000:0": {
+      "artifact_path": "mechanisms\\natural_breakout_seed0_age50000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553229.8195775
+    },
+    "mechanisms:natural_breakout_seed0_age50000:1": {
+      "artifact_path": "mechanisms\\natural_breakout_seed0_age50000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553332.2615044
+    },
+    "mechanisms:natural_breakout_seed0_age200000:0": {
+      "artifact_path": "mechanisms\\natural_breakout_seed0_age200000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553451.0592089
+    },
+    "mechanisms:natural_breakout_seed0_age200000:1": {
+      "artifact_path": "mechanisms\\natural_breakout_seed0_age200000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553569.1341
+    },
+    "mechanisms:natural_asterix_seed2_age50000:0": {
+      "artifact_path": "mechanisms\\natural_asterix_seed2_age50000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553667.6772404
+    },
+    "mechanisms:natural_asterix_seed2_age50000:1": {
+      "artifact_path": "mechanisms\\natural_asterix_seed2_age50000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553769.2789342
+    },
+    "mechanisms:natural_asterix_seed2_age200000:0": {
+      "artifact_path": "mechanisms\\natural_asterix_seed2_age200000_r0.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553877.70635
+    },
+    "mechanisms:natural_asterix_seed2_age200000:1": {
+      "artifact_path": "mechanisms\\natural_asterix_seed2_age200000_r1.json",
+      "updates": 26000,
+      "status": "complete",
+      "finished_at": 1791553987.18463
     }
   },
   "packages": [
@@ -24575,10 +24719,10 @@
   "active_package": {
     "id": 1,
     "started_at": 1791492518.3778272,
-    "updates": 4012375,
-    "wall_time_sec": 58908.98899483714
+    "updates": 4636375,
+    "wall_time_sec": 61468.82612873714
   },
-  "updated_at": 1791551427.366826,
+  "updated_at": 1791553987.2039576,
   "worker_pid": 16652,
   "queue": {
     "stages": [
@@ -25079,6 +25223,11 @@
       "series": "package_0",
       "time": 1791492521.1030347,
       "stdout": "[codex/trainability-review b66bd56] Research: package_0\n 8 files changed, 5818 insertions(+), 46 deletions(-)\n create mode 100644 research/results/minatar-repair-20261007/checkpoints.jsonl\n create mode 100644 research/results/minatar-repair-20261007/diagnostics.jsonl\n create mode 100644 research/results/minatar-repair-20261007/outcomes.jsonl\n create mode 100644 research/results/minatar-repair-20261007/paired_effects_0.png"
+    },
+    {
+      "series": "first_online_screen_96_branches",
+      "time": 1791551444.6009889,
+      "stdout": "[codex/trainability-review ef681ab] Research: first_online_screen_96_branches\n 6 files changed, 20964 insertions(+), 191 deletions(-)"
     }
   ]
 }
