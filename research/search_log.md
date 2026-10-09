@@ -62,3 +62,13 @@ Fixed-budget формализация, optimizer/weight ablation, clone-and-inte
 24 дополнительных novelty queries с filters и ограничениями записаны в [отдельном журнале](../notes/infrastructure_and_forward_search.md). Добавлены TeLAPA/PAME/SBP-P3O; это targeted search, не citation-graph export. Проверены приложения Injection, Asadi/AdamRel, assumptions SWD/AdamO и pinned author code Primacy/Juliani/OPEN/Plasticine/SWD. Код AdamRel expired, Injection exact code не найден. Полные paths, SHA и permalink evidence — в audit notes.
 
 После этого пересмотрены menu semantics, probing baseline, costs и novelty wording. SWD full-text lead закрыт для релевантных theorem/proof sections; окончательные publisher BibTeX ASlib/Agarwal ещё в очереди. Собственный synthetic control выполнен отдельно; авторские экспериментальные результаты не реплицировались.
+
+## 2026-10-09 — дополнительный novelty-проход B2 (дебат) и поиск по agent-практикам
+
+Метод: 7 запросов WebSearch standard (US-only индекс) и одна аннотация (WebFetch); прямой конкурент (prospective выбор типа repair по pre-repair diagnostics с regret на held-out средах) **не найден**. Отрицательный поиск ничего не доказывает; полные тексты не читались.
+Discovery leads (не canonical, уровень проверки — abstract/сниппет):
+- [AltNet, arXiv 2512.01034, AAMAS 2026](https://arxiv.org/pdf/2512.01034v2) — две сети, периодическая замена; фиксированное расписание, не диагностика.
+- [He 2026, arXiv 2603.21173](https://arxiv.org/abs/2603.21173) — по аннотации: dormancy/effective rank как «симптомы», потеря пластичности специфична для задачи; скептический prior против универсального диагностического сигнала.
+- DrM / ACE (в обзоре arXiv 2411.04832, уже canonical) адаптируют **силу** reset по метрике — не выбор типа.
+Уже в canonical bibliography: Juliani & Ash 2405.19153, Plasticine 2504.17490, Lyle 2402.18762, обзор 2411.04832, Injection 2305.15555, Resetting the Optimizer 2306.17833.
+Записи об agent-практиках: [docs/agent_research_practices.md](../docs/agent_research_practices.md) (сниппеты, не полные тексты).
