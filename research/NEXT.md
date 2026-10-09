@@ -2,6 +2,14 @@
 
 Обновлено: 2026-10-08. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
 
+## ОСТАНОВЛЕНО пользователем (2026-10-09, ~11:30)
+Кампания `minatar-repair-20261007` остановлена корректно по просьбе пользователя: watchdog, supervisor, coordinator и workers завершены; `supervisor.lock`/`worker.lock` свободны,
+worker leases мертвы, `outcomes.jsonl` = 48 строк (Breakout полностью: seeds 0,1,2 x 50k/200k x 4 действия x 2 repeats; Asterix seed 0 / 50k начат — частичные ветки продолжатся с savepoint).
+**Возобновить одной командой** (из корня проекта): `powershell -ExecutionPolicy Bypass -File scriptsesume_campaign.ps1` (запускает supervisor; он сам продолжит очередь с теми же seeds).
+Остановить снова: `powershell -ExecutionPolicy Bypass -File scripts\stop_campaign.ps1`. Внешний watchdog (`scripts/campaign_watchdog.py`) не запущен; запускать по желанию.
+Субагенты дебата завершены; преемники стартуют по `research/debate/handoff_A2.md` и `handoff_B3.md`. Не править `experiments/`/`configs/` до конца кампании (SHA в `dependency_manifest.json`).
+Итог по Breakout и открытые гипотезы — `notes/parallel_vectors_20261008.md`; проект следующей кампании — `docs/next_campaign_proposal.md`.
+
 ## Состояние
 - Кампания `minatar-repair-20261007`: online screen идёт (supervisor `scripts/research_supervisor.py --workers 2`, перезапущен 2026-10-08 после ~22 ч простоя).
 - Живые данные: `runs/minatar-repair-20261007/{progress.json,outcomes.jsonl,supervisor.json}`. Конфигурацию не менять.
