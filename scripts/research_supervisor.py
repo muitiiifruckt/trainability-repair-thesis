@@ -91,7 +91,7 @@ def supervise(config_path,interval=30,workers=2):
                 state["worker_limit"] = max(1,min(state["worker_limit"],2))
                 if state.get("last_error") == signature:
                     state["worker_limit"] = 1
-            if signature and signature == state.get("last_error"):
+            if signature.strip(":") and signature == state.get("last_error"):
                 state["same_error_restarts"] = state.get("same_error_restarts",0)+1
             else:
                 state["last_error"] = signature
