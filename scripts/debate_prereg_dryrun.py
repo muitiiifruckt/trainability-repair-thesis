@@ -106,7 +106,7 @@ def compare(X, y, h, g_true, rng, level, legacy=False):
     ub_name = max(U, key=lambda m: U[m].mean()); d = per_hist(np.where(pc > 0, ys, 0.0), h, hs) - U[ub_name]
     u_lb = float(np.quantile([d[rng.integers(0, len(d), len(d))].mean() for _ in range(300)], ALPHA))
     return dict(positive=bool(enough and T > 0 and p < ALPHA and lb > 0), T=float(T), p=float(p), lb=lb, ub=ub, best=best,
-                enough=bool(enough), util_lb_pos=bool(u_lb > 0))
+                enough=bool(enough), util_lb_pos=bool(u_lb > 0), ponly=bool(enough and T > 0 and p < ALPHA))
 
 
 def simulate(s, n_hist, rng):
@@ -147,6 +147,7 @@ def summarise(recs, n_sims):
     out["mean_T"] = round(float(np.mean([r["T"] for r in recs])), 3); out["mean_p"] = round(float(np.mean([r["p"] for r in recs])), 3)
     out["best_baseline_freq"] = {b: round(float(np.mean([r["best"] == b for r in recs])), 2) for b in sorted({r["best"] for r in recs})}
     out["util_lb_positive_rate"] = float(np.mean([r["util_lb_pos"] for r in recs]))
+    out["p_only_rate"] = float(np.mean([r["ponly"] for r in recs]))   # T>0 & permutation p<0.025, without the bootstrap-LB condition
     for d in DELTAS:
         neg = float(np.mean([(not r["positive"]) and r["enough"] and r["ub"] < d for r in recs]))
         out[f"negative_rate_delta{d}"] = neg; out[f"uncertain_rate_delta{d}"] = round(1 - pos - neg, 3)
