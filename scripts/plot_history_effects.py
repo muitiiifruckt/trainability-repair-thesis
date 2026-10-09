@@ -48,7 +48,8 @@ def render(snapshot, output):
         legend.update(zip(labels, handles))
     fig.legend(list(legend.values()), list(legend), loc="lower center", bbox_to_anchor=(.5, .075),
                frameon=False, ncol=4, fontsize=9)
-    fig.suptitle("Partial online screen: effects differ across histories and games", fontsize=13)
+    prefix = "Online screen" if data.get("kind") == "completed_pilot_screen" else "Partial online screen"
+    fig.suptitle(f"{prefix}: effects differ across histories and games", fontsize=13)
     fig.text(.5, .015, "Each history averages two ages and two continuation repeats. "
              "Incomplete histories excluded; no population confidence intervals.", ha="center", fontsize=9)
     fig.tight_layout(rect=(0, .18, 1, .93))

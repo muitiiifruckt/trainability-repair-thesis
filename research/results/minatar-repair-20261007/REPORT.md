@@ -1,5 +1,7 @@
 # Результаты автономной программы
 
+> Статистическая оговорка для pilot screen: bootstrap intervals ниже при трёх независимых histories/game не используются как подтверждение population effects. Актуальная интерпретация и полный срез — [CURRENT_STATUS.md](CURRENT_STATUS.md) и [monitoring/20261009T1310Z.md](monitoring/20261009T1310Z.md). Статус остаётся неопределённым до independent confirmation и controls.
+
 Это живой отчёт: завершённые запуски отделены от запланированных. Минимум для вывода — независимые истории обучения и continuation repeats.
 
 Обновление: 2026-10-09 16:10:44; серия: first_online_screen_96_branches.

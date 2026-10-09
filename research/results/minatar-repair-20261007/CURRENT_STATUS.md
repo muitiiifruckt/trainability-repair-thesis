@@ -1,20 +1,25 @@
 # Состояние исследования, 9 октября 2026
 
-Срез около 14:41 MSK: **72 из 96 screening-веток завершены**, исходные 12 checkpoints готовы. Coordinator и supervisor работают на двух workers. Прерванные после отсутствия процессов расчёты возобновлены с прежними seeds и matched savepoints; код learner, scientific config и очередь не менялись.
+**Первый online screening завершён: 96/96 веток**, 12 checkpoints, шесть исходных histories — по три в Breakout и Asterix. У каждой history два возраста и два continuation repeats. Все 24 checkpoint×repeat панели полные, budgets по 50k transitions/updates, continuation/evaluation seeds внутри панели совпадают. Numerical failures, нечисловых finals и дублей нет. Код и scientific config соответствуют исходному manifest.
 
-Полностью завершены три Breakout histories и одна Asterix history: каждая содержит два возраста и два начальных repeats. У второй Asterix history пока завершён только младший возраст. Numerical failures и расхождений бюджета нет. Confirm repeats 2/3 и механистические серии ещё впереди.
+Средний final-return effect относительно matched continue; сначала усредняются возраста и repeats внутри source history:
 
-Средний final-return effect относительно continue в полных histories:
+| Repair | Breakout, 3 histories | Asterix, 3 histories |
+|---|---:|---:|
+| Adam reset | −0.500 | +0.338 |
+| Head reset | +0.071 | −0.004 |
+| Head + Adam reset | −0.696 | +0.771 |
 
-- Breakout: Adam reset **−0.500**, head reset **+0.071**, совместный reset **−0.696**; три histories.
-- Asterix: Adam reset **+0.3875**, head reset **−0.0625**, совместный reset **+0.850**; одна history.
+Adam и совместный reset имеют положительное среднее во всех трёх Asterix histories и отрицательное во всех трёх Breakout histories. Head reset меняет знак между histories обеих игр. Head×optimizer interaction по Breakout: −0.563/+0.462/−0.700; по Asterix: +0.525/+0.088/+0.700. Знак среднего interaction одной history не означает согласия всех её отдельных панелей.
 
-Это описательные числа, без population confidence intervals. Возрасты и repeats сначала усредняются внутри history; незавершённые histories исключены из этих средних. По Breakout ранний кандидат на устойчивое head×optimizer взаимодействие не подтвердился: знак interaction меняется между histories. Первое отличие Asterix может отражать особенности игры; диагностическая ценность индивидуальных признаков ещё не проверена. Все направления пока **неопределённы**.
+Это описательные результаты пилота, без population confidence intervals. Независимая единица — source history, а не 24 панели и не 96 веток. Различие игр создаёт кандидата для следующей проверки, но пока не доказывает пользу diagnostics сверх простого контекста игры или age/return. Нет оснований объявлять optimizer state «испорченным» только потому, что его reset помог. Классификация: **неопределённо**; полезность индивидуального selector не подтверждена.
 
-Следующий шаг: завершить оставшиеся 24 screening-ветки, затем fixed-TD/LR controls и независимые continuation repeats. Seaquest/Freeway остаются закрытыми для development и policy evaluation до допустимого freeze.
+Head и совместный reset сразу уменьшают return: средняя парная потеря −3.058 в Breakout и −0.850 в Asterix. Adam reset сохраняет функцию и immediate return. Поэтому gain от собственного post-repair старта не заменяет primary final return: разрушение функции создаёт искусственно большой recovery gain.
 
-Старый автоматически созданный `REPORT.md` содержит исторический срез 16 строк. Его интервалы при малом числе histories не используются для текущих научных выводов. Дополнительные аудиты — в `NOTES_manual.md`; этот файл и monitoring сохраняются отдельно от перезаписи генератором.
+Runner автоматически перешёл к mechanisms. Общие fixed-TD transitions, cached targets и minibatch tapes проверяют fitting отдельно от online occupancy/target feedback; timestep/LR controls проверяют объяснение через величину шага. Затем нужны заранее предусмотренные independent repeats 2/3. Seaquest/Freeway остаются закрытыми до допустимого freeze и подтверждённого development signal.
 
-В первом пакете manifest зафиксирован wall time 25.56 h, включающий остановки. Строгая календарная граница 24 h в текущем runner не подтверждена; дефект учтён в completion audit. Update counters пакетов ниже 12M; metadata сохранены без исправления чисел задним числом.
+Данные, график и журнал полного screening: `monitoring/20261009T1310Z.json`, `monitoring/history_effects_20261009T1310Z.png`, `monitoring/20261009T1310Z.md`. Root outcomes SHA256: `fe3ee030f585111795edc9fbe17c8833ea4068b8326e0cf4a4447d9264ea396b`. Снимок проверен независимо вторым агентом; воспроизводимые scripts не импортируют learner и выполняют ноль optimizer updates.
 
-Raw SHA, данные, per-history effects, состояние процессов и объяснение следующего теста: `monitoring/20261009T1140Z.json` и `monitoring/20261009T1140Z.md`. Воспроизводимый график: `monitoring/history_effects_20261009T1140Z.png`.
+Автоматический `REPORT.md` обновлён на 96 строк и содержит bootstrap intervals при n=3/game. Эти интервалы не используются для научных выводов: coverage на таком количестве histories не подтверждён. Manual status и immutable monitoring сохраняются отдельно от генератора.
+
+На срезе около 16:13 MSK coordinator 16652 и supervisor 10116 живы, новых инфраструктурных ошибок нет. Первый закрытый пакет имеет wall time 25.56 h, включающий остановки; строгая календарная граница 24 h текущим runner не обеспечена. Активный пакет — около 16.4 h и 4.04M accounted updates, ниже 12M. Metadata не переписывались. Обязательные пробелы реализации перечислены в `docs/research_program_completion_audit.md`; завершение текущей реализованной батареи ещё не означает выполнения всей программы.
