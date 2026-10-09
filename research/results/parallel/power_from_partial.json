@@ -1,20 +1,20 @@
 {
  "breakout/head_and_optimizer_reset": {
   "n_histories": 3,
-  "mean": -0.896,
-  "sd_between_histories": 0.56,
-  "histories_for_80pct_power": 6
+  "mean": -0.696,
+  "sd_between_histories": 0.69,
+  "histories_for_80pct_power": 10
  },
  "breakout/head_reset": {
   "n_histories": 3,
-  "mean": -0.158,
-  "sd_between_histories": 0.256,
-  "histories_for_80pct_power": 23
+  "mean": 0.071,
+  "sd_between_histories": 0.633,
+  "histories_for_80pct_power": null
  },
  "breakout/optimizer_reset": {
   "n_histories": 3,
-  "mean": -0.538,
-  "sd_between_histories": 0.127,
-  "histories_for_80pct_power": 3
+  "mean": -0.5,
+  "sd_between_histories": 0.182,
+  "histories_for_80pct_power": 4
  }
 }

@@ -5,7 +5,7 @@
 ## Состояние
 - Кампания `minatar-repair-20261007`: online screen идёт (supervisor `scripts/research_supervisor.py --workers 2`, перезапущен 2026-10-08 после ~22 ч простоя).
 - Живые данные: `runs/minatar-repair-20261007/{progress.json,outcomes.jsonl,supervisor.json}`. Конфигурацию не менять.
-- Завершено 32 из 96 основных веток (2026-10-09: Breakout seeds 0,1 x возрасты 50k/200k); живой отчёт — `research/results/minatar-repair-20261007/REPORT.md`.
+- Завершено 48 из 96 основных веток (2026-10-09: Breakout полностью — seeds 0,1,2 x 50k/200k; Asterix начат); живой отчёт — `research/results/minatar-repair-20261007/REPORT.md`.
 
 ## Внимание: сон машины
 Кампания приостанавливается, когда Windows уходит в сон (ночью 9–10 ч); это не сбой, возобновление корректно (E1–E4 в `research/debate/log.md`). Сон от сети отключён, значит усыпление ручное. Не менять питание без решения пользователя.
@@ -20,7 +20,7 @@
 |---|---|---|---|
 | H-int | head×optimizer взаимодействие отрицательно | не реплицировано на 2-й истории (−0.05 против −0.56; n=2, неопределённо) | contrast по всем историям, затем fixed-TD |
 | H-split | вред joint reset — моменты Adam head vs body | proposed, не запущено | development probe с раздельным reset |
-| H-age | знак head reset зависит от возраста | proposed | age×repair в анализе |
+| H-age | знак head reset зависит от возраста | не подтверждена на 3 историях (+0.21 / −0.07) | age×repair в анализе; к тому же age = epsilon = replay |
 | H-cost | immediate drop head reset учитывать в utility selector | proposed | immediate/recovery декомпозиция |
 
 ## Дебат A/B (research/debate/)
