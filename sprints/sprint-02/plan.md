@@ -15,7 +15,7 @@
 - [ ] Решение «репликация или нет» — запись в `research/decisions.md` с обоснованием числами
 
 **Руководитель**
-- [ ] Учесть решения встречи (фокус и формат работы) — `notes/supervisor_meetings.md`
+- [ ] Учесть решения встречи (фокус и формат работы) — `personal/supervisor_meetings.md` (локально, не в git)
 
 **Методика**
 - [ ] Prereg v3: закончить dry-run (мощность, ворота negative, 4 repeat) и получить независимое воспроизведение — `research/debate/prereg_diag_sign.md` помечен «заморожен» в `accepted.md`

@@ -20,3 +20,6 @@ Thumbs.db
 .DS_Store
 research/external/
 research/debate/tmp/
+
+# Личные пояснительные материалы (шпаргалки, подготовка к встречам) — не публикуются
+personal/
