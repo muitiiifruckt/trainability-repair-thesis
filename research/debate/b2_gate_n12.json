@@ -1,0 +1,82 @@
+{
+ "noise_mean=0.5|b_D=0.0|n=12": {
+  "mean_gate_r": 0.454,
+  "pass_rate": 0.762,
+  "power_all": 0.028,
+  "power_given_pass": 0.029,
+  "power_given_fail": 0.025,
+  "sec": 4.6
+ },
+ "noise_mean=0.5|b_D=0.8|n=12": {
+  "mean_gate_r": 0.671,
+  "pass_rate": 0.964,
+  "power_all": 0.674,
+  "power_given_pass": 0.668,
+  "power_given_fail": 0.833,
+  "sec": 4.5
+ },
+ "noise_mean=0.7|b_D=0.0|n=12": {
+  "mean_gate_r": 0.307,
+  "pass_rate": 0.564,
+  "power_all": 0.024,
+  "power_given_pass": 0.025,
+  "power_given_fail": 0.023,
+  "sec": 5.2
+ },
+ "noise_mean=0.7|b_D=0.8|n=12": {
+  "mean_gate_r": 0.53,
+  "pass_rate": 0.858,
+  "power_all": 0.578,
+  "power_given_pass": 0.608,
+  "power_given_fail": 0.394,
+  "sec": 4.3
+ },
+ "noise_mean=1.0|b_D=0.0|n=12": {
+  "mean_gate_r": 0.182,
+  "pass_rate": 0.386,
+  "power_all": 0.022,
+  "power_given_pass": 0.016,
+  "power_given_fail": 0.026,
+  "sec": 4.4
+ },
+ "noise_mean=1.0|b_D=0.8|n=12": {
+  "mean_gate_r": 0.357,
+  "pass_rate": 0.602,
+  "power_all": 0.416,
+  "power_given_pass": 0.472,
+  "power_given_fail": 0.332,
+  "sec": 4.4
+ },
+ "noise_mean=1.4|b_D=0.0|n=12": {
+  "mean_gate_r": 0.103,
+  "pass_rate": 0.274,
+  "power_all": 0.022,
+  "power_given_pass": 0.022,
+  "power_given_fail": 0.022,
+  "sec": 4.3
+ },
+ "noise_mean=1.4|b_D=0.8|n=12": {
+  "mean_gate_r": 0.227,
+  "pass_rate": 0.42,
+  "power_all": 0.234,
+  "power_given_pass": 0.248,
+  "power_given_fail": 0.224,
+  "sec": 4.3
+ },
+ "noise_mean=2.0|b_D=0.0|n=12": {
+  "mean_gate_r": 0.043,
+  "pass_rate": 0.196,
+  "power_all": 0.018,
+  "power_given_pass": 0.01,
+  "power_given_fail": 0.02,
+  "sec": 4.3
+ },
+ "noise_mean=2.0|b_D=0.8|n=12": {
+  "mean_gate_r": 0.117,
+  "pass_rate": 0.284,
+  "power_all": 0.134,
+  "power_given_pass": 0.155,
+  "power_given_fail": 0.126,
+  "sec": 4.3
+ }
+}
