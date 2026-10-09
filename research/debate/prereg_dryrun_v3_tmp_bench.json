@@ -1,0 +1,90 @@
+{
+ "_config": {
+  "mode": "main",
+  "n_hist": 12,
+  "n_sims": 100,
+  "n_perm": 199,
+  "scenarios": "null_hetero_coupled",
+  "scheme": "d_perm",
+  "nuis": "game",
+  "lev": 0,
+  "rankD": 0,
+  "rankY": 0,
+  "rep": 2,
+  "n_age": 2,
+  "levels": "L2,L1",
+  "seed": 20261010,
+  "tag": "tmp_bench"
+ },
+ "null_hetero_coupled": {
+  "L2": {
+   "informative_rate": 0.12,
+   "informative_wilson95": [
+    0.07,
+    0.1981
+   ],
+   "useful_rate": 0.07,
+   "useful_wilson95": [
+    0.0343,
+    0.1375
+   ],
+   "mean_T": -0.214,
+   "mean_p": 0.587,
+   "T_true_pop": -0.124,
+   "frac_T_pos": 0.31,
+   "ub_below_Ttrue": 0.03,
+   "lb_above_Ttrue": 0.13,
+   "ci_covers_Ttrue": 0.84,
+   "negative_rate_delta0.05": 0.38,
+   "negative_rate_delta0.1": 0.48,
+   "negative_rate_delta0.2": 0.59,
+   "gate_pass_rate": 0.34,
+   "informative_given_pass": 0.1471,
+   "informative_given_fail": 0.1061,
+   "useful_given_pass": 0.1176,
+   "n_pass": 34,
+   "mean_icc_hat": 0.133,
+   "enough_rate": 1.0,
+   "n_perm_used": 199,
+   "exact_enumeration": false
+  },
+  "L1": {
+   "informative_rate": 0.01,
+   "informative_wilson95": [
+    0.0018,
+    0.0545
+   ],
+   "useful_rate": 0.0,
+   "useful_wilson95": [
+    0.0,
+    0.037
+   ],
+   "mean_T": -0.102,
+   "mean_p": 0.529,
+   "T_true_pop": -0.068,
+   "frac_T_pos": 0.19,
+   "ub_below_Ttrue": 0.19,
+   "lb_above_Ttrue": 0.02,
+   "ci_covers_Ttrue": 0.79,
+   "negative_rate_delta0.05": 0.54,
+   "negative_rate_delta0.1": 0.65,
+   "negative_rate_delta0.2": 0.84,
+   "gate_pass_rate": 0.34,
+   "informative_given_pass": 0.0,
+   "informative_given_fail": 0.0152,
+   "useful_given_pass": 0.0,
+   "n_pass": 34,
+   "mean_icc_hat": 0.133,
+   "enough_rate": 1.0,
+   "n_perm_used": 199,
+   "exact_enumeration": false
+  },
+  "n_hist": 12,
+  "n_sims": 100,
+  "rep": 2,
+  "scheme": "d_perm",
+  "signal_share_D": 0.0,
+  "true_icc_single": null,
+  "sec": 4.3
+ }
+}

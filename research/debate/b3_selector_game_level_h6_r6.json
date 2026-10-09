@@ -1,0 +1,8 @@
+{
+ "scenario": "game_level",
+ "n_sims": 2,
+ "B": 100,
+ "selector_gate_counts": {
+  "no_demonstrated_increment_over_age_and_sbs": 2
+ }
+}

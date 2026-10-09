@@ -1,0 +1,31 @@
+{
+ "scenario": "age_level",
+ "n_sims": 100,
+ "B": 200,
+ "hist_per_game": 6,
+ "repeats": 6,
+ "sigma": 0.7,
+ "tau": 0.0,
+ "gate_counts": {
+  "uncertain": 74,
+  "heterogeneous": 26
+ },
+ "gate_frac": {
+  "uncertain": 0.74,
+  "heterogeneous": 0.26
+ },
+ "param_status": {
+  "no_demonstrated_benefit_at_this_budget": 36,
+  "uncertain": 64
+ },
+ "mean_adv_vs_sbs": {
+  "breakout": 0.1958,
+  "asterix": 0.046
+ },
+ "mean_lb": {
+  "breakout": -0.1046,
+  "asterix": -0.0289
+ },
+ "mean_unique_choices": 3.1,
+ "seconds": 173.3
+}

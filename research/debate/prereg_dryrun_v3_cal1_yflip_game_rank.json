@@ -1,0 +1,374 @@
+{
+ "_config": {
+  "mode": "main",
+  "n_hist": 12,
+  "n_sims": 1000,
+  "n_perm": 999,
+  "scenarios": "null,null_hetero_coupled,null_skew,null_age_x_game,null_heavy_tail",
+  "scheme": "y_flip",
+  "nuis": "game",
+  "lev": 0,
+  "rankD": 1,
+  "rankY": 1,
+  "rep": 2,
+  "n_age": 2,
+  "levels": "L2,L1",
+  "seed": 20261010,
+  "tag": "cal1_yflip_game_rank"
+ },
+ "null": {
+  "L2": {
+   "informative_rate": 0.027,
+   "informative_wilson95": [
+    0.0186,
+    0.039
+   ],
+   "useful_rate": 0.01,
+   "useful_wilson95": [
+    0.0054,
+    0.0183
+   ],
+   "mean_T": -0.111,
+   "mean_p": 0.495,
+   "T_true_pop": -0.109,
+   "frac_T_pos": 0.216,
+   "ub_below_Ttrue": 0.085,
+   "lb_above_Ttrue": 0.054,
+   "ci_covers_Ttrue": 0.861,
+   "negative_rate_delta0.05": 0.496,
+   "negative_rate_delta0.1": 0.595,
+   "negative_rate_delta0.2": 0.746,
+   "gate_pass_rate": 0.295,
+   "informative_given_pass": 0.0271,
+   "informative_given_fail": 0.027,
+   "useful_given_pass": 0.0102,
+   "n_pass": 295,
+   "mean_icc_hat": 0.179,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "L1": {
+   "informative_rate": 0.034,
+   "informative_wilson95": [
+    0.0244,
+    0.0471
+   ],
+   "useful_rate": 0.011,
+   "useful_wilson95": [
+    0.0062,
+    0.0196
+   ],
+   "mean_T": -0.14,
+   "mean_p": 0.485,
+   "T_true_pop": -0.14,
+   "frac_T_pos": 0.196,
+   "ub_below_Ttrue": 0.071,
+   "lb_above_Ttrue": 0.043,
+   "ci_covers_Ttrue": 0.886,
+   "negative_rate_delta0.05": 0.415,
+   "negative_rate_delta0.1": 0.521,
+   "negative_rate_delta0.2": 0.688,
+   "gate_pass_rate": 0.295,
+   "informative_given_pass": 0.0305,
+   "informative_given_fail": 0.0355,
+   "useful_given_pass": 0.0102,
+   "n_pass": 295,
+   "mean_icc_hat": 0.179,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "n_hist": 12,
+  "n_sims": 1000,
+  "rep": 2,
+  "scheme": "y_flip",
+  "signal_share_D": 0.0,
+  "true_icc_single": null,
+  "sec": 36.5
+ },
+ "null_hetero_coupled": {
+  "L2": {
+   "informative_rate": 0.035,
+   "informative_wilson95": [
+    0.0253,
+    0.0483
+   ],
+   "useful_rate": 0.013,
+   "useful_wilson95": [
+    0.0076,
+    0.0221
+   ],
+   "mean_T": -0.113,
+   "mean_p": 0.49,
+   "T_true_pop": -0.11,
+   "frac_T_pos": 0.247,
+   "ub_below_Ttrue": 0.084,
+   "lb_above_Ttrue": 0.07,
+   "ci_covers_Ttrue": 0.846,
+   "negative_rate_delta0.05": 0.446,
+   "negative_rate_delta0.1": 0.557,
+   "negative_rate_delta0.2": 0.715,
+   "gate_pass_rate": 0.351,
+   "informative_given_pass": 0.0399,
+   "informative_given_fail": 0.0324,
+   "useful_given_pass": 0.0171,
+   "n_pass": 351,
+   "mean_icc_hat": 0.166,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "L1": {
+   "informative_rate": 0.022,
+   "informative_wilson95": [
+    0.0146,
+    0.0331
+   ],
+   "useful_rate": 0.011,
+   "useful_wilson95": [
+    0.0062,
+    0.0196
+   ],
+   "mean_T": -0.144,
+   "mean_p": 0.5,
+   "T_true_pop": -0.144,
+   "frac_T_pos": 0.206,
+   "ub_below_Ttrue": 0.068,
+   "lb_above_Ttrue": 0.041,
+   "ci_covers_Ttrue": 0.891,
+   "negative_rate_delta0.05": 0.467,
+   "negative_rate_delta0.1": 0.559,
+   "negative_rate_delta0.2": 0.735,
+   "gate_pass_rate": 0.351,
+   "informative_given_pass": 0.0285,
+   "informative_given_fail": 0.0185,
+   "useful_given_pass": 0.0114,
+   "n_pass": 351,
+   "mean_icc_hat": 0.166,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "n_hist": 12,
+  "n_sims": 1000,
+  "rep": 2,
+  "scheme": "y_flip",
+  "signal_share_D": 0.0,
+  "true_icc_single": null,
+  "sec": 31.3
+ },
+ "null_skew": {
+  "L2": {
+   "informative_rate": 0.022,
+   "informative_wilson95": [
+    0.0146,
+    0.0331
+   ],
+   "useful_rate": 0.011,
+   "useful_wilson95": [
+    0.0062,
+    0.0196
+   ],
+   "mean_T": -0.11,
+   "mean_p": 0.492,
+   "T_true_pop": -0.108,
+   "frac_T_pos": 0.219,
+   "ub_below_Ttrue": 0.088,
+   "lb_above_Ttrue": 0.043,
+   "ci_covers_Ttrue": 0.869,
+   "negative_rate_delta0.05": 0.455,
+   "negative_rate_delta0.1": 0.579,
+   "negative_rate_delta0.2": 0.741,
+   "gate_pass_rate": 0.321,
+   "informative_given_pass": 0.0125,
+   "informative_given_fail": 0.0265,
+   "useful_given_pass": 0.0062,
+   "n_pass": 321,
+   "mean_icc_hat": 0.203,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "L1": {
+   "informative_rate": 0.024,
+   "informative_wilson95": [
+    0.0162,
+    0.0355
+   ],
+   "useful_rate": 0.004,
+   "useful_wilson95": [
+    0.0016,
+    0.0102
+   ],
+   "mean_T": -0.157,
+   "mean_p": 0.512,
+   "T_true_pop": -0.156,
+   "frac_T_pos": 0.164,
+   "ub_below_Ttrue": 0.067,
+   "lb_above_Ttrue": 0.038,
+   "ci_covers_Ttrue": 0.895,
+   "negative_rate_delta0.05": 0.489,
+   "negative_rate_delta0.1": 0.576,
+   "negative_rate_delta0.2": 0.742,
+   "gate_pass_rate": 0.321,
+   "informative_given_pass": 0.0218,
+   "informative_given_fail": 0.025,
+   "useful_given_pass": 0.0062,
+   "n_pass": 321,
+   "mean_icc_hat": 0.203,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "n_hist": 12,
+  "n_sims": 1000,
+  "rep": 2,
+  "scheme": "y_flip",
+  "signal_share_D": 0.0,
+  "true_icc_single": null,
+  "sec": 29.3
+ },
+ "null_age_x_game": {
+  "L2": {
+   "informative_rate": 0.016,
+   "informative_wilson95": [
+    0.0099,
+    0.0258
+   ],
+   "useful_rate": 0.007,
+   "useful_wilson95": [
+    0.0034,
+    0.0144
+   ],
+   "mean_T": -0.001,
+   "mean_p": 0.515,
+   "T_true_pop": 0.001,
+   "frac_T_pos": 0.464,
+   "ub_below_Ttrue": 0.122,
+   "lb_above_Ttrue": 0.067,
+   "ci_covers_Ttrue": 0.811,
+   "negative_rate_delta0.05": 0.171,
+   "negative_rate_delta0.1": 0.262,
+   "negative_rate_delta0.2": 0.445,
+   "gate_pass_rate": 0.31,
+   "informative_given_pass": 0.0129,
+   "informative_given_fail": 0.0174,
+   "useful_given_pass": 0.0,
+   "n_pass": 310,
+   "mean_icc_hat": 0.19,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "L1": {
+   "informative_rate": 0.017,
+   "informative_wilson95": [
+    0.0106,
+    0.0271
+   ],
+   "useful_rate": 0.008,
+   "useful_wilson95": [
+    0.0041,
+    0.0157
+   ],
+   "mean_T": -0.144,
+   "mean_p": 0.504,
+   "T_true_pop": -0.144,
+   "frac_T_pos": 0.168,
+   "ub_below_Ttrue": 0.072,
+   "lb_above_Ttrue": 0.036,
+   "ci_covers_Ttrue": 0.892,
+   "negative_rate_delta0.05": 0.458,
+   "negative_rate_delta0.1": 0.565,
+   "negative_rate_delta0.2": 0.746,
+   "gate_pass_rate": 0.31,
+   "informative_given_pass": 0.0194,
+   "informative_given_fail": 0.0159,
+   "useful_given_pass": 0.0065,
+   "n_pass": 310,
+   "mean_icc_hat": 0.19,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "n_hist": 12,
+  "n_sims": 1000,
+  "rep": 2,
+  "scheme": "y_flip",
+  "signal_share_D": 0.0,
+  "true_icc_single": null,
+  "sec": 29.5
+ },
+ "null_heavy_tail": {
+  "L2": {
+   "informative_rate": 0.019,
+   "informative_wilson95": [
+    0.0122,
+    0.0295
+   ],
+   "useful_rate": 0.004,
+   "useful_wilson95": [
+    0.0016,
+    0.0102
+   ],
+   "mean_T": -0.118,
+   "mean_p": 0.502,
+   "T_true_pop": -0.117,
+   "frac_T_pos": 0.197,
+   "ub_below_Ttrue": 0.064,
+   "lb_above_Ttrue": 0.053,
+   "ci_covers_Ttrue": 0.883,
+   "negative_rate_delta0.05": 0.492,
+   "negative_rate_delta0.1": 0.596,
+   "negative_rate_delta0.2": 0.762,
+   "gate_pass_rate": 0.36,
+   "informative_given_pass": 0.0167,
+   "informative_given_fail": 0.0203,
+   "useful_given_pass": 0.0028,
+   "n_pass": 360,
+   "mean_icc_hat": 0.221,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "L1": {
+   "informative_rate": 0.018,
+   "informative_wilson95": [
+    0.0114,
+    0.0283
+   ],
+   "useful_rate": 0.006,
+   "useful_wilson95": [
+    0.0028,
+    0.013
+   ],
+   "mean_T": -0.143,
+   "mean_p": 0.49,
+   "T_true_pop": -0.143,
+   "frac_T_pos": 0.196,
+   "ub_below_Ttrue": 0.07,
+   "lb_above_Ttrue": 0.039,
+   "ci_covers_Ttrue": 0.891,
+   "negative_rate_delta0.05": 0.431,
+   "negative_rate_delta0.1": 0.537,
+   "negative_rate_delta0.2": 0.719,
+   "gate_pass_rate": 0.36,
+   "informative_given_pass": 0.0167,
+   "informative_given_fail": 0.0187,
+   "useful_given_pass": 0.0056,
+   "n_pass": 360,
+   "mean_icc_hat": 0.221,
+   "enough_rate": 1.0,
+   "n_perm_used": 999,
+   "exact_enumeration": false
+  },
+  "n_hist": 12,
+  "n_sims": 1000,
+  "rep": 2,
+  "scheme": "y_flip",
+  "signal_share_D": 0.0,
+  "true_icc_single": null,
+  "sec": 29.0
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "scenario": "game_level",
+ "n_sims": 100,
+ "B": 200,
+ "hist_per_game": 6,
+ "repeats": 6,
+ "sigma": 0.7,
+ "tau": 0.0,
+ "gate_counts": {
+  "heterogeneous": 100
+ },
+ "gate_frac": {
+  "heterogeneous": 1.0
+ },
+ "param_status": {
+  "uncertain": 2,
+  "positive": 98
+ },
+ "mean_adv_vs_sbs": {
+  "breakout": -0.1144,
+  "asterix": 0.3785
+ },
+ "mean_lb": {
+  "breakout": -0.359,
+  "asterix": 0.2244
+ },
+ "mean_unique_choices": 3.01,
+ "seconds": 171.5
+}
