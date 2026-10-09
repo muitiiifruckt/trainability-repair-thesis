@@ -8,7 +8,7 @@
     "head_and_optimizer_reset"
   ],
   "missing_files": [],
-  "outcome_rows": 16,
+  "outcome_rows": 96,
   "bootstrap_repeats": 1000,
   "population_oracle_estimated": false,
   "selection_trained": false,
@@ -21,90 +21,150 @@
         50000
       ],
       "gradient_budget_warning": false,
-      "rows": 16,
-      "complete_checkpoints": 2,
-      "complete_repeat_panels": 4,
-      "source_histories": 1,
+      "rows": 96,
+      "complete_checkpoints": 12,
+      "complete_repeat_panels": 24,
+      "source_histories": 6,
       "minimum_complete_repeats": 2,
       "missing_action_rows": 0,
       "failed_rows_by_reason": {},
       "nonfinite_or_missing_final_rows": 0,
       "completed_environment_budget_mismatch_rows": 0,
       "baseline_qualification": {
-        "known_checkpoints": 2,
-        "learned_checkpoints": 2,
-        "unlearned_checkpoints": 0,
+        "known_checkpoints": 12,
+        "learned_checkpoints": 11,
+        "unlearned_checkpoints": 1,
         "unknown_checkpoints": 0,
         "rule": "explicit_baseline_learned_or_separate_source_return_above_random_plus_declared_margin"
       },
       "action_statistics": {
         "continue": {
           "paired_effect": {
+            "asterix": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
             "breakout": {
               "mean": 0.0,
               "ci95": [
                 0.0,
                 0.0
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "harm_fraction": {
+            "asterix": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
             "breakout": {
               "mean": 0.0,
               "ci95": [
                 0.0,
                 0.0
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "immediate_change": {
-            "breakout": {
-              "mean": -1.1749999999999998,
+            "asterix": {
+              "mean": 0.03749999999999996,
               "ci95": [
-                -1.3999999999999997,
-                -0.95
+                -0.13343750000000004,
+                0.17927083333333324
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -0.8666666666666666,
+              "ci95": [
+                -1.241770833333333,
+                -0.4249999999999998
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "paired_immediate_effect": {
+            "asterix": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
             "breakout": {
               "mean": 0.0,
               "ci95": [
                 0.0,
                 0.0
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "auc_effect": {
+            "asterix": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
             "breakout": {
               "mean": 0.0,
               "ci95": [
                 0.0,
                 0.0
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
@@ -112,71 +172,131 @@
         },
         "optimizer_reset": {
           "paired_effect": {
-            "breakout": {
-              "mean": -0.5125,
+            "asterix": {
+              "mean": 0.33749999999999997,
               "ci95": [
-                -0.6499999999999999,
-                -0.375
+                0.024999999999999977,
+                0.7083333333333334
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -0.5000000000000001,
+              "ci95": [
+                -0.7710416666666668,
+                -0.2541666666666668
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "harm_fraction": {
+            "asterix": {
+              "mean": 0.16666666666666666,
+              "ci95": [
+                0.0,
+                0.4166666666666667
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
             "breakout": {
               "mean": 0.75,
               "ci95": [
-                0.5,
-                1.0
+                0.5833333333333334,
+                0.9166666666666666
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "immediate_change": {
-            "breakout": {
-              "mean": -1.1749999999999998,
+            "asterix": {
+              "mean": 0.03749999999999996,
               "ci95": [
-                -1.3999999999999997,
-                -0.95
+                -0.13343750000000004,
+                0.17927083333333324
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -0.8666666666666666,
+              "ci95": [
+                -1.241770833333333,
+                -0.4249999999999998
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "paired_immediate_effect": {
+            "asterix": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
             "breakout": {
               "mean": 0.0,
               "ci95": [
                 0.0,
                 0.0
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "auc_effect": {
-            "breakout": {
-              "mean": 0.3393750000000002,
+            "asterix": {
+              "mean": 0.2602083333333332,
               "ci95": [
-                -0.15625,
-                0.8350000000000004
+                -0.12166666666666669,
+                0.5932031249999998
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -0.22520833333333332,
+              "ci95": [
+                -0.7517916666666666,
+                0.3393750000000002
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
@@ -184,71 +304,131 @@
         },
         "head_reset": {
           "paired_effect": {
-            "breakout": {
-              "mean": -0.41249999999999964,
+            "asterix": {
+              "mean": -0.004166666666666717,
               "ci95": [
-                -0.8499999999999996,
-                0.025000000000000355
+                -0.34593750000000006,
+                0.2875
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": 0.07083333333333346,
+              "ci95": [
+                -0.5585416666666664,
+                1.0754166666666662
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "harm_fraction": {
+            "asterix": {
+              "mean": 0.3333333333333333,
+              "ci95": [
+                0.08333333333333333,
+                0.6666666666666666
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
             "breakout": {
               "mean": 0.5,
               "ci95": [
-                0.5,
-                0.5
+                0.25,
+                0.75
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "immediate_change": {
-            "breakout": {
-              "mean": -4.8375,
+            "asterix": {
+              "mean": -0.8125,
               "ci95": [
-                -4.9,
-                -4.775
+                -1.2249999999999999,
+                -0.4915625000000001
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -3.9250000000000007,
+              "ci95": [
+                -4.816666666666667,
+                -2.8874999999999997
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "paired_immediate_effect": {
-            "breakout": {
-              "mean": -3.6625,
+            "asterix": {
+              "mean": -0.85,
               "ci95": [
-                -3.95,
-                -3.3750000000000004
+                -1.3334374999999998,
+                -0.35000000000000003
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -3.0583333333333336,
+              "ci95": [
+                -3.6421875000000004,
+                -2.4125
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "auc_effect": {
-            "breakout": {
-              "mean": -0.608125,
+            "asterix": {
+              "mean": 0.19979166666666662,
               "ci95": [
-                -1.28375,
-                0.0674999999999999
+                -0.10172916666666668,
+                0.43656249999999996
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -0.6756249999999998,
+              "ci95": [
+                -1.4252083333333332,
+                0.07937500000000013
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
@@ -256,120 +436,915 @@
         },
         "head_and_optimizer_reset": {
           "paired_effect": {
-            "breakout": {
-              "mean": -1.4874999999999998,
+            "asterix": {
+              "mean": 0.7708333333333334,
               "ci95": [
-                -1.7499999999999996,
-                -1.225
+                0.39999999999999997,
+                1.262708333333333
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -0.6958333333333334,
+              "ci95": [
+                -1.4042708333333331,
+                0.0001041666666665734
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "harm_fraction": {
-            "breakout": {
-              "mean": 1.0,
+            "asterix": {
+              "mean": 0.25,
               "ci95": [
-                1.0,
+                0.0,
+                0.5
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": 0.8333333333333334,
+              "ci95": [
+                0.5833333333333334,
                 1.0
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "immediate_change": {
-            "breakout": {
-              "mean": -4.8375,
+            "asterix": {
+              "mean": -0.8125,
               "ci95": [
-                -4.9,
-                -4.775
+                -1.2249999999999999,
+                -0.4915625000000001
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -3.9250000000000007,
+              "ci95": [
+                -4.816666666666667,
+                -2.8874999999999997
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "paired_immediate_effect": {
-            "breakout": {
-              "mean": -3.6625,
+            "asterix": {
+              "mean": -0.85,
               "ci95": [
-                -3.95,
-                -3.3750000000000004
+                -1.3334374999999998,
+                -0.35000000000000003
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -3.0583333333333336,
+              "ci95": [
+                -3.6421875000000004,
+                -2.4125
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "auc_effect": {
-            "breakout": {
-              "mean": -1.053125,
+            "asterix": {
+              "mean": 0.5816666666666667,
               "ci95": [
-                -1.295,
-                -0.8112500000000005
+                0.3861458333333333,
+                0.8135416666666667
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -1.0345833333333332,
+              "ci95": [
+                -1.632369791666666,
+                -0.46374999999999983
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           }
         }
       },
-      "naive_same_sample_maximum_gap_vs_heldout_history_sbs": {},
+      "naive_same_sample_maximum_gap_vs_heldout_history_sbs": {
+        "asterix": 0.7791666666666667,
+        "breakout": 0.9083333333333329
+      },
       "naive_maximum_caveat": "optimistic_in_expectation; not_a_strict_population_oracle_bound",
       "cross_fitted_estimated_winner": {
-        "advantage_vs_sbs": {},
-        "effect_vs_continue": {},
-        "choices": [],
-        "skipped_checkpoints": [
-          "natural_breakout_seed0_age200000",
-          "natural_breakout_seed0_age50000"
+        "advantage_vs_sbs": {
+          "asterix": {
+            "mean": 0.3499999999999999,
+            "ci95": [
+              -0.5708333333333334,
+              1.15
+            ],
+            "source_histories": 3,
+            "checkpoints": 6,
+            "paired_repeats": 12,
+            "ci_unit": "full_source_history_paired_continuation_vectors_and_refitted_choices",
+            "small_history_count": true,
+            "bootstrap_valid_draws": 1000,
+            "bootstrap_requested_draws": 1000,
+            "bootstrap_refits_selection": true
+          },
+          "breakout": {
+            "mean": 0.3041666666666664,
+            "ci95": [
+              -0.6625000000000002,
+              1.7
+            ],
+            "source_histories": 3,
+            "checkpoints": 6,
+            "paired_repeats": 12,
+            "ci_unit": "full_source_history_paired_continuation_vectors_and_refitted_choices",
+            "small_history_count": true,
+            "bootstrap_valid_draws": 1000,
+            "bootstrap_requested_draws": 1000,
+            "bootstrap_refits_selection": true
+          }
+        },
+        "effect_vs_continue": {
+          "asterix": {
+            "mean": 0.3999999999999999,
+            "ci95": [
+              -0.06249999999999997,
+              1.15
+            ],
+            "source_histories": 3,
+            "checkpoints": 6,
+            "paired_repeats": 12,
+            "ci_unit": "full_source_history_paired_continuation_vectors_and_refitted_choices",
+            "small_history_count": true,
+            "bootstrap_valid_draws": 1000,
+            "bootstrap_requested_draws": 1000,
+            "bootstrap_refits_selection": true
+          },
+          "breakout": {
+            "mean": -0.24583333333333343,
+            "ci95": [
+              -0.575,
+              0.21250000000000013
+            ],
+            "source_histories": 3,
+            "checkpoints": 6,
+            "paired_repeats": 12,
+            "ci_unit": "full_source_history_paired_continuation_vectors_and_refitted_choices",
+            "small_history_count": true,
+            "bootstrap_valid_draws": 1000,
+            "bootstrap_requested_draws": 1000,
+            "bootstrap_refits_selection": true
+          }
+        },
+        "choices": [
+          {
+            "checkpoint_id": "natural_asterix_seed0_age200000",
+            "trajectory_id": "natural_asterix_seed0",
+            "game": "asterix",
+            "fold": 0,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "48834047",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "168983635",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed0_age200000",
+            "trajectory_id": "natural_asterix_seed0",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "head_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "168983635",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "48834047",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed0_age50000",
+            "trajectory_id": "natural_asterix_seed0",
+            "game": "asterix",
+            "fold": 0,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "1490638714",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "88537300",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed0_age50000",
+            "trajectory_id": "natural_asterix_seed0",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "optimizer_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "88537300",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1490638714",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed1_age200000",
+            "trajectory_id": "natural_asterix_seed1",
+            "game": "asterix",
+            "fold": 0,
+            "chosen_action": "head_reset",
+            "sbs_action": "head_and_optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "917282346",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "2114433824",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed1_age200000",
+            "trajectory_id": "natural_asterix_seed1",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "head_and_optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "2114433824",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "917282346",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed1_age50000",
+            "trajectory_id": "natural_asterix_seed1",
+            "game": "asterix",
+            "fold": 0,
+            "chosen_action": "optimizer_reset",
+            "sbs_action": "head_and_optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "1812463725",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1998527290",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed1_age50000",
+            "trajectory_id": "natural_asterix_seed1",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "head_and_optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "1998527290",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1812463725",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed2_age200000",
+            "trajectory_id": "natural_asterix_seed2",
+            "game": "asterix",
+            "fold": 0,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "1770135192",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "788730189",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed2_age200000",
+            "trajectory_id": "natural_asterix_seed2",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "788730189",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1770135192",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed2_age50000",
+            "trajectory_id": "natural_asterix_seed2",
+            "game": "asterix",
+            "fold": 0,
+            "chosen_action": "optimizer_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "885313894",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1763506619",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed2_age50000",
+            "trajectory_id": "natural_asterix_seed2",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "continue",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "1763506619",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "885313894",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed0_age200000",
+            "trajectory_id": "natural_breakout_seed0",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "continue",
+            "sbs_action": "head_and_optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "827100894",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "771119155",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed0_age200000",
+            "trajectory_id": "natural_breakout_seed0",
+            "game": "breakout",
+            "fold": 1,
+            "chosen_action": "continue",
+            "sbs_action": "head_and_optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "771119155",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "827100894",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed0_age50000",
+            "trajectory_id": "natural_breakout_seed0",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "head_reset",
+            "sbs_action": "head_and_optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "397217161",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "294285971",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed0_age50000",
+            "trajectory_id": "natural_breakout_seed0",
+            "game": "breakout",
+            "fold": 1,
+            "chosen_action": "head_reset",
+            "sbs_action": "head_and_optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "294285971",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "397217161",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed1_age200000",
+            "trajectory_id": "natural_breakout_seed1",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "1650282402",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1043101329",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed1_age200000",
+            "trajectory_id": "natural_breakout_seed1",
+            "game": "breakout",
+            "fold": 1,
+            "chosen_action": "head_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "1043101329",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1650282402",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed1_age50000",
+            "trajectory_id": "natural_breakout_seed1",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "continue",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "298259466",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "383740988",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed1_age50000",
+            "trajectory_id": "natural_breakout_seed1",
+            "game": "breakout",
+            "fold": 1,
+            "chosen_action": "head_reset",
+            "sbs_action": "head_reset",
+            "selection_repeat_ids": [
+              [
+                "383740988",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "298259466",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed2"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed2_age200000",
+            "trajectory_id": "natural_breakout_seed2",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "head_reset",
+            "sbs_action": "continue",
+            "selection_repeat_ids": [
+              [
+                "147782540",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1865810201",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed2_age200000",
+            "trajectory_id": "natural_breakout_seed2",
+            "game": "breakout",
+            "fold": 1,
+            "chosen_action": "continue",
+            "sbs_action": "continue",
+            "selection_repeat_ids": [
+              [
+                "1865810201",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "147782540",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed2_age50000",
+            "trajectory_id": "natural_breakout_seed2",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "continue",
+            "sbs_action": "continue",
+            "selection_repeat_ids": [
+              [
+                "839414497",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "112727274",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed2_age50000",
+            "trajectory_id": "natural_breakout_seed2",
+            "game": "breakout",
+            "fold": 1,
+            "chosen_action": "head_reset",
+            "sbs_action": "continue",
+            "selection_repeat_ids": [
+              [
+                "112727274",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "839414497",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1"
+            ]
+          }
         ],
+        "skipped_checkpoints": [],
         "ci_caveat": "histories_and_paired_repeat_vectors_resampled_with_refitted_choices;_fixed_disjoint_repeat_split;_not_simultaneous_or_independent_confirmation"
       },
-      "primary_gate": "incomplete",
+      "primary_gate": "uncertain",
       "gate_is_confirmatory": false,
       "parameter_repair_signal": {
-        "status": "incomplete",
+        "status": "uncertain",
         "positive": false,
         "uncertain": true,
         "contrasts": {
           "head_vs_continue": {
-            "breakout": {
-              "mean": -0.41249999999999964,
+            "asterix": {
+              "mean": -0.004166666666666717,
               "ci95": [
-                -0.8499999999999996,
-                0.025000000000000355
+                -0.34593750000000006,
+                0.2875
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": 0.07083333333333346,
+              "ci95": [
+                -0.5585416666666664,
+                1.0754166666666662
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
           },
           "joint_vs_optimizer": {
-            "breakout": {
-              "mean": -0.9749999999999999,
+            "asterix": {
+              "mean": 0.43333333333333335,
               "ci95": [
-                -1.3749999999999996,
-                -0.5750000000000002
+                0.19989583333333322,
+                0.7041666666666667
               ],
-              "source_histories": 1,
-              "checkpoints": 2,
-              "paired_repeats": 4,
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": true
+            },
+            "breakout": {
+              "mean": -0.19583333333333322,
+              "ci95": [
+                -0.8876041666666665,
+                0.36666666666666686
+              ],
+              "source_histories": 3,
+              "checkpoints": 6,
+              "paired_repeats": 12,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": true
             }
@@ -386,64 +1361,127 @@
   ],
   "worker_progress": {
     "progress": {
-      "event": "new_package",
-      "time": 1791492518.3817208,
-      "package_updates": 0,
-      "package_wall_sec": 0.0038922000001093693
+      "stage": "parallel_branches",
+      "parallel_wave_id": 17,
+      "pending_tasks": [],
+      "worker_progress": [
+        {
+          "task_id": "branch:0cf535491762da23779e747269e45a0d1f085beba0a06318c0da2a28c8dc638d",
+          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_0cf535491762da23779e",
+          "pending": false,
+          "child_progress": {
+            "stage": "screen",
+            "job_id": "branch:natural:natural_asterix_seed2_age200000:head_and_optimizer_reset:repeat0:h50000",
+            "checkpoint_id": "natural_asterix_seed2_age200000",
+            "action": "head_and_optimizer_reset",
+            "repeat": 0,
+            "completed_steps": 50000,
+            "horizon": 50000,
+            "gradient_updates": 245500,
+            "recent_return": 2.1,
+            "wall_time_sec": 427.3244244000016,
+            "event": "branch_complete",
+            "j_final": 4.85,
+            "failure_reason": null,
+            "time": 1791551422.4877944,
+            "package_updates": 200000,
+            "package_wall_sec": 1872.0265620999999
+          }
+        },
+        {
+          "task_id": "branch:cd2b87dd8a47e7548d51afe83ad99b4afb3f96063764c83b7fc203730c419242",
+          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_cd2b87dd8a47e7548d51",
+          "pending": false,
+          "child_progress": {
+            "stage": "screen",
+            "job_id": "branch:natural:natural_asterix_seed2_age200000:head_and_optimizer_reset:repeat1:h50000",
+            "checkpoint_id": "natural_asterix_seed2_age200000",
+            "action": "head_and_optimizer_reset",
+            "repeat": 1,
+            "completed_steps": 50000,
+            "horizon": 50000,
+            "gradient_updates": 245500,
+            "recent_return": 3.35,
+            "wall_time_sec": 427.4604137999995,
+            "event": "branch_complete",
+            "j_final": 4.15,
+            "failure_reason": null,
+            "time": 1791551423.4212863,
+            "package_updates": 200000,
+            "package_wall_sec": 1872.9599562999992
+          }
+        }
+      ],
+      "time": 1791551423.5547655,
+      "package_updates": 4012375,
+      "package_wall_sec": 58905.176938437144
     },
     "worker_status": "running",
-    "worker_pid": 13656,
-    "manifest_updated_at": 1791492518.382849,
+    "worker_pid": 16652,
+    "manifest_updated_at": 1791551427.366826,
     "jobs_by_status": {
-      "complete": 29
+      "complete": 109
     }
   },
   "provisional": true,
   "interpretation": "descriptive_screen_with_cross_fitted_estimated_winner; raw_returns_reported_per_game",
-  "checkpoints_without_outcomes": [
-    "natural_asterix_seed0_age200000",
-    "natural_asterix_seed0_age50000",
-    "natural_asterix_seed1_age200000",
-    "natural_asterix_seed1_age50000",
-    "natural_asterix_seed2_age200000",
-    "natural_asterix_seed2_age50000",
-    "natural_breakout_seed1_age200000",
-    "natural_breakout_seed1_age50000",
-    "natural_breakout_seed2_age200000",
-    "natural_breakout_seed2_age50000"
-  ],
+  "checkpoints_without_outcomes": [],
   "reserved_checkpoint_ids_excluded_from_development_analysis": [],
-  "primary_gate": "incomplete",
+  "primary_gate": "uncertain",
   "uncertain": true,
   "parameter_repair_signal": {
-    "status": "incomplete",
+    "status": "uncertain",
     "positive": false,
     "uncertain": true,
     "contrasts": {
       "head_vs_continue": {
-        "breakout": {
-          "mean": -0.41249999999999964,
+        "asterix": {
+          "mean": -0.004166666666666717,
           "ci95": [
-            -0.8499999999999996,
-            0.025000000000000355
+            -0.34593750000000006,
+            0.2875
           ],
-          "source_histories": 1,
-          "checkpoints": 2,
-          "paired_repeats": 4,
+          "source_histories": 3,
+          "checkpoints": 6,
+          "paired_repeats": 12,
+          "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+          "small_history_count": true
+        },
+        "breakout": {
+          "mean": 0.07083333333333346,
+          "ci95": [
+            -0.5585416666666664,
+            1.0754166666666662
+          ],
+          "source_histories": 3,
+          "checkpoints": 6,
+          "paired_repeats": 12,
           "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
           "small_history_count": true
         }
       },
       "joint_vs_optimizer": {
-        "breakout": {
-          "mean": -0.9749999999999999,
+        "asterix": {
+          "mean": 0.43333333333333335,
           "ci95": [
-            -1.3749999999999996,
-            -0.5750000000000002
+            0.19989583333333322,
+            0.7041666666666667
           ],
-          "source_histories": 1,
-          "checkpoints": 2,
-          "paired_repeats": 4,
+          "source_histories": 3,
+          "checkpoints": 6,
+          "paired_repeats": 12,
+          "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+          "small_history_count": true
+        },
+        "breakout": {
+          "mean": -0.19583333333333322,
+          "ci95": [
+            -0.8876041666666665,
+            0.36666666666666686
+          ],
+          "source_histories": 3,
+          "checkpoints": 6,
+          "paired_repeats": 12,
           "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
           "small_history_count": true
         }
