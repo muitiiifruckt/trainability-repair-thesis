@@ -2,7 +2,7 @@
 
 `papers.json` — единый реестр, `references.bib` — рабочий экспорт. Источники разбиты по исследовательским веткам в `parameters.json`, `optimizer_targets.json`, `data_selection.json`, `additional.json`, `core.json` и `followup.json`; дубликаты объединяются по нормализованному названию.
 
-Первый проход содержал 38 уникальных работ; второй добавил TeLAPA, PAME и SBP/P3O. Текущий реестр: **41 работа, 36 full_text и 5 abstract**. Уровни проверки и последующее чтение теорем уточняются в карточках и audit notes. Authoritative число работ и verification levels печатает сборщик. `full_text` иногда означает доступ к релевантным индексированным passages первичного PDF; ограничение записано в карточке.
+Первый проход содержал 38 уникальных работ; второй добавил TeLAPA, PAME и SBP/P3O; forward-citation проход 2026-10-09 ([заметка](../notes/forward_search_20261009.md)) добавил 12 работ в `followup.json` (все `full_text` по разделам, перечисленным в карточках; приложения и доказательства, как правило, не читались; `verified_at` этих карточек — 2026-10-09). Текущий реестр: **53 работы, 48 full_text и 5 abstract**. Уровни проверки и последующее чтение теорем уточняются в карточках и audit notes. Authoritative число работ и verification levels печатает сборщик. `full_text` иногда означает доступ к релевантным индексированным passages первичного PDF; ограничение записано в карточке.
 
 Пересборка: `python scripts/build_bibliography.py`.
 

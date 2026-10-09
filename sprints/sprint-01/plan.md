@@ -21,8 +21,8 @@
 - [x] Тематические заметки: параметры, optimizer и targets, данные и selection, PPO/on-policy — `notes/parameter_plasticity.md`, `notes/optimizer_targets.md`, `notes/data_and_selection.md`, `notes/additional_onpolicy.md`
 - [x] Границы новизны и ближайшие работы (TeLAPA, PAME, Injection, OPEN, Adaptive RR) — `docs/novelty.md`
 - [x] Аудит авторского кода ближайших работ (что реально меняют resets) — `notes/code_audit_parameters.md`, `notes/code_audit_optimizer.md`, `notes/infrastructure_and_forward_search.md`
-- [~] Дополнительный поиск конкурентов (агенты, 2026-10-09): прямого конкурента не найдено, новые наводки AltNet, He 2026 — только по аннотациям — `research/search_log.md`
-- [ ] Forward citations ближайших работ (Injection, Lyle, On-Policy Study, OPEN) — открыто в `docs/novelty.md` «Незакрытый novelty audit»
+- [x] Дополнительный поиск конкурентов (агенты, 2026-10-09): прямого конкурента не найдено, новые наводки AltNet, He 2026 — только по аннотациям — `research/search_log.md`
+- [~] Forward citations ближайших работ — частичный проход 2026-10-09: 12 новых карточек, прямого конкурента нет, ближайшие FAME (выбор пробной оценкой кандидатов) и Three Regimes (правило по величинам до дообучения); формулировка вклада сужена — `notes/forward_search_20261009.md`, `docs/novelty.md`. Открыто: ручной экспорт citation graph
 
 **3. Подготовка к встрече**
 - [ ] Короткий ответ руководителю: что прочитано, главные выводы, постановка, вопросы — `notes/supervisor_meetings.md`

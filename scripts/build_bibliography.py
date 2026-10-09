@@ -75,7 +75,7 @@ def main() -> None:
             "year": str(paper["year"]),
             "howpublished": bib_value(paper["venue"]),
             "url": paper["url"],
-            "note": "Metadata checked 2026-10-05; " + paper["verified_level"],
+            "note": "Metadata checked " + paper["verified_at"] + "; " + paper["verified_level"],
         }
         if paper.get("doi"):
             fields["doi"] = paper["doi"]
