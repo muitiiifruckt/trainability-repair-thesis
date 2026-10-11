@@ -1,0 +1,60 @@
+{
+  "kind": "restart_preflight",
+  "captured_at_utc": "2026-10-11T09:47:58.829712+00:00",
+  "manifest": {
+    "worker_status": "running",
+    "worker_pid": 16652,
+    "updated_at": 1791566653.2374237,
+    "active_package": {
+      "id": 1,
+      "started_at": 1791492518.3778272,
+      "updates": 7561975,
+      "wall_time_sec": 74135.03828533714
+    },
+    "worker_error": null
+  },
+  "progress_time": 1791566653.2348776,
+  "supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 10116,
+    "worker_pid": 16652,
+    "updated_at": 1791566667.3935475,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 4
+  },
+  "live_workers": 0,
+  "verified_code": {
+    "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+    "experiments\\mechanism_analysis.py": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+    "experiments\\rl_analysis.py": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+    "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+    "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+    "experiments\\rl_runner.py": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+    "experiments\\rl_scheduler.py": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+    "experiments\\rl_transfer.py": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+    "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+  },
+  "config_hash": "f3029c965f66d2100d1e8239800c580b7d4442d2b7e918d7919d1146eb66833d",
+  "source_outcomes_sha256": "594efebfc577c50b9a73b348b34fbd9c6275f219c97019c9ec6781da0c8e9402",
+  "source_outcome_count": 144,
+  "savepoints": [
+    {
+      "root": "runs\\minatar-repair-20261007\\workers\\branch\\branch_41c723840c4782d01718",
+      "job_id": "branch:natural:natural_asterix_seed0_age50000:optimizer_reset:repeat2:h50000",
+      "completed_steps": 40000,
+      "sha256": "8fc34c98edb8089346cc23683d1f2e58ba79217b07fc674d273c90b3822e9415",
+      "verified": true
+    },
+    {
+      "root": "runs\\minatar-repair-20261007\\workers\\branch\\branch_f15c4405e28d82461aa8",
+      "job_id": "branch:natural:natural_asterix_seed0_age50000:optimizer_reset:repeat3:h50000",
+      "completed_steps": 40000,
+      "sha256": "c6a555416ff8416f9101084a632171af1a61358088729d5b1d5a708f02fc3b1a",
+      "verified": true
+    }
+  ],
+  "calendar_package_age_sec": 219560.45245170593,
+  "limits_observation": "Calendar package age exceeds 24h including downtime; metadata retained. Frozen runner rotates before the next new wave. No strict deadline enforcement claim."
+}
