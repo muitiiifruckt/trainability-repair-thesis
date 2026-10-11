@@ -36146,6 +36146,13 @@
       "updates": 1979937,
       "wall_time_sec": 92032.57193868786,
       "closed_at": 1791492518.3778245
+    },
+    {
+      "id": 1,
+      "started_at": 1791492518.3778272,
+      "updates": 7561975,
+      "wall_time_sec": 219662.9409918525,
+      "closed_at": 1791712181.318818
     }
   ],
   "decisions": [],
@@ -36366,12 +36373,12 @@
     "sha256": "edf0d896bfcb31fc06b1dc5eb944856b1e409755446eb554f50cff6ea3628b0a"
   },
   "active_package": {
-    "id": 1,
-    "started_at": 1791492518.3778272,
-    "updates": 7561975,
-    "wall_time_sec": 219635.64777605247
+    "id": 2,
+    "started_at": 1791712181.31882,
+    "updates": 0,
+    "wall_time_sec": 0.029455500000040047
   },
-  "updated_at": 1791712154.0256042,
+  "updated_at": 1791712181.348281,
   "worker_pid": 3912,
   "queue": {
     "stages": [
@@ -37042,6 +37049,11 @@
       "series": "first_online_screen_96_branches",
       "time": 1791712154.0255954,
       "stdout": "[codex/trainability-review 298b01a] Research: first_online_screen_96_branches\n 8 files changed, 12194 insertions(+), 190 deletions(-)\n create mode 100644 research/results/minatar-repair-20261007/monitoring/20261011T0949Z_restart.json"
+    },
+    {
+      "series": "fixed_TD_mechanisms",
+      "time": 1791712181.1492915,
+      "stdout": "[codex/trainability-review 93feea6] Research: fixed_TD_mechanisms\n 5 files changed, 10 insertions(+), 4 deletions(-)"
     }
   ]
 }

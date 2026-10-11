@@ -1,0 +1,982 @@
+{
+  "schema_version": 1,
+  "captured_at_utc": "2026-10-11T09:49:46.526890+00:00",
+  "source": "runs\\minatar-repair-20261007\\outcomes.jsonl",
+  "source_sha256": "594efebfc577c50b9a73b348b34fbd9c6275f219c97019c9ec6781da0c8e9402",
+  "source_rows": 144,
+  "selected_rows": 144,
+  "stage_counts": {
+    "screen": 96,
+    "confirm": 48
+  },
+  "complete_panels": 36,
+  "incomplete_panels": [],
+  "menu": [
+    "continue",
+    "optimizer_reset",
+    "head_reset",
+    "head_and_optimizer_reset"
+  ],
+  "cohorts": {
+    "screen": [
+      0,
+      1
+    ],
+    "confirmation": [
+      2,
+      3
+    ]
+  },
+  "summaries": {
+    "asterix": {
+      "screen": {
+        "complete_histories": 3,
+        "expected_histories": 3,
+        "history_records": [
+          {
+            "trajectory_id": "natural_asterix_seed0",
+            "seed": 0,
+            "j_final": {
+              "continue": 1.175,
+              "optimizer_reset": 1.5625,
+              "head_reset": 1.1125,
+              "head_and_optimizer_reset": 2.025
+            },
+            "effects": {
+              "optimizer_reset": 0.38749999999999996,
+              "head_reset": -0.06249999999999992,
+              "head_and_optimizer_reset": 0.85,
+              "interaction": 0.5250000000000001
+            }
+          },
+          {
+            "trajectory_id": "natural_asterix_seed1",
+            "seed": 1,
+            "j_final": {
+              "continue": 1.4375,
+              "optimizer_reset": 1.5125,
+              "head_reset": 1.7,
+              "head_and_optimizer_reset": 1.8625
+            },
+            "effects": {
+              "optimizer_reset": 0.07499999999999998,
+              "head_reset": 0.26249999999999984,
+              "head_and_optimizer_reset": 0.42499999999999993,
+              "interaction": 0.0875000000000001
+            }
+          },
+          {
+            "trajectory_id": "natural_asterix_seed2",
+            "seed": 2,
+            "j_final": {
+              "continue": 1.55,
+              "optimizer_reset": 2.1,
+              "head_reset": 1.3375,
+              "head_and_optimizer_reset": 2.5875
+            },
+            "effects": {
+              "optimizer_reset": 0.55,
+              "head_reset": -0.21250000000000008,
+              "head_and_optimizer_reset": 1.0375,
+              "interaction": 0.7
+            }
+          }
+        ],
+        "mean_effects": {
+          "optimizer_reset": 0.3375,
+          "head_reset": -0.004166666666666717,
+          "head_and_optimizer_reset": 0.7708333333333334,
+          "interaction": 0.43750000000000006
+        },
+        "fully_complete": true
+      },
+      "confirmation": {
+        "complete_histories": 0,
+        "expected_histories": 3,
+        "history_records": [],
+        "mean_effects": {},
+        "fully_complete": false
+      }
+    },
+    "breakout": {
+      "screen": {
+        "complete_histories": 3,
+        "expected_histories": 3,
+        "history_records": [
+          {
+            "trajectory_id": "natural_breakout_seed0",
+            "seed": 0,
+            "j_final": {
+              "continue": 7.324999999999999,
+              "optimizer_reset": 6.8125,
+              "head_reset": 6.9125,
+              "head_and_optimizer_reset": 5.8375
+            },
+            "effects": {
+              "optimizer_reset": -0.5125,
+              "head_reset": -0.41249999999999964,
+              "head_and_optimizer_reset": -1.4874999999999998,
+              "interaction": -0.5625
+            }
+          },
+          {
+            "trajectory_id": "natural_breakout_seed1",
+            "seed": 1,
+            "j_final": {
+              "continue": 7.725,
+              "optimizer_reset": 7.05,
+              "head_reset": 7.5625,
+              "head_and_optimizer_reset": 7.35
+            },
+            "effects": {
+              "optimizer_reset": -0.6750000000000003,
+              "head_reset": -0.16249999999999964,
+              "head_and_optimizer_reset": -0.375,
+              "interaction": 0.4624999999999999
+            }
+          },
+          {
+            "trajectory_id": "natural_breakout_seed2",
+            "seed": 2,
+            "j_final": {
+              "continue": 6.925,
+              "optimizer_reset": 6.6125,
+              "head_reset": 7.7124999999999995,
+              "head_and_optimizer_reset": 6.699999999999999
+            },
+            "effects": {
+              "optimizer_reset": -0.3125000000000002,
+              "head_reset": 0.7874999999999996,
+              "head_and_optimizer_reset": -0.2250000000000003,
+              "interaction": -0.6999999999999997
+            }
+          }
+        ],
+        "mean_effects": {
+          "optimizer_reset": -0.5000000000000001,
+          "head_reset": 0.07083333333333346,
+          "head_and_optimizer_reset": -0.6958333333333334,
+          "interaction": -0.2666666666666666
+        },
+        "fully_complete": true
+      },
+      "confirmation": {
+        "complete_histories": 3,
+        "expected_histories": 3,
+        "history_records": [
+          {
+            "trajectory_id": "natural_breakout_seed0",
+            "seed": 0,
+            "j_final": {
+              "continue": 7.7,
+              "optimizer_reset": 8.1,
+              "head_reset": 6.6375,
+              "head_and_optimizer_reset": 7.525
+            },
+            "effects": {
+              "optimizer_reset": 0.3999999999999999,
+              "head_reset": -1.0625000000000002,
+              "head_and_optimizer_reset": -0.17500000000000004,
+              "interaction": 0.4875000000000005
+            }
+          },
+          {
+            "trajectory_id": "natural_breakout_seed1",
+            "seed": 1,
+            "j_final": {
+              "continue": 7.2625,
+              "optimizer_reset": 7.5875,
+              "head_reset": 6.575,
+              "head_and_optimizer_reset": 7.5375000000000005
+            },
+            "effects": {
+              "optimizer_reset": 0.3250000000000002,
+              "head_reset": -0.6874999999999998,
+              "head_and_optimizer_reset": 0.27500000000000036,
+              "interaction": 0.6375
+            }
+          },
+          {
+            "trajectory_id": "natural_breakout_seed2",
+            "seed": 2,
+            "j_final": {
+              "continue": 7.1625,
+              "optimizer_reset": 7.3500000000000005,
+              "head_reset": 7.375,
+              "head_and_optimizer_reset": 6.487500000000001
+            },
+            "effects": {
+              "optimizer_reset": 0.18750000000000044,
+              "head_reset": 0.2124999999999999,
+              "head_and_optimizer_reset": -0.6749999999999996,
+              "interaction": -1.075
+            }
+          }
+        ],
+        "mean_effects": {
+          "optimizer_reset": 0.30416666666666686,
+          "head_reset": -0.5125000000000001,
+          "head_and_optimizer_reset": -0.19166666666666643,
+          "interaction": 0.01666666666666683
+        },
+        "fully_complete": true
+      }
+    }
+  },
+  "panel_records": [
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed0",
+      "age": 50000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 0.75,
+        "optimizer_reset": 0.9,
+        "head_reset": 0.8,
+        "head_and_optimizer_reset": 1.75
+      },
+      "effects": {
+        "optimizer_reset": 0.15000000000000002,
+        "head_reset": 0.050000000000000044,
+        "head_and_optimizer_reset": 1.0,
+        "interaction": 0.7999999999999999
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed0",
+      "age": 50000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 0.75,
+        "optimizer_reset": 1.4,
+        "head_reset": 1.05,
+        "head_and_optimizer_reset": 1.4
+      },
+      "effects": {
+        "optimizer_reset": 0.6499999999999999,
+        "head_reset": 0.30000000000000004,
+        "head_and_optimizer_reset": 0.6499999999999999,
+        "interaction": -0.30000000000000004
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed0",
+      "age": 200000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 2.0,
+        "optimizer_reset": 2.05,
+        "head_reset": 2.2,
+        "head_and_optimizer_reset": 1.75
+      },
+      "effects": {
+        "optimizer_reset": 0.04999999999999982,
+        "head_reset": 0.20000000000000018,
+        "head_and_optimizer_reset": -0.25,
+        "interaction": -0.5
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed0",
+      "age": 200000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 1.2,
+        "optimizer_reset": 1.9,
+        "head_reset": 0.4,
+        "head_and_optimizer_reset": 3.2
+      },
+      "effects": {
+        "optimizer_reset": 0.7,
+        "head_reset": -0.7999999999999999,
+        "head_and_optimizer_reset": 2.0,
+        "interaction": 2.1000000000000005
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed1",
+      "age": 50000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 0.85,
+        "optimizer_reset": 1.2,
+        "head_reset": 1.15,
+        "head_and_optimizer_reset": 1.15
+      },
+      "effects": {
+        "optimizer_reset": 0.35,
+        "head_reset": 0.29999999999999993,
+        "head_and_optimizer_reset": 0.29999999999999993,
+        "interaction": -0.35
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed1",
+      "age": 50000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 1.3,
+        "optimizer_reset": 0.95,
+        "head_reset": 1.2,
+        "head_and_optimizer_reset": 1.6
+      },
+      "effects": {
+        "optimizer_reset": -0.3500000000000001,
+        "head_reset": -0.10000000000000009,
+        "head_and_optimizer_reset": 0.30000000000000004,
+        "interaction": 0.7500000000000002
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed1",
+      "age": 200000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 1.4,
+        "optimizer_reset": 1.55,
+        "head_reset": 2.15,
+        "head_and_optimizer_reset": 1.8
+      },
+      "effects": {
+        "optimizer_reset": 0.15000000000000013,
+        "head_reset": 0.75,
+        "head_and_optimizer_reset": 0.40000000000000013,
+        "interaction": -0.5
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed1",
+      "age": 200000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 2.2,
+        "optimizer_reset": 2.35,
+        "head_reset": 2.3,
+        "head_and_optimizer_reset": 2.9
+      },
+      "effects": {
+        "optimizer_reset": 0.1499999999999999,
+        "head_reset": 0.09999999999999964,
+        "head_and_optimizer_reset": 0.6999999999999997,
+        "interaction": 0.4500000000000002
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed2",
+      "age": 50000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 1.0,
+        "optimizer_reset": 0.75,
+        "head_reset": 0.7,
+        "head_and_optimizer_reset": 0.6
+      },
+      "effects": {
+        "optimizer_reset": -0.25,
+        "head_reset": -0.30000000000000004,
+        "head_and_optimizer_reset": -0.4,
+        "interaction": 0.15000000000000002
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed2",
+      "age": 50000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 1.05,
+        "optimizer_reset": 1.3,
+        "head_reset": 1.15,
+        "head_and_optimizer_reset": 0.75
+      },
+      "effects": {
+        "optimizer_reset": 0.25,
+        "head_reset": 0.09999999999999987,
+        "head_and_optimizer_reset": -0.30000000000000004,
+        "interaction": -0.6499999999999999
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed2",
+      "age": 200000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 1.65,
+        "optimizer_reset": 3.7,
+        "head_reset": 2.05,
+        "head_and_optimizer_reset": 4.85
+      },
+      "effects": {
+        "optimizer_reset": 2.0500000000000003,
+        "head_reset": 0.3999999999999999,
+        "head_and_optimizer_reset": 3.1999999999999997,
+        "interaction": 0.7499999999999996
+      }
+    },
+    {
+      "game": "asterix",
+      "trajectory_id": "natural_asterix_seed2",
+      "age": 200000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 2.5,
+        "optimizer_reset": 2.65,
+        "head_reset": 1.45,
+        "head_and_optimizer_reset": 4.15
+      },
+      "effects": {
+        "optimizer_reset": 0.1499999999999999,
+        "head_reset": -1.05,
+        "head_and_optimizer_reset": 1.6500000000000004,
+        "interaction": 2.5500000000000003
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed0",
+      "age": 50000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 5.85,
+        "optimizer_reset": 5.1,
+        "head_reset": 6.4,
+        "head_and_optimizer_reset": 4.55
+      },
+      "effects": {
+        "optimizer_reset": -0.75,
+        "head_reset": 0.5500000000000007,
+        "head_and_optimizer_reset": -1.2999999999999998,
+        "interaction": -1.1000000000000005
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed0",
+      "age": 50000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 6.95,
+        "optimizer_reset": 5.95,
+        "head_reset": 7.25,
+        "head_and_optimizer_reset": 5.7
+      },
+      "effects": {
+        "optimizer_reset": -1.0,
+        "head_reset": 0.2999999999999998,
+        "head_and_optimizer_reset": -1.25,
+        "interaction": -0.5499999999999998
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed0",
+      "age": 50000,
+      "repeat": 2,
+      "j_final": {
+        "continue": 6.55,
+        "optimizer_reset": 7.55,
+        "head_reset": 6.05,
+        "head_and_optimizer_reset": 7.0
+      },
+      "effects": {
+        "optimizer_reset": 1.0,
+        "head_reset": -0.5,
+        "head_and_optimizer_reset": 0.4500000000000002,
+        "interaction": -0.04999999999999982
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed0",
+      "age": 50000,
+      "repeat": 3,
+      "j_final": {
+        "continue": 6.5,
+        "optimizer_reset": 6.45,
+        "head_reset": 5.9,
+        "head_and_optimizer_reset": 6.4
+      },
+      "effects": {
+        "optimizer_reset": -0.04999999999999982,
+        "head_reset": -0.5999999999999996,
+        "head_and_optimizer_reset": -0.09999999999999964,
+        "interaction": 0.5499999999999998
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed0",
+      "age": 200000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 6.8,
+        "optimizer_reset": 6.5,
+        "head_reset": 6.3,
+        "head_and_optimizer_reset": 5.6
+      },
+      "effects": {
+        "optimizer_reset": -0.2999999999999998,
+        "head_reset": -0.5,
+        "head_and_optimizer_reset": -1.2000000000000002,
+        "interaction": -0.40000000000000036
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed0",
+      "age": 200000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 9.7,
+        "optimizer_reset": 9.7,
+        "head_reset": 7.7,
+        "head_and_optimizer_reset": 7.5
+      },
+      "effects": {
+        "optimizer_reset": 0.0,
+        "head_reset": -1.9999999999999991,
+        "head_and_optimizer_reset": -2.1999999999999993,
+        "interaction": -0.1999999999999993
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed0",
+      "age": 200000,
+      "repeat": 2,
+      "j_final": {
+        "continue": 9.8,
+        "optimizer_reset": 10.4,
+        "head_reset": 5.9,
+        "head_and_optimizer_reset": 7.3
+      },
+      "effects": {
+        "optimizer_reset": 0.5999999999999996,
+        "head_reset": -3.9000000000000004,
+        "head_and_optimizer_reset": -2.500000000000001,
+        "interaction": 0.8000000000000007
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed0",
+      "age": 200000,
+      "repeat": 3,
+      "j_final": {
+        "continue": 7.95,
+        "optimizer_reset": 8.0,
+        "head_reset": 8.7,
+        "head_and_optimizer_reset": 9.4
+      },
+      "effects": {
+        "optimizer_reset": 0.04999999999999982,
+        "head_reset": 0.7499999999999991,
+        "head_and_optimizer_reset": 1.4500000000000002,
+        "interaction": 0.6500000000000012
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed1",
+      "age": 50000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 6.8,
+        "optimizer_reset": 6.1,
+        "head_reset": 6.15,
+        "head_and_optimizer_reset": 5.55
+      },
+      "effects": {
+        "optimizer_reset": -0.7000000000000002,
+        "head_reset": -0.6499999999999995,
+        "head_and_optimizer_reset": -1.25,
+        "interaction": 0.09999999999999964
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed1",
+      "age": 50000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 6.05,
+        "optimizer_reset": 6.6,
+        "head_reset": 6.9,
+        "head_and_optimizer_reset": 5.7
+      },
+      "effects": {
+        "optimizer_reset": 0.5499999999999998,
+        "head_reset": 0.8500000000000005,
+        "head_and_optimizer_reset": -0.34999999999999964,
+        "interaction": -1.75
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed1",
+      "age": 50000,
+      "repeat": 2,
+      "j_final": {
+        "continue": 6.25,
+        "optimizer_reset": 6.45,
+        "head_reset": 5.4,
+        "head_and_optimizer_reset": 6.2
+      },
+      "effects": {
+        "optimizer_reset": 0.20000000000000018,
+        "head_reset": -0.8499999999999996,
+        "head_and_optimizer_reset": -0.04999999999999982,
+        "interaction": 0.5999999999999996
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed1",
+      "age": 50000,
+      "repeat": 3,
+      "j_final": {
+        "continue": 5.45,
+        "optimizer_reset": 4.9,
+        "head_reset": 6.3,
+        "head_and_optimizer_reset": 6.0
+      },
+      "effects": {
+        "optimizer_reset": -0.5499999999999998,
+        "head_reset": 0.8499999999999996,
+        "head_and_optimizer_reset": 0.5499999999999998,
+        "interaction": 0.25
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed1",
+      "age": 200000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 10.15,
+        "optimizer_reset": 8.65,
+        "head_reset": 10.55,
+        "head_and_optimizer_reset": 9.75
+      },
+      "effects": {
+        "optimizer_reset": -1.5,
+        "head_reset": 0.40000000000000036,
+        "head_and_optimizer_reset": -0.40000000000000036,
+        "interaction": 0.6999999999999993
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed1",
+      "age": 200000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 7.9,
+        "optimizer_reset": 6.85,
+        "head_reset": 6.65,
+        "head_and_optimizer_reset": 8.4
+      },
+      "effects": {
+        "optimizer_reset": -1.0500000000000007,
+        "head_reset": -1.25,
+        "head_and_optimizer_reset": 0.5,
+        "interaction": 2.8000000000000007
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed1",
+      "age": 200000,
+      "repeat": 2,
+      "j_final": {
+        "continue": 9.2,
+        "optimizer_reset": 8.45,
+        "head_reset": 6.2,
+        "head_and_optimizer_reset": 8.15
+      },
+      "effects": {
+        "optimizer_reset": -0.75,
+        "head_reset": -2.999999999999999,
+        "head_and_optimizer_reset": -1.049999999999999,
+        "interaction": 2.7
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed1",
+      "age": 200000,
+      "repeat": 3,
+      "j_final": {
+        "continue": 8.15,
+        "optimizer_reset": 10.55,
+        "head_reset": 8.4,
+        "head_and_optimizer_reset": 9.8
+      },
+      "effects": {
+        "optimizer_reset": 2.4000000000000004,
+        "head_reset": 0.25,
+        "head_and_optimizer_reset": 1.6500000000000004,
+        "interaction": -1.0
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed2",
+      "age": 50000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 5.55,
+        "optimizer_reset": 5.3,
+        "head_reset": 7.05,
+        "head_and_optimizer_reset": 5.2
+      },
+      "effects": {
+        "optimizer_reset": -0.25,
+        "head_reset": 1.5,
+        "head_and_optimizer_reset": -0.34999999999999964,
+        "interaction": -1.5999999999999996
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed2",
+      "age": 50000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 6.9,
+        "optimizer_reset": 6.3,
+        "head_reset": 5.6,
+        "head_and_optimizer_reset": 5.6
+      },
+      "effects": {
+        "optimizer_reset": -0.6000000000000005,
+        "head_reset": -1.3000000000000007,
+        "head_and_optimizer_reset": -1.3000000000000007,
+        "interaction": 0.6000000000000005
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed2",
+      "age": 50000,
+      "repeat": 2,
+      "j_final": {
+        "continue": 5.35,
+        "optimizer_reset": 5.45,
+        "head_reset": 6.2,
+        "head_and_optimizer_reset": 5.4
+      },
+      "effects": {
+        "optimizer_reset": 0.10000000000000053,
+        "head_reset": 0.8500000000000005,
+        "head_and_optimizer_reset": 0.05000000000000071,
+        "interaction": -0.9000000000000004
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed2",
+      "age": 50000,
+      "repeat": 3,
+      "j_final": {
+        "continue": 5.95,
+        "optimizer_reset": 5.65,
+        "head_reset": 5.35,
+        "head_and_optimizer_reset": 5.5
+      },
+      "effects": {
+        "optimizer_reset": -0.2999999999999998,
+        "head_reset": -0.6000000000000005,
+        "head_and_optimizer_reset": -0.4500000000000002,
+        "interaction": 0.4500000000000002
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed2",
+      "age": 200000,
+      "repeat": 0,
+      "j_final": {
+        "continue": 9.15,
+        "optimizer_reset": 8.6,
+        "head_reset": 8.95,
+        "head_and_optimizer_reset": 8.45
+      },
+      "effects": {
+        "optimizer_reset": -0.5500000000000007,
+        "head_reset": -0.20000000000000107,
+        "head_and_optimizer_reset": -0.7000000000000011,
+        "interaction": 0.05000000000000071
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed2",
+      "age": 200000,
+      "repeat": 1,
+      "j_final": {
+        "continue": 6.1,
+        "optimizer_reset": 6.25,
+        "head_reset": 9.25,
+        "head_and_optimizer_reset": 7.55
+      },
+      "effects": {
+        "optimizer_reset": 0.15000000000000036,
+        "head_reset": 3.1500000000000004,
+        "head_and_optimizer_reset": 1.4500000000000002,
+        "interaction": -1.8500000000000005
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed2",
+      "age": 200000,
+      "repeat": 2,
+      "j_final": {
+        "continue": 7.25,
+        "optimizer_reset": 9.4,
+        "head_reset": 8.45,
+        "head_and_optimizer_reset": 7.4
+      },
+      "effects": {
+        "optimizer_reset": 2.1500000000000004,
+        "head_reset": 1.1999999999999993,
+        "head_and_optimizer_reset": 0.15000000000000036,
+        "interaction": -3.1999999999999993
+      }
+    },
+    {
+      "game": "breakout",
+      "trajectory_id": "natural_breakout_seed2",
+      "age": 200000,
+      "repeat": 3,
+      "j_final": {
+        "continue": 10.1,
+        "optimizer_reset": 8.9,
+        "head_reset": 9.5,
+        "head_and_optimizer_reset": 7.65
+      },
+      "effects": {
+        "optimizer_reset": -1.1999999999999993,
+        "head_reset": -0.5999999999999996,
+        "head_and_optimizer_reset": -2.4499999999999993,
+        "interaction": -0.6500000000000004
+      }
+    }
+  ],
+  "crossfit": {
+    "breakout": {
+      "directions": [
+        {
+          "train": "screen",
+          "test": "confirmation",
+          "train_sbs": "head_reset",
+          "histories": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "selected_actions": [
+                "head_reset",
+                "continue"
+              ],
+              "leave_history_out_sbs": "head_reset",
+              "winner_vs_continue": -0.27500000000000036,
+              "winner_vs_train_sbs": 0.7875000000000001,
+              "winner_vs_leave_history_out_sbs": 0.7875000000000001
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "selected_actions": [
+                "head_reset",
+                "head_and_optimizer_reset"
+              ],
+              "leave_history_out_sbs": "head_reset",
+              "winner_vs_continue": 0.15000000000000036,
+              "winner_vs_train_sbs": 0.8375000000000004,
+              "winner_vs_leave_history_out_sbs": 0.8375000000000004
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "selected_actions": [
+                "head_reset",
+                "head_reset"
+              ],
+              "leave_history_out_sbs": "continue",
+              "winner_vs_continue": 0.21249999999999947,
+              "winner_vs_train_sbs": 0.0,
+              "winner_vs_leave_history_out_sbs": 0.21249999999999947
+            }
+          ],
+          "mean": {
+            "winner_vs_continue": 0.02916666666666649,
+            "winner_vs_train_sbs": 0.5416666666666669,
+            "winner_vs_leave_history_out_sbs": 0.6124999999999999
+          }
+        },
+        {
+          "train": "confirmation",
+          "test": "screen",
+          "train_sbs": "optimizer_reset",
+          "histories": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "selected_actions": [
+                "optimizer_reset",
+                "optimizer_reset"
+              ],
+              "leave_history_out_sbs": "optimizer_reset",
+              "winner_vs_continue": -0.5125000000000002,
+              "winner_vs_train_sbs": 0.0,
+              "winner_vs_leave_history_out_sbs": 0.0
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "selected_actions": [
+                "head_and_optimizer_reset",
+                "optimizer_reset"
+              ],
+              "leave_history_out_sbs": "optimizer_reset",
+              "winner_vs_continue": -1.0375,
+              "winner_vs_train_sbs": -0.3624999999999998,
+              "winner_vs_leave_history_out_sbs": -0.3624999999999998
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "selected_actions": [
+                "head_reset",
+                "optimizer_reset"
+              ],
+              "leave_history_out_sbs": "optimizer_reset",
+              "winner_vs_continue": -0.050000000000000266,
+              "winner_vs_train_sbs": 0.26249999999999973,
+              "winner_vs_leave_history_out_sbs": 0.26249999999999973
+            }
+          ],
+          "mean": {
+            "winner_vs_continue": -0.5333333333333335,
+            "winner_vs_train_sbs": -0.03333333333333336,
+            "winner_vs_leave_history_out_sbs": -0.03333333333333336
+          }
+        }
+      ],
+      "bidirectional_mean": {
+        "winner_vs_continue": -0.25208333333333355,
+        "winner_vs_train_sbs": 0.25416666666666676,
+        "winner_vs_leave_history_out_sbs": 0.2895833333333333
+      },
+      "interpretation": "Exploratory repeat-split label stability; uses trial outcomes, not a pre-repair diagnostic selector. n=3 training histories; no confidence interval."
+    }
+  },
+  "estimand": "Paired final raw-return difference; equal ages/repeats within source trajectory, then equal histories. Interaction=joint-head-optimizer+continue.",
+  "checks": "Unique jobs, finite finals, fixed 50k budgets, matched continuation/checkpoint/evaluation seeds, all curve means reconstructed from 20 returns.",
+  "limitations": "Same source histories, new continuation repeats only; n=3 per game. Partial histories excluded; no pooled-game repair claim or confidence intervals.",
+  "analysis_script_sha256": "8a47adb693c59267d31964c0c7edbecd077d98d9cbe8f7c076edf8e7e341309e"
+}
