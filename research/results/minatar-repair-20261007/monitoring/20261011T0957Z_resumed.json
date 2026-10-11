@@ -1,0 +1,58 @@
+{
+  "captured_at_utc": "2026-10-11T09:54:49.037975+00:00",
+  "supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 6596,
+    "worker_pid": 3912,
+    "updated_at": 1791712475.4595392,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 5
+  },
+  "coordinator_pid": 3912,
+  "coordinator_alive": true,
+  "root_progress_time": 1791712488.4538133,
+  "workers": [
+    {
+      "task": "branch:41c723840c4782d017182cd08f0fc699607a5b01a53ae672f8906ad9d87790f3",
+      "pending": true,
+      "job_id": "branch:natural:natural_asterix_seed0_age50000:head_reset:repeat2:h50000",
+      "steps": 17203,
+      "progress_time": 1791712484.7170706
+    },
+    {
+      "task": "branch:f15c4405e28d82461aa84d11629a1633449d4ba7a80aeb679503d6a6d46aa64b",
+      "pending": true,
+      "job_id": "branch:natural:natural_asterix_seed0_age50000:head_reset:repeat3:h50000",
+      "steps": 17206,
+      "progress_time": 1791712484.7441695
+    }
+  ],
+  "active_package": {
+    "id": 2,
+    "started_at": 1791712181.31882,
+    "updates": 184197,
+    "wall_time_sec": 307.13723420000315
+  },
+  "closed_packages": [
+    {
+      "id": 0,
+      "started_at": 1791400485.8058875,
+      "updates": 1979937,
+      "wall_time_sec": 92032.57193868786,
+      "closed_at": 1791492518.3778245
+    },
+    {
+      "id": 1,
+      "started_at": 1791492518.3778272,
+      "updates": 7561975,
+      "wall_time_sec": 219662.9409918525,
+      "closed_at": 1791712181.318818
+    }
+  ],
+  "worker_error": null,
+  "root_outcome_count": 146,
+  "scientific_code_sha_matches": true,
+  "confirmation_audit_source_sha256": "594efebfc577c50b9a73b348b34fbd9c6275f219c97019c9ec6781da0c8e9402"
+}

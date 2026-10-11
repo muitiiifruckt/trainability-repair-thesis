@@ -1,6 +1,17 @@
 # NEXT — читать первым в каждой сессии
 
-Обновлено: 2026-10-08. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+Обновлено: 2026-10-11. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+
+## Текущее состояние — 11 октября
+
+- Первый screen **96/96 завершён**; fixed-TD 24 jobs/744 branches и synthetic LR 1728 branches завершены. В зафиксированном срезе перед возобновлением **144 online outcomes**: screen 96 + confirmation Breakout 48. Asterix confirmation продолжается, живой счётчик уже растёт; исходных histories по-прежнему три на игру.
+- **Прежний optimizer finding Breakout не подтвердился:** effects screen −0.500 → confirmation +0.304167; все три history сменили знак. Польза выбора сверх continue не подтверждена. Полный sourced audit: [monitoring/20261011T0954Z.md](results/minatar-repair-20261007/monitoring/20261011T0954Z.md); основной manual статус — [CURRENT_STATUS.md](results/minatar-repair-20261007/CURRENT_STATUS.md).
+- После перезагрузки Windows процессов не было. SHA scientific code/config и обе сохранённые точки Asterix на 40k/50k verified; supervisor возобновлён 11 октября около 12:49 MSK, один coordinator, workers=2. Текущие PID всегда проверять по `supervisor.json`/manifest и реальному alive; stale `worker_status=running` недостаточен.
+- Frozen runner закрыл старый пакет с 61.02 h календарного времени, включая простой, и открыл пакет 2. Строгий wall ceiling остаётся дефектом; не трактовать это как отрицательный repair outcome и не корректировать metadata задним числом.
+- Активен **спринт 01**, следующий план остаётся предварительным до review/встречи. Продолжается существующая фоновая кампания и её уже авторизованная очередь; новых серий сверх неё и изменений методики до встречи не добавлять. `experiments/`/`configs/` не менять; исправления — только новая кампания/new output_root. Не публиковать intervals при <5 histories, не использовать auto-report intervals n=3; после автоматического пересоздания текста запускать `scripts/suppress_small_history_intervals.py`.
+- Seaquest/Freeway закрыты: exploratory heterogeneous gate текущего runner не заменяет корректное подтверждение и freeze. Пробелы программы — [completion audit](../docs/research_program_completion_audit.md).
+
+Ниже — прежние записи для контекста; их счётчики 48/72 не являются текущим состоянием.
 
 ## Возобновлено (2026-10-09, после короткой остановки)
 Кампания `minatar-repair-20261007` остановлена пользователем и затем возобновлена (supervisor + coordinator перезапущены, очередь продолжается с savepoint; 48 исходов на момент перезапуска, Breakout полностью, Asterix начат).

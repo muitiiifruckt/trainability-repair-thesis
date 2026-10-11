@@ -1,5 +1,15 @@
 # Журнал решений
 
+## 2026-10-11 — знак эффекта Adam не подтвердился и очередь восстановлена
+
+1. **Снять стабильный вред optimizer reset в Breakout.** На полных 48 confirmation branches repeats 2/3 mean effect +0.304167 против −0.500 в исходном screen; все три source histories сменили знак. Это новые continuation repeats тех же трёх histories. Положительную confirmation не объявлять доказанной пользой; итог — «неопределённо».
+2. **Не объявлять selection signal по положительному контрасту с шумным SBS.** Checkpoint winner screen→confirm +0.029167 vs continue, обратное направление −0.533333; среднее −0.252083. Среднее +0.254167 vs training-half SBS не компенсирует отсутствие пользы vs continue. Это exploratory outcome-based label stability, не diagnostic predictor или перенос на unseen history.
+3. **Восстановить ту же очередь после прекращения процессов.** Живых coordinator/workers/leases нет; проверены исходные SHA и два Asterix savepoints 40k/50k. Hidden supervisor возобновлён с workers=2, без правки learner/config/seeds. Перезагрузка Windows зафиксирована, точная причина остановки progress не установлена; не записывать её как MemoryError или numerical result.
+4. **Оставить wall-budget defect явно открытым.** Пакет 1 автоматически закрыт с 7,561,975 updates/61.02 h календарного времени включая простой; новый пакет 2 начат перед wave. Строгий 24h deadline требует новой кампании. Исходные metadata сохраняются.
+5. **Следовать текущему спринту:** продолжать разрешённую фоновую очередь, новых методических экспериментов до встречи не запускать. Исправления `experiments/`/`configs/` — только для нового output_root. Reserved transfer закрыт до корректного подтверждения signal/freeze; текущий exploratory gate не достаточен.
+
+Данные: [audit](results/minatar-repair-20261007/monitoring/20261011T0954Z.md), compact JSON с исходным SHA `594efebfc577c50b9a73b348b34fbd9c6275f219c97019c9ec6781da0c8e9402`. Числа и matched-seed/budget checks воспроизведены независимым read-only агентом; n=3/game, intervals не вычислялись.
+
 ## 2026-10-05 — первая постановка после поиска литературы
 
 1. **Не заявлять новизну fixed-budget plasticity.** Такая формализация уже есть у Lyle et al. (2023).

@@ -1,25 +1,28 @@
-# Состояние исследования, 9 октября 2026
+# Состояние исследования, 11 октября 2026
 
-**Первый online screening завершён: 96/96 веток**, 12 checkpoints, шесть исходных histories — по три в Breakout и Asterix. У каждой history два возраста и два continuation repeats. Все 24 checkpoint×repeat панели полные, budgets по 50k transitions/updates, continuation/evaluation seeds внутри панели совпадают. Numerical failures, нечисловых finals и дублей нет. Код и scientific config соответствуют исходному manifest.
+**Первый screen завершён (96/96), новые продолжения Breakout тоже завершены (48/48). Вред сброса Adam из первого screen не подтвердился.** В root на зафиксированном срезе 144 online outcomes; confirmation Asterix ещё выполняется. Source histories по-прежнему три на игру: возраста и repeats не увеличивают число независимых histories.
 
-Средний final-return effect относительно matched continue; сначала усредняются возраста и repeats внутри source history:
+Для Breakout mean final-return effects относительно matched continue, с равным весом возрастов/repeats внутри history:
 
-| Repair | Breakout, 3 histories | Asterix, 3 histories |
-|---|---:|---:|
-| Adam reset | −0.500 | +0.338 |
-| Head reset | +0.071 | −0.004 |
-| Head + Adam reset | −0.696 | +0.771 |
+- Adam reset: **−0.500 → +0.304167** в confirmation repeats 2/3. Все три history сменили знак.
+- Head reset: +0.070833 → −0.512500.
+- Head + Adam reset: −0.695833 → −0.191667.
+- Head×optimizer interaction: −0.266667 → +0.016667.
 
-Adam и совместный reset имеют положительное среднее во всех трёх Asterix histories и отрицательное во всех трёх Breakout histories. Head reset меняет знак между histories обеих игр. Head×optimizer interaction по Breakout: −0.563/+0.462/−0.700; по Asterix: +0.525/+0.088/+0.700. Знак среднего interaction одной history не означает согласия всех её отдельных панелей.
+Новый положительный знак Adam не является доказанной пользой: первые и новые независимые продолжения тех же histories противоречат друг другу. По всем четырём repeats mean Adam effect −0.097917; объединение не объясняет нестабильность. **Классификация: неопределённо**, intervals при n=3 не показываем. Прежнее различие игр из screen нельзя представлять как подтверждённый optimizer contrast. Asterix screen effects +0.3375/−0.004167/+0.770833 для Adam/head/joint остаются screening findings до завершения его confirmation.
 
-Это описательные результаты пилота, без population confidence intervals. Независимая единица — source history, а не 24 панели и не 96 веток. Различие игр создаёт кандидата для следующей проверки, но пока не доказывает пользу diagnostics сверх простого контекста игры или age/return. Нет оснований объявлять optimizer state «испорченным» только потому, что его reset помог. Классификация: **неопределённо**; полезность индивидуального selector не подтверждена.
+Exploratory выбор checkpoint winner по двум trial repeats: screen→confirm +0.029167 vs continue, обратно −0.533333; среднее **−0.252083 vs continue**. Положительный контраст +0.254167 с training-half SBS не доказывает пользу: SBS тоже меняется между половинами. Это проверка устойчивости outcome labels, использующая пробные outcomes тех же histories; pre-repair diagnostic selector и перенос на unseen history здесь не проверялись.
 
-Head и совместный reset сразу уменьшают return: средняя парная потеря −3.058 в Breakout и −0.850 в Asterix. Adam reset сохраняет функцию и immediate return. Поэтому gain от собственного post-repair старта не заменяет primary final return: разрушение функции создаёт искусственно большой recovery gain.
+У 144 завершённых веток нет failures, дублей или нечисловых finals; matched continuation/checkpoint/evaluation seeds и бюджеты 50k/50k проверены, evaluation means реконструированы по 20 episodes. Числа и checks независимо воспроизведены. Источник SHA256: `594efebfc577c50b9a73b348b34fbd9c6275f219c97019c9ec6781da0c8e9402`.
 
-Fixed-TD и synthetic LR серии уже завершены, идут independent continuation repeats 2/3. На fixed-TD после 2000 updates совместный reset хуже continue во всех 24 jobs, несмотря на положительный online effect Asterix. Synthetic scale drop показывает смену знака optimizer effect с LR и чувствительность процентов к усреднению. Это пока не устанавливает online механизм. Пять float32 timestep-controls превышают declared tolerance; они сохранены как numerical discrepancies отдельно от FPE failures и требуют длинного precision control на безопасной границе. Полный журнал — `monitoring/20261009T1410Z.md`, compact data и явные estimators — в соседних JSON. Seaquest/Freeway остаются закрытыми до допустимого freeze и подтверждённого development signal.
+Полный журнал, компактные данные и график: [audit 11 октября](monitoring/20261011T0954Z.md), [JSON](monitoring/20261011T0954Z_confirmation.json), [history effects](monitoring/confirmation_effects_20261011T0954Z.png). Предыдущий screen сохранён отдельно в `monitoring/20261009T1310Z.*`; его описание относится только к repeats 0/1.
 
-Данные, график и журнал полного screening: `monitoring/20261009T1310Z.json`, `monitoring/history_effects_20261009T1310Z.png`, `monitoring/20261009T1310Z.md`. Root outcomes SHA256: `fe3ee030f585111795edc9fbe17c8833ea4068b8326e0cf4a4447d9264ea396b`. Снимок проверен независимо вторым агентом; воспроизводимые scripts не импортируют learner и выполняют ноль optimizer updates.
+Fixed-TD 24 jobs/744 branches и synthetic LR controls 1728 branches завершены. Совместный reset хуже continue на fixed-TD после 2000 updates во всех 24 jobs; это fitting outcome, не return. Synthetic scale drop меняет optimizer effect с LR; проценты чувствительны к estimator. Пять float32 timestep controls превышают declared tolerance; FPE отсутствуют, длинный precision follow-up отложен до новой кампании. Подробный журнал — [controls audit](monitoring/20261009T1410Z.md).
 
-Автоматический `REPORT.md` обновлён на 96 строк и содержит bootstrap intervals при n=3/game. Эти интервалы не используются для научных выводов: coverage на таком количестве histories не подтверждён. Manual status и immutable monitoring сохраняются отдельно от генератора.
+11 октября процессов прежнего supervisor/coordinator/workers не было; последний root progress — с 9 октября. Windows перезагружалась, точная причина остановки progress не установлена. Проверены исходные SHA/config и обе сохранённые ветки Asterix на 40k/50k; возобновлена одна существующая очередь с двумя workers и прежними seeds. [Restart preflight](monitoring/20261011T0949Z_restart.json). Актуальные PID/рост clocks проверяются по live manifest/progress и реальным процессам.
 
-На срезе около 16:13 MSK coordinator 16652 и supervisor 10116 живы, новых инфраструктурных ошибок нет. Первый закрытый пакет имеет wall time 25.56 h, включающий остановки; строгая календарная граница 24 h текущим runner не обеспечена. Активный пакет — около 16.4 h и 4.04M accounted updates, ниже 12M. Metadata не переписывались. Обязательные пробелы реализации перечислены в `docs/research_program_completion_audit.md`; завершение текущей реализованной батареи ещё не означает выполнения всей программы.
+Frozen runner закрыл пакет 1 с 7,561,975 accounted updates и 61.02 h календарного времени, включая длительный простой; пакет 2 начат перед следующей wave. Строгий 24h wall ceiling не обеспечен, metadata не переписывались. Потолок 12M updates и возобновляемая очередь остаются действующими. Инфраструктурные ограничения не являются отрицательными результатами repairs.
+
+Продолжается существующая программа. Новых методических серий к ней до встречи не добавляем; активен спринт 01, следующий план предварительный. `experiments/` и `configs/` во время кампании не меняются; исправления требуют нового output_root. [Completion audit](../../../docs/research_program_completion_audit.md) остаётся открытым. Seaquest/Freeway закрыты до корректного подтверждения signal и protocol freeze; текущего exploratory gate недостаточно.
+
+Автоматический `REPORT.md` смешивает доступные repeats и может вновь генерировать intervals при n=3. Такие intervals не используются; отдельный postprocessing убирает их из текущего текста, не меняя frozen analysis code. Научная интерпретация и сопоставление screen/confirmation хранятся в этом manual статусе и неизменяемых monitoring snapshots.
