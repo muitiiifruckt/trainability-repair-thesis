@@ -2,7 +2,7 @@
 
 Это живой отчёт: завершённые запуски отделены от запланированных. Минимум для вывода — независимые истории обучения и continuation repeats.
 
-Обновление: 2026-10-11 12:49:12; серия: first_online_screen_96_branches.
+Обновление: 2026-10-11 12:49:40; серия: fixed_TD_mechanisms.
 Checkpoints: 12. Завершённые ветки: {'screen': 96, 'confirm': 48, 'stress': 0, 'parameters': 0, 'lr_control': 0}.
 Текущий пакет: 1; optimizer updates: 7,561,975.
 
