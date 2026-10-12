@@ -1,5 +1,9 @@
 # Журнал решений
 
+## 2026-10-12 — усиление controller и отказ от повторного live handoff
+
+Исполненная версия orchestration сохранена commit `686a7a0`; дальнейшие усиления имеют отдельные hashes. После независимого замечания о TOCTOU live handoff полностью retired, CLI выполняет только read-only audit. Проверяем recorded decision по manifest и canonical операции, полный бюджет finished outcomes и только явный FloatingPointError как numerical failure. Standalone controller под worker.lock не создаёт Campaign при живых child leases. Девять stdlib tests прошли за 0.015 s без learner updates; stop script syntax и четыре workspace boundary examples проверены без остановки процессов. Замечание final reviewer о Thesis-copy/Thesis2 устранено. Healthy PID 13144/17736 оставлены выполнять source queue; будущая wrapper revision применяется при следующем штатном запуске. Heartbeat prompt обновлён с сохранением cadence/quiet intent. [Проверки и provenance](results/minatar-repair-20261007/monitoring/20261012T1024Z_queue_recovery.md).
+
 ## 2026-10-12 — записанное расширение восстанавливать до нового gate
 
 Partial imported checkpoints превращают global readiness в incomplete; frozen auto не читает принятое increase_resolution и мог пропустить natural seeds 3–5/repeats 4–5 после restart. Дефект воспроизведён независимо. В scripts добавлена lock-owning orchestration принятого решения; она вызывает frozen Campaign methods, сохраняет task identities/accounting и не меняет scientific config/code. Supervisor возобновляет durable plan до auto. Текущие probes сохранены перед handoff; первая transient lock denial не выполняла learner updates, повторный запуск продолжил sources. Четыре лёгких tests прошли. Независимые замечания к первой handoff/plan-validation версии сохранены для усиления до её следующего использования; фактические hashes — [операционный audit](results/minatar-repair-20261007/monitoring/20261012T1024Z_queue_recovery.md).

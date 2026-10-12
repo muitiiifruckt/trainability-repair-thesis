@@ -83,12 +83,38 @@ def coverage(plan, operation, outcomes):
         failure = row.get("failure_reason")
         if failure:
             # A finished numerical failure is recorded, never retried as missing.
+            if not isinstance(failure, str) or failure.split(":", 1)[0] != "FloatingPointError":
+                raise ValueError("Infrastructure failure cannot be a finished numerical outcome")
             failures.append({"job_id": row.get("job_id"), "reason": failure})
-        elif row.get("completed_env_steps") != plan["horizon"] or not isinstance(row.get("j_final"), (int, float)) or not math.isfinite(row["j_final"]):
+        elif (row.get("completed_env_steps") != plan["horizon"]
+              or row.get("budget_gradient_updates") != plan["horizon"]
+              or row.get("probe_gradient_updates", 0) != 0
+              or not isinstance(row.get("j_final"), (int, float)) or not math.isfinite(row["j_final"])):
             raise ValueError("Invalid finished outcome in recorded resume plan")
         found[key] = row
     return {"expected": len(expected), "finished": len(found), "missing": len(expected - found.keys()),
             "numerical_failures": failures, "complete": found.keys() == expected}
+
+
+def validate_plan(plan, config, manifest, checkpoints):
+    if plan["config_hash"] != sha(config) or plan["decision_sha256"] != sha(plan["decision"]):
+        raise ValueError("Changed recorded decision/config")
+    if not any(sha(r) == plan["decision_sha256"] for r in manifest.get("decisions", [])):
+        raise ValueError("Recorded decision is absent from the campaign manifest")
+    canonical = make_plan(config, {"decisions": [plan["decision"]]}, checkpoints, plan["scientific_code"])
+    for field in ("games", "menu", "horizon"):
+        if plan[field] != canonical[field]:
+            raise ValueError(f"Changed recorded plan field: {field}")
+    if not set(config["screen"]["ages"]).issubset(plan["ages"]):
+        raise ValueError("Recorded plan omitted a source age")
+    if plan["status"] != "complete" and plan["ages"] != canonical["ages"]:
+        raise ValueError("Changed source ages in a pending recorded plan")
+    if plan["status"] == "complete" and not set(plan["ages"]).issubset(canonical["ages"]):
+        raise ValueError("Recorded source ages are absent from current artifacts")
+    recorded = [{k: op[k] for k in ("id", "seeds", "repeats")} for op in plan["operations"]]
+    expected = [{k: op[k] for k in ("id", "seeds", "repeats")} for op in canonical["operations"]]
+    if recorded != expected:
+        raise ValueError("Changed operations in the recorded expansion")
 
 
 def verify(config, manifest, code):
@@ -98,6 +124,19 @@ def verify(config, manifest, code):
         path = (ROOT / name).resolve()
         if not path.is_relative_to(ROOT) or hashlib.sha256(path.read_bytes()).hexdigest() != digest:
             raise ValueError(f"Changed frozen scientific code: {name}")
+
+
+def ensure_no_live_child_leases(folder):
+    from scripts.research_supervisor import alive
+    for path in folder.glob("workers/*/*/worker_lease.json"):
+        try:
+            lease = read(path)
+        except FileNotFoundError:
+            continue
+        except (OSError, json.JSONDecodeError) as error:
+            raise RuntimeError("Cannot verify existing worker lease") from error
+        if alive(lease.get("pid")):
+            raise RuntimeError("Existing child workers are healthy; wait before coordinator resume")
 
 
 def run(config_path, workers):
@@ -112,7 +151,22 @@ def run(config_path, workers):
     lock.write(b"0")
     lock.flush()
     lock.seek(0)
-    msvcrt.locking(lock.fileno(), msvcrt.LK_NBLCK, 1)
+    started_lock_wait = time.monotonic()
+    while True:
+        try:
+            msvcrt.locking(lock.fileno(), msvcrt.LK_NBLCK, 1)
+            break
+        except OSError:
+            from scripts.research_supervisor import alive
+            owner = read(folder / "manifest.json").get("worker_pid")
+            if alive(owner) and owner != os.getpid():
+                lock.close()
+                raise RuntimeError("Another coordinator is active; no changes made")
+            if time.monotonic() - started_lock_wait >= 10:
+                lock.close()
+                raise
+            lock.seek(0)
+            time.sleep(.1)
     campaign = None
     try:
         manifest = read(folder / "manifest.json")
@@ -120,13 +174,13 @@ def run(config_path, workers):
         plan = read(path) if path.exists() else make_plan(config, manifest, rows(folder / "checkpoints.jsonl"), read(folder / "dependency_manifest.json")["code"])
         code = plan["scientific_code"] if plan else read(folder / "dependency_manifest.json")["code"]
         verify(config, manifest, code)
+        ensure_no_live_child_leases(folder)
         if plan:
-            if plan["config_hash"] != sha(config) or plan["decision_sha256"] != sha(plan["decision"]):
-                raise ValueError("Changed recorded decision/config")
+            validate_plan(plan, config, manifest, rows(folder / "checkpoints.jsonl"))
             plan["orchestration_revisions"].append({"time": time.time(), "pid": os.getpid(),
                 "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
             write(path, plan)
-        # rl_runner preserves its required MinAtar-before-torch import order.
+        # Frozen modules import MinAtar before learner/BLAS work begins.
         from experiments.rl_runner import Campaign, torch
         campaign = Campaign(config_path, resume=True, workers=workers)
         torch.set_num_threads(1)
@@ -160,6 +214,13 @@ def run(config_path, workers):
             campaign.manifest["worker_status"] = "failed"
             campaign.manifest["worker_error"] = {"time": time.time(), "type": type(error).__name__, "message": str(error)}
             campaign.persist()
+        else:
+            # Own worker.lock here; surface integrity failures before Campaign
+            # instead of leaving an empty supervisor error signature forever.
+            manifest = read(folder / "manifest.json")
+            manifest.update(worker_status="failed", worker_pid=os.getpid(), worker_error={
+                "time": time.time(), "type": type(error).__name__, "message": str(error)})
+            write(folder / "manifest.json", manifest)
         raise
     finally:
         if campaign is not None:

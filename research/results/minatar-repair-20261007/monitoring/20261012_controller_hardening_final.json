@@ -1,0 +1,152 @@
+{
+  "captured_at_utc": "2026-10-12T10:48:34.322425+00:00",
+  "scientific_code_verified": true,
+  "config_hash": "f3029c965f66d2100d1e8239800c580b7d4442d2b7e918d7919d1146eb66833d",
+  "scientific_code_sha256": {
+    "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+    "experiments\\mechanism_analysis.py": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+    "experiments\\rl_analysis.py": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+    "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+    "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+    "experiments\\rl_runner.py": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+    "experiments\\rl_scheduler.py": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+    "experiments\\rl_transfer.py": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+    "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+  },
+  "executed_first_revision_git_commit": "686a7a0",
+  "active_controller_revision": {
+    "path": "recorded_resume_plan.json",
+    "decision_sha256": "02ea086d1da576cc964b53285d0bf7e3f483d945054af3e9c926b49a8184b841",
+    "script_sha256": "35c4332a320aae897f56a9bb92f486f48775b14db70db6be63742de1dc3062c1"
+  },
+  "on_disk_operational_sha256": {
+    "scripts\\resume_recorded_research.py": "04639ffddea8bdc5f836131946031f9eed4d24d0648bf0471b9480d44388f849",
+    "scripts\\handoff_recorded_queue.py": "bf66816952f24eae186ed197ef84d304fae360802ee1c6c241bfea8cfc1ad45d",
+    "scripts\\research_supervisor.py": "8cf24795c07db4385a57745c6f6e59073b352a116d87e3c6842a438efa016bb1",
+    "scripts\\stop_campaign.ps1": "11f83aa1adc8b3b3989c6d81f329c332731416d01051cadfe8cc97a133cc3b15",
+    "tests\\test_recorded_resume.py": "eed7cd70681c0ad2ed92ab8c781e56589fa37b07e62eb42d33ce4b304d76155b"
+  },
+  "supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 13144,
+    "worker_pid": 17736,
+    "updated_at": 1791802109.5747962,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 8
+  },
+  "supervisor_alive": true,
+  "coordinator_alive": true,
+  "worker_status": "running",
+  "worker_error": null,
+  "progress": {
+    "stage": "parallel_source",
+    "operation": "additional_sources",
+    "parallel_wave_id": 34,
+    "pending_tasks": [
+      "source:735f92a39646bb330c0b8db3955a70c910d42d1a2aece07f31fa9c9ff5c1f199"
+    ],
+    "worker_progress": [
+      {
+        "task_id": "source:735f92a39646bb330c0b8db3955a70c910d42d1a2aece07f31fa9c9ff5c1f199",
+        "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\source\\source_735f92a39646bb330c0b",
+        "pending": true,
+        "child_progress": {
+          "stage": "source",
+          "trajectory_id": "natural_asterix_seed5",
+          "job_id": "natural_asterix_seed5",
+          "environment_steps": 118249,
+          "gradient_updates": 113250,
+          "recent_return": 1.05,
+          "wall_time_sec": 679.651071100001,
+          "event": "checkpoint_created",
+          "checkpoint_id": "natural_asterix_seed5_age50000",
+          "j_pre": 0.45,
+          "random_return": 0.75,
+          "time": 1791802094.8862991,
+          "package_updates": 113250,
+          "package_wall_sec": 679.6828087999893
+        }
+      }
+    ],
+    "time": 1791802097.109109,
+    "package_updates": 704754,
+    "package_wall_sec": 3407.484846180101
+  },
+  "recorded_plan_status": "running",
+  "recorded_operations": [
+    {
+      "id": "additional_sources",
+      "seeds": [
+        3,
+        4,
+        5
+      ],
+      "repeats": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "status": "running",
+      "coverage": {
+        "expected": 192,
+        "finished": 0,
+        "missing": 192,
+        "numerical_failures": [],
+        "complete": false
+      }
+    },
+    {
+      "id": "additional_repeats",
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "repeats": [
+        4,
+        5
+      ],
+      "status": "pending"
+    }
+  ],
+  "plan_validation_passed": true,
+  "outcomes": {
+    "rows": 192,
+    "by_source_mode": {
+      "natural": 192
+    },
+    "sha256": "a895b8b6ae778f3878ada2e8297b9945d0c4cad3931a885e4d2813ad6115cf16"
+  },
+  "validation": {
+    "unittest": "tests.test_recorded_resume",
+    "tests_passed": 9,
+    "wall_seconds": 0.015,
+    "imports_torch": false,
+    "optimizer_updates": 0,
+    "powershell_syntax_passed": true,
+    "stop_script_executed": false,
+    "powershell_workspace_examples_passed": 4,
+    "workspace_boundary_excludes": [
+      "Thesis-copy",
+      "Thesis2"
+    ]
+  },
+  "live_handoff": "retired; current CLI performs read-only audit only",
+  "active_controller_restarted_for_hardening": false,
+  "automation": {
+    "id": "rl",
+    "status": "ACTIVE",
+    "cadence_minutes": 30,
+    "durable_plan_prompt": true,
+    "wrapper_prompt": true,
+    "read_only_handoff_prompt": true
+  },
+  "supersedes_snapshot_for_on_disk_revision": "20261012_controller_hardening.json",
+  "independent_review": "No blocking resume/lease/handoff defects; stop path-boundary comment addressed."
+}

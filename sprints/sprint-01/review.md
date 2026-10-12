@@ -6,6 +6,8 @@
 
 План: [plan.md](plan.md). Задачи спринта по договорённости с руководителем — **литературное ревью** и **анализ работ на смежные темы**; эксперименты выполнены сверх плана. Итоги собраны по `research/decisions.md`, `research/NEXT.md` и git-истории; финальная версия — в конце спринта.
 
+**Операционное дополнение 12 октября.** При восстановлении обнаружен дефект: новый incomplete gate мог отменить уже записанное расширение. Исправлен внешний controller, scientific SHA сохранены; исполнившаяся версия — commit `686a7a0`. После независимого review live handoff retired, добавлены canonical plan/budget/live-lease checks. Прошли 9 stdlib tests и syntax/path checks stop helper без выполнения остановки; healthy campaign не перезапускалась для hardening. [Queue recovery и отдельные revision hashes](../../research/results/minatar-repair-20261007/monitoring/20261012T1024Z_queue_recovery.md). Это восстановление существующей очереди, не новая научная методика; остальные completion gaps остаются открыты.
+
 ## Сделано
 **По задачам спринта**
 - **Анализ смежных работ** — тематические заметки (параметры, optimizer/targets, данные и selection, on-policy), аудит авторского кода, границы новизны с ближайшими работами (TeLAPA, PAME, Injection) — `notes/`, `docs/novelty.md`.

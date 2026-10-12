@@ -1,23 +1,23 @@
-"""Одноразовый handoff после сохранения текущей механистической серии.
+"""Read-only audit исторической handoff boundary.
 
-Не прерывает незавершённый probe или живых child writers. Останавливает
-только сверенные PID данной кампании; новый supervisor запускается скрыто.
+Одноразовый live handoff был выполнен версией из Git 686a7a0. Этот CLI больше
+не останавливает и не запускает процессы: advisory JSON не даёт строгого
+cooperative acknowledgement. Действующий supervisor уже использует durable
+wrapper, поэтому дальнейшие live переключения не требуются.
 """
 import argparse
-import ctypes
-import json
 from pathlib import Path
-import subprocess
 import sys
 import time
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from research_supervisor import alive
-from resume_recorded_research import read, rows, write, make_plan, coverage
+from resume_recorded_research import read, rows, write
 
 
 def safe_boundary(config, manifest, progress, checkpoints, active_leases):
+    """Только наблюдение; не разрешение на остановку процесса."""
     if active_leases or progress.get("stage") != "mechanisms" or progress.get("event") != "mechanisms_complete":
         return False
     games = set(config["screen"]["games"] + config["adaptive"]["development_extension_games"])
@@ -27,83 +27,24 @@ def safe_boundary(config, manifest, progress, checkpoints, active_leases):
     return bool(expected) and all(jobs.get(k, {}).get("status") == "complete" for k in expected) and jobs.get(progress.get("job_id"), {}).get("status") == "complete"
 
 
-def terminate(pid):
-    from ctypes import wintypes
-    library = ctypes.WinDLL("kernel32", use_last_error=True)
-    library.OpenProcess.argtypes = (wintypes.DWORD, wintypes.BOOL, wintypes.DWORD)
-    library.OpenProcess.restype = wintypes.HANDLE
-    library.TerminateProcess.argtypes = (wintypes.HANDLE, wintypes.UINT)
-    library.TerminateProcess.restype = wintypes.BOOL
-    library.CloseHandle.argtypes = (wintypes.HANDLE,)
-    handle = library.OpenProcess(0x1001, False, pid)
-    if not handle:
-        if not alive(pid):
-            return
-        raise OSError(ctypes.get_last_error(), "Cannot open owned research process")
-    try:
-        if not library.TerminateProcess(handle, 0):
-            raise OSError(ctypes.get_last_error(), "Cannot stop owned research process")
-    finally:
-        library.CloseHandle(handle)
-    for _ in range(100):
-        if not alive(pid):
-            return
-        time.sleep(.1)
-    raise RuntimeError("Research process did not exit")
-
-
 def handoff(config_path, coordinator_pid, supervisor_pid, workers):
+    """Совместимый audit entry point; все process mutations отключены."""
     config = read(config_path)
     folder = (ROOT / config["output_root"]).resolve()
     if not folder.is_relative_to(ROOT):
         raise ValueError("Output outside workspace")
-    status_file = folder / "recorded_handoff.json"
-    started = time.time()
-    while time.time() - started < 3600:
-        manifest, progress = read(folder / "manifest.json"), read(folder / "progress.json")
-        supervisor = read(folder / "supervisor.json")
-        if manifest.get("worker_pid") != coordinator_pid or supervisor.get("supervisor_pid") != supervisor_pid:
-            write(status_file, {"status": "owner_changed_no_action", "time": time.time()})
-            return
-        checkpoints = rows(folder / "checkpoints.jsonl")
-        plan = make_plan(config, manifest, checkpoints, read(folder / "dependency_manifest.json")["code"])
-        if plan is None or all(coverage(plan, op, rows(folder / "outcomes.jsonl"))["complete"] for op in plan["operations"]):
-            write(status_file, {"status": "no_pending_recorded_expansion", "time": time.time()})
-            return
-        active_leases = []
-        for path in folder.glob("workers/*/*/worker_lease.json"):
-            try:
-                lease = read(path)
-            except FileNotFoundError:
-                continue
-            except (OSError, json.JSONDecodeError):
-                # An unreadable lease is uncertainty, never permission to stop.
-                active_leases.append({"lease_temporarily_unreadable": str(path)})
-                continue
-            if alive(lease.get("pid")):
-                active_leases.append(lease)
-        ready = safe_boundary(config, manifest, progress, checkpoints, active_leases)
-        if ready or (not alive(coordinator_pid) and not active_leases):
-            snapshot = {"status": "handoff_at_saved_boundary", "time": time.time(),
-                "coordinator_pid": coordinator_pid, "supervisor_pid": supervisor_pid,
-                "progress": progress, "decision_sha256": plan["decision_sha256"]}
-            write(status_file, snapshot)
-            # Supervisor first, so it cannot launch the old route during handoff.
-            terminate(supervisor_pid)
-            terminate(coordinator_pid)
-            with (ROOT / "runs/supervisor.stdout.log").open("ab", buffering=0) as stdout, (ROOT / "runs/supervisor.stderr.log").open("ab", buffering=0) as stderr:
-                child = subprocess.Popen([str(ROOT / ".venv/Scripts/python.exe"), "-u", "scripts/research_supervisor.py",
-                    "--workers", str(workers), "--config", str(config_path)], cwd=ROOT,
-                    stdin=subprocess.DEVNULL, stdout=stdout, stderr=stderr, creationflags=subprocess.CREATE_NO_WINDOW)
-            snapshot.update(status="replacement_supervisor_started", launched_pid=child.pid, completed_at=time.time())
-            write(status_file, snapshot)
-            return
-        if progress.get("stage") not in ("mechanisms", "parallel_source", "resume_recorded_resolution"):
-            # Never kill a learner on an unexpected route; heartbeat diagnoses it.
-            write(status_file, {"status": "boundary_missed_no_termination", "time": time.time(), "progress": progress})
-            return
-        time.sleep(.25)
-    write(status_file, {"status": "timed_out_no_termination", "time": time.time()})
+    manifest, progress = read(folder / "manifest.json"), read(folder / "progress.json")
+    supervisor = read(folder / "supervisor.json")
+    record = {"status": "read_only_audit", "time": time.time(), "process_mutations": "disabled",
+              "requested_coordinator_pid": coordinator_pid, "requested_supervisor_pid": supervisor_pid,
+              "current_coordinator_pid": manifest.get("worker_pid"),
+              "current_supervisor_pid": supervisor.get("supervisor_pid"),
+              "coordinator_alive": alive(manifest.get("worker_pid")),
+              "supervisor_alive": alive(supervisor.get("supervisor_pid")),
+              "reason": "Live handoff retired; normal supervisor resumes the recorded plan."}
+    # Preserve the actual executed handoff record instead of overwriting it.
+    write(folder / "recorded_handoff_audit.json", record)
+    return record
 
 
 if __name__ == "__main__":
