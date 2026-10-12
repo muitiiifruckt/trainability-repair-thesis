@@ -8,6 +8,8 @@
 
 **Операционное дополнение 12 октября.** При восстановлении обнаружен дефект: новый incomplete gate мог отменить уже записанное расширение. Исправлен внешний controller, scientific SHA сохранены; исполнившаяся версия — commit `686a7a0`. После независимого review live handoff retired, добавлены canonical plan/budget/live-lease checks. Прошли 9 stdlib tests и syntax/path checks stop helper без выполнения остановки; healthy campaign не перезапускалась для hardening. [Queue recovery и отдельные revision hashes](../../research/results/minatar-repair-20261007/monitoring/20261012T1024Z_queue_recovery.md). Это восстановление существующей очереди, не новая научная методика; остальные completion gaps остаются открыты.
 
+**Второе прерывание 12 октября.** После сна 14:30–14:49 UTC живых Python не осталось; точная причина завершения не установлена. Verified два branch savepoints на 35k, hidden supervisor восстановил прежние ветки и загрузил готовую controller revision `88b50ab`. Независимый ledger audit подтвердил однократный reconciliation 70k; в срезе 14:59 UTC два workers продолжили обучение, 248 root outcomes без failures. Новая научная серия не завершена, выводы по repair не меняются. [Журнал восстановления](../../research/results/minatar-repair-20261007/monitoring/20261012_sleep_interruption.md).
+
 ## Сделано
 **По задачам спринта**
 - **Анализ смежных работ** — тематические заметки (параметры, optimizer/targets, данные и selection, on-policy), аудит авторского кода, границы новизны с ближайшими работами (TeLAPA, PAME, Injection) — `notes/`, `docs/novelty.md`.

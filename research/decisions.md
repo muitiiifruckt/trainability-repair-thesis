@@ -1,5 +1,9 @@
 # Журнал решений
 
+## 2026-10-12, 14:55 UTC — восстановить прежние ветки после инфраструктурного прерывания
+
+До запуска проверены отсутствие живых writers, frozen code/config и два branch SHA на completed_steps=35,000. Системный сон подтверждён, но причина завершения Python не установлена; старые queued WER не объявлять новым BSOD. Возобновлён existing hidden supervisor, workers=2, прежние task IDs/seed 4/repeats 2–3. Штатный restart загрузил подготовленную controller revision `88b50ab`, learner не менялся. Независимо подтверждён однократный reconciliation 70k updates (3,700,254 → 3,770,254); учёт ненаблюдаемой работы после последнего counter остаётся ограничением. На 14:59 UTC оба workers продолжили обучение, 248 root outcomes без failures. Прерывание учитывать отдельно от scientific results; reserved games закрыты. [Журнал и данные](results/minatar-repair-20261007/monitoring/20261012_sleep_interruption.md).
+
 ## 2026-10-12 — усиление controller и отказ от повторного live handoff
 
 Исполненная версия orchestration сохранена commit `686a7a0`; дальнейшие усиления имеют отдельные hashes. После независимого замечания о TOCTOU live handoff полностью retired, CLI выполняет только read-only audit. Проверяем recorded decision по manifest и canonical операции, полный бюджет finished outcomes и только явный FloatingPointError как numerical failure. Standalone controller под worker.lock не создаёт Campaign при живых child leases. Девять stdlib tests прошли за 0.015 s без learner updates; stop script syntax и четыре workspace boundary examples проверены без остановки процессов. Замечание final reviewer о Thesis-copy/Thesis2 устранено. Healthy PID 13144/17736 оставлены выполнять source queue; будущая wrapper revision применяется при следующем штатном запуске. Heartbeat prompt обновлён с сохранением cadence/quiet intent. [Проверки и provenance](results/minatar-repair-20261007/monitoring/20261012T1024Z_queue_recovery.md).

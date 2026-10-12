@@ -1,0 +1,160 @@
+{
+  "captured_at_utc": "2026-10-12T14:55:20.453844+00:00",
+  "classification": "infrastructure_interruption",
+  "process_termination_cause": "unknown; coincides with sleep; no fresh Python crash evidence",
+  "system_sleep_utc": "2026-10-12T14:30:17.3658349Z",
+  "system_wake_utc": "2026-10-12T14:49:20.3482525Z",
+  "shutdown_or_restart_in_window": false,
+  "old_queued_wer_not_fresh_bsod": true,
+  "live_writer_count": 0,
+  "supervisor_before": {
+    "status": "monitoring",
+    "supervisor_pid": 13144,
+    "worker_pid": 17736,
+    "updated_at": 1791815411.5912762,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 8
+  },
+  "manifest_active_package_before": {
+    "id": 3,
+    "started_at": 1791798689.6242628,
+    "updates": 3700254,
+    "wall_time_sec": 16708.969073580112
+  },
+  "progress_before": {
+    "stage": "parallel_branches",
+    "operation": "additional_sources",
+    "parallel_wave_id": 42,
+    "pending_tasks": [
+      "branch:fb44b194bab3ae44fc1e1470d7f063749bb87811fdd981923f883c46180cd1bb",
+      "branch:fc8bdf90f767dd28a5b70350ac59f2126777ab8850691c9ea8f22dd456a7ab4c"
+    ],
+    "worker_progress": [
+      {
+        "task_id": "branch:fb44b194bab3ae44fc1e1470d7f063749bb87811fdd981923f883c46180cd1bb",
+        "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_fb44b194bab3ae44fc1e",
+        "pending": true,
+        "child_progress": {
+          "stage": "confirm",
+          "job_id": "branch:natural:natural_breakout_seed4_age200000:continue:repeat2:h50000",
+          "checkpoint_id": "natural_breakout_seed4_age200000",
+          "action": "continue",
+          "repeat": 2,
+          "completed_steps": 34621,
+          "horizon": 50000,
+          "gradient_updates": 230121,
+          "recent_return": 6.55,
+          "wall_time_sec": 340.0988728000084,
+          "time": 1791815398.3265371,
+          "package_updates": 34621,
+          "package_wall_sec": 341.02498270000797
+        }
+      },
+      {
+        "task_id": "branch:fc8bdf90f767dd28a5b70350ac59f2126777ab8850691c9ea8f22dd456a7ab4c",
+        "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_fc8bdf90f767dd28a5b7",
+        "pending": true,
+        "child_progress": {
+          "stage": "confirm",
+          "job_id": "branch:natural:natural_breakout_seed4_age200000:continue:repeat3:h50000",
+          "checkpoint_id": "natural_breakout_seed4_age200000",
+          "action": "continue",
+          "repeat": 3,
+          "completed_steps": 34533,
+          "horizon": 50000,
+          "gradient_updates": 230033,
+          "recent_return": 6.9,
+          "wall_time_sec": 340.0746936999785,
+          "time": 1791815398.344312,
+          "package_updates": 34533,
+          "package_wall_sec": 341.04155799999717
+        }
+      }
+    ],
+    "time": 1791815398.591524,
+    "package_updates": 3700254,
+    "package_wall_sec": 16708.96726158011
+  },
+  "verified_savepoints": [
+    {
+      "job_id": "branch:natural:natural_breakout_seed4_age200000:continue:repeat2:h50000",
+      "task_id": "branch:fb44b194bab3ae44fc1e1470d7f063749bb87811fdd981923f883c46180cd1bb",
+      "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_fb44b194bab3ae44fc1e",
+      "completed_steps": 35000,
+      "initial_updates": 195500,
+      "resume_sha256": "7cb718e97e473950de108dea0be737801144e977564dce0e8fd9995bb3e4bedd",
+      "checkpoint_id": "natural_breakout_seed4_age200000",
+      "source_sha256": "0b3a692496e9178412169ccabe26c9863f11d27e6303dc983d802268e9338aca",
+      "training_seed": 4,
+      "continuation_repeat": 2,
+      "curve_positions": [
+        0,
+        5000,
+        20000
+      ],
+      "previous_child_pid": 11500,
+      "previous_child_alive": false
+    },
+    {
+      "job_id": "branch:natural:natural_breakout_seed4_age200000:continue:repeat3:h50000",
+      "task_id": "branch:fc8bdf90f767dd28a5b70350ac59f2126777ab8850691c9ea8f22dd456a7ab4c",
+      "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_fc8bdf90f767dd28a5b7",
+      "completed_steps": 35000,
+      "initial_updates": 195500,
+      "resume_sha256": "996a668e15593d5b474a4ce5df465f2717228593f08fb3f5723ed5c4253ab8d6",
+      "checkpoint_id": "natural_breakout_seed4_age200000",
+      "source_sha256": "0b3a692496e9178412169ccabe26c9863f11d27e6303dc983d802268e9338aca",
+      "training_seed": 4,
+      "continuation_repeat": 3,
+      "curve_positions": [
+        0,
+        5000,
+        20000
+      ],
+      "previous_child_pid": 15708,
+      "previous_child_alive": false
+    }
+  ],
+  "scientific_code_sha256": {
+    "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+    "experiments\\mechanism_analysis.py": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+    "experiments\\rl_analysis.py": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+    "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+    "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+    "experiments\\rl_runner.py": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+    "experiments\\rl_scheduler.py": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+    "experiments\\rl_transfer.py": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+    "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+  },
+  "scientific_code_verified": true,
+  "config_hash": "f3029c965f66d2100d1e8239800c580b7d4442d2b7e918d7919d1146eb66833d",
+  "controller_sha256": "04639ffddea8bdc5f836131946031f9eed4d24d0648bf0471b9480d44388f849",
+  "controller_revision_git_commit": "88b50ab",
+  "recorded_plan_status": "running",
+  "actual_coverage": {
+    "additional_sources": {
+      "expected": 192,
+      "finished": 56,
+      "missing": 136,
+      "numerical_failures": [],
+      "complete": false
+    },
+    "additional_repeats": {
+      "expected": 192,
+      "finished": 0,
+      "missing": 192,
+      "numerical_failures": [],
+      "complete": false
+    }
+  },
+  "outcomes": {
+    "rows": 248,
+    "sha256": "7f68d695486570972d92e605959652a49870fe537ac63c227c13e3cf5f9a7103",
+    "failure_count": 0
+  },
+  "independent_read_only_preflight": "confirmed no live writers/no new numerical or memory failures",
+  "preflight_optimizer_updates": 0,
+  "planned_resume": "existing hidden supervisor, workers=2; original output_root/task identities/seeds retained"
+}
