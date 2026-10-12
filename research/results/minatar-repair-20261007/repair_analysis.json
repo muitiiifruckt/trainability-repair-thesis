@@ -1554,62 +1554,13 @@
   "worker_progress": {
     "progress": {
       "event": "new_package",
-      "stage": "parallel_source",
-      "parallel_wave_id": 32,
-      "pending_tasks": [
-        "source:e0d49a65e59a1e06d08bd4cb88eda619fc98b4fa7183cf02e4d8ff6549f30800"
-      ],
-      "worker_progress": [
-        {
-          "task_id": "source:e0d49a65e59a1e06d08bd4cb88eda619fc98b4fa7183cf02e4d8ff6549f30800",
-          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\source\\source_e0d49a65e59a1e06d08b",
-          "pending": true,
-          "child_progress": {
-            "stage": "source",
-            "trajectory_id": "natural_breakout_seed5",
-            "job_id": "natural_breakout_seed5",
-            "environment_steps": 191754,
-            "gradient_updates": 186755,
-            "recent_return": 5.55,
-            "wall_time_sec": 1764.7435647999955,
-            "event": "checkpoint_created",
-            "checkpoint_id": "natural_breakout_seed5_age50000",
-            "j_pre": 4.1,
-            "random_return": 0.6,
-            "time": 1791726344.908294,
-            "package_updates": 186755,
-            "package_wall_sec": 1764.8388724000033
-          }
-        },
-        {
-          "task_id": "source:93f19eea116a4be4c4aba0a35380d922619261433387f84b8a5b1c5d13691884",
-          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\source\\source_93f19eea116a4be4c4ab",
-          "pending": false,
-          "child_progress": {
-            "stage": "source",
-            "trajectory_id": "natural_asterix_seed3",
-            "job_id": "natural_asterix_seed3",
-            "environment_steps": 200499,
-            "gradient_updates": 195500,
-            "recent_return": 1.85,
-            "wall_time_sec": 1733.7806748000003,
-            "event": "checkpoint_created",
-            "checkpoint_id": "natural_asterix_seed3_age200000",
-            "j_pre": 1.75,
-            "random_return": 0.75,
-            "time": 1791726316.2637968,
-            "package_updates": 195500,
-            "package_wall_sec": 1736.1774977000023
-          }
-        }
-      ],
-      "time": 1791726356.9379113,
-      "package_updates": 2990697,
-      "package_wall_sec": 14175.619089700005
+      "time": 1791798689.6725848,
+      "package_updates": 0,
+      "package_wall_sec": 0.048318999994080514
     },
     "worker_status": "running",
     "worker_pid": 9532,
-    "manifest_updated_at": 1791798665.6530354,
+    "manifest_updated_at": 1791798689.6742988,
     "jobs_by_status": {
       "complete": 236
     }

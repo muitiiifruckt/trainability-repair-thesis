@@ -48333,6 +48333,13 @@
       "updates": 7561975,
       "wall_time_sec": 219662.9409918525,
       "closed_at": 1791712181.318818
+    },
+    {
+      "id": 2,
+      "started_at": 1791712181.31882,
+      "updates": 2990697,
+      "wall_time_sec": 86508.30544161462,
+      "closed_at": 1791798689.6242611
     }
   ],
   "decisions": [
@@ -48602,12 +48609,12 @@
     "sha256": "edf0d896bfcb31fc06b1dc5eb944856b1e409755446eb554f50cff6ea3628b0a"
   },
   "active_package": {
-    "id": 2,
-    "started_at": 1791712181.31882,
-    "updates": 2990697,
-    "wall_time_sec": 86484.33421381461
+    "id": 3,
+    "started_at": 1791798689.6242628,
+    "updates": 0,
+    "wall_time_sec": 0.050032799976179376
   },
-  "updated_at": 1791798665.6530354,
+  "updated_at": 1791798689.6742988,
   "worker_pid": 9532,
   "queue": {
     "stages": [
@@ -49460,6 +49467,11 @@
       "series": "independent_continuation_confirmation",
       "time": 1791722337.0927107,
       "stdout": "[codex/trainability-review f78238f] Research: independent_continuation_confirmation\n 7 files changed, 12247 insertions(+), 306 deletions(-)"
+    },
+    {
+      "series": "first_online_screen_96_branches",
+      "time": 1791798689.5888429,
+      "stdout": "[codex/trainability-review f792347] Research: first_online_screen_96_branches\n 14 files changed, 3334 insertions(+), 61 deletions(-)\n create mode 100644 research/results/minatar-repair-20261007/decisions.jsonl\n create mode 100644 research/results/minatar-repair-20261007/monitoring/20261011T1244Z_full_confirmation.json\n create mode 100644 research/results/minatar-repair-20261007/monitoring/20261011T1244Z_recovery.json\n create mode 100644 research/results/minatar-repair-20261007/monitoring/20261011T1244Z_recovery_histories.json\n create mode 100644 research/results/minatar-repair-20261007/monitoring/20261012T0949Z_restart.json\n create mode 100644 research/results/minatar-repair-20261007/monitoring/full_confirmation_effects_20261011T1244Z.png"
     }
   ]
 }

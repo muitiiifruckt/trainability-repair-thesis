@@ -2,9 +2,9 @@
 
 Это живой отчёт: завершённые запуски отделены от запланированных. Минимум для вывода — независимые истории обучения и continuation repeats.
 
-Обновление: 2026-10-12 12:51:28; серия: first_online_screen_96_branches.
+Обновление: 2026-10-12 12:51:50; серия: package_2.
 Checkpoints: 18. Завершённые ветки: {'screen': 96, 'confirm': 96, 'stress': 0, 'parameters': 0, 'lr_control': 0}.
-Текущий пакет: 2; optimizer updates: 2,990,697.
+Текущий пакет: 3; optimizer updates: 0.
 
 ## natural, бюджет 50000 transitions
 
