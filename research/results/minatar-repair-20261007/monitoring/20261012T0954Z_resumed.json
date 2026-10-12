@@ -1,0 +1,73 @@
+{
+  "captured_at_utc": "2026-10-12T09:55:44.679839+00:00",
+  "supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 17204,
+    "worker_pid": 9532,
+    "updated_at": 1791798927.8617902,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 6
+  },
+  "supervisor_alive": true,
+  "coordinator_pid": 9532,
+  "coordinator_alive": true,
+  "worker_error": null,
+  "active_package": {
+    "id": 3,
+    "started_at": 1791798689.6242628,
+    "updates": 52000,
+    "wall_time_sec": 231.15234469997813
+  },
+  "closed_packages": [
+    {
+      "id": 0,
+      "started_at": 1791400485.8058875,
+      "updates": 1979937,
+      "wall_time_sec": 92032.57193868786,
+      "closed_at": 1791492518.3778245
+    },
+    {
+      "id": 1,
+      "started_at": 1791492518.3778272,
+      "updates": 7561975,
+      "wall_time_sec": 219662.9409918525,
+      "closed_at": 1791712181.318818
+    },
+    {
+      "id": 2,
+      "started_at": 1791712181.31882,
+      "updates": 2990697,
+      "wall_time_sec": 86508.30544161462,
+      "closed_at": 1791798689.6242611
+    }
+  ],
+  "root_progress_age": 23.905865907669067,
+  "workers": [],
+  "scientific_code_hashes_match": true,
+  "outcome_rows": 192,
+  "decisions": [
+    {
+      "decision": "development_expansion",
+      "reason": "Frozen before reserved-game outcomes",
+      "time": 1791722337.1206872,
+      "gate": "uncertain",
+      "baseline_learned_fraction": 1.0
+    },
+    {
+      "decision": "increase_resolution",
+      "reason": "Uncertain differences after four independent continuations",
+      "time": 1791722337.15152,
+      "source_seeds": [
+        3,
+        4,
+        5
+      ],
+      "repeats": [
+        4,
+        5
+      ]
+    }
+  ]
+}

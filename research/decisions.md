@@ -1,5 +1,19 @@
 # Журнал решений
 
+## 2026-10-12 — записанное расширение восстанавливать до нового gate
+
+Partial imported checkpoints превращают global readiness в incomplete; frozen auto не читает принятое increase_resolution и мог пропустить natural seeds 3–5/repeats 4–5 после restart. Дефект воспроизведён независимо. В scripts добавлена lock-owning orchestration принятого решения; она вызывает frozen Campaign methods, сохраняет task identities/accounting и не меняет scientific config/code. Supervisor возобновляет durable plan до auto. Текущие probes сохранены перед handoff; первая transient lock denial не выполняла learner updates, повторный запуск продолжил sources. Четыре лёгких tests прошли. Независимые замечания к первой handoff/plan-validation версии сохранены для усиления до её следующего использования; фактические hashes — [операционный audit](results/minatar-repair-20261007/monitoring/20261012T1024Z_queue_recovery.md).
+
+## 2026-10-12 — полное confirmation и увеличение разрешения
+
+1. **Снять screening benefits Asterix как подтверждённый результат.** На independent repeats Adam +0.337500 → −0.316667 (все три знака сменились), joint +0.770833 → −0.150000. Положительный pooled joint +0.310417 у всех трёх histories не заменяет независимое подтверждение: две histories отрицательны в confirmation. Вместе с Breakout результат остаётся «неопределённо», n=3/game, без intervals.
+2. **Selection benefit не установлен.** Symmetric repeat-split winner vs continue: Asterix −0.020833, Breakout −0.252083. Малый Asterix contrast с SBS чувствителен к одной точной ничьей. Это outcome-label check на прежних histories, не diagnostic transfer; reserved games закрыты.
+3. **Сохранить secondary recovery costs отдельно от primary final.** Breakout head/joint AUC effects отрицательны у всех трёх histories в обеих половинах: means −0.675625/−1.034583 → −0.658750/−0.804375. Final outcome после просмотра не заменяется AUC. Raw curve/harm summaries сохранены, zero panels отдельно.
+4. **Продолжить авторизованное расширение.** Runner при gate=uncertain запустил seeds 3–5, затем repeats 4–5 на seeds 0–5; итоговая natural панель 576 branches, 6 source histories/game. Отличать variance внутри history от различий между агентами; не считать repeats новыми histories. Следом — запланированные LR controls, stress при отсутствии signal.
+5. **Возобновить ту же очередь после выключения машины.** Windows event 1074 совпадает с прекращением progress. Живых процессов/leases нет, code/config hashes и source savepoint Breakout seed 5 на 190k verified. Hidden resume с workers=2; metadata/calendar downtime не переписывать, исправление strict deadline — новая кампания.
+
+Источники: [192-branch audit](results/minatar-repair-20261007/monitoring/20261011T1244Z.md), SHA `a895b8b6ae778f3878ada2e8297b9945d0c4cad3931a885e4d2813ad6115cf16`; независимое воспроизведение stdlib read-only агентом. Learner/config не менялись, проверки не запускали optimizer updates.
+
 ## 2026-10-11 — знак эффекта Adam не подтвердился и очередь восстановлена
 
 1. **Снять стабильный вред optimizer reset в Breakout.** На полных 48 confirmation branches repeats 2/3 mean effect +0.304167 против −0.500 в исходном screen; все три source histories сменили знак. Это новые continuation repeats тех же трёх histories. Положительную confirmation не объявлять доказанной пользой; итог — «неопределённо».

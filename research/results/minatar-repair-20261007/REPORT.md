@@ -1,5 +1,7 @@
 # Результаты автономной программы
 
+**Редакционная проверка:** intervals при <5 source histories скрыты согласно AGENTS.md. Screen и confirmation сравниваются отдельно в [CURRENT_STATUS.md](CURRENT_STATUS.md); повторы одной source history не являются независимыми histories.
+
 Это живой отчёт: завершённые запуски отделены от запланированных. Минимум для вывода — независимые истории обучения и continuation repeats.
 
 Обновление: 2026-10-12 12:51:50; серия: package_2.
@@ -12,14 +14,14 @@ Checkpoints: 18. Завершённые ветки: {'screen': 96, 'confirm': 96
 Историй: 6; полных checkpoint×repeat панелей: 48; минимум repeats: 4.
 Numerical failures: {}; missing/nonfinite finals: 0.
 
-- asterix, continue: paired effect 0.000; 95% interval [0.0, 0.0]; histories 3.
-- breakout, continue: paired effect 0.000; 95% interval [0.0, 0.0]; histories 3.
-- asterix, optimizer_reset: paired effect 0.010; 95% interval [-0.25421875000000005, 0.3166666666666667]; histories 3.
-- breakout, optimizer_reset: paired effect -0.098; 95% interval [-0.4604166666666667, 0.3042187500000002]; histories 3.
-- asterix, head_reset: paired effect 0.054; 95% interval [-0.24796875000000002, 0.3167708333333333]; histories 3.
-- breakout, head_reset: paired effect -0.221; 95% interval [-0.9813020833333331, 0.5792187499999999]; histories 3.
-- asterix, head_and_optimizer_reset: paired effect 0.310; 95% interval [-0.12744791666666666, 0.6875]; histories 3.
-- breakout, head_and_optimizer_reset: paired effect -0.444; 95% interval [-1.0627083333333334, 0.08750000000000002]; histories 3.
+- asterix, continue: paired effect 0.000; histories 3. Интервал скрыт (n<5).
+- breakout, continue: paired effect 0.000; histories 3. Интервал скрыт (n<5).
+- asterix, optimizer_reset: paired effect 0.010; histories 3. Интервал скрыт (n<5).
+- breakout, optimizer_reset: paired effect -0.098; histories 3. Интервал скрыт (n<5).
+- asterix, head_reset: paired effect 0.054; histories 3. Интервал скрыт (n<5).
+- breakout, head_reset: paired effect -0.221; histories 3. Интервал скрыт (n<5).
+- asterix, head_and_optimizer_reset: paired effect 0.310; histories 3. Интервал скрыт (n<5).
+- breakout, head_and_optimizer_reset: paired effect -0.444; histories 3. Интервал скрыт (n<5).
 
 Интервалы группируются по source history. Шумный максимум не считается oracle; незавершённые или failed пары не объявляются успехом.
 

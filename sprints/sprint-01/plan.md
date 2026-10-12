@@ -37,9 +37,12 @@
 ## Добавлено в ходе спринта (сверх плана)
 - [x] Формализация и протокол эксперимента — `docs/formalization.md`, `docs/experimental_protocol.md`, `docs/research_program.md`
 - [x] Синтетический контроль (24 checkpoint, 288 веток) — `docs/controlled_probe_results.md`
-- [~] Стенд DQN на MinAtar и первая кампания сравнения 4 вмешательств — screen 96/96 завершён; confirmation Breakout 48/48, Asterix идёт (11 октября) — `runs/`, `research/results/minatar-repair-20261007/`
+- [~] Стенд DQN на MinAtar и первая кампания сравнения 4 вмешательств — screen 96/96 и confirmation 96/96 завершены; авторизованное расширение histories/repeats выполняется (12 октября) — `runs/`, `research/results/minatar-repair-20261007/`
 - [x] Независимый аудит методики двумя парами агентов — `research/debate/`
 - [x] Проект следующей кампании — `docs/next_campaign_proposal.md`
 - [x] Публикация репозитория на GitHub
 - [x] Аудит независимых continuation repeats Breakout: прежний знак Adam не подтвердился (−0.500 → +0.304167, те же 3 histories); итог «неопределённо», без intervals — `research/results/minatar-repair-20261007/monitoring/20261011T0954Z.md`
 - [x] Возобновление существующей фоновой очереди после прекращения процессов: SHA и оба savepoints 40k/50k verified, один hidden supervisor с двумя workers; новые эксперименты/методика не запускались — `research/NEXT.md`
+- [x] Полное confirmation: Asterix optimizer/joint benefits не воспроизвелись (+0.3375/+0.770833 → −0.316667/−0.1500). Оба game-level outcomes неопределённы; независимый аудит, compact data, harm/recovery curves и график — `research/results/minatar-repair-20261007/monitoring/20261011T1244Z.md`
+- [~] Уже предусмотренное расширение sources seeds 3–5/repeats 4–5 продолжено после выключения машины; source savepoints verified 12 октября, code/config не менялись. Не является запуском нового спринта или новой методики.
+- [x] Исправлен resume принятого increase_resolution внешней scripts-orchestration; прежние scientific hashes/worker IDs сохранены, четыре stdlib checks прошли. Сохранены independent audit замечания к boundary/provenance — `monitoring/20261012T1024Z_queue_recovery.md`.

@@ -1,0 +1,196 @@
+{
+  "captured_at_utc": "2026-10-12T10:21:38.657265+00:00",
+  "handoff": {
+    "status": "replacement_supervisor_started",
+    "time": 1791800067.6961374,
+    "coordinator_pid": 9532,
+    "supervisor_pid": 17204,
+    "progress": {
+      "event": "mechanisms_complete",
+      "stage": "mechanisms",
+      "job_id": "mechanisms:natural_asterix_seed3_age200000:1",
+      "updates": 26000,
+      "time": 1791800067.5929487,
+      "package_updates": 312000,
+      "package_wall_sec": 1377.9686835999892
+    },
+    "decision_sha256": "02ea086d1da576cc964b53285d0bf7e3f483d945054af3e9c926b49a8184b841",
+    "launched_pid": 20768,
+    "completed_at": 1791800067.7066705
+  },
+  "helper_sha256": {
+    "scripts/resume_recorded_research.py": "35c4332a320aae897f56a9bb92f486f48775b14db70db6be63742de1dc3062c1",
+    "scripts/handoff_recorded_queue.py": "6b99ecedf43555e816c1a9da91f220eec19e3582ef34c1de8de479cce9ad384f",
+    "scripts/research_supervisor.py": "8cf24795c07db4385a57745c6f6e59073b352a116d87e3c6842a438efa016bb1"
+  },
+  "plan": {
+    "schema_version": 1,
+    "config_hash": "f3029c965f66d2100d1e8239800c580b7d4442d2b7e918d7919d1146eb66833d",
+    "scientific_code": {
+      "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+      "experiments\\mechanism_analysis.py": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+      "experiments\\rl_analysis.py": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+      "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+      "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+      "experiments\\rl_runner.py": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+      "experiments\\rl_scheduler.py": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+      "experiments\\rl_transfer.py": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+      "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+    },
+    "decision": {
+      "decision": "increase_resolution",
+      "reason": "Uncertain differences after four independent continuations",
+      "time": 1791722337.15152,
+      "source_seeds": [
+        3,
+        4,
+        5
+      ],
+      "repeats": [
+        4,
+        5
+      ]
+    },
+    "decision_sha256": "02ea086d1da576cc964b53285d0bf7e3f483d945054af3e9c926b49a8184b841",
+    "created_at": 1791800097.959152,
+    "games": [
+      "breakout",
+      "asterix"
+    ],
+    "ages": [
+      50000,
+      200000
+    ],
+    "menu": [
+      "continue",
+      "optimizer_reset",
+      "head_reset",
+      "head_and_optimizer_reset"
+    ],
+    "horizon": 50000,
+    "status": "running",
+    "operations": [
+      {
+        "id": "additional_sources",
+        "seeds": [
+          3,
+          4,
+          5
+        ],
+        "repeats": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "status": "running",
+        "coverage": {
+          "expected": 192,
+          "finished": 0,
+          "missing": 192,
+          "numerical_failures": [],
+          "complete": false
+        }
+      },
+      {
+        "id": "additional_repeats",
+        "seeds": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "repeats": [
+          4,
+          5
+        ],
+        "status": "pending"
+      }
+    ],
+    "orchestration_revisions": [
+      {
+        "time": 1791800097.9641757,
+        "pid": 17736,
+        "script_sha256": "35c4332a320aae897f56a9bb92f486f48775b14db70db6be63742de1dc3062c1"
+      }
+    ]
+  },
+  "supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 13144,
+    "worker_pid": 17736,
+    "updated_at": 1791800488.1567523,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 8
+  },
+  "coordinator_alive": true,
+  "coordinator_pid": 17736,
+  "scientific_code_sha_matches": true,
+  "worker_error": null,
+  "active_package": {
+    "id": 3,
+    "started_at": 1791798689.6242628,
+    "updates": 509254,
+    "wall_time_sec": 1807.7759018800862
+  },
+  "progress": {
+    "stage": "parallel_source",
+    "operation": "additional_sources",
+    "parallel_wave_id": 33,
+    "pending_tasks": [
+      "source:51bc267b4fa1331ba79c839a42eb79c6d73aecbc3696683e3f0d76b2597e9c54"
+    ],
+    "worker_progress": [
+      {
+        "task_id": "source:e0d49a65e59a1e06d08bd4cb88eda619fc98b4fa7183cf02e4d8ff6549f30800",
+        "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\source\\source_e0d49a65e59a1e06d08b",
+        "pending": false,
+        "child_progress": {
+          "stage": "source",
+          "trajectory_id": "natural_breakout_seed5",
+          "job_id": "natural_breakout_seed5",
+          "environment_steps": 200499,
+          "gradient_updates": 195500,
+          "recent_return": 5.3,
+          "wall_time_sec": 115.91590590000851,
+          "event": "checkpoint_created",
+          "checkpoint_id": "natural_breakout_seed5_age200000",
+          "j_pre": 6.95,
+          "random_return": 0.6,
+          "time": 1791800235.9810948,
+          "package_updates": 197254,
+          "package_wall_sec": 75655.9116774401
+        }
+      },
+      {
+        "task_id": "source:51bc267b4fa1331ba79c839a42eb79c6d73aecbc3696683e3f0d76b2597e9c54",
+        "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\source\\source_51bc267b4fa1331ba79c",
+        "pending": true,
+        "child_progress": {
+          "stage": "source",
+          "trajectory_id": "natural_asterix_seed4",
+          "job_id": "natural_asterix_seed4",
+          "environment_steps": 71809,
+          "gradient_updates": 66810,
+          "recent_return": 0.45,
+          "wall_time_sec": 375.86940649998724,
+          "event": "checkpoint_created",
+          "checkpoint_id": "natural_asterix_seed4_age50000",
+          "j_pre": 0.4,
+          "random_return": 0.75,
+          "time": 1791800493.1136856,
+          "package_updates": 66810,
+          "package_wall_sec": 375.92199279999477
+        }
+      }
+    ],
+    "time": 1791800497.397818,
+    "package_updates": 509254,
+    "package_wall_sec": 1807.7735557800916
+  },
+  "tests": "4 stdlib tests passed; no learner imports/optimizer updates in validation."
+}

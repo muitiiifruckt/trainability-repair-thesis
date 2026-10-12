@@ -99,8 +99,11 @@ def supervise(config_path,interval=30,workers=2):
             if state["same_error_restarts"] >= 3:
                 state.update(status="attention_required",updated_at=time.time()); write(status_path,state); return
             with (folder/"supervised-worker.log").open("ab",buffering=0) as log:
-                child = subprocess.Popen([sys.executable,"-u","-m","experiments.rl_runner","auto",
-                    "--resume","--workers",str(state["worker_limit"]),"--config",str(config_path)],cwd=ROOT,
+                # Replay already recorded expansion before recomputing a gate:
+                # partial imported checkpoints otherwise turn it to incomplete.
+                # The wrapper owns worker.lock and calls unchanged frozen methods.
+                child = subprocess.Popen([sys.executable,"-u",str(ROOT/"scripts/resume_recorded_research.py"),
+                    "--workers",str(state["worker_limit"]),"--config",str(config_path)],cwd=ROOT,
                     stdin=subprocess.DEVNULL,stdout=log,stderr=subprocess.STDOUT,
                     creationflags=subprocess.CREATE_NO_WINDOW)
             state.update(status="restarted",worker_pid=child.pid,updated_at=time.time(),

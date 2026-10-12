@@ -1,15 +1,17 @@
 # NEXT — читать первым в каждой сессии
 
-Обновлено: 2026-10-11. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+Обновлено: 2026-10-12. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
 
-## Текущее состояние — 11 октября
+## Текущее состояние — 12 октября
 
-- Первый screen **96/96 завершён**; fixed-TD 24 jobs/744 branches и synthetic LR 1728 branches завершены. В зафиксированном срезе перед возобновлением **144 online outcomes**: screen 96 + confirmation Breakout 48. Asterix confirmation продолжается, живой счётчик уже растёт; исходных histories по-прежнему три на игру.
-- **Прежний optimizer finding Breakout не подтвердился:** effects screen −0.500 → confirmation +0.304167; все три history сменили знак. Польза выбора сверх continue не подтверждена. Полный sourced audit: [monitoring/20261011T0954Z.md](results/minatar-repair-20261007/monitoring/20261011T0954Z.md); основной manual статус — [CURRENT_STATUS.md](results/minatar-repair-20261007/CURRENT_STATUS.md).
-- После перезагрузки Windows процессов не было. SHA scientific code/config и обе сохранённые точки Asterix на 40k/50k verified; supervisor возобновлён 11 октября около 12:49 MSK, один coordinator, workers=2. Текущие PID всегда проверять по `supervisor.json`/manifest и реальному alive; stale `worker_status=running` недостаточен.
+- Первый screen **96/96 и confirmation 96/96 завершены**; fixed-TD 24 jobs/744 branches и synthetic LR 1728 branches завершены. Verified pilot — **192 online outcomes**, source seeds 0–2, четыре repeats, исходных histories по-прежнему три на игру. Расширение seeds 3–5/repeats 4–5 выполняется; его outcomes учитывать отдельным срезом.
+- **Первоначальные optimizer findings не подтвердились в обеих играх:** Breakout −0.500 → +0.304167; Asterix +0.337500 → −0.316667, все шесть source histories сменили знак. Asterix joint +0.770833 → −0.150000. Польза выбора vs continue не подтверждена. [Полный sourced audit](results/minatar-repair-20261007/monitoring/20261011T1244Z.md); [CURRENT_STATUS.md](results/minatar-repair-20261007/CURRENT_STATUS.md).
+- После выключения Windows 11 октября 16:46 MSK процессов не было. Scientific SHA/config, отсутствие живых leases и source savepoint Breakout seed 5 на 190k env verified; hidden supervisor возобновлён 12 октября, workers=2, одна существующая очередь и прежние seeds. Текущие PID проверять по `supervisor.json`/manifest и реальному alive, не по stale `worker_status=running`.
 - Frozen runner закрыл старый пакет с 61.02 h календарного времени, включая простой, и открыл пакет 2. Строгий wall ceiling остаётся дефектом; не трактовать это как отрицательный repair outcome и не корректировать metadata задним числом.
 - Активен **спринт 01**, следующий план остаётся предварительным до review/встречи. Продолжается существующая фоновая кампания и её уже авторизованная очередь; новых серий сверх неё и изменений методики до встречи не добавлять. `experiments/`/`configs/` не менять; исправления — только новая кампания/new output_root. Не публиковать intervals при <5 histories, не использовать auto-report intervals n=3; после автоматического пересоздания текста запускать `scripts/suppress_small_history_intervals.py`.
 - Seaquest/Freeway закрыты: exploratory heterogeneous gate текущего runner не заменяет корректное подтверждение и freeze. Пробелы программы — [completion audit](../docs/research_program_completion_audit.md).
+- Следующая полная natural панель — 576 branches: 6 source histories на игру × 2 ages × 6 repeats × 4 actions. До её завершения не смешивать cohorts с разным числом repeats и не объявлять missing histories отрицательным repair outcome. Decision `increase_resolution` записан самим runner при exploratory gate=uncertain.
+- **Исправлен вход в recorded queue:** partial additional checkpoints превращали новый gate в incomplete и могли отменить уже принятое расширение. Supervisor теперь запускает внешний `scripts/resume_recorded_research.py`, который владеет worker.lock и replay принятого решения выполняет до frozen auto. Plan — `runs/minatar-repair-20261007/recorded_resume_plan.json`. Scientific files/config не менялись; helper revisions имеют отдельные hashes. [Операционный audit](results/minatar-repair-20261007/monitoring/20261012T1024Z_queue_recovery.md).
 
 Ниже — прежние записи для контекста; их счётчики 48/72 не являются текущим состоянием.
 
