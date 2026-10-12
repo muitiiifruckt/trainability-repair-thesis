@@ -1482,10 +1482,10 @@
         "skipped_checkpoints": [],
         "ci_caveat": "histories_and_paired_repeat_vectors_resampled_with_refitted_choices;_fixed_disjoint_repeat_split;_not_simultaneous_or_independent_confirmation"
       },
-      "primary_gate": "uncertain",
+      "primary_gate": "incomplete",
       "gate_is_confirmatory": false,
       "parameter_repair_signal": {
-        "status": "uncertain",
+        "status": "incomplete",
         "positive": false,
         "uncertain": true,
         "contrasts": {
@@ -1554,76 +1554,81 @@
   "worker_progress": {
     "progress": {
       "event": "new_package",
-      "stage": "parallel_branches",
-      "parallel_wave_id": 30,
-      "pending_tasks": [],
+      "stage": "parallel_source",
+      "parallel_wave_id": 32,
+      "pending_tasks": [
+        "source:e0d49a65e59a1e06d08bd4cb88eda619fc98b4fa7183cf02e4d8ff6549f30800"
+      ],
       "worker_progress": [
         {
-          "task_id": "branch:4b3c7f90a55aefa40c98853d4edf484562e1392a3ebde17154a475f977080bab",
-          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_4b3c7f90a55aefa40c98",
-          "pending": false,
+          "task_id": "source:e0d49a65e59a1e06d08bd4cb88eda619fc98b4fa7183cf02e4d8ff6549f30800",
+          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\source\\source_e0d49a65e59a1e06d08b",
+          "pending": true,
           "child_progress": {
-            "stage": "confirm",
-            "job_id": "branch:natural:natural_asterix_seed2_age200000:head_and_optimizer_reset:repeat2:h50000",
-            "checkpoint_id": "natural_asterix_seed2_age200000",
-            "action": "head_and_optimizer_reset",
-            "repeat": 2,
-            "completed_steps": 50000,
-            "horizon": 50000,
-            "gradient_updates": 245500,
-            "recent_return": 2.65,
-            "wall_time_sec": 499.96446789999754,
-            "event": "branch_complete",
-            "j_final": 1.25,
-            "failure_reason": null,
-            "time": 1791722311.0966423,
-            "package_updates": 200000,
-            "package_wall_sec": 2024.5234794999997
+            "stage": "source",
+            "trajectory_id": "natural_breakout_seed5",
+            "job_id": "natural_breakout_seed5",
+            "environment_steps": 191754,
+            "gradient_updates": 186755,
+            "recent_return": 5.55,
+            "wall_time_sec": 1764.7435647999955,
+            "event": "checkpoint_created",
+            "checkpoint_id": "natural_breakout_seed5_age50000",
+            "j_pre": 4.1,
+            "random_return": 0.6,
+            "time": 1791726344.908294,
+            "package_updates": 186755,
+            "package_wall_sec": 1764.8388724000033
           }
         },
         {
-          "task_id": "branch:6504bd3753ca58f00e145b36d94be49e7479e0c2e74b5e32d37b82d6d09c6a77",
-          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_6504bd3753ca58f00e14",
+          "task_id": "source:93f19eea116a4be4c4aba0a35380d922619261433387f84b8a5b1c5d13691884",
+          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\source\\source_93f19eea116a4be4c4ab",
           "pending": false,
           "child_progress": {
-            "stage": "confirm",
-            "job_id": "branch:natural:natural_asterix_seed2_age200000:head_and_optimizer_reset:repeat3:h50000",
-            "checkpoint_id": "natural_asterix_seed2_age200000",
-            "action": "head_and_optimizer_reset",
-            "repeat": 3,
-            "completed_steps": 50000,
-            "horizon": 50000,
-            "gradient_updates": 245500,
-            "recent_return": 1.2,
-            "wall_time_sec": 492.8508178999982,
-            "event": "branch_complete",
-            "j_final": 1.7,
-            "failure_reason": null,
-            "time": 1791722302.1762378,
-            "package_updates": 200000,
-            "package_wall_sec": 2015.601714700002
+            "stage": "source",
+            "trajectory_id": "natural_asterix_seed3",
+            "job_id": "natural_asterix_seed3",
+            "environment_steps": 200499,
+            "gradient_updates": 195500,
+            "recent_return": 1.85,
+            "wall_time_sec": 1733.7806748000003,
+            "event": "checkpoint_created",
+            "checkpoint_id": "natural_asterix_seed3_age200000",
+            "j_pre": 1.75,
+            "random_return": 0.75,
+            "time": 1791726316.2637968,
+            "package_updates": 195500,
+            "package_wall_sec": 1736.1774977000023
           }
         }
       ],
-      "time": 1791722311.330569,
-      "package_updates": 2404197,
-      "package_wall_sec": 10130.011747100005
+      "time": 1791726356.9379113,
+      "package_updates": 2990697,
+      "package_wall_sec": 14175.619089700005
     },
     "worker_status": "running",
-    "worker_pid": 3912,
-    "manifest_updated_at": 1791722314.0776715,
+    "worker_pid": 9532,
+    "manifest_updated_at": 1791798665.6530354,
     "jobs_by_status": {
-      "complete": 230
+      "complete": 236
     }
   },
   "provisional": true,
   "interpretation": "descriptive_screen_with_cross_fitted_estimated_winner; raw_returns_reported_per_game",
-  "checkpoints_without_outcomes": [],
+  "checkpoints_without_outcomes": [
+    "natural_asterix_seed3_age200000",
+    "natural_asterix_seed3_age50000",
+    "natural_breakout_seed3_age200000",
+    "natural_breakout_seed3_age50000",
+    "natural_breakout_seed4_age200000",
+    "natural_breakout_seed4_age50000"
+  ],
   "reserved_checkpoint_ids_excluded_from_development_analysis": [],
-  "primary_gate": "uncertain",
+  "primary_gate": "incomplete",
   "uncertain": true,
   "parameter_repair_signal": {
-    "status": "uncertain",
+    "status": "incomplete",
     "positive": false,
     "uncertain": true,
     "contrasts": {

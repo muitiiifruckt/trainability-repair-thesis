@@ -1,0 +1,50 @@
+{
+  "captured_at_utc": "2026-10-12T09:50:21.015874+00:00",
+  "supervisor_alive": false,
+  "coordinator_alive": false,
+  "pre_restart_supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 6596,
+    "worker_pid": 3912,
+    "updated_at": 1791726346.7410948,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 5
+  },
+  "source_resumes": [
+    {
+      "root": "runs\\minatar-repair-20261007\\workers\\source\\source_e0d49a65e59a1e06d08b",
+      "trajectory_id": "natural_breakout_seed5",
+      "metadata": {
+        "sha256": "309dcdc922dd049e36382b787ca93783738173a2865444995e9fdc68fd821b1a",
+        "artifact_path": "source_resume\\natural_breakout_seed5.a.pt",
+        "environment_steps": 190000,
+        "gradient_updates": 185001
+      },
+      "verified_sha256": "309dcdc922dd049e36382b787ca93783738173a2865444995e9fdc68fd821b1a"
+    },
+    {
+      "root": "runs\\minatar-repair-20261007\\workers\\source\\source_93f19eea116a4be4c4ab",
+      "trajectory_id": "natural_asterix_seed3",
+      "metadata": {
+        "sha256": "066c3bcbae1fd0451c23ddda94ec496d58e0b45ac0edf9a3d5a2054bd40d1e46",
+        "artifact_path": "source_resume\\natural_asterix_seed3.b.pt",
+        "environment_steps": 200499,
+        "gradient_updates": 195500
+      },
+      "verified_sha256": "066c3bcbae1fd0451c23ddda94ec496d58e0b45ac0edf9a3d5a2054bd40d1e46"
+    }
+  ],
+  "worker_error": null,
+  "active_package_before_resume": {
+    "id": 2,
+    "started_at": 1791712181.31882,
+    "updates": 2990697,
+    "wall_time_sec": 14175.630568400004
+  },
+  "calendar_package_sec": 86439.697067976,
+  "outcome_rows": 192,
+  "source_outcomes_sha256": "a895b8b6ae778f3878ada2e8297b9945d0c4cad3931a885e4d2813ad6115cf16",
+  "os_event": "System event 1074: shutdown initiated by StartMenuExperienceHost on 2026-10-11 16:46 MSK; root last progress near 16:45 MSK."
+}

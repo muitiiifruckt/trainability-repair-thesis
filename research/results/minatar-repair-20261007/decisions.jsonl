@@ -1,0 +1,2 @@
+{"decision": "development_expansion", "reason": "Frozen before reserved-game outcomes", "time": 1791722337.1206872, "gate": "uncertain", "baseline_learned_fraction": 1.0}
+{"decision": "increase_resolution", "reason": "Uncertain differences after four independent continuations", "time": 1791722337.15152, "source_seeds": [3, 4, 5], "repeats": [4, 5]}

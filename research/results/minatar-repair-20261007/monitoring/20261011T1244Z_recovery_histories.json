@@ -1,0 +1,887 @@
+{
+  "source_sha256": "a895b8b6ae778f3878ada2e8297b9945d0c4cad3931a885e4d2813ad6115cf16",
+  "analysis_script_sha256": "5d4ba6f56df7eafd9a0c2be383fa89fac68095c8fea8c2af9aaa50b51231fb7d",
+  "estimand": "Paired differences; equal ages/repeats within trajectory, then equal source histories. Descriptive harm=negative paired final, no independence claim.",
+  "by_game": {
+    "asterix": {
+      "screen": {
+        "optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": 0.38749999999999996,
+              "auc_effect": 0.5512499999999998,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 0.14999999999999997,
+                "20000": 0.8999999999999999,
+                "50000": 0.38749999999999996
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": 0.07499999999999998,
+              "auc_effect": -0.13187500000000002,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.01249999999999997,
+                "20000": -0.3375,
+                "50000": 0.07499999999999998
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": 0.55,
+              "auc_effect": 0.36124999999999985,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.42500000000000004,
+                "20000": 0.6249999999999999,
+                "50000": 0.55
+              }
+            }
+          ],
+          "final_mean": 0.3375,
+          "auc_mean": 0.2602083333333332,
+          "negative_panels": 2,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": 0.0,
+            "5000": -0.09583333333333335,
+            "20000": 0.39583333333333326,
+            "50000": 0.3375
+          }
+        },
+        "head_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": -0.06249999999999992,
+              "auc_effect": 0.17437499999999992,
+              "curve_effect": {
+                "0": -1.3375,
+                "5000": 0.5125,
+                "20000": 0.35,
+                "50000": -0.06249999999999992
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": 0.26249999999999984,
+              "auc_effect": 0.443125,
+              "curve_effect": {
+                "0": -0.8625,
+                "5000": 0.2375,
+                "20000": 0.8,
+                "50000": 0.26249999999999984
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": -0.21250000000000008,
+              "auc_effect": -0.01812500000000003,
+              "curve_effect": {
+                "0": -0.35000000000000003,
+                "5000": -0.04999999999999996,
+                "20000": 0.1625000000000001,
+                "50000": -0.21250000000000008
+              }
+            }
+          ],
+          "final_mean": -0.004166666666666717,
+          "auc_mean": 0.19979166666666662,
+          "negative_panels": 4,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": -0.85,
+            "5000": 0.23333333333333334,
+            "20000": 0.43750000000000006,
+            "50000": -0.004166666666666717
+          }
+        },
+        "head_and_optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": 0.85,
+              "auc_effect": 0.5387500000000001,
+              "curve_effect": {
+                "0": -1.3375,
+                "5000": 0.7124999999999999,
+                "20000": 0.4624999999999999,
+                "50000": 0.85
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": 0.42499999999999993,
+              "auc_effect": 0.40125,
+              "curve_effect": {
+                "0": -0.8625,
+                "5000": 0.7125000000000001,
+                "20000": 0.3875,
+                "50000": 0.42499999999999993
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": 1.0375,
+              "auc_effect": 0.8049999999999999,
+              "curve_effect": {
+                "0": -0.35000000000000003,
+                "5000": 0.025000000000000105,
+                "20000": 1.125,
+                "50000": 1.0375
+              }
+            }
+          ],
+          "final_mean": 0.7708333333333334,
+          "auc_mean": 0.5816666666666667,
+          "negative_panels": 3,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": -0.85,
+            "5000": 0.4833333333333334,
+            "20000": 0.6583333333333333,
+            "50000": 0.7708333333333334
+          }
+        }
+      },
+      "confirmation": {
+        "optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": -0.22499999999999998,
+              "auc_effect": 0.018749999999999906,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.1874999999999999,
+                "20000": 0.2750000000000001,
+                "50000": -0.22499999999999998
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": -0.5,
+              "auc_effect": -0.0018750000000000155,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 0.14999999999999994,
+                "20000": 0.26249999999999996,
+                "50000": -0.5
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": -0.22499999999999995,
+              "auc_effect": 0.06875000000000003,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.16250000000000006,
+                "20000": 0.375,
+                "50000": -0.22499999999999995
+              }
+            }
+          ],
+          "final_mean": -0.31666666666666665,
+          "auc_mean": 0.028541666666666642,
+          "negative_panels": 8,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": 0.0,
+            "5000": -0.06666666666666667,
+            "20000": 0.3041666666666667,
+            "50000": -0.31666666666666665
+          }
+        },
+        "head_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": 0.4125000000000001,
+              "auc_effect": 0.23937499999999992,
+              "curve_effect": {
+                "0": -1.3875,
+                "5000": -0.08749999999999997,
+                "20000": 0.45000000000000007,
+                "50000": 0.4125000000000001
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": 0.03750000000000003,
+              "auc_effect": 0.11812499999999995,
+              "curve_effect": {
+                "0": -0.36250000000000004,
+                "5000": 0.5125,
+                "20000": 0.04999999999999993,
+                "50000": 0.03750000000000003
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": -0.1124999999999999,
+              "auc_effect": 0.09312500000000001,
+              "curve_effect": {
+                "0": -0.35000000000000003,
+                "5000": -0.15,
+                "20000": 0.38749999999999996,
+                "50000": -0.1124999999999999
+              }
+            }
+          ],
+          "final_mean": 0.11250000000000007,
+          "auc_mean": 0.1502083333333333,
+          "negative_panels": 5,
+          "zero_panels": 1,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": -0.7,
+            "5000": 0.09166666666666666,
+            "20000": 0.29583333333333334,
+            "50000": 0.11250000000000007
+          }
+        },
+        "head_and_optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": -0.23749999999999996,
+              "auc_effect": 0.103125,
+              "curve_effect": {
+                "0": -1.3875,
+                "5000": 0.26250000000000007,
+                "20000": 0.42500000000000004,
+                "50000": -0.23749999999999996
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": 0.5374999999999999,
+              "auc_effect": 0.21624999999999978,
+              "curve_effect": {
+                "0": -0.36250000000000004,
+                "5000": 0.7874999999999999,
+                "20000": -0.18750000000000003,
+                "50000": 0.5374999999999999
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": -0.75,
+              "auc_effect": -0.08312499999999998,
+              "curve_effect": {
+                "0": -0.35000000000000003,
+                "5000": -0.4125,
+                "20000": 0.5375,
+                "50000": -0.75
+              }
+            }
+          ],
+          "final_mean": -0.15000000000000002,
+          "auc_mean": 0.07874999999999993,
+          "negative_panels": 7,
+          "zero_panels": 1,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": -0.7,
+            "5000": 0.2125,
+            "20000": 0.2583333333333333,
+            "50000": -0.15000000000000002
+          }
+        }
+      },
+      "all_repeats": {
+        "optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": 0.08124999999999998,
+              "auc_effect": 0.28499999999999986,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.018749999999999954,
+                "20000": 0.5875,
+                "50000": 0.08124999999999998
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": -0.21250000000000002,
+              "auc_effect": -0.06687500000000002,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 0.06874999999999998,
+                "20000": -0.03750000000000002,
+                "50000": -0.21250000000000002
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": 0.16250000000000003,
+              "auc_effect": 0.21499999999999997,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.29375000000000007,
+                "20000": 0.49999999999999994,
+                "50000": 0.16250000000000003
+              }
+            }
+          ],
+          "final_mean": 0.010416666666666663,
+          "auc_mean": 0.14437499999999995,
+          "negative_panels": 10,
+          "zero_panels": 0,
+          "panel_count": 24,
+          "paired_curve_means": {
+            "0": 0.0,
+            "5000": -0.08125000000000002,
+            "20000": 0.35,
+            "50000": 0.010416666666666663
+          }
+        },
+        "head_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": 0.17500000000000007,
+              "auc_effect": 0.20687499999999992,
+              "curve_effect": {
+                "0": -1.3625,
+                "5000": 0.21249999999999997,
+                "20000": 0.4,
+                "50000": 0.17500000000000007
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": 0.14999999999999997,
+              "auc_effect": 0.280625,
+              "curve_effect": {
+                "0": -0.6125,
+                "5000": 0.375,
+                "20000": 0.42499999999999993,
+                "50000": 0.14999999999999997
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": -0.16249999999999998,
+              "auc_effect": 0.03749999999999999,
+              "curve_effect": {
+                "0": -0.35000000000000003,
+                "5000": -0.09999999999999998,
+                "20000": 0.275,
+                "50000": -0.16249999999999998
+              }
+            }
+          ],
+          "final_mean": 0.05416666666666669,
+          "auc_mean": 0.175,
+          "negative_panels": 9,
+          "zero_panels": 1,
+          "panel_count": 24,
+          "paired_curve_means": {
+            "0": -0.775,
+            "5000": 0.1625,
+            "20000": 0.36666666666666664,
+            "50000": 0.05416666666666669
+          }
+        },
+        "head_and_optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_asterix_seed0",
+              "final_effect": 0.30625,
+              "auc_effect": 0.3209375,
+              "curve_effect": {
+                "0": -1.3625,
+                "5000": 0.48750000000000004,
+                "20000": 0.44375,
+                "50000": 0.30625
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed1",
+              "final_effect": 0.48124999999999996,
+              "auc_effect": 0.30874999999999986,
+              "curve_effect": {
+                "0": -0.6125,
+                "5000": 0.75,
+                "20000": 0.09999999999999999,
+                "50000": 0.48124999999999996
+              }
+            },
+            {
+              "trajectory_id": "natural_asterix_seed2",
+              "final_effect": 0.14375000000000002,
+              "auc_effect": 0.3609375,
+              "curve_effect": {
+                "0": -0.35000000000000003,
+                "5000": -0.19374999999999995,
+                "20000": 0.83125,
+                "50000": 0.14375000000000002
+              }
+            }
+          ],
+          "final_mean": 0.3104166666666667,
+          "auc_mean": 0.33020833333333327,
+          "negative_panels": 10,
+          "zero_panels": 1,
+          "panel_count": 24,
+          "paired_curve_means": {
+            "0": -0.775,
+            "5000": 0.3479166666666667,
+            "20000": 0.4583333333333333,
+            "50000": 0.3104166666666667
+          }
+        }
+      }
+    },
+    "breakout": {
+      "screen": {
+        "optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": -0.5125,
+              "auc_effect": 0.3393750000000002,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 0.9750000000000002,
+                "20000": 0.6625000000000001,
+                "50000": -0.5125
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": -0.6750000000000003,
+              "auc_effect": -0.7187499999999998,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 1.1875,
+                "20000": -1.6750000000000003,
+                "50000": -0.6750000000000003
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": -0.3125000000000002,
+              "auc_effect": -0.29625000000000035,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.3374999999999999,
+                "20000": -0.30000000000000004,
+                "50000": -0.3125000000000002
+              }
+            }
+          ],
+          "final_mean": -0.5000000000000001,
+          "auc_mean": -0.22520833333333332,
+          "negative_panels": 9,
+          "zero_panels": 1,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": 0.0,
+            "5000": 0.6083333333333334,
+            "20000": -0.43750000000000006,
+            "50000": -0.5000000000000001
+          }
+        },
+        "head_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": -0.41249999999999964,
+              "auc_effect": -0.608125,
+              "curve_effect": {
+                "0": -3.6625,
+                "5000": -1.225,
+                "20000": -0.12500000000000033,
+                "50000": -0.41249999999999964
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": -0.16249999999999964,
+              "auc_effect": -1.4062499999999998,
+              "curve_effect": {
+                "0": -3.0500000000000003,
+                "5000": -0.06250000000000011,
+                "20000": -2.6500000000000004,
+                "50000": -0.16249999999999964
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": 0.7874999999999996,
+              "auc_effect": -0.012499999999999956,
+              "curve_effect": {
+                "0": -2.4625,
+                "5000": -0.3749999999999998,
+                "20000": -0.11250000000000004,
+                "50000": 0.7874999999999996
+              }
+            }
+          ],
+          "final_mean": 0.07083333333333346,
+          "auc_mean": -0.6756249999999999,
+          "negative_panels": 6,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": -3.0583333333333336,
+            "5000": -0.5541666666666667,
+            "20000": -0.9625000000000002,
+            "50000": 0.07083333333333346
+          }
+        },
+        "head_and_optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": -1.4874999999999998,
+              "auc_effect": -1.053125,
+              "curve_effect": {
+                "0": -3.6625,
+                "5000": -1.8375,
+                "20000": -0.12500000000000022,
+                "50000": -1.4874999999999998
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": -0.375,
+              "auc_effect": -1.5868749999999994,
+              "curve_effect": {
+                "0": -3.0500000000000003,
+                "5000": -2.0250000000000004,
+                "20000": -2.0375,
+                "50000": -0.375
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": -0.2250000000000003,
+              "auc_effect": -0.4637499999999998,
+              "curve_effect": {
+                "0": -2.4625,
+                "5000": -0.5499999999999999,
+                "20000": -0.3624999999999998,
+                "50000": -0.2250000000000003
+              }
+            }
+          ],
+          "final_mean": -0.6958333333333334,
+          "auc_mean": -1.034583333333333,
+          "negative_panels": 10,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": -3.0583333333333336,
+            "5000": -1.4708333333333334,
+            "20000": -0.8416666666666667,
+            "50000": -0.6958333333333334
+          }
+        }
+      },
+      "confirmation": {
+        "optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": 0.3999999999999999,
+              "auc_effect": 0.2818750000000003,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 0.2749999999999999,
+                "20000": 0.23750000000000027,
+                "50000": 0.3999999999999999
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": 0.3250000000000002,
+              "auc_effect": -0.15250000000000008,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.46250000000000013,
+                "20000": -0.3500000000000001,
+                "50000": 0.3250000000000002
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": 0.18750000000000044,
+              "auc_effect": 0.2524999999999997,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 0.2500000000000002,
+                "20000": 0.32499999999999996,
+                "50000": 0.18750000000000044
+              }
+            }
+          ],
+          "final_mean": 0.30416666666666686,
+          "auc_mean": 0.12729166666666666,
+          "negative_panels": 5,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": 0.0,
+            "5000": 0.020833333333333332,
+            "20000": 0.07083333333333337,
+            "50000": 0.30416666666666686
+          }
+        },
+        "head_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": -1.0625000000000002,
+              "auc_effect": -0.7456250000000004,
+              "curve_effect": {
+                "0": -4.15,
+                "5000": -1.1250000000000002,
+                "20000": 0.012500000000000178,
+                "50000": -1.0625000000000002
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": -0.6874999999999998,
+              "auc_effect": -1.195,
+              "curve_effect": {
+                "0": -3.2875000000000005,
+                "5000": -2.4625,
+                "20000": -0.7375,
+                "50000": -0.6874999999999998
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": 0.2124999999999999,
+              "auc_effect": -0.03562500000000024,
+              "curve_effect": {
+                "0": -2.4124999999999996,
+                "5000": -0.7374999999999999,
+                "20000": 0.3750000000000002,
+                "50000": 0.2124999999999999
+              }
+            }
+          ],
+          "final_mean": -0.5125000000000001,
+          "auc_mean": -0.6587500000000003,
+          "negative_panels": 7,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": -3.2833333333333337,
+            "5000": -1.4416666666666667,
+            "20000": -0.11666666666666654,
+            "50000": -0.5125000000000001
+          }
+        },
+        "head_and_optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": -0.17500000000000004,
+              "auc_effect": -0.8099999999999998,
+              "curve_effect": {
+                "0": -4.15,
+                "5000": -3.0875,
+                "20000": 0.15000000000000013,
+                "50000": -0.17500000000000004
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": 0.27500000000000036,
+              "auc_effect": -1.3012500000000007,
+              "curve_effect": {
+                "0": -3.2875000000000005,
+                "5000": -3.5375,
+                "20000": -1.1375000000000004,
+                "50000": 0.27500000000000036
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": -0.6749999999999996,
+              "auc_effect": -0.3018750000000001,
+              "curve_effect": {
+                "0": -2.4124999999999996,
+                "5000": -0.5125000000000001,
+                "20000": 0.27500000000000013,
+                "50000": -0.6749999999999996
+              }
+            }
+          ],
+          "final_mean": -0.19166666666666643,
+          "auc_mean": -0.8043750000000002,
+          "negative_panels": 6,
+          "zero_panels": 0,
+          "panel_count": 12,
+          "paired_curve_means": {
+            "0": -3.2833333333333337,
+            "5000": -2.379166666666667,
+            "20000": -0.23750000000000004,
+            "50000": -0.19166666666666643
+          }
+        }
+      },
+      "all_repeats": {
+        "optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": -0.05625000000000002,
+              "auc_effect": 0.31062500000000026,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 0.625,
+                "20000": 0.4500000000000002,
+                "50000": -0.05625000000000002
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": -0.17500000000000004,
+              "auc_effect": -0.43562499999999993,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": 0.36249999999999993,
+                "20000": -1.0125000000000002,
+                "50000": -0.17500000000000004
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": -0.06249999999999989,
+              "auc_effect": -0.02187500000000031,
+              "curve_effect": {
+                "0": 0.0,
+                "5000": -0.043749999999999845,
+                "20000": 0.012499999999999956,
+                "50000": -0.06249999999999989
+              }
+            }
+          ],
+          "final_mean": -0.09791666666666665,
+          "auc_mean": -0.048958333333333326,
+          "negative_panels": 14,
+          "zero_panels": 1,
+          "panel_count": 24,
+          "paired_curve_means": {
+            "0": 0.0,
+            "5000": 0.3145833333333334,
+            "20000": -0.18333333333333335,
+            "50000": -0.09791666666666665
+          }
+        },
+        "head_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": -0.7374999999999999,
+              "auc_effect": -0.6768750000000002,
+              "curve_effect": {
+                "0": -3.90625,
+                "5000": -1.1750000000000003,
+                "20000": -0.05625000000000008,
+                "50000": -0.7374999999999999
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": -0.4249999999999997,
+              "auc_effect": -1.300625,
+              "curve_effect": {
+                "0": -3.16875,
+                "5000": -1.2625000000000002,
+                "20000": -1.69375,
+                "50000": -0.4249999999999997
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": 0.4999999999999998,
+              "auc_effect": -0.024062500000000098,
+              "curve_effect": {
+                "0": -2.4375,
+                "5000": -0.5562499999999999,
+                "20000": 0.1312500000000001,
+                "50000": 0.4999999999999998
+              }
+            }
+          ],
+          "final_mean": -0.2208333333333333,
+          "auc_mean": -0.6671875,
+          "negative_panels": 13,
+          "zero_panels": 0,
+          "panel_count": 24,
+          "paired_curve_means": {
+            "0": -3.1708333333333334,
+            "5000": -0.9979166666666668,
+            "20000": -0.5395833333333333,
+            "50000": -0.2208333333333333
+          }
+        },
+        "head_and_optimizer_reset": {
+          "history_records": [
+            {
+              "trajectory_id": "natural_breakout_seed0",
+              "final_effect": -0.8312499999999999,
+              "auc_effect": -0.9315625000000001,
+              "curve_effect": {
+                "0": -3.90625,
+                "5000": -2.4625,
+                "20000": 0.012499999999999956,
+                "50000": -0.8312499999999999
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed1",
+              "final_effect": -0.04999999999999982,
+              "auc_effect": -1.4440625,
+              "curve_effect": {
+                "0": -3.16875,
+                "5000": -2.78125,
+                "20000": -1.5875000000000004,
+                "50000": -0.04999999999999982
+              }
+            },
+            {
+              "trajectory_id": "natural_breakout_seed2",
+              "final_effect": -0.44999999999999996,
+              "auc_effect": -0.38281249999999994,
+              "curve_effect": {
+                "0": -2.4375,
+                "5000": -0.53125,
+                "20000": -0.043749999999999845,
+                "50000": -0.44999999999999996
+              }
+            }
+          ],
+          "final_mean": -0.4437499999999999,
+          "auc_mean": -0.9194791666666666,
+          "negative_panels": 16,
+          "zero_panels": 0,
+          "panel_count": 24,
+          "paired_curve_means": {
+            "0": -3.1708333333333334,
+            "5000": -1.925,
+            "20000": -0.5395833333333334,
+            "50000": -0.4437499999999999
+          }
+        }
+      }
+    }
+  }
+}

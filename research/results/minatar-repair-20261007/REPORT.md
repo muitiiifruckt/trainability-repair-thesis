@@ -2,13 +2,13 @@
 
 Это живой отчёт: завершённые запуски отделены от запланированных. Минимум для вывода — независимые истории обучения и continuation repeats.
 
-Обновление: 2026-10-11 15:38:55; серия: independent_continuation_confirmation.
-Checkpoints: 12. Завершённые ветки: {'screen': 96, 'confirm': 96, 'stress': 0, 'parameters': 0, 'lr_control': 0}.
-Текущий пакет: 2; optimizer updates: 2,404,197.
+Обновление: 2026-10-12 12:51:28; серия: first_online_screen_96_branches.
+Checkpoints: 18. Завершённые ветки: {'screen': 96, 'confirm': 96, 'stress': 0, 'parameters': 0, 'lr_control': 0}.
+Текущий пакет: 2; optimizer updates: 2,990,697.
 
 ## natural, бюджет 50000 transitions
 
-Статус: **неопределённо: разрешения эксперимента недостаточно**.
+Статус: **серия ещё не завершена или содержит пропуски/сбои**.
 Историй: 6; полных checkpoint×repeat панелей: 48; минимум repeats: 4.
 Numerical failures: {}; missing/nonfinite finals: 0.
 
