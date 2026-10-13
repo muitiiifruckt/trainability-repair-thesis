@@ -57,3 +57,7 @@
 ## Предложения для плана следующего спринта
 - Цель — закрыть первый screen и решить, нужна ли репликация на 24 историях.
 - Подготовка к встрече с руководителем: личное чтение 4–5 ключевых статей.
+
+## Операционное дополнение 13 октября: power off и reused PID
+
+После power off 14:28 UTC Windows переиспользовала PID worker для renderer. Это инфраструктурная причина блокировки resume, не repair outcome. Исправлена внешняя owner verification под worker.lock, 26 stdlib checks/independent review; приложение не останавливалось. Verified savepoints 10k continue repeats2–3 seed5 AST сохранены, workers продвинулись. На срезе 15:30 UTC root 360, expansion 168/192 неполон; reconciliation 25,601 учтён один раз, discarded observed 5,601 не скрыт. Scientific pilot conclusion остаётся неопределённым, reserved закрыты. Controller `568152b`/`e06f068`; [evidence](../../research/results/minatar-repair-20261007/monitoring/20261013_pid_reuse_recovery.md).
