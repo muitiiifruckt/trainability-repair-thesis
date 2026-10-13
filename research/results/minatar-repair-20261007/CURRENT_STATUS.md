@@ -1,4 +1,6 @@
-# Состояние исследования, 12 октября 2026
+# Состояние исследования, 13 октября 2026
+
+**Операционное обновление 13 октября.** После аварийного завершения Windows восстановлены повреждённые control JSON. Все 328 прежних root outcomes и шесть завершённых local rows сохранены; только две unfinished joint branches повторены с прежними seeds от verified source. На проверенном срезе 13:23 UTC root **336 outcomes**, additional_sources 144/192; серия ещё неполна. Оба workers здоровы, numerical failures нет. Прежние observed 358,043 updates + 100k reruns учтены без дублирования; discarded partial 58,043 не исключён из бюджета. Просроченный package 3 закрыт с 26.98 h (включая простой), новый package 4 в пределах бюджета. Scientific code/config не менялись; pilot ниже остаётся отдельным полным cohort 192. [Журнал, проверки и SHA](monitoring/20261013_nul_control_recovery.md).
 
 **Исходный screen 96/96 и independent continuation confirmation 96/96 завершены. Первоначальные optimizer effects не воспроизвелись в обеих играх.** Verified pilot — 192 ветки, source seeds 0–2, два возраста, четыре repeats, четыре repairs. Независимых source histories три на игру; repeats/возраста не являются новыми histories.
 

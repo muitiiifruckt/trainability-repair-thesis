@@ -1,8 +1,10 @@
 # NEXT — читать первым в каждой сессии
 
-Обновлено: 2026-10-12. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+Обновлено: 2026-10-13. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
 
-## Текущее состояние — 12 октября
+## Текущее состояние — 13 октября
+
+- **После аварийного OS interruption восстановлены NUL control files.** На проверенном срезе 13:23 UTC: root 336 outcomes, additional_sources 144/192, additional_repeats ещё ожидает; package 4 — 458,043 updates, два workers здоровы. Только две unfinished joint branches повторены от verified source; шесть raw completed rows сохранены, предыдущий observed расход 358,043 reconciled один раз. Helper `b29eba8`, 14 checks passed; scientific code/config unchanged. [Журнал и SHA](results/minatar-repair-20261007/monitoring/20261013_nul_control_recovery.md). Текущие PID брать из valid supervisor.json и проверять alive. Повторный helper apply к уже восстановленным файлам не запускать; original NUL bytes/PT находятся в ignored recovery quarantine.
 
 - Первый screen **96/96 и confirmation 96/96 завершены**; fixed-TD 24 jobs/744 branches и synthetic LR 1728 branches завершены. Verified pilot — **192 online outcomes**, source seeds 0–2, четыре repeats, исходных histories по-прежнему три на игру. Расширение seeds 3–5/repeats 4–5 выполняется; его outcomes учитывать отдельным срезом.
 - **Первоначальные optimizer findings не подтвердились в обеих играх:** Breakout −0.500 → +0.304167; Asterix +0.337500 → −0.316667, все шесть source histories сменили знак. Asterix joint +0.770833 → −0.150000. Польза выбора vs continue не подтверждена. [Полный sourced audit](results/minatar-repair-20261007/monitoring/20261011T1244Z.md); [CURRENT_STATUS.md](results/minatar-repair-20261007/CURRENT_STATUS.md).

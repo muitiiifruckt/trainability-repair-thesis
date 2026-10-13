@@ -1,0 +1,227 @@
+{
+  "captured_at_utc": "2026-10-13T13:23:07.498501+00:00",
+  "classification": "OS_interruption_and_NUL_control_metadata_recovered",
+  "os_events": {
+    "new_boot_utc": "2026-10-13T09:12:57.500905Z",
+    "kernel_power_event": 41,
+    "unexpected_shutdown_event": 6008,
+    "reported_previous_shutdown_utc": "2026-10-12T20:33:18Z",
+    "last_worker_log_utc": "2026-10-12T20:37:31Z",
+    "event_time_disagreement": true,
+    "bugcheck_code": 0,
+    "sleep_in_progress": 4,
+    "root_cause": "unknown"
+  },
+  "helper_git_commit": "b29eba8",
+  "helper_sha256": "8f3119ea9915bb82b1c5dc581a389a51fb86a197f15ee835848e51af828e9908",
+  "tests": {
+    "passed": 14,
+    "wall_seconds": 0.032,
+    "optimizer_updates": 0,
+    "torch_imported": false
+  },
+  "quarantine": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\recovery\\20261013_nul_controls",
+  "quarantined_supervisor": {
+    "size": 211,
+    "sha256": "a8e63d1668da80b7902494cbbfe1313ef5c5fe3c455435e316b48072c8f4b52d"
+  },
+  "source_root_outcomes_before": {
+    "rows": 328,
+    "sha256": "51a62a6774f31dcd937a2f2a055822c8462073be14037b35624a4304e6809f8d"
+  },
+  "recovered_workers": [
+    {
+      "task_id": "branch:618de0efc6b5e09a826ad59bab7440930a558f0092e98177f8d5ae32da4a886e",
+      "completed_jobs_preserved": [
+        "branch:natural:natural_asterix_seed4_age50000:continue:repeat2:h50000",
+        "branch:natural:natural_asterix_seed4_age50000:optimizer_reset:repeat2:h50000",
+        "branch:natural:natural_asterix_seed4_age50000:head_reset:repeat2:h50000"
+      ],
+      "raw_prefix_sha256": "6a799d9438bdbabc519eca84472a166582725aa7ce6c88df700c0feab06112d6",
+      "original_damage": {
+        "manifest.json": {
+          "size": 18462,
+          "sha256": "3932f0c74ccd9a7db5146e5b540ff63c3b8a4501aa7f9c38a6ee62d3660fa57f"
+        },
+        "progress.json": {
+          "size": 548,
+          "sha256": "73f10e16a57e80fcd212b6629685e2e19a1d19bf13d34dda6c866b528b098684"
+        },
+        "branch_resume.json": {
+          "size": 2658,
+          "sha256": "faaf9815dc4e4b5b9771154d68f895f55bdcf04942fe95546abfb1ed22c8ab6c"
+        }
+      },
+      "unverified_pt_quarantine_sha256": "fad97a75c190d10830b6c8c95888bb18ee018be65be18c8a15f4a4a9e667b252",
+      "observed_old_work": 179051,
+      "final_accounted_updates": 229051,
+      "rerun_job": "branch:natural:natural_asterix_seed4_age50000:head_and_optimizer_reset:repeat2:h50000",
+      "rerun_budget_env_steps": 50000,
+      "rerun_budget_gradient_updates": 50000,
+      "continuation_seed": 3019179,
+      "repair_seed": 924983275,
+      "source_sha256": "adc1083c478ae2414ba794bc73ec8497856262c51b45541572a2b9d114dc39dd"
+    },
+    {
+      "task_id": "branch:884e66655cec7367ccdbae336df8aeaf5949b17fd9edd9d7c1e8b47d8a7a2fa8",
+      "completed_jobs_preserved": [
+        "branch:natural:natural_asterix_seed4_age50000:continue:repeat3:h50000",
+        "branch:natural:natural_asterix_seed4_age50000:optimizer_reset:repeat3:h50000",
+        "branch:natural:natural_asterix_seed4_age50000:head_reset:repeat3:h50000"
+      ],
+      "raw_prefix_sha256": "71af9eaa0ada4a096a8b834c583ae910aa44ac1a54960f398e3e1eb764a31425",
+      "original_damage": {
+        "manifest.json": {
+          "size": 18421,
+          "sha256": "0855c77b45c770dddbc6e2a0f1a6dc33bc660a4d25c8b79c907987c01cfd0333"
+        },
+        "progress.json": {
+          "size": 550,
+          "sha256": "25778f162c4243167f8eaa876f1b0619e67afc158de7805600471a563ec5e8b7"
+        },
+        "branch_resume.json": {
+          "size": 2648,
+          "sha256": "f6176f908d8529bf9a99ad50f3d0c0c7c1d106fa040c3d64600620de0095c0d4"
+        }
+      },
+      "unverified_pt_quarantine_sha256": "513c2f390aea730dc949b1b9e3b2ae9cdf711ebc9f9595aa94367318cd2a5517",
+      "observed_old_work": 178992,
+      "final_accounted_updates": 228992,
+      "rerun_job": "branch:natural:natural_asterix_seed4_age50000:head_and_optimizer_reset:repeat3:h50000",
+      "rerun_budget_env_steps": 50000,
+      "rerun_budget_gradient_updates": 50000,
+      "continuation_seed": 138593184,
+      "repair_seed": 1145363266,
+      "source_sha256": "adc1083c478ae2414ba794bc73ec8497856262c51b45541572a2b9d114dc39dd"
+    }
+  ],
+  "previous_observed_work": 358043,
+  "rerun_updates": 100000,
+  "accounted_recovery_total": 458043,
+  "unobserved_after_counter_work_possible": true,
+  "package_3_closed": {
+    "id": 3,
+    "started_at": 1791798689.6242628,
+    "updates": 7700254,
+    "wall_time_sec": 97119.3804813113,
+    "closed_at": 1791895809.0047433
+  },
+  "active_package": {
+    "id": 4,
+    "started_at": 1791895809.004745,
+    "updates": 458043,
+    "wall_time_sec": 1967.4774338999996
+  },
+  "supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 17528,
+    "worker_pid": 19124,
+    "updated_at": 1791897780.3004742,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 10,
+    "recovery_source": "verified monitoring snapshot; original NUL bytes quarantined"
+  },
+  "supervisor_alive": true,
+  "coordinator_alive": true,
+  "worker_error": null,
+  "progress": {
+    "stage": "parallel_branches",
+    "operation": "additional_sources",
+    "event": "new_package",
+    "parallel_wave_id": 55,
+    "pending_tasks": [
+      "branch:406476f3230e4d7f698b04e3e32bfdee29107b4bf0703b3e13ffe1c802cd11ee",
+      "branch:fb9c162fc3722e29a16edcc4c131f86bcab2acd62a824a7c646df84084f7c1e4"
+    ],
+    "worker_progress": [
+      {
+        "task_id": "branch:fb9c162fc3722e29a16edcc4c131f86bcab2acd62a824a7c646df84084f7c1e4",
+        "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_fb9c162fc3722e29a16e",
+        "pending": true,
+        "child_progress": {
+          "stage": "screen",
+          "job_id": "branch:natural:natural_asterix_seed4_age200000:head_and_optimizer_reset:repeat0:h50000",
+          "checkpoint_id": "natural_asterix_seed4_age200000",
+          "action": "head_and_optimizer_reset",
+          "repeat": 0,
+          "completed_steps": 31729,
+          "horizon": 50000,
+          "gradient_updates": 227229,
+          "recent_return": 1.4,
+          "wall_time_sec": 260.14907139999923,
+          "event": "branch_complete",
+          "j_final": 0.85,
+          "failure_reason": null,
+          "time": 1791897771.883655,
+          "package_updates": 181729,
+          "package_wall_sec": 1522.2821480000002
+        }
+      },
+      {
+        "task_id": "branch:406476f3230e4d7f698b04e3e32bfdee29107b4bf0703b3e13ffe1c802cd11ee",
+        "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_406476f3230e4d7f698b",
+        "pending": true,
+        "child_progress": {
+          "stage": "screen",
+          "job_id": "branch:natural:natural_asterix_seed4_age200000:head_and_optimizer_reset:repeat1:h50000",
+          "checkpoint_id": "natural_asterix_seed4_age200000",
+          "action": "head_and_optimizer_reset",
+          "repeat": 1,
+          "completed_steps": 29086,
+          "horizon": 50000,
+          "gradient_updates": 224586,
+          "recent_return": 2.2,
+          "wall_time_sec": 240.0580654000005,
+          "event": "branch_complete",
+          "j_final": 1.0,
+          "failure_reason": null,
+          "time": 1791897760.2438803,
+          "package_updates": 179086,
+          "package_wall_sec": 1510.6344797000002
+        }
+      }
+    ],
+    "time": 1791897776.4803345,
+    "package_updates": 458043,
+    "package_wall_sec": 1967.4755879000004
+  },
+  "recorded_plan_status": "running",
+  "actual_coverage": {
+    "additional_sources": {
+      "expected": 192,
+      "finished": 144,
+      "missing": 48,
+      "numerical_failures": [],
+      "complete": false
+    },
+    "additional_repeats": {
+      "expected": 192,
+      "finished": 0,
+      "missing": 192,
+      "numerical_failures": [],
+      "complete": false
+    }
+  },
+  "outcomes_now": {
+    "rows": 336,
+    "sha256": "351b01d384b490e3882c81172da6377a6d2cd8cd650ac428857d19c0b92ec53c",
+    "failures": 0
+  },
+  "frozen_code_verified": true,
+  "scientific_code_sha256": {
+    "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+    "experiments\\mechanism_analysis.py": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+    "experiments\\rl_analysis.py": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+    "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+    "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+    "experiments\\rl_runner.py": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+    "experiments\\rl_scheduler.py": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+    "experiments\\rl_transfer.py": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+    "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+  },
+  "config_hash": "f3029c965f66d2100d1e8239800c580b7d4442d2b7e918d7919d1146eb66833d",
+  "power_settings_changed": false,
+  "independent_pre_apply_review": "No blocking defects; multi-file apply requires successful applied.json before launch."
+}
