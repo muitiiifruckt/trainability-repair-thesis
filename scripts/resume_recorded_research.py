@@ -127,7 +127,7 @@ def verify(config, manifest, code):
 
 
 def ensure_no_live_child_leases(folder):
-    from scripts.research_supervisor import alive
+    from scripts.research_supervisor import research_owner_alive
     for path in folder.glob("workers/*/*/worker_lease.json"):
         try:
             lease = read(path)
@@ -135,7 +135,7 @@ def ensure_no_live_child_leases(folder):
             continue
         except (OSError, json.JSONDecodeError) as error:
             raise RuntimeError("Cannot verify existing worker lease") from error
-        if alive(lease.get("pid")):
+        if research_owner_alive(lease.get("pid"), lease.get("started_at")):
             raise RuntimeError("Existing child workers are healthy; wait before coordinator resume")
 
 
@@ -157,9 +157,10 @@ def run(config_path, workers):
             msvcrt.locking(lock.fileno(), msvcrt.LK_NBLCK, 1)
             break
         except OSError:
-            from scripts.research_supervisor import alive
-            owner = read(folder / "manifest.json").get("worker_pid")
-            if alive(owner) and owner != os.getpid():
+            from scripts.research_supervisor import research_owner_alive
+            owner_record = read(folder / "manifest.json")
+            owner = owner_record.get("worker_pid")
+            if research_owner_alive(owner, owner_record.get("updated_at")) and owner != os.getpid():
                 lock.close()
                 raise RuntimeError("Another coordinator is active; no changes made")
             if time.monotonic() - started_lock_wait >= 10:
@@ -174,11 +175,14 @@ def run(config_path, workers):
         plan = read(path) if path.exists() else make_plan(config, manifest, rows(folder / "checkpoints.jsonl"), read(folder / "dependency_manifest.json")["code"])
         code = plan["scientific_code"] if plan else read(folder / "dependency_manifest.json")["code"]
         verify(config, manifest, code)
+        from scripts.research_supervisor import quarantine_reused_leases_locked
+        archived = quarantine_reused_leases_locked(folder)
         ensure_no_live_child_leases(folder)
         if plan:
             validate_plan(plan, config, manifest, rows(folder / "checkpoints.jsonl"))
             plan["orchestration_revisions"].append({"time": time.time(), "pid": os.getpid(),
-                "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()})
+                "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),
+                "reused_pid_leases_quarantined": archived})
             write(path, plan)
         # Frozen modules import MinAtar before learner/BLAS work begins.
         from experiments.rl_runner import Campaign, torch
