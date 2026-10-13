@@ -99,6 +99,19 @@ class ResearchProcessIdentityTest(unittest.TestCase):
                     quarantine_reused_leases(folder)
             self.assertEqual(lease.read_bytes(), b"invalid")
 
+    def test_unknown_or_invalid_owner_schema_is_never_treated_as_dead(self):
+        cases = [{}, {"pid": None}, {"pid": "2400"}, {"pid": True},
+                 {"pid": 2400, "started_at": float("nan"), "task_id": "task"}]
+        for value in cases:
+            with self.subTest(value=value), tempfile.TemporaryDirectory() as directory:
+                folder, lease, _, _ = self.fixture(directory)
+                payload = json.dumps(value).encode()
+                lease.write_bytes(payload)
+                with patch("scripts.research_supervisor.ROOT", Path(directory)):
+                    with self.assertRaisesRegex(RuntimeError, "Cannot verify"):
+                        quarantine_reused_leases(folder)
+                self.assertEqual(lease.read_bytes(), payload)
+
 
 if __name__ == "__main__":
     unittest.main()

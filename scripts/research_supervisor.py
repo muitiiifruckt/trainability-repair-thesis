@@ -10,6 +10,7 @@ import argparse
 import ctypes
 import hashlib
 import json
+import math
 import os
 import subprocess
 import sys
@@ -89,8 +90,11 @@ def quarantine_reused_leases_locked(folder):
     for path in folder.glob("workers/*/*/worker_lease.json"):
         try:
             lease = json.loads(path.read_text(encoding="utf-8"))
-            if not isinstance(lease, dict):
-                raise ValueError("Lease must be an object")
+            if (not isinstance(lease, dict) or type(lease.get("pid")) is not int
+                    or lease["pid"] <= 0 or type(lease.get("started_at")) not in (int, float)
+                    or not math.isfinite(lease["started_at"]) or lease["started_at"] <= 0
+                    or not isinstance(lease.get("task_id"), str) or not lease["task_id"]):
+                raise ValueError("Lease ownership fields are invalid")
         except (OSError, ValueError) as error:
             raise RuntimeError("Cannot verify existing worker lease") from error
         leases.append((path, lease))
