@@ -8,7 +8,7 @@
     "head_and_optimizer_reset"
   ],
   "missing_files": [],
-  "outcome_rows": 328,
+  "outcome_rows": 456,
   "bootstrap_repeats": 1000,
   "population_oracle_estimated": false,
   "selection_trained": false,
@@ -21,19 +21,19 @@
         50000
       ],
       "gradient_budget_warning": false,
-      "rows": 328,
-      "complete_checkpoints": 21,
-      "complete_repeat_panels": 82,
-      "source_histories": 11,
-      "minimum_complete_repeats": 2,
+      "rows": 456,
+      "complete_checkpoints": 24,
+      "complete_repeat_panels": 114,
+      "source_histories": 12,
+      "minimum_complete_repeats": 4,
       "missing_action_rows": 0,
       "failed_rows_by_reason": {},
       "nonfinite_or_missing_final_rows": 0,
       "completed_environment_budget_mismatch_rows": 0,
       "baseline_qualification": {
-        "known_checkpoints": 21,
-        "learned_checkpoints": 18,
-        "unlearned_checkpoints": 3,
+        "known_checkpoints": 24,
+        "learned_checkpoints": 20,
+        "unlearned_checkpoints": 4,
         "unknown_checkpoints": 0,
         "rule": "explicit_baseline_learned_or_separate_source_return_above_random_plus_declared_margin"
       },
@@ -46,9 +46,9 @@
                 0.0,
                 0.0
               ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             },
@@ -60,7 +60,7 @@
               ],
               "source_histories": 6,
               "checkpoints": 12,
-              "paired_repeats": 48,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
@@ -72,9 +72,9 @@
                 0.0,
                 0.0
               ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             },
@@ -86,33 +86,33 @@
               ],
               "source_histories": 6,
               "checkpoints": 12,
-              "paired_repeats": 48,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "immediate_change": {
             "asterix": {
-              "mean": -0.007500000000000036,
+              "mean": 0.028124999999999983,
               "ci95": [
-                -0.12378125000000005,
-                0.12753124999999998
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.5624999999999999,
-              "ci95": [
-                -0.8573177083333331,
-                -0.2781249999999999
+                -0.07609374999999999,
+                0.1448177083333333
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.48784722222222204,
+              "ci95": [
+                -0.7701475694444445,
+                -0.23123263888888868
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
@@ -124,9 +124,9 @@
                 0.0,
                 0.0
               ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             },
@@ -138,7 +138,7 @@
               ],
               "source_histories": 6,
               "checkpoints": 12,
-              "paired_repeats": 48,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
@@ -150,9 +150,9 @@
                 0.0,
                 0.0
               ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             },
@@ -164,7 +164,7 @@
               ],
               "source_histories": 6,
               "checkpoints": 12,
-              "paired_repeats": 48,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
@@ -173,158 +173,26 @@
         "optimizer_reset": {
           "paired_effect": {
             "asterix": {
-              "mean": -0.03125,
+              "mean": 0.08333333333333333,
               "ci95": [
-                -0.32999999999999996,
-                0.2600625
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.045833333333333316,
-              "ci95": [
-                -0.36463541666666666,
-                0.3209114583333332
+                -0.14484375,
+                0.3104166666666667
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
-            }
-          },
-          "harm_fraction": {
-            "asterix": {
-              "mean": 0.475,
-              "ci95": [
-                0.2,
-                0.775
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
             },
             "breakout": {
-              "mean": 0.5208333333333334,
+              "mean": -0.03680555555555556,
               "ci95": [
-                0.3125,
-                0.7083333333333334
+                -0.3340972222222222,
+                0.3056076388888889
               ],
               "source_histories": 6,
               "checkpoints": 12,
-              "paired_repeats": 48,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            }
-          },
-          "immediate_change": {
-            "asterix": {
-              "mean": -0.007500000000000036,
-              "ci95": [
-                -0.12378125000000005,
-                0.12753124999999998
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.5624999999999999,
-              "ci95": [
-                -0.8573177083333331,
-                -0.2781249999999999
-              ],
-              "source_histories": 6,
-              "checkpoints": 12,
-              "paired_repeats": 48,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            }
-          },
-          "paired_immediate_effect": {
-            "asterix": {
-              "mean": 0.0,
-              "ci95": [
-                0.0,
-                0.0
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": 0.0,
-              "ci95": [
-                0.0,
-                0.0
-              ],
-              "source_histories": 6,
-              "checkpoints": 12,
-              "paired_repeats": 48,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            }
-          },
-          "auc_effect": {
-            "asterix": {
-              "mean": 0.07206249999999997,
-              "ci95": [
-                -0.06556406249999998,
-                0.23306718749999994
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": 0.00838541666666672,
-              "ci95": [
-                -0.25280338541666647,
-                0.25387369791666664
-              ],
-              "source_histories": 6,
-              "checkpoints": 12,
-              "paired_repeats": 48,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            }
-          }
-        },
-        "head_reset": {
-          "paired_effect": {
-            "asterix": {
-              "mean": 0.04500000000000002,
-              "ci95": [
-                -0.16628125000000005,
-                0.25253125
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.2927083333333333,
-              "ci95": [
-                -0.8072916666666665,
-                0.24294270833333323
-              ],
-              "source_histories": 6,
-              "checkpoints": 12,
-              "paired_repeats": 48,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
@@ -333,102 +201,234 @@
             "asterix": {
               "mean": 0.375,
               "ci95": [
-                0.17437500000000003,
-                0.625
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": 0.5416666666666666,
-              "ci95": [
-                0.375,
-                0.6875
+                0.20833333333333334,
+                0.5416666666666666
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": 0.5069444444444444,
+              "ci95": [
+                0.3055555555555555,
+                0.6807291666666666
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "immediate_change": {
             "asterix": {
-              "mean": -0.6050000000000001,
+              "mean": 0.028124999999999983,
               "ci95": [
-                -1.01753125,
-                -0.24712500000000034
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -3.992708333333333,
-              "ci95": [
-                -4.496953125,
-                -3.446770833333334
+                -0.07609374999999999,
+                0.1448177083333333
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.48784722222222204,
+              "ci95": [
+                -0.7701475694444445,
+                -0.23123263888888868
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "paired_immediate_effect": {
             "asterix": {
-              "mean": -0.5975,
+              "mean": 0.0,
               "ci95": [
-                -1.06003125,
-                -0.15375
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -3.4302083333333333,
-              "ci95": [
-                -3.8615364583333336,
-                -2.936380208333333
+                0.0,
+                0.0
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": 0.0,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "auc_effect": {
             "asterix": {
-              "mean": 0.130125,
+              "mean": 0.07614583333333333,
               "ci95": [
-                0.008474999999999991,
-                0.26352656249999995
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.48802083333333335,
-              "ci95": [
-                -0.9018359374999999,
-                -0.13723177083333352
+                -0.05933203125,
+                0.21733463541666662
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.020833333333333228,
+              "ci95": [
+                -0.2275308159722221,
+                0.22915104166666683
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            }
+          }
+        },
+        "head_reset": {
+          "paired_effect": {
+            "asterix": {
+              "mean": 0.09062500000000002,
+              "ci95": [
+                -0.09067708333333334,
+                0.3000520833333334
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.26770833333333327,
+              "ci95": [
+                -0.6229340277777776,
+                0.134435763888889
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            }
+          },
+          "harm_fraction": {
+            "asterix": {
+              "mean": 0.375,
+              "ci95": [
+                0.20833333333333334,
+                0.5416666666666666
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": 0.5347222222222222,
+              "ci95": [
+                0.3888888888888889,
+                0.673784722222222
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            }
+          },
+          "immediate_change": {
+            "asterix": {
+              "mean": -0.5916666666666667,
+              "ci95": [
+                -0.8742968750000001,
+                -0.31664062500000006
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -3.9809027777777772,
+              "ci95": [
+                -4.442057291666667,
+                -3.4467881944444443
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            }
+          },
+          "paired_immediate_effect": {
+            "asterix": {
+              "mean": -0.6197916666666667,
+              "ci95": [
+                -0.9479166666666666,
+                -0.31875000000000003
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -3.493055555555556,
+              "ci95": [
+                -3.883055555555555,
+                -3.0561197916666667
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            }
+          },
+          "auc_effect": {
+            "asterix": {
+              "mean": 0.17307291666666666,
+              "ci95": [
+                0.05501041666666667,
+                0.29719140625
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.42828125,
+              "ci95": [
+                -0.7529240451388889,
+                -0.15842881944444465
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
@@ -437,130 +437,130 @@
         "head_and_optimizer_reset": {
           "paired_effect": {
             "asterix": {
-              "mean": 0.17124999999999999,
+              "mean": 0.26354166666666673,
               "ci95": [
-                -0.16000000000000006,
-                0.5214062499999998
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.603125,
-              "ci95": [
-                -1.0479947916666665,
-                -0.18117187500000007
+                0.011432291666666691,
+                0.49690104166666677
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.6076388888888888,
+              "ci95": [
+                -0.9670399305555556,
+                -0.24268229166666658
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "harm_fraction": {
             "asterix": {
-              "mean": 0.5,
+              "mean": 0.4166666666666667,
               "ci95": [
-                0.2,
-                0.8
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": 0.6458333333333334,
-              "ci95": [
-                0.5,
-                0.7916666666666666
+                0.22916666666666666,
+                0.6046874999999995
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": 0.638888888888889,
+              "ci95": [
+                0.5,
+                0.763888888888889
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "immediate_change": {
             "asterix": {
-              "mean": -0.6050000000000001,
+              "mean": -0.5916666666666667,
               "ci95": [
-                -1.01753125,
-                -0.24712500000000034
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -3.992708333333333,
-              "ci95": [
-                -4.496953125,
-                -3.446770833333334
+                -0.8742968750000001,
+                -0.31664062500000006
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -3.9809027777777772,
+              "ci95": [
+                -4.442057291666667,
+                -3.4467881944444443
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "paired_immediate_effect": {
             "asterix": {
-              "mean": -0.5975,
+              "mean": -0.6197916666666667,
               "ci95": [
-                -1.06003125,
-                -0.15375
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -3.4302083333333333,
-              "ci95": [
-                -3.8615364583333336,
-                -2.936380208333333
+                -0.9479166666666666,
+                -0.31875000000000003
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -3.493055555555556,
+              "ci95": [
+                -3.883055555555555,
+                -3.0561197916666667
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "auc_effect": {
             "asterix": {
-              "mean": 0.19324999999999998,
+              "mean": 0.22104166666666666,
               "ci95": [
-                -0.0031265624999999996,
-                0.39428281249999997
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.8000000000000002,
-              "ci95": [
-                -1.1600442708333334,
-                -0.4818437499999999
+                0.07999088541666664,
+                0.377890625
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.7813715277777779,
+              "ci95": [
+                -1.120599392361111,
+                -0.4656666666666667
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
@@ -568,21 +568,21 @@
         }
       },
       "naive_same_sample_maximum_gap_vs_heldout_history_sbs": {
-        "asterix": 0.37499999999999994,
-        "breakout": 0.23854166666666657
+        "asterix": 0.2562499999999999,
+        "breakout": 0.2996527777777777
       },
       "naive_maximum_caveat": "optimistic_in_expectation; not_a_strict_population_oracle_bound",
       "cross_fitted_estimated_winner": {
         "advantage_vs_sbs": {
           "asterix": {
-            "mean": 0.013750000000000012,
+            "mean": -0.08333333333333336,
             "ci95": [
-              -0.32131250000000006,
-              0.23384374999999996
+              -0.3416666666666666,
+              0.20315104166666662
             ],
-            "source_histories": 5,
-            "checkpoints": 9,
-            "paired_repeats": 34,
+            "source_histories": 6,
+            "checkpoints": 12,
+            "paired_repeats": 48,
             "ci_unit": "full_source_history_paired_continuation_vectors_and_refitted_choices",
             "small_history_count": false,
             "bootstrap_valid_draws": 1000,
@@ -590,14 +590,14 @@
             "bootstrap_refits_selection": true
           },
           "breakout": {
-            "mean": -0.2822916666666666,
+            "mean": -0.057986111111111065,
             "ci95": [
-              -0.487734375,
-              0.35937499999999994
+              -0.39409722222222215,
+              0.2946614583333331
             ],
             "source_histories": 6,
             "checkpoints": 12,
-            "paired_repeats": 48,
+            "paired_repeats": 66,
             "ci_unit": "full_source_history_paired_continuation_vectors_and_refitted_choices",
             "small_history_count": false,
             "bootstrap_valid_draws": 1000,
@@ -607,14 +607,14 @@
         },
         "effect_vs_continue": {
           "asterix": {
-            "mean": -0.08125,
+            "mean": 1.850371707708594e-17,
             "ci95": [
-              -0.28015624999999994,
-              0.13753125000000002
+              -0.23752604166666663,
+              0.19903645833333328
             ],
-            "source_histories": 5,
-            "checkpoints": 9,
-            "paired_repeats": 34,
+            "source_histories": 6,
+            "checkpoints": 12,
+            "paired_repeats": 48,
             "ci_unit": "full_source_history_paired_continuation_vectors_and_refitted_choices",
             "small_history_count": false,
             "bootstrap_valid_draws": 1000,
@@ -622,14 +622,14 @@
             "bootstrap_refits_selection": true
           },
           "breakout": {
-            "mean": -0.2822916666666666,
+            "mean": -0.15937500000000002,
             "ci95": [
-              -0.5531249999999999,
-              0.08544270833333344
+              -0.40243923611111115,
+              0.11743055555555551
             ],
             "source_histories": 6,
             "checkpoints": 12,
-            "paired_repeats": 48,
+            "paired_repeats": 66,
             "ci_unit": "full_source_history_paired_continuation_vectors_and_refitted_choices",
             "small_history_count": false,
             "bootstrap_valid_draws": 1000,
@@ -644,7 +644,7 @@
             "game": "asterix",
             "fold": 0,
             "chosen_action": "head_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "89648747",
@@ -670,6 +670,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -684,7 +685,7 @@
             "game": "asterix",
             "fold": 1,
             "chosen_action": "head_and_optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "48834047",
@@ -710,6 +711,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -724,7 +726,7 @@
             "game": "asterix",
             "fold": 0,
             "chosen_action": "head_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "1419580524",
@@ -750,6 +752,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -764,7 +767,7 @@
             "game": "asterix",
             "fold": 1,
             "chosen_action": "head_and_optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "88537300",
@@ -790,6 +793,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -804,7 +808,7 @@
             "game": "asterix",
             "fold": 0,
             "chosen_action": "head_and_optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "1863908159",
@@ -830,6 +834,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -844,7 +849,7 @@
             "game": "asterix",
             "fold": 1,
             "chosen_action": "head_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "917282346",
@@ -870,6 +875,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -884,7 +890,7 @@
             "game": "asterix",
             "fold": 0,
             "chosen_action": "head_and_optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "1998527290",
@@ -910,6 +916,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -924,7 +931,7 @@
             "game": "asterix",
             "fold": 1,
             "chosen_action": "head_and_optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "847066650",
@@ -950,6 +957,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -964,7 +972,7 @@
             "game": "asterix",
             "fold": 0,
             "chosen_action": "head_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "646997291",
@@ -990,6 +998,7 @@
               "natural_asterix_seed1",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1004,7 +1013,7 @@
             "game": "asterix",
             "fold": 1,
             "chosen_action": "head_and_optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "788730189",
@@ -1030,6 +1039,7 @@
               "natural_asterix_seed1",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1044,7 +1054,7 @@
             "game": "asterix",
             "fold": 0,
             "chosen_action": "continue",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "885313894",
@@ -1070,6 +1080,7 @@
               "natural_asterix_seed1",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1084,7 +1095,7 @@
             "game": "asterix",
             "fold": 1,
             "chosen_action": "continue",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "115594169",
@@ -1110,6 +1121,7 @@
               "natural_asterix_seed1",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1124,7 +1136,7 @@
             "game": "asterix",
             "fold": 0,
             "chosen_action": "head_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "1811540174",
@@ -1150,6 +1162,7 @@
               "natural_asterix_seed1",
               "natural_asterix_seed2",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1164,7 +1177,7 @@
             "game": "asterix",
             "fold": 1,
             "chosen_action": "head_and_optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "8883434",
@@ -1190,6 +1203,7 @@
               "natural_asterix_seed1",
               "natural_asterix_seed2",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1204,7 +1218,7 @@
             "game": "asterix",
             "fold": 0,
             "chosen_action": "optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "2001029612",
@@ -1230,6 +1244,7 @@
               "natural_asterix_seed1",
               "natural_asterix_seed2",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1244,7 +1259,7 @@
             "game": "asterix",
             "fold": 1,
             "chosen_action": "optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "2113185367",
@@ -1270,6 +1285,7 @@
               "natural_asterix_seed1",
               "natural_asterix_seed2",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1279,133 +1295,29 @@
             ]
           },
           {
-            "checkpoint_id": "natural_asterix_seed4_age50000",
+            "checkpoint_id": "natural_asterix_seed4_age200000",
             "trajectory_id": "natural_asterix_seed4",
             "game": "asterix",
             "fold": 0,
-            "chosen_action": "continue",
-            "sbs_action": "optimizer_reset",
-            "selection_repeat_ids": [
-              [
-                "54393021",
-                "1"
-              ]
-            ],
-            "evaluation_repeat_ids": [
-              [
-                "1904981178",
-                "0"
-              ]
-            ],
-            "sbs_training_trajectory_ids": [
-              "natural_asterix_seed0",
-              "natural_asterix_seed1",
-              "natural_asterix_seed2",
-              "natural_asterix_seed3",
-              "natural_breakout_seed0",
-              "natural_breakout_seed1",
-              "natural_breakout_seed2",
-              "natural_breakout_seed3",
-              "natural_breakout_seed4",
-              "natural_breakout_seed5"
-            ]
-          },
-          {
-            "checkpoint_id": "natural_asterix_seed4_age50000",
-            "trajectory_id": "natural_asterix_seed4",
-            "game": "asterix",
-            "fold": 1,
-            "chosen_action": "head_reset",
-            "sbs_action": "optimizer_reset",
-            "selection_repeat_ids": [
-              [
-                "1904981178",
-                "0"
-              ]
-            ],
-            "evaluation_repeat_ids": [
-              [
-                "54393021",
-                "1"
-              ]
-            ],
-            "sbs_training_trajectory_ids": [
-              "natural_asterix_seed0",
-              "natural_asterix_seed1",
-              "natural_asterix_seed2",
-              "natural_asterix_seed3",
-              "natural_breakout_seed0",
-              "natural_breakout_seed1",
-              "natural_breakout_seed2",
-              "natural_breakout_seed3",
-              "natural_breakout_seed4",
-              "natural_breakout_seed5"
-            ]
-          },
-          {
-            "checkpoint_id": "natural_breakout_seed0_age200000",
-            "trajectory_id": "natural_breakout_seed0",
-            "game": "breakout",
-            "fold": 0,
-            "chosen_action": "head_reset",
-            "sbs_action": "continue",
-            "selection_repeat_ids": [
-              [
-                "2022956252",
-                "3"
-              ],
-              [
-                "771119155",
-                "0"
-              ]
-            ],
-            "evaluation_repeat_ids": [
-              [
-                "827100894",
-                "1"
-              ],
-              [
-                "1811022809",
-                "2"
-              ]
-            ],
-            "sbs_training_trajectory_ids": [
-              "natural_asterix_seed0",
-              "natural_asterix_seed1",
-              "natural_asterix_seed2",
-              "natural_asterix_seed3",
-              "natural_asterix_seed4",
-              "natural_breakout_seed1",
-              "natural_breakout_seed2",
-              "natural_breakout_seed3",
-              "natural_breakout_seed4",
-              "natural_breakout_seed5"
-            ]
-          },
-          {
-            "checkpoint_id": "natural_breakout_seed0_age200000",
-            "trajectory_id": "natural_breakout_seed0",
-            "game": "breakout",
-            "fold": 1,
             "chosen_action": "optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
-                "827100894",
-                "1"
+                "885404596",
+                "3"
               ],
               [
-                "1811022809",
+                "1675842131",
                 "2"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "2022956252",
-                "3"
+                "85712047",
+                "1"
               ],
               [
-                "771119155",
+                "658468421",
                 "0"
               ]
             ],
@@ -1414,7 +1326,8 @@
               "natural_asterix_seed1",
               "natural_asterix_seed2",
               "natural_asterix_seed3",
-              "natural_asterix_seed4",
+              "natural_asterix_seed5",
+              "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
               "natural_breakout_seed3",
@@ -1423,70 +1336,30 @@
             ]
           },
           {
-            "checkpoint_id": "natural_breakout_seed0_age50000",
-            "trajectory_id": "natural_breakout_seed0",
-            "game": "breakout",
-            "fold": 0,
-            "chosen_action": "continue",
-            "sbs_action": "continue",
-            "selection_repeat_ids": [
-              [
-                "294285971",
-                "0"
-              ],
-              [
-                "647861028",
-                "3"
-              ]
-            ],
-            "evaluation_repeat_ids": [
-              [
-                "397217161",
-                "1"
-              ],
-              [
-                "19917498",
-                "2"
-              ]
-            ],
-            "sbs_training_trajectory_ids": [
-              "natural_asterix_seed0",
-              "natural_asterix_seed1",
-              "natural_asterix_seed2",
-              "natural_asterix_seed3",
-              "natural_asterix_seed4",
-              "natural_breakout_seed1",
-              "natural_breakout_seed2",
-              "natural_breakout_seed3",
-              "natural_breakout_seed4",
-              "natural_breakout_seed5"
-            ]
-          },
-          {
-            "checkpoint_id": "natural_breakout_seed0_age50000",
-            "trajectory_id": "natural_breakout_seed0",
-            "game": "breakout",
+            "checkpoint_id": "natural_asterix_seed4_age200000",
+            "trajectory_id": "natural_asterix_seed4",
+            "game": "asterix",
             "fold": 1,
             "chosen_action": "continue",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
-                "397217161",
+                "85712047",
                 "1"
               ],
               [
-                "19917498",
-                "2"
+                "658468421",
+                "0"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "294285971",
-                "0"
+                "885404596",
+                "3"
               ],
               [
-                "647861028",
-                "3"
+                "1675842131",
+                "2"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -1494,7 +1367,8 @@
               "natural_asterix_seed1",
               "natural_asterix_seed2",
               "natural_asterix_seed3",
-              "natural_asterix_seed4",
+              "natural_asterix_seed5",
+              "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
               "natural_breakout_seed3",
@@ -1503,29 +1377,152 @@
             ]
           },
           {
-            "checkpoint_id": "natural_breakout_seed1_age200000",
-            "trajectory_id": "natural_breakout_seed1",
-            "game": "breakout",
+            "checkpoint_id": "natural_asterix_seed4_age50000",
+            "trajectory_id": "natural_asterix_seed4",
+            "game": "asterix",
+            "fold": 0,
+            "chosen_action": "head_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "3019179",
+                "2"
+              ],
+              [
+                "1904981178",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "54393021",
+                "1"
+              ],
+              [
+                "138593184",
+                "3"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed5",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed4_age50000",
+            "trajectory_id": "natural_asterix_seed4",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "54393021",
+                "1"
+              ],
+              [
+                "138593184",
+                "3"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "3019179",
+                "2"
+              ],
+              [
+                "1904981178",
+                "0"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed5",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed5_age200000",
+            "trajectory_id": "natural_asterix_seed5",
+            "game": "asterix",
             "fold": 0,
             "chosen_action": "head_and_optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
-                "1650282402",
+                "1086663985",
                 "1"
               ],
               [
-                "550132115",
+                "974770050",
+                "2"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "2072451193",
+                "0"
+              ],
+              [
+                "1357066085",
+                "3"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed5_age200000",
+            "trajectory_id": "natural_asterix_seed5",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "2072451193",
+                "0"
+              ],
+              [
+                "1357066085",
                 "3"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "1043101329",
-                "0"
+                "1086663985",
+                "1"
               ],
               [
-                "1646757288",
+                "974770050",
                 "2"
               ]
             ],
@@ -1535,6 +1532,334 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed5_age50000",
+            "trajectory_id": "natural_asterix_seed5",
+            "game": "asterix",
+            "fold": 0,
+            "chosen_action": "head_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "1232129904",
+                "0"
+              ],
+              [
+                "1238682815",
+                "2"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "780849067",
+                "1"
+              ],
+              [
+                "833714726",
+                "3"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_asterix_seed5_age50000",
+            "trajectory_id": "natural_asterix_seed5",
+            "game": "asterix",
+            "fold": 1,
+            "chosen_action": "head_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "780849067",
+                "1"
+              ],
+              [
+                "833714726",
+                "3"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1232129904",
+                "0"
+              ],
+              [
+                "1238682815",
+                "2"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed0_age200000",
+            "trajectory_id": "natural_breakout_seed0",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "continue",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "827100894",
+                "1"
+              ],
+              [
+                "1811022809",
+                "2"
+              ],
+              [
+                "351613730",
+                "5"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "771119155",
+                "0"
+              ],
+              [
+                "1852291844",
+                "4"
+              ],
+              [
+                "2022956252",
+                "3"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_asterix_seed5",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed0_age200000",
+            "trajectory_id": "natural_breakout_seed0",
+            "game": "breakout",
+            "fold": 1,
+            "chosen_action": "head_and_optimizer_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "771119155",
+                "0"
+              ],
+              [
+                "1852291844",
+                "4"
+              ],
+              [
+                "2022956252",
+                "3"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "827100894",
+                "1"
+              ],
+              [
+                "1811022809",
+                "2"
+              ],
+              [
+                "351613730",
+                "5"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_asterix_seed5",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed0_age50000",
+            "trajectory_id": "natural_breakout_seed0",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "optimizer_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "1957279240",
+                "5"
+              ],
+              [
+                "19917498",
+                "2"
+              ],
+              [
+                "898858392",
+                "4"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "294285971",
+                "0"
+              ],
+              [
+                "647861028",
+                "3"
+              ],
+              [
+                "397217161",
+                "1"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_asterix_seed5",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed0_age50000",
+            "trajectory_id": "natural_breakout_seed0",
+            "game": "breakout",
+            "fold": 1,
+            "chosen_action": "head_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "294285971",
+                "0"
+              ],
+              [
+                "647861028",
+                "3"
+              ],
+              [
+                "397217161",
+                "1"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1957279240",
+                "5"
+              ],
+              [
+                "19917498",
+                "2"
+              ],
+              [
+                "898858392",
+                "4"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_asterix_seed5",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed3",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed1_age200000",
+            "trajectory_id": "natural_breakout_seed1",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "optimizer_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "1650282402",
+                "1"
+              ],
+              [
+                "1320285711",
+                "5"
+              ],
+              [
+                "1043101329",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "550132115",
+                "3"
+              ],
+              [
+                "1646757288",
+                "2"
+              ],
+              [
+                "1518862227",
+                "4"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed2",
               "natural_breakout_seed3",
@@ -1548,15 +1873,19 @@
             "game": "breakout",
             "fold": 1,
             "chosen_action": "continue",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
-                "1043101329",
-                "0"
+                "550132115",
+                "3"
               ],
               [
                 "1646757288",
                 "2"
+              ],
+              [
+                "1518862227",
+                "4"
               ]
             ],
             "evaluation_repeat_ids": [
@@ -1565,8 +1894,12 @@
                 "1"
               ],
               [
-                "550132115",
-                "3"
+                "1320285711",
+                "5"
+              ],
+              [
+                "1043101329",
+                "0"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -1575,6 +1908,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed2",
               "natural_breakout_seed3",
@@ -1587,12 +1921,16 @@
             "trajectory_id": "natural_breakout_seed1",
             "game": "breakout",
             "fold": 0,
-            "chosen_action": "optimizer_reset",
-            "sbs_action": "continue",
+            "chosen_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
-                "383740988",
-                "1"
+                "782344343",
+                "4"
+              ],
+              [
+                "298259466",
+                "0"
               ],
               [
                 "288832906",
@@ -1601,12 +1939,16 @@
             ],
             "evaluation_repeat_ids": [
               [
-                "298259466",
-                "0"
-              ],
-              [
                 "831565547",
                 "3"
+              ],
+              [
+                "291467204",
+                "5"
+              ],
+              [
+                "383740988",
+                "1"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -1615,6 +1957,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed2",
               "natural_breakout_seed3",
@@ -1628,21 +1971,29 @@
             "game": "breakout",
             "fold": 1,
             "chosen_action": "head_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
-              [
-                "298259466",
-                "0"
-              ],
               [
                 "831565547",
                 "3"
+              ],
+              [
+                "291467204",
+                "5"
+              ],
+              [
+                "383740988",
+                "1"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "383740988",
-                "1"
+                "782344343",
+                "4"
+              ],
+              [
+                "298259466",
+                "0"
               ],
               [
                 "288832906",
@@ -1655,6 +2006,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed2",
               "natural_breakout_seed3",
@@ -1667,26 +2019,34 @@
             "trajectory_id": "natural_breakout_seed2",
             "game": "breakout",
             "fold": 0,
-            "chosen_action": "head_reset",
-            "sbs_action": "continue",
+            "chosen_action": "optimizer_reset",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
-              [
-                "1026229007",
-                "2"
-              ],
-              [
-                "147782540",
-                "1"
-              ]
-            ],
-            "evaluation_repeat_ids": [
               [
                 "580119912",
                 "3"
               ],
               [
+                "1888918871",
+                "4"
+              ],
+              [
+                "1026229007",
+                "2"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "147782540",
+                "1"
+              ],
+              [
                 "1865810201",
                 "0"
+              ],
+              [
+                "1077709808",
+                "5"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -1695,6 +2055,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed3",
@@ -1707,26 +2068,34 @@
             "trajectory_id": "natural_breakout_seed2",
             "game": "breakout",
             "fold": 1,
-            "chosen_action": "continue",
-            "sbs_action": "continue",
+            "chosen_action": "head_reset",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
+              [
+                "147782540",
+                "1"
+              ],
+              [
+                "1865810201",
+                "0"
+              ],
+              [
+                "1077709808",
+                "5"
+              ]
+            ],
+            "evaluation_repeat_ids": [
               [
                 "580119912",
                 "3"
               ],
               [
-                "1865810201",
-                "0"
-              ]
-            ],
-            "evaluation_repeat_ids": [
+                "1888918871",
+                "4"
+              ],
               [
                 "1026229007",
                 "2"
-              ],
-              [
-                "147782540",
-                "1"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -1735,6 +2104,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed3",
@@ -1747,12 +2117,16 @@
             "trajectory_id": "natural_breakout_seed2",
             "game": "breakout",
             "fold": 0,
-            "chosen_action": "head_reset",
-            "sbs_action": "continue",
+            "chosen_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "112727274",
                 "0"
+              ],
+              [
+                "839414497",
+                "1"
               ],
               [
                 "1262843304",
@@ -1761,12 +2135,16 @@
             ],
             "evaluation_repeat_ids": [
               [
-                "839414497",
-                "1"
+                "1633654067",
+                "4"
               ],
               [
                 "1300966329",
                 "2"
+              ],
+              [
+                "560439293",
+                "5"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -1775,6 +2153,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed3",
@@ -1788,21 +2167,29 @@
             "game": "breakout",
             "fold": 1,
             "chosen_action": "continue",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
-                "839414497",
-                "1"
+                "1633654067",
+                "4"
               ],
               [
                 "1300966329",
                 "2"
+              ],
+              [
+                "560439293",
+                "5"
               ]
             ],
             "evaluation_repeat_ids": [
               [
                 "112727274",
                 "0"
+              ],
+              [
+                "839414497",
+                "1"
               ],
               [
                 "1262843304",
@@ -1815,6 +2202,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed3",
@@ -1827,8 +2215,57 @@
             "trajectory_id": "natural_breakout_seed3",
             "game": "breakout",
             "fold": 0,
+            "chosen_action": "optimizer_reset",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "1030015362",
+                "5"
+              ],
+              [
+                "1600829521",
+                "4"
+              ],
+              [
+                "1940525837",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1617011444",
+                "2"
+              ],
+              [
+                "1515321006",
+                "1"
+              ],
+              [
+                "1306401573",
+                "3"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_asterix_seed5",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed3_age200000",
+            "trajectory_id": "natural_breakout_seed3",
+            "game": "breakout",
+            "fold": 1,
             "chosen_action": "continue",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "1617011444",
@@ -1837,12 +2274,20 @@
               [
                 "1515321006",
                 "1"
+              ],
+              [
+                "1306401573",
+                "3"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "1306401573",
-                "3"
+                "1030015362",
+                "5"
+              ],
+              [
+                "1600829521",
+                "4"
               ],
               [
                 "1940525837",
@@ -1855,6 +2300,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1863,66 +2309,83 @@
             ]
           },
           {
-            "checkpoint_id": "natural_breakout_seed3_age200000",
+            "checkpoint_id": "natural_breakout_seed3_age50000",
+            "trajectory_id": "natural_breakout_seed3",
+            "game": "breakout",
+            "fold": 0,
+            "chosen_action": "continue",
+            "sbs_action": "optimizer_reset",
+            "selection_repeat_ids": [
+              [
+                "1632534747",
+                "5"
+              ],
+              [
+                "702895091",
+                "1"
+              ],
+              [
+                "1730563032",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
+                "1441433990",
+                "3"
+              ],
+              [
+                "1704382710",
+                "2"
+              ],
+              [
+                "622932650",
+                "4"
+              ]
+            ],
+            "sbs_training_trajectory_ids": [
+              "natural_asterix_seed0",
+              "natural_asterix_seed1",
+              "natural_asterix_seed2",
+              "natural_asterix_seed3",
+              "natural_asterix_seed4",
+              "natural_asterix_seed5",
+              "natural_breakout_seed0",
+              "natural_breakout_seed1",
+              "natural_breakout_seed2",
+              "natural_breakout_seed4",
+              "natural_breakout_seed5"
+            ]
+          },
+          {
+            "checkpoint_id": "natural_breakout_seed3_age50000",
             "trajectory_id": "natural_breakout_seed3",
             "game": "breakout",
             "fold": 1,
             "chosen_action": "optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
-                "1306401573",
+                "1441433990",
                 "3"
-              ],
-              [
-                "1940525837",
-                "0"
-              ]
-            ],
-            "evaluation_repeat_ids": [
-              [
-                "1617011444",
-                "2"
-              ],
-              [
-                "1515321006",
-                "1"
-              ]
-            ],
-            "sbs_training_trajectory_ids": [
-              "natural_asterix_seed0",
-              "natural_asterix_seed1",
-              "natural_asterix_seed2",
-              "natural_asterix_seed3",
-              "natural_asterix_seed4",
-              "natural_breakout_seed0",
-              "natural_breakout_seed1",
-              "natural_breakout_seed2",
-              "natural_breakout_seed4",
-              "natural_breakout_seed5"
-            ]
-          },
-          {
-            "checkpoint_id": "natural_breakout_seed3_age50000",
-            "trajectory_id": "natural_breakout_seed3",
-            "game": "breakout",
-            "fold": 0,
-            "chosen_action": "head_reset",
-            "sbs_action": "continue",
-            "selection_repeat_ids": [
-              [
-                "702895091",
-                "1"
               ],
               [
                 "1704382710",
                 "2"
+              ],
+              [
+                "622932650",
+                "4"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "1441433990",
-                "3"
+                "1632534747",
+                "5"
+              ],
+              [
+                "702895091",
+                "1"
               ],
               [
                 "1730563032",
@@ -1935,46 +2398,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
-              "natural_breakout_seed0",
-              "natural_breakout_seed1",
-              "natural_breakout_seed2",
-              "natural_breakout_seed4",
-              "natural_breakout_seed5"
-            ]
-          },
-          {
-            "checkpoint_id": "natural_breakout_seed3_age50000",
-            "trajectory_id": "natural_breakout_seed3",
-            "game": "breakout",
-            "fold": 1,
-            "chosen_action": "continue",
-            "sbs_action": "continue",
-            "selection_repeat_ids": [
-              [
-                "1441433990",
-                "3"
-              ],
-              [
-                "1730563032",
-                "0"
-              ]
-            ],
-            "evaluation_repeat_ids": [
-              [
-                "702895091",
-                "1"
-              ],
-              [
-                "1704382710",
-                "2"
-              ]
-            ],
-            "sbs_training_trajectory_ids": [
-              "natural_asterix_seed0",
-              "natural_asterix_seed1",
-              "natural_asterix_seed2",
-              "natural_asterix_seed3",
-              "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -1988,25 +2412,25 @@
             "game": "breakout",
             "fold": 0,
             "chosen_action": "continue",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
-              [
-                "505574609",
-                "0"
-              ],
-              [
-                "1121911562",
-                "2"
-              ]
-            ],
-            "evaluation_repeat_ids": [
               [
                 "1215877976",
                 "3"
               ],
               [
+                "505574609",
+                "0"
+              ]
+            ],
+            "evaluation_repeat_ids": [
+              [
                 "973129362",
                 "1"
+              ],
+              [
+                "1121911562",
+                "2"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -2015,6 +2439,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -2028,25 +2453,25 @@
             "game": "breakout",
             "fold": 1,
             "chosen_action": "continue",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
+              [
+                "973129362",
+                "1"
+              ],
+              [
+                "1121911562",
+                "2"
+              ]
+            ],
+            "evaluation_repeat_ids": [
               [
                 "1215877976",
                 "3"
               ],
               [
-                "973129362",
-                "1"
-              ]
-            ],
-            "evaluation_repeat_ids": [
-              [
                 "505574609",
                 "0"
-              ],
-              [
-                "1121911562",
-                "2"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -2055,6 +2480,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -2067,22 +2493,30 @@
             "trajectory_id": "natural_breakout_seed4",
             "game": "breakout",
             "fold": 0,
-            "chosen_action": "continue",
-            "sbs_action": "continue",
+            "chosen_action": "head_reset",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
                 "50256413",
                 "2"
               ],
               [
-                "1758004978",
-                "1"
+                "1526932439",
+                "3"
+              ],
+              [
+                "828920437",
+                "5"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "1526932439",
-                "3"
+                "1758004978",
+                "1"
+              ],
+              [
+                "1931527982",
+                "4"
               ],
               [
                 "1140114351",
@@ -2095,6 +2529,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -2108,11 +2543,15 @@
             "game": "breakout",
             "fold": 1,
             "chosen_action": "optimizer_reset",
-            "sbs_action": "continue",
+            "sbs_action": "optimizer_reset",
             "selection_repeat_ids": [
               [
-                "1526932439",
-                "3"
+                "1758004978",
+                "1"
+              ],
+              [
+                "1931527982",
+                "4"
               ],
               [
                 "1140114351",
@@ -2125,8 +2564,12 @@
                 "2"
               ],
               [
-                "1758004978",
-                "1"
+                "1526932439",
+                "3"
+              ],
+              [
+                "828920437",
+                "5"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -2135,6 +2578,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -2147,26 +2591,26 @@
             "trajectory_id": "natural_breakout_seed5",
             "game": "breakout",
             "fold": 0,
-            "chosen_action": "optimizer_reset",
+            "chosen_action": "head_reset",
             "sbs_action": "continue",
             "selection_repeat_ids": [
               [
-                "47103405",
-                "0"
+                "1787573452",
+                "1"
               ],
               [
-                "854810199",
-                "2"
+                "1563043545",
+                "3"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "1563043545",
-                "3"
+                "854810199",
+                "2"
               ],
               [
-                "1787573452",
-                "1"
+                "47103405",
+                "0"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -2175,6 +2619,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -2187,26 +2632,26 @@
             "trajectory_id": "natural_breakout_seed5",
             "game": "breakout",
             "fold": 1,
-            "chosen_action": "head_reset",
+            "chosen_action": "optimizer_reset",
             "sbs_action": "continue",
             "selection_repeat_ids": [
               [
-                "1563043545",
-                "3"
+                "854810199",
+                "2"
               ],
               [
-                "1787573452",
-                "1"
+                "47103405",
+                "0"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "47103405",
-                "0"
+                "1787573452",
+                "1"
               ],
               [
-                "854810199",
-                "2"
+                "1563043545",
+                "3"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -2215,6 +2660,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -2231,18 +2677,18 @@
             "sbs_action": "continue",
             "selection_repeat_ids": [
               [
-                "1440788588",
-                "3"
-              ],
-              [
                 "765886668",
                 "1"
+              ],
+              [
+                "1651181239",
+                "0"
               ]
             ],
             "evaluation_repeat_ids": [
               [
-                "1651181239",
-                "0"
+                "1440788588",
+                "3"
               ],
               [
                 "1605148888",
@@ -2255,6 +2701,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -2267,12 +2714,12 @@
             "trajectory_id": "natural_breakout_seed5",
             "game": "breakout",
             "fold": 1,
-            "chosen_action": "optimizer_reset",
+            "chosen_action": "head_reset",
             "sbs_action": "continue",
             "selection_repeat_ids": [
               [
-                "1651181239",
-                "0"
+                "1440788588",
+                "3"
               ],
               [
                 "1605148888",
@@ -2281,12 +2728,12 @@
             ],
             "evaluation_repeat_ids": [
               [
-                "1440788588",
-                "3"
-              ],
-              [
                 "765886668",
                 "1"
+              ],
+              [
+                "1651181239",
+                "0"
               ]
             ],
             "sbs_training_trajectory_ids": [
@@ -2295,6 +2742,7 @@
               "natural_asterix_seed2",
               "natural_asterix_seed3",
               "natural_asterix_seed4",
+              "natural_asterix_seed5",
               "natural_breakout_seed0",
               "natural_breakout_seed1",
               "natural_breakout_seed2",
@@ -2306,61 +2754,61 @@
         "skipped_checkpoints": [],
         "ci_caveat": "histories_and_paired_repeat_vectors_resampled_with_refitted_choices;_fixed_disjoint_repeat_split;_not_simultaneous_or_independent_confirmation"
       },
-      "primary_gate": "incomplete",
+      "primary_gate": "uncertain",
       "gate_is_confirmatory": false,
       "parameter_repair_signal": {
-        "status": "incomplete",
+        "status": "uncertain",
         "positive": false,
         "uncertain": true,
         "contrasts": {
           "head_vs_continue": {
             "asterix": {
-              "mean": 0.04500000000000002,
+              "mean": 0.09062500000000002,
               "ci95": [
-                -0.16628125000000005,
-                0.25253125
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.2927083333333333,
-              "ci95": [
-                -0.8072916666666665,
-                0.24294270833333323
+                -0.09067708333333334,
+                0.3000520833333334
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.26770833333333327,
+              "ci95": [
+                -0.6229340277777776,
+                0.134435763888889
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
           },
           "joint_vs_optimizer": {
             "asterix": {
-              "mean": 0.20249999999999999,
+              "mean": 0.1802083333333333,
               "ci95": [
-                -0.10999999999999999,
-                0.5512499999999999
-              ],
-              "source_histories": 5,
-              "checkpoints": 9,
-              "paired_repeats": 34,
-              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-              "small_history_count": false
-            },
-            "breakout": {
-              "mean": -0.5572916666666666,
-              "ci95": [
-                -0.9594791666666668,
-                -0.14057291666666652
+                -0.09377604166666663,
+                0.4417447916666666
               ],
               "source_histories": 6,
               "checkpoints": 12,
               "paired_repeats": 48,
+              "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+              "small_history_count": false
+            },
+            "breakout": {
+              "mean": -0.5708333333333333,
+              "ci95": [
+                -0.8725694444444443,
+                -0.2631163194444446
+              ],
+              "source_histories": 6,
+              "checkpoints": 12,
+              "paired_repeats": 66,
               "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
               "small_history_count": false
             }
@@ -2377,83 +2825,129 @@
   ],
   "worker_progress": {
     "progress": {
-      "stage": "resume_recorded_resolution",
-      "operation": "additional_sources",
+      "stage": "parallel_branches",
+      "operation": "additional_repeats",
+      "parallel_wave_id": 71,
+      "pending_tasks": [],
+      "worker_progress": [
+        {
+          "task_id": "branch:e1b881396476198826c92e87da3f42dc28d419634d19a84634dbfc8668f77ad0",
+          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_e1b881396476198826c9",
+          "pending": false,
+          "child_progress": {
+            "stage": "confirm",
+            "job_id": "branch:natural:natural_breakout_seed4_age50000:head_and_optimizer_reset:repeat4:h50000",
+            "checkpoint_id": "natural_breakout_seed4_age50000",
+            "action": "head_and_optimizer_reset",
+            "repeat": 4,
+            "completed_steps": 50000,
+            "horizon": 50000,
+            "gradient_updates": 95500,
+            "recent_return": 3.5,
+            "wall_time_sec": 460.9078715000069,
+            "event": "branch_complete",
+            "j_final": 5.9,
+            "failure_reason": null,
+            "time": 1791982962.7489312,
+            "package_updates": 200000,
+            "package_wall_sec": 1820.3796401
+          }
+        },
+        {
+          "task_id": "branch:a3c952b43881ce9266e77bb6b7674e0702911c2dd26ebae1a36ebfdf77ee57fa",
+          "worker_root": "C:\\Users\\aayza\\OneDrive\\Документы\\ChatGPT\\Thesis\\runs\\minatar-repair-20261007\\workers\\branch\\branch_a3c952b43881ce9266e7",
+          "pending": false,
+          "child_progress": {
+            "stage": "confirm",
+            "job_id": "branch:natural:natural_breakout_seed4_age50000:head_and_optimizer_reset:repeat5:h50000",
+            "checkpoint_id": "natural_breakout_seed4_age50000",
+            "action": "head_and_optimizer_reset",
+            "repeat": 5,
+            "completed_steps": 50000,
+            "horizon": 50000,
+            "gradient_updates": 95500,
+            "recent_return": 3.55,
+            "wall_time_sec": 460.49617240000225,
+            "event": "branch_complete",
+            "j_final": 5.5,
+            "failure_reason": null,
+            "time": 1791982961.768149,
+            "package_updates": 200000,
+            "package_wall_sec": 1819.3989858999994
+          }
+        }
+      ],
       "event": "new_package",
-      "time": 1791895809.0469139,
+      "time": 1791982963.390029,
       "package_updates": 0,
-      "package_wall_sec": 0.04216189999897324
+      "package_wall_sec": 0.05764199999975972
     },
     "worker_status": "running",
-    "worker_pid": 19124,
-    "manifest_updated_at": 1791895809.0483072,
+    "worker_pid": 17984,
+    "manifest_updated_at": 1791982963.392832,
     "jobs_by_status": {
-      "complete": 390
+      "complete": 518
     }
   },
   "provisional": true,
   "interpretation": "descriptive_screen_with_cross_fitted_estimated_winner; raw_returns_reported_per_game",
-  "checkpoints_without_outcomes": [
-    "natural_asterix_seed4_age200000",
-    "natural_asterix_seed5_age200000",
-    "natural_asterix_seed5_age50000"
-  ],
+  "checkpoints_without_outcomes": [],
   "reserved_checkpoint_ids_excluded_from_development_analysis": [],
-  "primary_gate": "incomplete",
+  "primary_gate": "uncertain",
   "uncertain": true,
   "parameter_repair_signal": {
-    "status": "incomplete",
+    "status": "uncertain",
     "positive": false,
     "uncertain": true,
     "contrasts": {
       "head_vs_continue": {
         "asterix": {
-          "mean": 0.04500000000000002,
+          "mean": 0.09062500000000002,
           "ci95": [
-            -0.16628125000000005,
-            0.25253125
-          ],
-          "source_histories": 5,
-          "checkpoints": 9,
-          "paired_repeats": 34,
-          "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-          "small_history_count": false
-        },
-        "breakout": {
-          "mean": -0.2927083333333333,
-          "ci95": [
-            -0.8072916666666665,
-            0.24294270833333323
+            -0.09067708333333334,
+            0.3000520833333334
           ],
           "source_histories": 6,
           "checkpoints": 12,
           "paired_repeats": 48,
+          "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+          "small_history_count": false
+        },
+        "breakout": {
+          "mean": -0.26770833333333327,
+          "ci95": [
+            -0.6229340277777776,
+            0.134435763888889
+          ],
+          "source_histories": 6,
+          "checkpoints": 12,
+          "paired_repeats": 66,
           "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
           "small_history_count": false
         }
       },
       "joint_vs_optimizer": {
         "asterix": {
-          "mean": 0.20249999999999999,
+          "mean": 0.1802083333333333,
           "ci95": [
-            -0.10999999999999999,
-            0.5512499999999999
-          ],
-          "source_histories": 5,
-          "checkpoints": 9,
-          "paired_repeats": 34,
-          "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
-          "small_history_count": false
-        },
-        "breakout": {
-          "mean": -0.5572916666666666,
-          "ci95": [
-            -0.9594791666666668,
-            -0.14057291666666652
+            -0.09377604166666663,
+            0.4417447916666666
           ],
           "source_histories": 6,
           "checkpoints": 12,
           "paired_repeats": 48,
+          "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
+          "small_history_count": false
+        },
+        "breakout": {
+          "mean": -0.5708333333333333,
+          "ci95": [
+            -0.8725694444444443,
+            -0.2631163194444446
+          ],
+          "source_histories": 6,
+          "checkpoints": 12,
+          "paired_repeats": 66,
           "ci_unit": "full_source_history_with_nested_paired_continuation_repeats",
           "small_history_count": false
         }
