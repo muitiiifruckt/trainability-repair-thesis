@@ -1,5 +1,12 @@
 # Журнал решений
 
+## 2026-10-14, 07:45 UTC — продолжить verified joint branches после прекращения процессов
+
+Причина прекращения Python около 13 октября 18:16UTC неизвестна; confirmed sleep/wake не доказывает её, queued WER с апрельскими/сентябрьскими dumps не является новым BSOD. Все JSON valid, frozen hashes/recorded plan и два joint 35kSHA verified. Один hidden supervisor продолжил прежние IDs/seeds AST seed 5 age 200k repeats0/1, без scientific edits. Шесть completed rows импортированы неизменными (root368→374); physical373,193 reconciled один раз (2,063,644→2,436,837), observed discarded 3,193 учтён. Workers продвигаются, failures 0, package 4<24h/<12M. Expanded series неполна; pilot conclusion неопределённый, reserved закрыты. [Операционный журнал](results/minatar-repair-20261007/monitoring/20261014_power_interruption.md).
+
+Восстановленные joint repeats0/1 завершены на срезе 07:48 UTC: root 376, physical ledgers 201,755 / 201,438, package 4 **2,466,837**; remaining 30k учтены, failures 0. Следующая wave выполняется, additional_sources 184/192 ещё неполно.
+
+
 ## 2026-10-13, 15:30 UTC — сохранить очередь при переиспользовании PID после power off
 
 Windows 1074/42 и hybrid boot 27 объясняют новое прекращение Python. PID2400 теперь принадлежит новому ChatGPT.exe renderer, а не прежнему worker; не останавливать его. Внешний controller проверяет image/creation time, сохраняет unknown/Python owners и архивирует доказанный reused lease только под worker.lock. Исполнены commits `568152b`/`e06f068`, 26 stdlib checks и independent review; scientific code/config неизменны. Два verified savepoints continue Asterix seed5 age50k на 10k шагов продолжены с теми же seeds/IDs. Reconciliation 25,601 выполнен один раз (1,658,043 → 1,683,644), observed discarded 5,601 сохранены как ресурсные затраты. Root 360 без failures, expansion 168/192 неполон; итог pilot остаётся неопределённым, reserved закрыты. [Evidence](results/minatar-repair-20261007/monitoring/20261013_pid_reuse_recovery.md).

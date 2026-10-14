@@ -1,4 +1,6 @@
-# Состояние исследования, 13 октября 2026
+# Состояние исследования, 14 октября 2026
+
+**Восстановленная волна завершена, 07:48 UTC 14 октября.** Причина прекращения Python 13 октября 18:16 UTC неизвестна. Два verified joint 35k checkpoints AST seed 5 age 200k/repeats0–1 продолжены до 50k с прежними seeds; raw prefixes и все hashes сохранены. Root **376 outcomes**, additional_sources **184/192**, failures 0; partial expanded data не заменяет pilot 192 ниже. Physical reconciliation 373,193 + remaining 30k выполнены однократно; package 4 **2,466,837 updates / ~18.95 h**, observed discarded 3,193 включён в затраты. Один coordinator и два workers выполняют следующую записанную волну, scientific code/config неизменны; reserved закрыты. [Журнал](monitoring/20261014_power_interruption.md).
 
 **Последнее восстановление, 15:30 UTC 13 октября.** После нового power off Windows исправлен PID-only блокирующий дефект: старый номер worker принадлежал новому renderer приложения. Один hidden supervisor и два workers продолжили verified 10k savepoints Asterix seed5/repeats2–3; seeds и все scientific hashes сохранены. На срезе root **360 outcomes**, additional_sources **168/192**, additional_repeats ожидает; ошибок численной устойчивости нет. Reconciliation **25,601** однократный, package 4 **1,683,644 updates**; observed discarded **5,601** остаются в resource budget. 26 stdlib checks прошли, новый controller `e06f068`. Научные выводы пока относятся к отдельному полному pilot 192 ниже. [Журнал](monitoring/20261013_pid_reuse_recovery.md).
 

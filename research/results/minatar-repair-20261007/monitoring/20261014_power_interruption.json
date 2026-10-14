@@ -1,0 +1,452 @@
+{
+  "phase": "restored_wave_complete_next_wave_healthy",
+  "time": 1791963796.768976,
+  "root_outcomes": 368,
+  "root_sha256": "8fcabfca68d65f8aae4d6974ed42b9995a2238edc63e9d500308a776c1ebadc2",
+  "root_raw_bytes": 972805,
+  "root_package": {
+    "id": 4,
+    "started_at": 1791895809.004745,
+    "updates": 2063644,
+    "wall_time_sec": 19545.558345206293
+  },
+  "pre_supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 16392,
+    "worker_pid": 19148,
+    "updated_at": 1791915347.9544282,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 11,
+    "recovery_source": "verified monitoring snapshot; original NUL bytes quarantined",
+    "reused_pid_leases_quarantined": [
+      {
+        "old_path": "workers\\branch\\branch_f7c3b8abfc3c538ca66c\\worker_lease.json",
+        "archive": "recovery\\reused_pid_leases\\workers\\branch\\branch_f7c3b8abfc3c538ca66c\\lease-1791905375839206700.json",
+        "pid": 2400,
+        "lease_started_at": 1791901625.386828,
+        "current_identity": {
+          "image_name": "chatgpt.exe",
+          "created_at": 1791903193.382534
+        },
+        "lease_sha256": "929f5596687eca332c6fb01a7b33414095bb091ca210be9f8149f0ac822344fd",
+        "time": 1791905375.840897
+      }
+    ]
+  },
+  "source": {
+    "checkpoint_id": "natural_asterix_seed5_age200000",
+    "sha256": "e60c28fd841126569ef39b4f4330430c66cda97ff12b477c3b6d9acfda7fcca1",
+    "gradient_updates": 195500,
+    "environment_steps": 200499
+  },
+  "workers": [
+    {
+      "task_id": "branch:6d94466b07023e805e9af4cc4707448f8c1d6da14702c9bfdb1c16e787ec4a44",
+      "root": "workers\\branch\\branch_6d94466b07023e805e9a",
+      "lease": {
+        "pid": 14860,
+        "task_id": "branch:6d94466b07023e805e9af4cc4707448f8c1d6da14702c9bfdb1c16e787ec4a44",
+        "started_at": 1791906918.2248528
+      },
+      "resume": {
+        "job_id": "branch:natural:natural_asterix_seed5_age200000:head_and_optimizer_reset:repeat1:h50000",
+        "sha256": "a360f623bbb02384b91282ef95696b5e717544d03d181e8f706a66c7a634fadb",
+        "completed_steps": 35000,
+        "initial_updates": 195500
+      },
+      "observed_updates": 186755,
+      "progress": {
+        "stage": "screen",
+        "job_id": "branch:natural:natural_asterix_seed5_age200000:head_and_optimizer_reset:repeat1:h50000",
+        "checkpoint_id": "natural_asterix_seed5_age200000",
+        "action": "head_and_optimizer_reset",
+        "repeat": 1,
+        "completed_steps": 36755,
+        "horizon": 50000,
+        "gradient_updates": 232255,
+        "recent_return": 0.95,
+        "wall_time_sec": 7030.3941925,
+        "event": "branch_complete",
+        "j_final": 1.95,
+        "failure_reason": null,
+        "time": 1791915364.695572,
+        "package_updates": 186755,
+        "package_wall_sec": 8446.5257872
+      },
+      "local_outcomes_count": 3,
+      "local_raw_sha256": "50d3ccc1f70dfd283ba32c861e615a0a86c78cd27fd4d23f064a1cceeda5a20c",
+      "local_raw_bytes": 7869
+    },
+    {
+      "task_id": "branch:6ee596e32aee370bec618d28cfbf9633ff7640cf98461c204b76a3031fe58d71",
+      "root": "workers\\branch\\branch_6ee596e32aee370bec61",
+      "lease": {
+        "pid": 13512,
+        "task_id": "branch:6ee596e32aee370bec618d28cfbf9633ff7640cf98461c204b76a3031fe58d71",
+        "started_at": 1791906918.2247736
+      },
+      "resume": {
+        "job_id": "branch:natural:natural_asterix_seed5_age200000:head_and_optimizer_reset:repeat0:h50000",
+        "sha256": "aa66c1f66ab09c09e4a4d71e77e89dac97d77c790b9e0d78088e7f413932024b",
+        "completed_steps": 35000,
+        "initial_updates": 195500
+      },
+      "observed_updates": 186438,
+      "progress": {
+        "stage": "screen",
+        "job_id": "branch:natural:natural_asterix_seed5_age200000:head_and_optimizer_reset:repeat0:h50000",
+        "checkpoint_id": "natural_asterix_seed5_age200000",
+        "action": "head_and_optimizer_reset",
+        "repeat": 0,
+        "completed_steps": 36438,
+        "horizon": 50000,
+        "gradient_updates": 231938,
+        "recent_return": 1.85,
+        "wall_time_sec": 7025.524908200001,
+        "event": "branch_complete",
+        "j_final": 2.2,
+        "failure_reason": null,
+        "time": 1791915360.5186427,
+        "package_updates": 186438,
+        "package_wall_sec": 8442.3499906
+      },
+      "local_outcomes_count": 3,
+      "local_raw_sha256": "7a2d94e46f8a010909215ab6e6395a27cdbadb9806be408454003759a14f2663",
+      "local_raw_bytes": 7878
+    }
+  ],
+  "coverage": {
+    "additional_sources": {
+      "expected": 192,
+      "finished": 176,
+      "missing": 16,
+      "numerical_failures": [],
+      "complete": false
+    },
+    "additional_repeats": {
+      "expected": 192,
+      "finished": 0,
+      "missing": 192,
+      "numerical_failures": [],
+      "complete": false
+    }
+  },
+  "frozen_code": {
+    "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+    "experiments\\mechanism_analysis.py": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+    "experiments\\rl_analysis.py": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+    "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+    "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+    "experiments\\rl_runner.py": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+    "experiments\\rl_scheduler.py": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+    "experiments\\rl_transfer.py": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+    "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+  },
+  "decision_sha256": "02ea086d1da576cc964b53285d0bf7e3f483d945054af3e9c926b49a8184b841",
+  "controller_commit": "0f88884d6cd3fc2792183208434ed71bed07162d",
+  "scripts_sha256": {
+    "research_supervisor.py": "fa611bfd8c659d9e1fe741cb684f8c950953d52f2e537561ec82b59ec8968453",
+    "resume_recorded_research.py": "35ec4448d658cacce2fa02b2efad417a4d2702ccd88b28d7de24338dc7628d37"
+  },
+  "reconciliation_expected": 373193,
+  "known_discarded_updates": 3193,
+  "post_resume": {
+    "time": 1791963910.037928,
+    "root_pid": 17984,
+    "root_identity": {
+      "image_name": "python.exe",
+      "created_at": 1791963834.8830585
+    },
+    "supervisor_pid": 9616,
+    "supervisor_identity": {
+      "image_name": "python.exe",
+      "created_at": 1791963833.6607895
+    },
+    "package": {
+      "id": 4,
+      "started_at": 1791895809.004745,
+      "updates": 2436837,
+      "wall_time_sec": 68085.59764995215
+    },
+    "outcomes": 374,
+    "sha256": "7ff5a3dcf6a450bd796da9d645019109cd1e3b606546b073783a748ba00bb8e7",
+    "failures": 0,
+    "workers": [
+      {
+        "task_id": "branch:6d94466b07023e805e9af4cc4707448f8c1d6da14702c9bfdb1c16e787ec4a44",
+        "pid": 13648,
+        "identity": {
+          "image_name": "python.exe",
+          "created_at": 1791963854.415659
+        },
+        "status": "running",
+        "progress": {
+          "stage": "screen",
+          "job_id": "branch:natural:natural_asterix_seed5_age200000:head_and_optimizer_reset:repeat1:h50000",
+          "checkpoint_id": "natural_asterix_seed5_age200000",
+          "action": "head_and_optimizer_reset",
+          "repeat": 1,
+          "completed_steps": 39301,
+          "horizon": 50000,
+          "gradient_updates": 234801,
+          "recent_return": 0.8,
+          "wall_time_sec": 7050.273364599998,
+          "time": 1791963905.826389,
+          "package_updates": 191056,
+          "package_wall_sec": 56987.56901516284
+        },
+        "package": {
+          "id": 0,
+          "started_at": 1791906918.2573636,
+          "updates": 191056,
+          "wall_time_sec": 56987.57163746284
+        }
+      },
+      {
+        "task_id": "branch:6ee596e32aee370bec618d28cfbf9633ff7640cf98461c204b76a3031fe58d71",
+        "pid": 15980,
+        "identity": {
+          "image_name": "python.exe",
+          "created_at": 1791963854.4248142
+        },
+        "status": "running",
+        "progress": {
+          "stage": "screen",
+          "job_id": "branch:natural:natural_asterix_seed5_age200000:head_and_optimizer_reset:repeat0:h50000",
+          "checkpoint_id": "natural_asterix_seed5_age200000",
+          "action": "head_and_optimizer_reset",
+          "repeat": 0,
+          "completed_steps": 39283,
+          "horizon": 50000,
+          "gradient_updates": 234783,
+          "recent_return": 1.1,
+          "wall_time_sec": 7050.192594000007,
+          "time": 1791963905.8263636,
+          "package_updates": 190721,
+          "package_wall_sec": 56987.57011689017
+        },
+        "package": {
+          "id": 0,
+          "started_at": 1791906918.2562299,
+          "updates": 190721,
+          "wall_time_sec": 56987.57265469017
+        }
+      }
+    ],
+    "root_raw_prefix_unchanged": true,
+    "six_completed_local_rows_imported_unchanged": true,
+    "coverage": {
+      "additional_sources": {
+        "expected": 192,
+        "finished": 182,
+        "missing": 10,
+        "numerical_failures": [],
+        "complete": false
+      },
+      "additional_repeats": {
+        "expected": 192,
+        "finished": 0,
+        "missing": 192,
+        "numerical_failures": [],
+        "complete": false
+      }
+    },
+    "wrapper_revision": {
+      "time": 1791963835.0449157,
+      "pid": 17984,
+      "script_sha256": "35ec4448d658cacce2fa02b2efad417a4d2702ccd88b28d7de24338dc7628d37",
+      "reused_pid_leases_quarantined": []
+    }
+  },
+  "os_events": [
+    {
+      "provider": "Kernel-Power",
+      "id": 42,
+      "utc": "2026-10-13T16:23:30.8449545Z",
+      "reason": "Button or Lid"
+    },
+    {
+      "provider": "Power-Troubleshooter",
+      "id": 1,
+      "wake_utc": "2026-10-13T18:14:41.407716Z",
+      "reason": "Power Button"
+    },
+    {
+      "provider": "Kernel-Power",
+      "id": 42,
+      "utc": "2026-10-13T19:54:43.6805200Z",
+      "reason": "Application API"
+    },
+    {
+      "provider": "Kernel-Boot",
+      "id": 27,
+      "utc": "2026-10-14T07:40:08.3608128Z",
+      "boot_type": 1
+    },
+    {
+      "provider": "Power-Troubleshooter",
+      "id": 1,
+      "wake_utc": "2026-10-14T07:40:08.3763614Z"
+    }
+  ],
+  "process_termination_cause": "unknown; no selected system event at last progress; confirmed power intervals occur separately",
+  "new_events_41_6008_1074_since_oct13_1600_utc": false,
+  "final_restored_wave": {
+    "time": 1791964086.1625762,
+    "outcomes": 376,
+    "sha256": "0deb88ac94c77d6217557d5b7ff3161fc47e07c43fdf3e2f6e5799e59d7e10b4",
+    "package": {
+      "id": 4,
+      "started_at": 1791895809.004745,
+      "updates": 2466837,
+      "wall_time_sec": 68258.94868265215
+    },
+    "workers": [
+      {
+        "task_id": "branch:6d94466b07023e805e9af4cc4707448f8c1d6da14702c9bfdb1c16e787ec4a44",
+        "physical_updates": 201755,
+        "status": "complete",
+        "outcomes": 4,
+        "progress": {
+          "stage": "screen",
+          "job_id": "branch:natural:natural_asterix_seed5_age200000:head_and_optimizer_reset:repeat1:h50000",
+          "checkpoint_id": "natural_asterix_seed5_age200000",
+          "action": "head_and_optimizer_reset",
+          "repeat": 1,
+          "completed_steps": 50000,
+          "horizon": 50000,
+          "gradient_updates": 245500,
+          "recent_return": 1.35,
+          "wall_time_sec": 7151.259844900007,
+          "event": "branch_complete",
+          "j_final": 2.45,
+          "failure_reason": null,
+          "time": 1791964006.856736,
+          "package_updates": 201755,
+          "package_wall_sec": 57088.599362262845
+        },
+        "local_raw_sha256": "822b25e4d99f55852421eb7d0865845d3b2c5d1ef5cd8175cf2b9a7d1cad3870",
+        "completed_raw_prefix_unchanged": true
+      },
+      {
+        "task_id": "branch:6ee596e32aee370bec618d28cfbf9633ff7640cf98461c204b76a3031fe58d71",
+        "physical_updates": 201438,
+        "status": "complete",
+        "outcomes": 4,
+        "progress": {
+          "stage": "screen",
+          "job_id": "branch:natural:natural_asterix_seed5_age200000:head_and_optimizer_reset:repeat0:h50000",
+          "checkpoint_id": "natural_asterix_seed5_age200000",
+          "action": "head_and_optimizer_reset",
+          "repeat": 0,
+          "completed_steps": 50000,
+          "horizon": 50000,
+          "gradient_updates": 245500,
+          "recent_return": 2.45,
+          "wall_time_sec": 7151.013333700015,
+          "event": "branch_complete",
+          "j_final": 2.9,
+          "failure_reason": null,
+          "time": 1791964006.7564642,
+          "package_updates": 201438,
+          "package_wall_sec": 57088.50022669017
+        },
+        "local_raw_sha256": "ffef733b2823a91b7dac36487f65cbcd437339052fb6ea168b1d559c8ad26001",
+        "completed_raw_prefix_unchanged": true
+      }
+    ],
+    "current_workers": [
+      {
+        "lease": {
+          "pid": 15980,
+          "task_id": "branch:2cc38e5392186263109c2e499b2e44f36ff26fb8a92d70b5266bef5eafc12e05",
+          "started_at": 1791964007.5525212
+        },
+        "identity": {
+          "image_name": "python.exe",
+          "created_at": 1791963854.4248142
+        },
+        "progress": {
+          "stage": "confirm",
+          "job_id": "branch:natural:natural_asterix_seed5_age200000:continue:repeat2:h50000",
+          "checkpoint_id": "natural_asterix_seed5_age200000",
+          "action": "continue",
+          "repeat": 2,
+          "completed_steps": 5000,
+          "horizon": 50000,
+          "gradient_updates": 200500,
+          "recent_return": 1.65,
+          "wall_time_sec": 60.365542399988044,
+          "time": 1791964069.0138378,
+          "package_updates": 5000,
+          "package_wall_sec": 61.43453009999939
+        }
+      },
+      {
+        "lease": {
+          "pid": 13648,
+          "task_id": "branch:6a22924098a10cd1eb72f6511339f140d570b550d2b657fd5064de8470e74112",
+          "started_at": 1791964007.5525866
+        },
+        "identity": {
+          "image_name": "python.exe",
+          "created_at": 1791963854.415659
+        },
+        "progress": {
+          "stage": "confirm",
+          "job_id": "branch:natural:natural_asterix_seed5_age200000:continue:repeat3:h50000",
+          "checkpoint_id": "natural_asterix_seed5_age200000",
+          "action": "continue",
+          "repeat": 3,
+          "completed_steps": 5000,
+          "horizon": 50000,
+          "gradient_updates": 200500,
+          "recent_return": 1.6,
+          "wall_time_sec": 60.14991680000094,
+          "time": 1791964069.040895,
+          "package_updates": 5000,
+          "package_wall_sec": 61.454232899995986
+        }
+      }
+    ],
+    "root_pid": 17984,
+    "supervisor_pid": 9616,
+    "coverage": {
+      "additional_sources": {
+        "expected": 192,
+        "finished": 184,
+        "missing": 8,
+        "numerical_failures": [],
+        "complete": false
+      },
+      "additional_repeats": {
+        "expected": 192,
+        "finished": 0,
+        "missing": 192,
+        "numerical_failures": [],
+        "complete": false
+      }
+    },
+    "original_root_raw_prefix_unchanged": true,
+    "raw_import_all_rows_unchanged": true
+  },
+  "independent_audit": {
+    "agent": "interruption_oct13",
+    "snapshot_utc": "2026-10-14T07:45:59Z",
+    "read_only": true,
+    "torch_imported": false,
+    "one_supervision_tree": true,
+    "root_outcomes": 374,
+    "scientific_sha_verified": 9,
+    "source_binary_sha_verified": true,
+    "one_time_reconciliation_verified": 373193,
+    "worker_advance_steps": [
+      43597,
+      43591
+    ],
+    "termination_cause_unknown": true,
+    "no_live_owners_before_start": true
+  }
+}

@@ -1,8 +1,10 @@
 # NEXT — читать первым в каждой сессии
 
-Обновлено: 2026-10-13. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+Обновлено: 2026-10-14. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
 
-## Текущее состояние — 13 октября
+## Текущее состояние — 14 октября
+
+- **Ночная остановка восстановлена; обе unfinished joint branches завершены.** Причина завершения Python неизвестна, power intervals подтверждены отдельно. На 07:48 UTC: root **376 outcomes**, additional_sources **184/192**, следующая recorded wave repeats 2/3 выполняется; supervisor9616/coordinator17984 и два workers здоровы. Final ledgers 201,755 / 201,438, package 4 **2,466,837 updates / ~18.95 h**; reconciliation 373,193 и remaining 30k учтены однократно, discarded 3,193 включён. Scientific code/config/seeds неизменны, failures 0. [Журнал и SHA](results/minatar-repair-20261007/monitoring/20261014_power_interruption.md). Pilot conclusion остаётся неопределённым, reserved закрыты. Текущие PID проверять по native identity.
 
 - **После power off 14:28 UTC та же очередь возобновлена.** PID2400 уже принадлежал новому ChatGPT.exe renderer, поэтому исправлена внешняя проверка владельца lease; приложение не трогали. Controller revisions `568152b`/`e06f068`, 26 stdlib checks. На 15:30 UTC: root 360 outcomes, additional_sources 168/192, additional_repeats ожидает; один supervisor/coordinator, два workers продолжают verified 10k savepoints. Physical reconciliation 25,601 однократный, package 4 — 1,683,644 updates; 5,601 discarded observed updates сохранены в затратах. Scientific code/config и seeds неизменны. [Журнал и SHA](results/minatar-repair-20261007/monitoring/20261013_pid_reuse_recovery.md). Проверять actual process identity вместе с PID; не останавливать посторонние процессы с переиспользованным номером.
 

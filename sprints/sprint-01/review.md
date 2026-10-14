@@ -61,3 +61,9 @@
 ## Операционное дополнение 13 октября: power off и reused PID
 
 После power off 14:28 UTC Windows переиспользовала PID worker для renderer. Это инфраструктурная причина блокировки resume, не repair outcome. Исправлена внешняя owner verification под worker.lock, 26 stdlib checks/independent review; приложение не останавливалось. Verified savepoints 10k continue repeats2–3 seed5 AST сохранены, workers продвинулись. На срезе 15:30 UTC root 360, expansion 168/192 неполон; reconciliation 25,601 учтён один раз, discarded observed 5,601 не скрыт. Scientific pilot conclusion остаётся неопределённым, reserved закрыты. Controller `568152b`/`e06f068`; [evidence](../../research/results/minatar-repair-20261007/monitoring/20261013_pid_reuse_recovery.md).
+
+## Операционное дополнение 14 октября
+
+Ночная инфраструктурная остановка восстановлена без изменения frozen science/seeds: два verified 35k joint checkpoints продолжены, 6 completed raw rows сохранены и импортированы. На срезе 07:45 UTC root 374, additional_sources182/192 неполно, failures 0; resource373,193 reconciled один раз, observed discarded 3,193 включён. Причина завершения Python не установлена; sleep/wake подтверждены отдельно, не считать их repair outcome. Один supervisor/coordinator и два workers здоровы, package 4<24h/12M; pilot вывод остаётся неопределённым. [SHA и audit](../../research/results/minatar-repair-20261007/monitoring/20261014_power_interruption.md).
+
+Восстановленные joint repeats0/1 завершены на срезе 07:48 UTC: root 376, physical ledgers 201,755 / 201,438, package 4 **2,466,837**; remaining 30k учтены, failures 0. Следующая wave выполняется, additional_sources 184/192 ещё неполно.
