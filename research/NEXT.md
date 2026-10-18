@@ -49,7 +49,7 @@
 | H-split | вред joint reset — моменты Adam head vs body | proposed, не запущено | development probe с раздельным reset |
 | H-age | знак head reset зависит от возраста | не подтверждена на 3 историях (+0.21 / −0.07) | age×repair в анализе; к тому же age = epsilon = replay |
 | H-cost | immediate drop head reset учитывать в utility selector | proposed | immediate/recovery декомпозиция |
-| H-eps | сброс Adam вреден у нас из-за малого ε (1e-8; у Rainbow/Asadi 1.5e-4): первые шаги после сброса почти одинаковой нормированной величины | proposed (2026-10-09), не запущено | arm optimizer_reset при ε=1.5e-4 и с LR-warmup; логировать ‖Δθ‖/‖θ‖ первых шагов |
+| H-eps | сброс Adam вреден у нас из-за малого ε (1e-8; у Rainbow/Asadi 1.5e-4): первые шаги после сброса почти одинаковой нормированной величины | proposed (2026-10-09), не запущено; поддержка: Lyle et al. 2023 Fig. 1 и App. A.1 — при резкой смене задачи Adam (ε=1e-9) расходится и насыщает ReLU, помогает b2=0.9 и ε̄=1e-3 (supervised MNIST, не RL; 2026-10-18) | arm optimizer_reset при ε=1.5e-4 и с LR-warmup; логировать ‖Δθ‖/‖θ‖ первых шагов |
 | H-timing | у Asadi сброс совпадал с обновлением target и повторялся; у нас один сброс в произвольный момент | proposed (2026-10-09), не запущено | ветка «сброс в момент обновления target» и повторные сбросы |
 
 ## Дебат A/B (research/debate/)

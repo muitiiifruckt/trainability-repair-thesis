@@ -1,0 +1,32 @@
+{
+  "time": 1792063805.1769977,
+  "selected_cohort_sha256": "47dbf35c3554da651a2769207c27ca7f70eda58ee6b70eae609a3cf1d7419b11",
+  "source_sha256": "b92d30e0dd809bcf0d3079e5230976d4c65f6dabc819ac24e3b80954ec708888",
+  "independent_audit_agent": "confirm_audit_oct11",
+  "independent_original_filtered_line_sha256": "bb61c0ba84b8f49af0e6bb65cc6a707f1bcf61c1e20cd118da376cc605e3fac5",
+  "independent_original_line_rule": "Selected raw lines in source order, original bytes and line endings preserved",
+  "independent_jobid_sorted_line_sha256": "ac542a01c6764816954cbcbcaf2747e1c628ef18e1c42d49064da5b0542abb11",
+  "independent_jobid_rule": "Sort full selected rows by job_id, json.dumps(sort_keys=True,separators=(comma,colon)) default ensure_ascii, UTF-8, LF after every row",
+  "hash_note": "Different normalizations of the same verified 384 records; all counts and estimates agree",
+  "independent_effect_and_chooser_agreement": true,
+  "generator_validation": {
+    "negative_guards_passed": 14,
+    "old_subset_effect_comparisons_passed": 16,
+    "absolute_tolerance": 1e-12,
+    "selected_hash_order_invariance": true,
+    "torch_imported": false,
+    "optimizer_updates": 0
+  },
+  "plot_sha256": "bb9e035eec4a581a0e3ee19f60e32191795d6d9cc97482fc13b5fcc62e8481a7",
+  "plot_script_sha256": "2c9976430c2d06fd0d324f7b513b57be9d8b754f44134cb2271db06aa4a35eb9",
+  "plot_visually_verified": true,
+  "no_intervals_or_significance_tests": true,
+  "independent_unit": "trajectory_id; six per game",
+  "public_export_reproduces_selected_cohort": {
+    "source": "research\\results\\minatar-repair-20261007\\outcomes.jsonl",
+    "source_rows": 456,
+    "source_sha256": "255ec133a0708bc4517d618c5bf66301fc5598c745578f27aa9b144b7ac74470",
+    "selected_cohort_sha256": "47dbf35c3554da651a2769207c27ca7f70eda58ee6b70eae609a3cf1d7419b11",
+    "all_effects_same": true
+  }
+}

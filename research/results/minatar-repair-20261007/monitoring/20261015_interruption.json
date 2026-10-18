@@ -1,0 +1,386 @@
+{
+  "phase": "resumed_verified",
+  "time": 1792063425.815647,
+  "root_outcomes": 456,
+  "root_sha256": "255ec133a0708bc4517d618c5bf66301fc5598c745578f27aa9b144b7ac74470",
+  "root_raw_bytes": 1205914,
+  "root_package": {
+    "id": 5,
+    "started_at": 1791982963.3323815,
+    "updates": 0,
+    "wall_time_sec": 1491.2691249000054
+  },
+  "closed_packages": [
+    {
+      "id": 0,
+      "started_at": 1791400485.8058875,
+      "updates": 1979937,
+      "wall_time_sec": 92032.57193868786,
+      "closed_at": 1791492518.3778245
+    },
+    {
+      "id": 1,
+      "started_at": 1791492518.3778272,
+      "updates": 7561975,
+      "wall_time_sec": 219662.9409918525,
+      "closed_at": 1791712181.318818
+    },
+    {
+      "id": 2,
+      "started_at": 1791712181.31882,
+      "updates": 2990697,
+      "wall_time_sec": 86508.30544161462,
+      "closed_at": 1791798689.6242611
+    },
+    {
+      "id": 3,
+      "started_at": 1791798689.6242628,
+      "updates": 7700254,
+      "wall_time_sec": 97119.3804813113,
+      "closed_at": 1791895809.0047433
+    },
+    {
+      "id": 4,
+      "started_at": 1791895809.004745,
+      "updates": 6466837,
+      "wall_time_sec": 87154.32762405215,
+      "closed_at": 1791982963.3323724
+    }
+  ],
+  "pre_supervisor": {
+    "status": "monitoring",
+    "supervisor_pid": 9616,
+    "worker_pid": 17984,
+    "updated_at": 1791984454.8996344,
+    "worker_limit": 2,
+    "last_error": ":",
+    "same_error_restarts": 0,
+    "restarts": 12,
+    "recovery_source": "verified monitoring snapshot; original NUL bytes quarantined",
+    "reused_pid_leases_quarantined": [
+      {
+        "old_path": "workers\\branch\\branch_f7c3b8abfc3c538ca66c\\worker_lease.json",
+        "archive": "recovery\\reused_pid_leases\\workers\\branch\\branch_f7c3b8abfc3c538ca66c\\lease-1791905375839206700.json",
+        "pid": 2400,
+        "lease_started_at": 1791901625.386828,
+        "current_identity": {
+          "image_name": "chatgpt.exe",
+          "created_at": 1791903193.382534
+        },
+        "lease_sha256": "929f5596687eca332c6fb01a7b33414095bb091ca210be9f8149f0ac822344fd",
+        "time": 1791905375.840897
+      }
+    ]
+  },
+  "source": {
+    "checkpoint_id": "natural_breakout_seed4_age200000",
+    "sha256": "0b3a692496e9178412169ccabe26c9863f11d27e6303dc983d802268e9338aca",
+    "gradient_updates": 195500,
+    "environment_steps": 200499
+  },
+  "workers": [
+    {
+      "task_id": "branch:89f29965d7d557a75844eccd22c13a16ceabb4c7405c265040dec6785f8ddb32",
+      "root": "workers\\branch\\branch_89f29965d7d557a75844",
+      "lease": {
+        "pid": 13640,
+        "task_id": "branch:89f29965d7d557a75844eccd22c13a16ceabb4c7405c265040dec6785f8ddb32",
+        "started_at": 1791983006.636714
+      },
+      "resume": {
+        "job_id": "branch:natural:natural_breakout_seed4_age200000:head_reset:repeat4:h50000",
+        "sha256": "4e2d6be61a7ca182ee79e242f94c3a2e51ef4a7cbb48ec1954f7535b226b74cc",
+        "completed_steps": 45000,
+        "initial_updates": 195500
+      },
+      "observed_updates": 145120,
+      "progress": {
+        "stage": "confirm",
+        "job_id": "branch:natural:natural_breakout_seed4_age200000:head_reset:repeat4:h50000",
+        "checkpoint_id": "natural_breakout_seed4_age200000",
+        "action": "head_reset",
+        "repeat": 4,
+        "completed_steps": 45120,
+        "horizon": 50000,
+        "gradient_updates": 240620,
+        "recent_return": 5.5,
+        "wall_time_sec": 489.91812349999964,
+        "event": "branch_complete",
+        "j_final": 10.5,
+        "failure_reason": null,
+        "time": 1791984449.5274606,
+        "package_updates": 145120,
+        "package_wall_sec": 1442.8604399000033
+      },
+      "local_outcomes": 2,
+      "local_raw_sha256": "f3f7e4da4694f5b6ab0849dc879f286b4a7e74259dbc7b126d76e1523ffb9685",
+      "local_raw_bytes": 5313
+    },
+    {
+      "task_id": "branch:98811214b73b225be1511d5fe12fd12f6998efbe75630f0ff39bd209e922876d",
+      "root": "workers\\branch\\branch_98811214b73b225be151",
+      "lease": {
+        "pid": 10072,
+        "task_id": "branch:98811214b73b225be1511d5fe12fd12f6998efbe75630f0ff39bd209e922876d",
+        "started_at": 1791983006.6381938
+      },
+      "resume": {
+        "job_id": "branch:natural:natural_breakout_seed4_age200000:head_reset:repeat5:h50000",
+        "sha256": "40d0eadf329e8a5499f34c846c704baea1577d9d36b3a2e29a5ff7f31e8a7612",
+        "completed_steps": 45000,
+        "initial_updates": 195500
+      },
+      "observed_updates": 145106,
+      "progress": {
+        "stage": "confirm",
+        "job_id": "branch:natural:natural_breakout_seed4_age200000:head_reset:repeat5:h50000",
+        "checkpoint_id": "natural_breakout_seed4_age200000",
+        "action": "head_reset",
+        "repeat": 5,
+        "completed_steps": 45106,
+        "horizon": 50000,
+        "gradient_updates": 240606,
+        "recent_return": 5.1,
+        "wall_time_sec": 491.4738917000068,
+        "event": "branch_complete",
+        "j_final": 8.4,
+        "failure_reason": null,
+        "time": 1791984449.4284203,
+        "package_updates": 145106,
+        "package_wall_sec": 1442.751064199998
+      },
+      "local_outcomes": 2,
+      "local_raw_sha256": "7f8e2897ecf39d0299f78fa7a0758cf46260cc31995b9fd814b1bda60e3c84bb",
+      "local_raw_bytes": 5294
+    }
+  ],
+  "coverage": {
+    "additional_sources": {
+      "expected": 192,
+      "finished": 192,
+      "missing": 0,
+      "numerical_failures": [],
+      "complete": true
+    },
+    "additional_repeats": {
+      "expected": 192,
+      "finished": 72,
+      "missing": 120,
+      "numerical_failures": [],
+      "complete": false
+    }
+  },
+  "frozen_code": {
+    "experiments\\controlled_probe.py": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+    "experiments\\mechanism_analysis.py": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+    "experiments\\rl_analysis.py": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+    "experiments\\rl_core.py": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+    "experiments\\rl_mechanisms.py": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+    "experiments\\rl_runner.py": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+    "experiments\\rl_scheduler.py": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+    "experiments\\rl_transfer.py": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+    "experiments\\synthetic_lr_sweep.py": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+  },
+  "decision_sha256": "02ea086d1da576cc964b53285d0bf7e3f483d945054af3e9c926b49a8184b841",
+  "controller_commit": "51bc71e7192080c270171f7db91fe44826058fd9",
+  "scripts_sha256": {
+    "research_supervisor.py": "fa611bfd8c659d9e1fe741cb684f8c950953d52f2e537561ec82b59ec8968453",
+    "resume_recorded_research.py": "35ec4448d658cacce2fa02b2efad417a4d2702ccd88b28d7de24338dc7628d37"
+  },
+  "reconciliation_expected": 290226,
+  "known_discarded_updates": 226,
+  "post_resume": {
+    "time": 1792063531.075004,
+    "root_pid": 8492,
+    "supervisor_pid": 2920,
+    "package": {
+      "id": 5,
+      "started_at": 1791982963.3323815,
+      "updates": 290226,
+      "wall_time_sec": 80556.71745962527
+    },
+    "outcomes": 460,
+    "sha256": "b92d30e0dd809bcf0d3079e5230976d4c65f6dabc819ac24e3b80954ec708888",
+    "root_raw_prefix_unchanged": true,
+    "four_local_completed_rows_imported_unchanged": true,
+    "workers": [
+      {
+        "pid": 20148,
+        "lease": {
+          "pid": 20148,
+          "task_id": "branch:89f29965d7d557a75844eccd22c13a16ceabb4c7405c265040dec6785f8ddb32",
+          "started_at": 1792063490.9371502
+        },
+        "identity": {
+          "image_name": "python.exe",
+          "created_at": 1792063479.8102531
+        },
+        "progress": {
+          "stage": "confirm",
+          "job_id": "branch:natural:natural_breakout_seed4_age200000:head_reset:repeat4:h50000",
+          "checkpoint_id": "natural_breakout_seed4_age200000",
+          "action": "head_reset",
+          "repeat": 4,
+          "completed_steps": 46844,
+          "horizon": 50000,
+          "gradient_updates": 242344,
+          "recent_return": 3.55,
+          "wall_time_sec": 508.8438407000067,
+          "time": 1792063512.4174697,
+          "package_updates": 146964,
+          "package_wall_sec": 80505.75044896729
+        },
+        "package": {
+          "id": 0,
+          "started_at": 1791983006.6670084,
+          "updates": 146964,
+          "wall_time_sec": 80505.75250626728
+        },
+        "status": "running"
+      },
+      {
+        "pid": 3008,
+        "lease": {
+          "pid": 3008,
+          "task_id": "branch:98811214b73b225be1511d5fe12fd12f6998efbe75630f0ff39bd209e922876d",
+          "started_at": 1792063490.9654903
+        },
+        "identity": {
+          "image_name": "python.exe",
+          "created_at": 1792063479.800415
+        },
+        "progress": {
+          "stage": "confirm",
+          "job_id": "branch:natural:natural_breakout_seed4_age200000:head_reset:repeat5:h50000",
+          "checkpoint_id": "natural_breakout_seed4_age200000",
+          "action": "head_reset",
+          "repeat": 5,
+          "completed_steps": 46849,
+          "horizon": 50000,
+          "gradient_updates": 242349,
+          "recent_return": 5.75,
+          "wall_time_sec": 510.49396870000055,
+          "time": 1792063512.4174697,
+          "package_updates": 146955,
+          "package_wall_sec": 80505.74011286887
+        },
+        "package": {
+          "id": 0,
+          "started_at": 1791983006.677344,
+          "updates": 146955,
+          "wall_time_sec": 80505.74276056886
+        },
+        "status": "running"
+      }
+    ],
+    "wrapper_revision": {
+      "time": 1792063433.1008434,
+      "pid": 8492,
+      "script_sha256": "35ec4448d658cacce2fa02b2efad417a4d2702ccd88b28d7de24338dc7628d37",
+      "reused_pid_leases_quarantined": []
+    },
+    "coverage": {
+      "additional_sources": {
+        "expected": 192,
+        "finished": 192,
+        "missing": 0,
+        "numerical_failures": [],
+        "complete": true
+      },
+      "additional_repeats": {
+        "expected": 192,
+        "finished": 76,
+        "missing": 116,
+        "numerical_failures": [],
+        "complete": false
+      }
+    }
+  },
+  "os_events": [
+    {
+      "provider": "Kernel-Boot",
+      "id": 27,
+      "utc": "2026-10-14T13:30:05.7617513Z",
+      "boot_type": 0
+    },
+    {
+      "provider": "User32",
+      "id": 1074,
+      "utc": "2026-10-14T13:31:34.4488744Z",
+      "process": "TrustedInstaller.exe",
+      "reason": "Operating System: Update (Planned)",
+      "reason_code": "0x80020003"
+    },
+    {
+      "provider": "Kernel-Boot",
+      "id": 27,
+      "utc": "2026-10-14T13:31:47.7477787Z",
+      "boot_type": 0
+    },
+    {
+      "provider": "User32",
+      "id": 1074,
+      "utc": "2026-10-14T13:32:30.0447062Z",
+      "process": "winlogon.exe",
+      "reason_code": "0x500ff"
+    },
+    {
+      "provider": "Kernel-Boot",
+      "id": 27,
+      "utc": "2026-10-14T13:53:24.772545Z",
+      "boot_type": 0
+    },
+    {
+      "provider": "User32",
+      "id": 1074,
+      "utc": "2026-10-14T17:52:43.5475828Z",
+      "process": "StartMenuExperienceHost.exe",
+      "shutdown_type": "power off"
+    },
+    {
+      "provider": "Kernel-Boot",
+      "id": 27,
+      "utc": "2026-10-15T10:20:05.3651882Z",
+      "boot_type": 1
+    },
+    {
+      "provider": "Kernel-Power",
+      "id": 42,
+      "utc": "2026-10-15T10:59:09.7211286Z",
+      "reason": "Application API"
+    },
+    {
+      "provider": "Kernel-Boot",
+      "id": 27,
+      "utc": "2026-10-15T11:00:20.3405487Z",
+      "boot_type": 1
+    }
+  ],
+  "termination_cause": "Planned Windows Update reboots confirmed shortly after last progress; exact Python termination time not observed",
+  "reused_old_pid": {
+    "pid": 13640,
+    "image": "svchost.exe",
+    "created_at_utc": "2026-10-14T13:53:57Z",
+    "native_query_available": false,
+    "no_process_mutations": true,
+    "not_a_research_owner": true
+  },
+  "independent_audit": {
+    "agent": "interruption_oct13",
+    "snapshot_utc": "2026-10-15T11:25:28Z",
+    "root_outcomes": 460,
+    "failures": 0,
+    "duplicate_jobs": 0,
+    "root_original_prefix_sha_verified": true,
+    "reconciliation": 290226,
+    "single_supervision_tree": true,
+    "source_clocks_verified": true,
+    "continuation_seeds_preserved": [
+      1118952087,
+      254052230
+    ],
+    "frozen_code_hashes_verified": 9,
+    "read_only": true,
+    "torch_imported": false
+  }
+}
