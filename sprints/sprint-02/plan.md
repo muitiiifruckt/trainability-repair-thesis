@@ -2,7 +2,7 @@
 
 **Статус: на согласовании у руководителя.**
 
-**Основание:** [итоги спринта 01](../sprint-01/review.md) (черновик) и [карточка темы](../docs/topic_card.md) «Causal trainability that predicts live repair decisions». DQN-кампания спринта 01 становится пилотом, основная линия дальше идёт по карточке.
+**Основание:** [итоги спринта 01](../sprint-01/review.md) (черновик) и [карточка темы](../../docs/topic_card.md) «Causal trainability that predicts live repair decisions». DQN-кампания спринта 01 становится пилотом, основная линия дальше идёт по карточке.
 
 ## Цель спринта
 
