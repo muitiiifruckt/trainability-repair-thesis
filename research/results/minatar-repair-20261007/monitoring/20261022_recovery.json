@@ -1,0 +1,139 @@
+{
+  "captured_at_local": "2026-10-22 18:17:13",
+  "workers": {
+    "branch_91324d8f65667abbe3e6": {
+      "files": {
+        "branch_resume.json": {
+          "size": 1874,
+          "sha256": "a2c6013e31c94c6dcc952b78bbbfa58cccabc7f2bd537d9d0254b1d6840c56c2",
+          "all_nul": true,
+          "nonzero_bytes": 0
+        },
+        "branch_resume.pt": {
+          "size": 205777079,
+          "sha256": "dabc17d2b3d765fa7b1891e48892da934e882694f78afce89b2f7a913e1f1720",
+          "all_nul": false,
+          "nonzero_bytes": 41
+        },
+        "config.json": {
+          "size": 3087,
+          "sha256": "064c35f09aa23fc858b5dd2dd6a2ba79d6aaecdf7ca7bca969dc5c5aebe407c5",
+          "all_nul": false,
+          "nonzero_bytes": 3087
+        },
+        "dependency_manifest.json": {
+          "size": 1285,
+          "sha256": "6762d6d52cdf3588a4ea5185d47300c0a0f3266d8a3990be50eece5668d02e73",
+          "all_nul": false,
+          "nonzero_bytes": 1285
+        },
+        "manifest.json": {
+          "size": 2681,
+          "sha256": "aea9b0cb5baa362bccd2f9d245a495a4ee0e36380da4db076cc36eec262614e4",
+          "all_nul": true,
+          "nonzero_bytes": 0
+        },
+        "progress.json": {
+          "size": 445,
+          "sha256": "869d73972e00e9617cd738edcac8a0f9ecfeef895160450c79aac712c2c426ef",
+          "all_nul": false,
+          "nonzero_bytes": 445
+        },
+        "worker_config.json": {
+          "size": 3087,
+          "sha256": "064c35f09aa23fc858b5dd2dd6a2ba79d6aaecdf7ca7bca969dc5c5aebe407c5",
+          "all_nul": false,
+          "nonzero_bytes": 3087
+        },
+        "worker_lease.json": {
+          "size": 134,
+          "sha256": "7a49b570adba9012c8e79c0545f7edbeac6cd70ff1cf3efbd4e25c411a5e8d41",
+          "all_nul": false,
+          "nonzero_bytes": 134
+        }
+      },
+      "progress": {
+        "stage": "confirm",
+        "job_id": "branch:natural:natural_asterix_seed1_age200000:continue:repeat4:h50000",
+        "checkpoint_id": "natural_asterix_seed1_age200000",
+        "action": "continue",
+        "repeat": 4,
+        "completed_steps": 14768,
+        "horizon": 50000,
+        "gradient_updates": 210268,
+        "recent_return": 1.8,
+        "wall_time_sec": 140.04378489998635,
+        "time": 1792361992.8214457,
+        "package_updates": 14768,
+        "package_wall_sec": 141.18339879999985
+      }
+    },
+    "branch_b3929d93f6fd79b8a7de": {
+      "files": {
+        "branch_resume.json": {
+          "size": 1871,
+          "sha256": "9a0e5bd75a7fd5aa77ec68199cd85e9cb696fd0bb0ece1ac68fa7d11e348bb73",
+          "all_nul": true,
+          "nonzero_bytes": 0
+        },
+        "branch_resume.pt": {
+          "size": 205778359,
+          "sha256": "8854faca6464a9d99f7e55d6dd3be57565d4cb50b9959b98f78bec9e92160ed3",
+          "all_nul": false,
+          "nonzero_bytes": 41
+        },
+        "config.json": {
+          "size": 3087,
+          "sha256": "31f6b9291e2f7c404cf456d9427c6416b9d78532c9fb92b679fe7d8f10ad0f4f",
+          "all_nul": false,
+          "nonzero_bytes": 3087
+        },
+        "dependency_manifest.json": {
+          "size": 1285,
+          "sha256": "532b4bf31e4e17e3942fb4c9d450d8f662aa8f0a91e52b508ea019a03e508edb",
+          "all_nul": false,
+          "nonzero_bytes": 1285
+        },
+        "manifest.json": {
+          "size": 2680,
+          "sha256": "81b8d80236765ec92280dd5729f1b38be70fdf825bbab93add3e72888194af5c",
+          "all_nul": true,
+          "nonzero_bytes": 0
+        },
+        "progress.json": {
+          "size": 446,
+          "sha256": "1e1b74be1c36ef54f1bb709142b10444a8c404efd0ac05f8d1969458b133a3ce",
+          "all_nul": false,
+          "nonzero_bytes": 446
+        },
+        "worker_config.json": {
+          "size": 3087,
+          "sha256": "31f6b9291e2f7c404cf456d9427c6416b9d78532c9fb92b679fe7d8f10ad0f4f",
+          "all_nul": false,
+          "nonzero_bytes": 3087
+        },
+        "worker_lease.json": {
+          "size": 132,
+          "sha256": "98c4a44035245bade585616a54dd9bc88bb2b2017f30bff5bb281cd33ced486a",
+          "all_nul": false,
+          "nonzero_bytes": 132
+        }
+      },
+      "progress": {
+        "stage": "confirm",
+        "job_id": "branch:natural:natural_asterix_seed1_age200000:continue:repeat5:h50000",
+        "checkpoint_id": "natural_asterix_seed1_age200000",
+        "action": "continue",
+        "repeat": 5,
+        "completed_steps": 14703,
+        "horizon": 50000,
+        "gradient_updates": 210203,
+        "recent_return": 2.55,
+        "wall_time_sec": 140.02843950001989,
+        "time": 1792361992.8913176,
+        "package_updates": 14703,
+        "package_wall_sec": 141.24667709998903
+      }
+    }
+  }
+}
