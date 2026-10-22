@@ -1,0 +1,90 @@
+{
+  "breakout_cnn_s0": {
+    "eval_return": 5.5,
+    "random_return": 0.5,
+    "steps_per_sec": 4802.467690287972,
+    "wall_time_sec": 208.10634541511536,
+    "env_steps": 999424,
+    "final_episode_return": 5.241044584500466,
+    "final_fc_effective_rank": 33.4241693001396,
+    "final_fc_dead_fraction": 0.203125,
+    "final_fc_adam_frac": 0.20442073170731706
+  },
+  "breakout_cnn_s1": {
+    "eval_return": 5.166666666666667,
+    "random_return": 0.5,
+    "steps_per_sec": 4890.01578039958,
+    "wall_time_sec": 204.38052654266357,
+    "env_steps": 999424,
+    "final_episode_return": 5.218626283846872,
+    "final_fc_effective_rank": 37.554070153814706,
+    "final_fc_dead_fraction": 0.15625,
+    "final_fc_adam_frac": 0.1665701219512195
+  },
+  "breakout_cnn_ln_s0": {
+    "eval_return": 11.433333333333334,
+    "random_return": 0.5,
+    "steps_per_sec": 4682.364733162731,
+    "wall_time_sec": 213.44428658485413,
+    "env_steps": 999424,
+    "final_episode_return": 10.972886557886557,
+    "final_fc_effective_rank": 63.0899428591741,
+    "final_fc_dead_fraction": 0.0,
+    "final_fc_adam_frac": 0.0011943159688412852
+  },
+  "breakout_cnn_ln_s1": {
+    "eval_return": 10.6,
+    "random_return": 0.5,
+    "steps_per_sec": 4563.1679902148435,
+    "wall_time_sec": 219.01976919174194,
+    "env_steps": 999424,
+    "final_episode_return": 10.344217171717172,
+    "final_fc_effective_rank": 66.72053756700367,
+    "final_fc_dead_fraction": 0.0,
+    "final_fc_adam_frac": 0.0
+  },
+  "space_invaders_cnn_s0": {
+    "eval_return": 33.2,
+    "random_return": 2.933333333333333,
+    "steps_per_sec": 4205.917828290514,
+    "wall_time_sec": 237.62328243255615,
+    "env_steps": 999424,
+    "final_episode_return": 35.975,
+    "final_fc_effective_rank": 34.02267701117017,
+    "final_fc_dead_fraction": 0.328125,
+    "final_fc_adam_frac": 0.01844512195121951
+  },
+  "space_invaders_cnn_s1": {
+    "eval_return": 52.833333333333336,
+    "random_return": 2.933333333333333,
+    "steps_per_sec": 3941.7491942720712,
+    "wall_time_sec": 253.548348903656,
+    "env_steps": 999424,
+    "final_episode_return": 48.015,
+    "final_fc_effective_rank": 35.287804754292516,
+    "final_fc_dead_fraction": 0.2734375,
+    "final_fc_adam_frac": 0.006547256097560975
+  },
+  "space_invaders_cnn_ln_s0": {
+    "eval_return": 62.333333333333336,
+    "random_return": 2.933333333333333,
+    "steps_per_sec": 3639.8185859522387,
+    "wall_time_sec": 274.58071780204773,
+    "env_steps": 999424,
+    "final_episode_return": 39.36666666666667,
+    "final_fc_effective_rank": 40.352650425888335,
+    "final_fc_dead_fraction": 0.25,
+    "final_fc_adam_frac": 0.0
+  },
+  "space_invaders_cnn_ln_s1": {
+    "eval_return": 43.9,
+    "random_return": 2.933333333333333,
+    "steps_per_sec": 3949.2903728482797,
+    "wall_time_sec": 253.06419777870178,
+    "env_steps": 999424,
+    "final_episode_return": 33.79166666666667,
+    "final_fc_effective_rank": 44.58948316428045,
+    "final_fc_dead_fraction": 0.203125,
+    "final_fc_adam_frac": 0.0
+  }
+}

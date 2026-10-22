@@ -1,0 +1,81 @@
+{
+  "steps": 200000,
+  "config": {
+    "game": "breakout",
+    "arch": "cnn",
+    "seed": 0,
+    "total_steps": 200000,
+    "num_envs": 8,
+    "num_steps": 128,
+    "lr": 0.00025,
+    "adam_eps": 1e-08,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "update_epochs": 4,
+    "num_minibatches": 4,
+    "clip": 0.1,
+    "ent_coef": 0.01,
+    "vf_coef": 0.5,
+    "max_grad_norm": 0.5,
+    "sticky_action_prob": 0.1,
+    "difficulty_ramping": true,
+    "episode_cap": 10000,
+    "input_channels": 4,
+    "conv_channels": 16,
+    "hidden": 128,
+    "num_actions": 6,
+    "reference_size": 256,
+    "eval_episodes": 30,
+    "telemetry_every": 4,
+    "snapshot_fractions": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "checkpoint_fractions": [
+      0.0,
+      0.25,
+      1.0
+    ]
+  },
+  "pairs": [
+    {
+      "on": 38.00726246833801,
+      "off": 35.05670356750488,
+      "overhead": 0.08416532647319674
+    },
+    {
+      "on": 38.02787399291992,
+      "off": 36.342050552368164,
+      "overhead": 0.04638768079755207
+    },
+    {
+      "on": 37.699089765548706,
+      "off": 36.15199327468872,
+      "overhead": 0.04279422379576414
+    }
+  ],
+  "median_overhead": 0.04638768079755207,
+  "torch_threads": 1,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+  "revision": {
+    "git_head": "2b1d08b9929c8709f53b06dc8342b9e9562a7268",
+    "dirty_causal_trainability": false,
+    "files": {
+      "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+      "causal_trainability/hybrids.py": "2a5eea9fc660db2a9601973a6edca6486c955517afea99d74fd62e9fcbabb5db",
+      "causal_trainability/lab.py": "021fb2c3a9123f23afc4fe41adc8adb7b15c8a8bdd1fa4524de85e7688a2df34",
+      "causal_trainability/pilot.py": "67a4684dcdfef50ec2a26fcb6212a3ef186f13cf57886ad3baf547e74eebb11a",
+      "causal_trainability/ppo_minatar.py": "0ab8123deb46c6852a62a92cac2f3a8c54c23b7dfd9c1ea361c26915487606fe",
+      "causal_trainability/telemetry.py": "457e2407bf4bb7548688269a58dbdd47cca12a53439f97dab74496dc9b0c263b",
+      "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1"
+    },
+    "python": "3.13.12",
+    "torch": "2.12.1+cu126",
+    "numpy": "2.4.4",
+    "MinAtar": "1.0.15"
+  }
+}
