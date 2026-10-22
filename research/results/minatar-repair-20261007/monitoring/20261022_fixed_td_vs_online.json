@@ -1,0 +1,1831 @@
+{
+  "schema_version": 1,
+  "audit_kind": "fixed_td_vs_online",
+  "mechanism_summary_sha256": "2af626aba4bce69608ad9ae16aa966a086039546577d91d0b862c6199c212026",
+  "outcomes_sha256": "85f373676d5ee12d3dbb32f60efa72123b67c037a0e0c4d539b6f7f89b297ced",
+  "analysis_script_sha256": "71a75044e9e3d6a064840414c601dc4b60de1c41f8d1d7898ecce8c6f05bc5a0",
+  "main_variant": "h2000_old_target",
+  "variants": {
+    "h100_old_target": {
+      "horizon": 100,
+      "evaluation_teacher": "old_target",
+      "games": {
+        "asterix": {
+          "histories": 4,
+          "checkpoints": 8,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 8,
+              "online_positive_checkpoints": 5,
+              "spearman_checkpoints": 0.5238095238095238,
+              "history_fixed_td": [
+                0.0008619464933872223,
+                0.000380566343665123,
+                0.00041304808109998703,
+                0.0006788540631532669
+              ],
+              "history_online": [
+                0.10416666666666663,
+                -0.1875,
+                0.37083333333333335,
+                0.22916666666666669
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.23809523809523808,
+              "history_fixed_td": [
+                -0.16738293506205082,
+                -0.14224563911557198,
+                -0.10009472817182541,
+                -0.1260280292481184
+              ],
+              "history_online": [
+                0.16666666666666669,
+                0.36666666666666664,
+                -0.17083333333333336,
+                0.10833333333333335
+              ],
+              "sign_agreement_histories": 1
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 1,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 7,
+              "spearman_checkpoints": -0.38095238095238093,
+              "history_fixed_td": [
+                -1.2910735588520765,
+                -0.9847847931087017,
+                -0.5298082679510117,
+                -1.0112305600196123
+              ],
+              "history_online": [
+                0.25,
+                0.2833333333333333,
+                0.2791666666666667,
+                0.2833333333333334
+              ],
+              "sign_agreement_histories": 0
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.35714285714285715,
+              "history_fixed_td": [
+                -1.124552570283413,
+                -0.8429197203367949,
+                -0.43012658786028624,
+                -0.8858813848346472
+              ],
+              "history_online": [
+                -0.020833333333333343,
+                0.10416666666666666,
+                0.07916666666666672,
+                -0.05416666666666667
+              ],
+              "sign_agreement_histories": 2
+            }
+          },
+          "choice_counts": {
+            "optimizer_reset": 8
+          },
+          "online_best_counts": {
+            "head_and_optimizer_reset": 3,
+            "head_reset": 2,
+            "optimizer_reset": 2,
+            "continue": 1
+          },
+          "choice_matches_online_best": 2,
+          "online_best_within_fixed_td_tie": 3,
+          "history_online_effect_of_fixed_td_choice": [
+            0.10416666666666663,
+            -0.1875,
+            0.37083333333333335,
+            0.22916666666666669
+          ]
+        },
+        "breakout": {
+          "histories": 5,
+          "checkpoints": 10,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 3,
+              "fixed_td_tie_checkpoints": 7,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.15151515151515152,
+              "history_fixed_td": [
+                0.0002339472994208336,
+                0.0008971551433205605,
+                0.0007728403434157372,
+                0.001139807514846325,
+                0.0007424121722579002
+              ],
+              "history_online": [
+                -0.1416666666666666,
+                -0.07083333333333344,
+                -0.2250000000000001,
+                0.10000000000000002,
+                0.3541666666666665
+              ],
+              "sign_agreement_histories": 1
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 6,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.3575757575757576,
+              "history_fixed_td": [
+                -0.5822727596387267,
+                -0.644927722401917,
+                -0.6694561531767249,
+                -0.4092485383152962,
+                -0.5133771868422627
+              ],
+              "history_online": [
+                -0.3333333333333333,
+                -0.46666666666666634,
+                -0.03750000000000031,
+                -0.4833333333333333,
+                -0.12916666666666665
+              ],
+              "sign_agreement_histories": 5
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 9,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 1,
+              "spearman_checkpoints": 0.6727272727272727,
+              "history_fixed_td": [
+                -2.337208836339414,
+                -2.4963842751458287,
+                -2.5499546518549323,
+                -1.4232189878821373,
+                -2.3365062894299626
+              ],
+              "history_online": [
+                -0.6416666666666667,
+                -0.5499999999999998,
+                -0.7833333333333333,
+                -0.4874999999999999,
+                -0.5083333333333334
+              ],
+              "sign_agreement_histories": 5
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 7,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 3,
+              "spearman_checkpoints": -0.07878787878787878,
+              "history_fixed_td": [
+                -1.7551700240001082,
+                -1.8523537078872323,
+                -1.8812713390216231,
+                -1.0151102570816875,
+                -1.8238715147599578
+              ],
+              "history_online": [
+                -0.1666666666666668,
+                -0.012500000000000039,
+                -0.5208333333333329,
+                -0.10416666666666664,
+                -0.7333333333333333
+              ],
+              "sign_agreement_histories": 5
+            }
+          },
+          "choice_counts": {
+            "optimizer_reset": 9,
+            "continue": 1
+          },
+          "online_best_counts": {
+            "continue": 3,
+            "head_reset": 3,
+            "optimizer_reset": 4
+          },
+          "choice_matches_online_best": 4,
+          "online_best_within_fixed_td_tie": 5,
+          "history_online_effect_of_fixed_td_choice": [
+            -0.1416666666666666,
+            -0.07083333333333344,
+            -0.09583333333333337,
+            0.10000000000000002,
+            0.3541666666666665
+          ]
+        }
+      }
+    },
+    "h100_refreshed_online": {
+      "horizon": 100,
+      "evaluation_teacher": "refreshed_online",
+      "games": {
+        "asterix": {
+          "histories": 4,
+          "checkpoints": 8,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 1,
+              "fixed_td_positive_checkpoints": 1,
+              "fixed_td_tie_checkpoints": 7,
+              "online_positive_checkpoints": 5,
+              "spearman_checkpoints": 0.2619047619047619,
+              "history_fixed_td": [
+                0.000839482992887497,
+                0.0005320664495229721,
+                0.00045517273247241974,
+                0.0008942838758230209
+              ],
+              "history_online": [
+                0.10416666666666663,
+                -0.1875,
+                0.37083333333333335,
+                0.22916666666666669
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.23809523809523808,
+              "history_fixed_td": [
+                -0.17499903216958046,
+                -0.14542552828788757,
+                -0.10600747168064117,
+                -0.12674875371158123
+              ],
+              "history_online": [
+                0.16666666666666669,
+                0.36666666666666664,
+                -0.17083333333333336,
+                0.10833333333333335
+              ],
+              "sign_agreement_histories": 1
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 1,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 7,
+              "spearman_checkpoints": -0.38095238095238093,
+              "history_fixed_td": [
+                -1.257623802870512,
+                -0.9695431031286716,
+                -0.5376606173813343,
+                -0.9870894942432642
+              ],
+              "history_online": [
+                0.25,
+                0.2833333333333333,
+                0.2791666666666667,
+                0.2833333333333334
+              ],
+              "sign_agreement_histories": 0
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.35714285714285715,
+              "history_fixed_td": [
+                -1.083464253693819,
+                -0.824649641290307,
+                -0.43210831843316555,
+                -0.861235024407506
+              ],
+              "history_online": [
+                -0.020833333333333343,
+                0.10416666666666666,
+                0.07916666666666672,
+                -0.05416666666666667
+              ],
+              "sign_agreement_histories": 2
+            }
+          },
+          "choice_counts": {
+            "optimizer_reset": 8
+          },
+          "online_best_counts": {
+            "head_and_optimizer_reset": 3,
+            "head_reset": 2,
+            "optimizer_reset": 2,
+            "continue": 1
+          },
+          "choice_matches_online_best": 2,
+          "online_best_within_fixed_td_tie": 3,
+          "history_online_effect_of_fixed_td_choice": [
+            0.10416666666666663,
+            -0.1875,
+            0.37083333333333335,
+            0.22916666666666669
+          ]
+        },
+        "breakout": {
+          "histories": 5,
+          "checkpoints": 10,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 2,
+              "fixed_td_positive_checkpoints": 1,
+              "fixed_td_tie_checkpoints": 7,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.41818181818181815,
+              "history_fixed_td": [
+                0.00027082301676273346,
+                -0.00044035352766513824,
+                -0.0011108983308076859,
+                0.002249913290143013,
+                0.00041827186942100525
+              ],
+              "history_online": [
+                -0.1416666666666666,
+                -0.07083333333333344,
+                -0.2250000000000001,
+                0.10000000000000002,
+                0.3541666666666665
+              ],
+              "sign_agreement_histories": 2
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 6,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.28484848484848485,
+              "history_fixed_td": [
+                -0.5701324101537466,
+                -0.622329437173903,
+                -0.6524557210505009,
+                -0.4006457235664129,
+                -0.5050476882606745
+              ],
+              "history_online": [
+                -0.3333333333333333,
+                -0.46666666666666634,
+                -0.03750000000000031,
+                -0.4833333333333333,
+                -0.12916666666666665
+              ],
+              "sign_agreement_histories": 5
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 9,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 1,
+              "spearman_checkpoints": 0.6848484848484848,
+              "history_fixed_td": [
+                -2.3071517404168844,
+                -2.4721019053831697,
+                -2.492443088442087,
+                -1.3906854521483183,
+                -2.285360062494874
+              ],
+              "history_online": [
+                -0.6416666666666667,
+                -0.5499999999999998,
+                -0.7833333333333333,
+                -0.4874999999999999,
+                -0.5083333333333334
+              ],
+              "sign_agreement_histories": 5
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 7,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 3,
+              "spearman_checkpoints": -0.05454545454545454,
+              "history_fixed_td": [
+                -1.7372901532799006,
+                -1.8493321146816015,
+                -1.8388764690607786,
+                -0.9922896418720484,
+                -1.7807306461036205
+              ],
+              "history_online": [
+                -0.1666666666666668,
+                -0.012500000000000039,
+                -0.5208333333333329,
+                -0.10416666666666664,
+                -0.7333333333333333
+              ],
+              "sign_agreement_histories": 5
+            }
+          },
+          "choice_counts": {
+            "optimizer_reset": 7,
+            "continue": 3
+          },
+          "online_best_counts": {
+            "continue": 3,
+            "head_reset": 3,
+            "optimizer_reset": 4
+          },
+          "choice_matches_online_best": 5,
+          "online_best_within_fixed_td_tie": 6,
+          "history_online_effect_of_fixed_td_choice": [
+            -0.07499999999999996,
+            0.05416666666666655,
+            -0.12916666666666674,
+            0.10000000000000002,
+            0.3541666666666665
+          ]
+        }
+      }
+    },
+    "h500_old_target": {
+      "horizon": 500,
+      "evaluation_teacher": "old_target",
+      "games": {
+        "asterix": {
+          "histories": 4,
+          "checkpoints": 8,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 8,
+              "online_positive_checkpoints": 5,
+              "spearman_checkpoints": -0.40476190476190477,
+              "history_fixed_td": [
+                4.1287392377853394e-05,
+                0.0002951342612504959,
+                0.00019942224025726318,
+                -5.6412070989608765e-05
+              ],
+              "history_online": [
+                0.10416666666666663,
+                -0.1875,
+                0.37083333333333335,
+                0.22916666666666669
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.0,
+              "history_fixed_td": [
+                -0.10649058595299721,
+                -0.08794404566287994,
+                -0.067624825052917,
+                -0.08439714834094048
+              ],
+              "history_online": [
+                0.16666666666666669,
+                0.36666666666666664,
+                -0.17083333333333336,
+                0.10833333333333335
+              ],
+              "sign_agreement_histories": 1
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 1,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 7,
+              "spearman_checkpoints": 0.47619047619047616,
+              "history_fixed_td": [
+                -0.1376233957707882,
+                -0.11337439343333244,
+                -0.08960962574928999,
+                -0.11730052158236504
+              ],
+              "history_online": [
+                0.25,
+                0.2833333333333333,
+                0.2791666666666667,
+                0.2833333333333334
+              ],
+              "sign_agreement_histories": 0
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.11904761904761904,
+              "history_fixed_td": [
+                -0.03117409721016884,
+                -0.025725482031702995,
+                -0.02218422293663025,
+                -0.03284696117043495
+              ],
+              "history_online": [
+                -0.020833333333333343,
+                0.10416666666666666,
+                0.07916666666666672,
+                -0.05416666666666667
+              ],
+              "sign_agreement_histories": 2
+            }
+          },
+          "choice_counts": {
+            "continue": 3,
+            "optimizer_reset": 5
+          },
+          "online_best_counts": {
+            "head_and_optimizer_reset": 3,
+            "head_reset": 2,
+            "optimizer_reset": 2,
+            "continue": 1
+          },
+          "choice_matches_online_best": 1,
+          "online_best_within_fixed_td_tie": 3,
+          "history_online_effect_of_fixed_td_choice": [
+            0.016666666666666663,
+            -0.1875,
+            0.37083333333333335,
+            0.0
+          ]
+        },
+        "breakout": {
+          "histories": 5,
+          "checkpoints": 10,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 10,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.09090909090909091,
+              "history_fixed_td": [
+                0.00022477097809314728,
+                0.000249677337706089,
+                0.00032808631658554077,
+                0.00021894648671150208,
+                0.0003076493740081787
+              ],
+              "history_online": [
+                -0.1416666666666666,
+                -0.07083333333333344,
+                -0.2250000000000001,
+                0.10000000000000002,
+                0.3541666666666665
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 6,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.28484848484848485,
+              "history_fixed_td": [
+                -0.24069097731262445,
+                -0.364570003002882,
+                -0.2726948857307434,
+                -0.21221372671425343,
+                -0.24091282486915588
+              ],
+              "history_online": [
+                -0.3333333333333333,
+                -0.46666666666666634,
+                -0.03750000000000031,
+                -0.4833333333333333,
+                -0.12916666666666665
+              ],
+              "sign_agreement_histories": 5
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 9,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 1,
+              "spearman_checkpoints": -0.5636363636363636,
+              "history_fixed_td": [
+                -0.34006764832884073,
+                -0.48124196752905846,
+                -0.40521389991045,
+                -0.2915234249085188,
+                -0.3407822474837303
+              ],
+              "history_online": [
+                -0.6416666666666667,
+                -0.5499999999999998,
+                -0.7833333333333333,
+                -0.4874999999999999,
+                -0.5083333333333334
+              ],
+              "sign_agreement_histories": 5
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 7,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 3,
+              "spearman_checkpoints": -0.24848484848484848,
+              "history_fixed_td": [
+                -0.09960144199430943,
+                -0.11692164186388254,
+                -0.13284710049629211,
+                -0.07952864468097687,
+                -0.10017707198858261
+              ],
+              "history_online": [
+                -0.1666666666666668,
+                -0.012500000000000039,
+                -0.5208333333333329,
+                -0.10416666666666664,
+                -0.7333333333333333
+              ],
+              "sign_agreement_histories": 5
+            }
+          },
+          "choice_counts": {
+            "continue": 3,
+            "optimizer_reset": 7
+          },
+          "online_best_counts": {
+            "continue": 3,
+            "head_reset": 3,
+            "optimizer_reset": 4
+          },
+          "choice_matches_online_best": 4,
+          "online_best_within_fixed_td_tie": 7,
+          "history_online_effect_of_fixed_td_choice": [
+            -0.06666666666666665,
+            -0.07083333333333344,
+            -0.09583333333333337,
+            -0.016666666666666607,
+            0.3541666666666665
+          ]
+        }
+      }
+    },
+    "h500_refreshed_online": {
+      "horizon": 500,
+      "evaluation_teacher": "refreshed_online",
+      "games": {
+        "asterix": {
+          "histories": 4,
+          "checkpoints": 8,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 8,
+              "online_positive_checkpoints": 5,
+              "spearman_checkpoints": -0.023809523809523808,
+              "history_fixed_td": [
+                -4.438124597072601e-05,
+                0.0001349765807390213,
+                0.0002930518239736557,
+                0.00018695741891860962
+              ],
+              "history_online": [
+                0.10416666666666663,
+                -0.1875,
+                0.37083333333333335,
+                0.22916666666666669
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.0,
+              "history_fixed_td": [
+                -0.11593308858573437,
+                -0.09046643041074276,
+                -0.07206888683140278,
+                -0.08329471945762634
+              ],
+              "history_online": [
+                0.16666666666666669,
+                0.36666666666666664,
+                -0.17083333333333336,
+                0.10833333333333335
+              ],
+              "sign_agreement_histories": 1
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 1,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 7,
+              "spearman_checkpoints": 0.47619047619047616,
+              "history_fixed_td": [
+                -0.14729532040655613,
+                -0.1154425498098135,
+                -0.09541834704577923,
+                -0.11530579626560211
+              ],
+              "history_online": [
+                0.25,
+                0.2833333333333333,
+                0.2791666666666667,
+                0.2833333333333334
+              ],
+              "sign_agreement_histories": 0
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.21428571428571427,
+              "history_fixed_td": [
+                -0.031317850574851036,
+                -0.02511109597980976,
+                -0.023642512038350105,
+                -0.03219803422689438
+              ],
+              "history_online": [
+                -0.020833333333333343,
+                0.10416666666666666,
+                0.07916666666666672,
+                -0.05416666666666667
+              ],
+              "sign_agreement_histories": 2
+            }
+          },
+          "choice_counts": {
+            "continue": 3,
+            "optimizer_reset": 5
+          },
+          "online_best_counts": {
+            "head_and_optimizer_reset": 3,
+            "head_reset": 2,
+            "optimizer_reset": 2,
+            "continue": 1
+          },
+          "choice_matches_online_best": 2,
+          "online_best_within_fixed_td_tie": 3,
+          "history_online_effect_of_fixed_td_choice": [
+            0.016666666666666663,
+            -0.041666666666666664,
+            0.37083333333333335,
+            0.125
+          ]
+        },
+        "breakout": {
+          "histories": 5,
+          "checkpoints": 10,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 2,
+              "fixed_td_tie_checkpoints": 8,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.04242424242424243,
+              "history_fixed_td": [
+                0.0005786092951893806,
+                8.523371070623398e-05,
+                0.0010834094136953354,
+                -0.00018918700516223907,
+                0.00022680126130580902
+              ],
+              "history_online": [
+                -0.1416666666666666,
+                -0.07083333333333344,
+                -0.2250000000000001,
+                0.10000000000000002,
+                0.3541666666666665
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 6,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.23636363636363636,
+              "history_fixed_td": [
+                -0.23866664338856936,
+                -0.3576666582375765,
+                -0.27204596251249313,
+                -0.21111716330051422,
+                -0.23881092853844166
+              ],
+              "history_online": [
+                -0.3333333333333333,
+                -0.46666666666666634,
+                -0.03750000000000031,
+                -0.4833333333333333,
+                -0.12916666666666665
+              ],
+              "sign_agreement_histories": 5
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 9,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 1,
+              "spearman_checkpoints": -0.5636363636363636,
+              "history_fixed_td": [
+                -0.3356699990108609,
+                -0.46681791730225086,
+                -0.3991422653198242,
+                -0.2900616303086281,
+                -0.33664255775511265
+              ],
+              "history_online": [
+                -0.6416666666666667,
+                -0.5499999999999998,
+                -0.7833333333333333,
+                -0.4874999999999999,
+                -0.5083333333333334
+              ],
+              "sign_agreement_histories": 5
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 7,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 3,
+              "spearman_checkpoints": -0.12727272727272726,
+              "history_fixed_td": [
+                -0.09758196491748095,
+                -0.10923649277538061,
+                -0.12817971222102642,
+                -0.07875528000295162,
+                -0.0980584304779768
+              ],
+              "history_online": [
+                -0.1666666666666668,
+                -0.012500000000000039,
+                -0.5208333333333329,
+                -0.10416666666666664,
+                -0.7333333333333333
+              ],
+              "sign_agreement_histories": 5
+            }
+          },
+          "choice_counts": {
+            "continue": 4,
+            "optimizer_reset": 6
+          },
+          "online_best_counts": {
+            "continue": 3,
+            "head_reset": 3,
+            "optimizer_reset": 4
+          },
+          "choice_matches_online_best": 5,
+          "online_best_within_fixed_td_tie": 6,
+          "history_online_effect_of_fixed_td_choice": [
+            -0.06666666666666665,
+            0.05416666666666655,
+            -0.2250000000000001,
+            0.11666666666666663,
+            0.21666666666666656
+          ]
+        }
+      }
+    },
+    "h2000_old_target": {
+      "horizon": 2000,
+      "evaluation_teacher": "old_target",
+      "games": {
+        "asterix": {
+          "histories": 4,
+          "checkpoints": 8,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 8,
+              "online_positive_checkpoints": 5,
+              "spearman_checkpoints": 0.19047619047619047,
+              "history_fixed_td": [
+                -2.6734545826911926e-05,
+                -0.00031033530831336975,
+                0.00010954402387142181,
+                -6.805360317230225e-05
+              ],
+              "history_online": [
+                0.10416666666666663,
+                -0.1875,
+                0.37083333333333335,
+                0.22916666666666669
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.30952380952380953,
+              "history_fixed_td": [
+                -0.059552447870373726,
+                -0.051424985751509666,
+                -0.041094993241131306,
+                -0.05156441032886505
+              ],
+              "history_online": [
+                0.16666666666666669,
+                0.36666666666666664,
+                -0.17083333333333336,
+                0.10833333333333335
+              ],
+              "sign_agreement_histories": 1
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 1,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 7,
+              "spearman_checkpoints": 0.38095238095238093,
+              "history_fixed_td": [
+                -0.08328556828200817,
+                -0.06944864057004452,
+                -0.05656359437853098,
+                -0.07485178485512733
+              ],
+              "history_online": [
+                0.25,
+                0.2833333333333333,
+                0.2791666666666667,
+                0.2833333333333334
+              ],
+              "sign_agreement_histories": 0
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.23809523809523808,
+              "history_fixed_td": [
+                -0.023706385865807533,
+                -0.01771331951022148,
+                -0.015578145161271095,
+                -0.02321932092308998
+              ],
+              "history_online": [
+                -0.020833333333333343,
+                0.10416666666666666,
+                0.07916666666666672,
+                -0.05416666666666667
+              ],
+              "sign_agreement_histories": 2
+            }
+          },
+          "choice_counts": {
+            "continue": 4,
+            "optimizer_reset": 4
+          },
+          "online_best_counts": {
+            "head_and_optimizer_reset": 3,
+            "head_reset": 2,
+            "optimizer_reset": 2,
+            "continue": 1
+          },
+          "choice_matches_online_best": 1,
+          "online_best_within_fixed_td_tie": 3,
+          "history_online_effect_of_fixed_td_choice": [
+            0.016666666666666663,
+            0.0,
+            0.37083333333333335,
+            0.10416666666666669
+          ]
+        },
+        "breakout": {
+          "histories": 5,
+          "checkpoints": 10,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 10,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.01818181818181818,
+              "history_fixed_td": [
+                -0.0002606026828289032,
+                -0.00018413271754980087,
+                -0.00013597309589385986,
+                -0.00011376477777957916,
+                -6.638281047344208e-05
+              ],
+              "history_online": [
+                -0.1416666666666666,
+                -0.07083333333333344,
+                -0.2250000000000001,
+                0.10000000000000002,
+                0.3541666666666665
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 6,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.7333333333333333,
+              "history_fixed_td": [
+                -0.11236718390136957,
+                -0.16446887701749802,
+                -0.11230151075869799,
+                -0.08913230337202549,
+                -0.09676957968622446
+              ],
+              "history_online": [
+                -0.3333333333333333,
+                -0.46666666666666634,
+                -0.03750000000000031,
+                -0.4833333333333333,
+                -0.12916666666666665
+              ],
+              "sign_agreement_histories": 5
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 9,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 1,
+              "spearman_checkpoints": 0.2727272727272727,
+              "history_fixed_td": [
+                -0.17059897724539042,
+                -0.25386291928589344,
+                -0.180230432190001,
+                -0.12781558744609356,
+                -0.15328074526041746
+              ],
+              "history_online": [
+                -0.6416666666666667,
+                -0.5499999999999998,
+                -0.7833333333333333,
+                -0.4874999999999999,
+                -0.5083333333333334
+              ],
+              "sign_agreement_histories": 5
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 7,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 3,
+              "spearman_checkpoints": 0.006060606060606061,
+              "history_fixed_td": [
+                -0.05797119066119194,
+                -0.08920990955084562,
+                -0.06779294833540916,
+                -0.03856951929628849,
+                -0.05644478276371956
+              ],
+              "history_online": [
+                -0.1666666666666668,
+                -0.012500000000000039,
+                -0.5208333333333329,
+                -0.10416666666666664,
+                -0.7333333333333333
+              ],
+              "sign_agreement_histories": 5
+            }
+          },
+          "choice_counts": {
+            "continue": 5,
+            "optimizer_reset": 5
+          },
+          "online_best_counts": {
+            "continue": 3,
+            "head_reset": 3,
+            "optimizer_reset": 4
+          },
+          "choice_matches_online_best": 2,
+          "online_best_within_fixed_td_tie": 7,
+          "history_online_effect_of_fixed_td_choice": [
+            -0.06666666666666665,
+            -0.125,
+            -0.09583333333333337,
+            -0.016666666666666607,
+            0.21666666666666656
+          ]
+        }
+      },
+      "checkpoints": [
+        {
+          "checkpoint_id": "natural_asterix_seed0_age200000",
+          "game": "asterix",
+          "seed": 0,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -0.00027908384799957275,
+            "head_reset": -0.05223932862281799,
+            "head_and_optimizer_reset": -0.06925299018621445,
+            "interaction": -0.01673457771539688
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.17499999999999993,
+            "head_reset": 0.008333333333333434,
+            "head_and_optimizer_reset": 0.24166666666666667,
+            "interaction": 0.05833333333333329
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "head_and_optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_asterix_seed0_age50000",
+          "game": "asterix",
+          "seed": 0,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 0.0002256147563457489,
+            "head_reset": -0.06686556711792946,
+            "head_and_optimizer_reset": -0.0973181463778019,
+            "interaction": -0.030678194016218185
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.033333333333333326,
+            "head_reset": 0.32499999999999996,
+            "head_and_optimizer_reset": 0.2583333333333333,
+            "interaction": -0.09999999999999998
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "head_reset",
+          "online_effect_of_fixed_td_choice": 0.033333333333333326
+        },
+        {
+          "checkpoint_id": "natural_asterix_seed1_age200000",
+          "game": "asterix",
+          "seed": 1,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -0.0006086640059947968,
+            "head_reset": -0.04121631011366844,
+            "head_and_optimizer_reset": -0.05362023040652275,
+            "interaction": -0.011795256286859512
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.2916666666666667,
+            "head_reset": 0.7666666666666666,
+            "head_and_optimizer_reset": 0.28333333333333327,
+            "interaction": -0.19166666666666665
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "head_reset",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_asterix_seed1_age50000",
+          "game": "asterix",
+          "seed": 1,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -1.2006610631942749e-05,
+            "head_reset": -0.06163366138935089,
+            "head_and_optimizer_reset": -0.08527705073356628,
+            "interaction": -0.02363138273358345
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.08333333333333333,
+            "head_reset": -0.03333333333333335,
+            "head_and_optimizer_reset": 0.2833333333333333,
+            "interaction": 0.39999999999999997
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "head_and_optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_asterix_seed2_age200000",
+          "game": "asterix",
+          "seed": 2,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 2.089887857437134e-06,
+            "head_reset": -0.03928258270025253,
+            "head_and_optimizer_reset": -0.05256893113255501,
+            "interaction": -0.013288438320159912
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.9833333333333334,
+            "head_reset": -0.05000000000000001,
+            "head_and_optimizer_reset": 0.6083333333333334,
+            "interaction": -0.32499999999999996
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.9833333333333334
+        },
+        {
+          "checkpoint_id": "natural_asterix_seed2_age50000",
+          "game": "asterix",
+          "seed": 2,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 0.0002169981598854065,
+            "head_reset": -0.04290740378201008,
+            "head_and_optimizer_reset": -0.06055825762450695,
+            "interaction": -0.01786785200238228
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.24166666666666667,
+            "head_reset": -0.29166666666666674,
+            "head_and_optimizer_reset": -0.050000000000000044,
+            "interaction": 0.4833333333333334
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "continue",
+          "online_effect_of_fixed_td_choice": -0.24166666666666667
+        },
+        {
+          "checkpoint_id": "natural_asterix_seed3_age200000",
+          "game": "asterix",
+          "seed": 3,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 0.00028402358293533325,
+            "head_reset": -0.04530530050396919,
+            "head_and_optimizer_reset": -0.062408801168203354,
+            "interaction": -0.017387524247169495
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.20833333333333337,
+            "head_reset": -0.008333333333333304,
+            "head_and_optimizer_reset": 0.4000000000000001,
+            "interaction": 0.2
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "head_and_optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.20833333333333337
+        },
+        {
+          "checkpoint_id": "natural_asterix_seed3_age50000",
+          "game": "asterix",
+          "seed": 3,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -0.00042013078927993774,
+            "head_reset": -0.05782352015376091,
+            "head_and_optimizer_reset": -0.08729476854205132,
+            "interaction": -0.029051117599010468
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.25,
+            "head_reset": 0.225,
+            "head_and_optimizer_reset": 0.16666666666666666,
+            "interaction": -0.30833333333333335
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed0_age200000",
+          "game": "breakout",
+          "seed": 0,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -0.0005218498408794403,
+            "head_reset": -0.13502908498048782,
+            "head_and_optimizer_reset": -0.1737205907702446,
+            "interaction": -0.038169655948877335
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.1499999999999999,
+            "head_reset": -0.8500000000000002,
+            "head_and_optimizer_reset": -0.6833333333333335,
+            "interaction": 0.31666666666666665
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "continue",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed0_age50000",
+          "game": "breakout",
+          "seed": 0,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 6.444752216339111e-07,
+            "head_reset": -0.08970528282225132,
+            "head_and_optimizer_reset": -0.16747736372053623,
+            "interaction": -0.07777272537350655
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.1333333333333333,
+            "head_reset": 0.18333333333333357,
+            "head_and_optimizer_reset": -0.6,
+            "interaction": -0.6500000000000002
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "head_reset",
+          "online_effect_of_fixed_td_choice": -0.1333333333333333
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed1_age200000",
+          "game": "breakout",
+          "seed": 1,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -0.0004462525248527527,
+            "head_reset": -0.26126982271671295,
+            "head_and_optimizer_reset": -0.33901000022888184,
+            "interaction": -0.07729392498731613
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.1083333333333331,
+            "head_reset": -1.2999999999999996,
+            "head_and_optimizer_reset": -0.708333333333333,
+            "interaction": 0.48333333333333345
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed1_age50000",
+          "game": "breakout",
+          "seed": 1,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 7.798708975315094e-05,
+            "head_reset": -0.06766793131828308,
+            "head_and_optimizer_reset": -0.16871583834290504,
+            "interaction": -0.10112589411437511
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.25,
+            "head_reset": 0.36666666666666686,
+            "head_and_optimizer_reset": -0.3916666666666666,
+            "interaction": -0.5083333333333335
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "head_reset",
+          "online_effect_of_fixed_td_choice": -0.25
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed2_age200000",
+          "game": "breakout",
+          "seed": 2,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -0.0003536492586135864,
+            "head_reset": -0.14083441346883774,
+            "head_and_optimizer_reset": -0.18753193318843842,
+            "interaction": -0.04634387046098709
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.25833333333333347,
+            "head_reset": 0.016666666666666313,
+            "head_and_optimizer_reset": -1.075,
+            "interaction": -0.8333333333333328
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "head_reset",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed2_age50000",
+          "game": "breakout",
+          "seed": 2,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 8.17030668258667e-05,
+            "head_reset": -0.08376860804855824,
+            "head_and_optimizer_reset": -0.1729289311915636,
+            "interaction": -0.08924202620983124
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.19166666666666674,
+            "head_reset": -0.09166666666666694,
+            "head_and_optimizer_reset": -0.4916666666666667,
+            "interaction": -0.208333333333333
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "continue",
+          "online_effect_of_fixed_td_choice": -0.19166666666666674
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed3_age200000",
+          "game": "breakout",
+          "seed": 3,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -0.0003384128212928772,
+            "head_reset": -0.10274127870798111,
+            "head_and_optimizer_reset": -0.12290672957897186,
+            "interaction": -0.019827038049697876
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.23333333333333325,
+            "head_reset": -0.7583333333333332,
+            "head_and_optimizer_reset": -0.8249999999999998,
+            "interaction": -0.29999999999999993
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed3_age50000",
+          "game": "breakout",
+          "seed": 3,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 0.00011088326573371887,
+            "head_reset": -0.07552332803606987,
+            "head_and_optimizer_reset": -0.13272444531321526,
+            "interaction": -0.057312000542879105
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": -0.033333333333333215,
+            "head_reset": -0.20833333333333334,
+            "head_and_optimizer_reset": -0.1499999999999999,
+            "interaction": 0.09166666666666665
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "continue",
+          "online_effect_of_fixed_td_choice": -0.033333333333333215
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed4_age200000",
+          "game": "breakout",
+          "seed": 4,
+          "age": 200000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": -0.00020978599786758423,
+            "head_reset": -0.1252167969942093,
+            "head_and_optimizer_reset": -0.16436153650283813,
+            "interaction": -0.03893495351076126
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.2749999999999999,
+            "head_reset": -0.5499999999999998,
+            "head_and_optimizer_reset": -1.35,
+            "interaction": -1.0750000000000002
+          },
+          "fixed_td_choice": "continue",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.0
+        },
+        {
+          "checkpoint_id": "natural_breakout_seed4_age50000",
+          "game": "breakout",
+          "seed": 4,
+          "age": 50000,
+          "fixed_td": {
+            "continue": 0.0,
+            "optimizer_reset": 7.702037692070007e-05,
+            "head_reset": -0.06832236237823963,
+            "head_and_optimizer_reset": -0.1421999540179968,
+            "interaction": -0.07395461201667786
+          },
+          "online": {
+            "continue": 0.0,
+            "optimizer_reset": 0.4333333333333331,
+            "head_reset": 0.2916666666666665,
+            "head_and_optimizer_reset": 0.3333333333333332,
+            "interaction": -0.39166666666666644
+          },
+          "fixed_td_choice": "optimizer_reset",
+          "fixed_td_tied_with_choice": [
+            "continue",
+            "optimizer_reset"
+          ],
+          "online_best": "optimizer_reset",
+          "online_effect_of_fixed_td_choice": 0.4333333333333331
+        }
+      ]
+    },
+    "h2000_refreshed_online": {
+      "horizon": 2000,
+      "evaluation_teacher": "refreshed_online",
+      "games": {
+        "asterix": {
+          "histories": 4,
+          "checkpoints": 8,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 8,
+              "online_positive_checkpoints": 5,
+              "spearman_checkpoints": 0.23809523809523808,
+              "history_fixed_td": [
+                0.00018055737018585205,
+                -0.00040792301297187805,
+                0.0001650732010602951,
+                -0.00010895170271396637
+              ],
+              "history_online": [
+                0.10416666666666663,
+                -0.1875,
+                0.37083333333333335,
+                0.22916666666666669
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.23809523809523808,
+              "history_fixed_td": [
+                -0.06044204533100128,
+                -0.05302371270954609,
+                -0.04311542026698589,
+                -0.051063500344753265
+              ],
+              "history_online": [
+                0.16666666666666669,
+                0.36666666666666664,
+                -0.17083333333333336,
+                0.10833333333333335
+              ],
+              "sign_agreement_histories": 1
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 1,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 7,
+              "spearman_checkpoints": 0.5238095238095238,
+              "history_fixed_td": [
+                -0.08450044319033623,
+                -0.07091897167265415,
+                -0.059135615825653076,
+                -0.07548169419169426
+              ],
+              "history_online": [
+                0.25,
+                0.2833333333333333,
+                0.2791666666666667,
+                0.2833333333333334
+              ],
+              "sign_agreement_histories": 0
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 4,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.23809523809523808,
+              "history_fixed_td": [
+                -0.024238955229520798,
+                -0.017487335950136185,
+                -0.016185268759727478,
+                -0.024309242144227028
+              ],
+              "history_online": [
+                -0.020833333333333343,
+                0.10416666666666666,
+                0.07916666666666672,
+                -0.05416666666666667
+              ],
+              "sign_agreement_histories": 2
+            }
+          },
+          "choice_counts": {
+            "continue": 6,
+            "optimizer_reset": 2
+          },
+          "online_best_counts": {
+            "head_and_optimizer_reset": 3,
+            "head_reset": 2,
+            "optimizer_reset": 2,
+            "continue": 1
+          },
+          "choice_matches_online_best": 0,
+          "online_best_within_fixed_td_tie": 3,
+          "history_online_effect_of_fixed_td_choice": [
+            0.016666666666666663,
+            0.0,
+            -0.12083333333333333,
+            0.0
+          ]
+        },
+        "breakout": {
+          "histories": 5,
+          "checkpoints": 10,
+          "per_action": {
+            "optimizer_reset": {
+              "sign_agreement_checkpoints": 0,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 10,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": -0.17575757575757575,
+              "history_fixed_td": [
+                -0.0002833390608429909,
+                -0.0002308441326022148,
+                -9.494274854660034e-05,
+                -9.27262008190155e-05,
+                -0.00024996884167194366
+              ],
+              "history_online": [
+                -0.1416666666666666,
+                -0.07083333333333344,
+                -0.2250000000000001,
+                0.10000000000000002,
+                0.3541666666666665
+              ],
+              "sign_agreement_histories": 0
+            },
+            "head_reset": {
+              "sign_agreement_checkpoints": 6,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 4,
+              "spearman_checkpoints": 0.7212121212121212,
+              "history_fixed_td": [
+                -0.11024435050785542,
+                -0.1657885406166315,
+                -0.1112627238035202,
+                -0.08693166635930538,
+                -0.09748545847833157
+              ],
+              "history_online": [
+                -0.3333333333333333,
+                -0.46666666666666634,
+                -0.03750000000000031,
+                -0.4833333333333333,
+                -0.12916666666666665
+              ],
+              "sign_agreement_histories": 5
+            },
+            "head_and_optimizer_reset": {
+              "sign_agreement_checkpoints": 9,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 1,
+              "spearman_checkpoints": 0.21212121212121213,
+              "history_fixed_td": [
+                -0.16696218959987164,
+                -0.2515528332442045,
+                -0.17872391268610954,
+                -0.12686448357999325,
+                -0.1503873597830534
+              ],
+              "history_online": [
+                -0.6416666666666667,
+                -0.5499999999999998,
+                -0.7833333333333333,
+                -0.4874999999999999,
+                -0.5083333333333334
+              ],
+              "sign_agreement_histories": 5
+            },
+            "interaction": {
+              "sign_agreement_checkpoints": 7,
+              "fixed_td_positive_checkpoints": 0,
+              "fixed_td_tie_checkpoints": 0,
+              "online_positive_checkpoints": 3,
+              "spearman_checkpoints": 0.006060606060606061,
+              "history_fixed_td": [
+                -0.05643450003117323,
+                -0.0855334484949708,
+                -0.06736624613404274,
+                -0.03984009101986885,
+                -0.05265193246304989
+              ],
+              "history_online": [
+                -0.1666666666666668,
+                -0.012500000000000039,
+                -0.5208333333333329,
+                -0.10416666666666664,
+                -0.7333333333333333
+              ],
+              "sign_agreement_histories": 5
+            }
+          },
+          "choice_counts": {
+            "continue": 7,
+            "optimizer_reset": 3
+          },
+          "online_best_counts": {
+            "continue": 3,
+            "head_reset": 3,
+            "optimizer_reset": 4
+          },
+          "choice_matches_online_best": 1,
+          "online_best_within_fixed_td_tie": 7,
+          "history_online_effect_of_fixed_td_choice": [
+            0.0,
+            -0.125,
+            -0.09583333333333337,
+            -0.016666666666666607,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "signs": "fixed_td: continue loss minus repaired loss; online: repair j_final minus continue; positive = repair better",
+  "fixed_td_tie": 0.001,
+  "limitations": "Descriptive and post hoc; fixed-TD covers asterix seeds 0-3 and breakout seeds 0-4 only; ages and repeats are dependent within a history; no intervals; fixed-TD is a 2000-update fitting outcome on cached data with old-target training, not 50k-step return; checkpoints matched by id only."
+}

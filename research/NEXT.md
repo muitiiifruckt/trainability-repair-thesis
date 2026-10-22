@@ -1,6 +1,12 @@
 # NEXT — читать первым в каждой сессии
 
-Обновлено: 2026-10-14. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+Обновлено: 2026-10-22. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+
+## 22 октября — DQN-пилот закрыт
+
+- Кампания остановлена на полной natural-панели **576 исходов** (22.10, 22:48); процессов нет. Восстановление после сбоя 19.10 — [20261022_recovery.md](results/minatar-repair-20261007/monitoring/20261022_recovery.md).
+- Итоги — [отчёт T0](results/minatar-repair-20261007/monitoring/20261022_full_576.md) и запись в [decisions.md](decisions.md). Новых запусков DQN нет; основная линия — PPO по [карточке](../docs/topic_card.md), текущий спринт — [sprints/](../sprints/README.md).
+- Записи ниже — история кампании; их счётчики не являются текущим состоянием.
 
 ## Текущее состояние — 14 октября
 

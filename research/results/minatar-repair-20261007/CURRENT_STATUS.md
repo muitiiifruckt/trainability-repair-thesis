@@ -1,4 +1,6 @@
-# Состояние исследования, 14 октября 2026
+# Состояние исследования, 22 октября 2026
+
+**22 октября: кампания закрыта на 576 исходах.** Полная natural-панель досчитана, кампания остановлена; стадии `mechanisms`/`report` не запускались. Итоги — [отчёт T0](monitoring/20261022_full_576.md). Абзацы ниже относятся к 14 октября и раньше.
 
 **Восстановленная волна завершена, 07:48 UTC 14 октября.** Причина прекращения Python 13 октября 18:16 UTC неизвестна. Два verified joint 35k checkpoints AST seed 5 age 200k/repeats0–1 продолжены до 50k с прежними seeds; raw prefixes и все hashes сохранены. Root **376 outcomes**, additional_sources **184/192**, failures 0; partial expanded data не заменяет pilot 192 ниже. Physical reconciliation 373,193 + remaining 30k выполнены однократно; package 4 **2,466,837 updates / ~18.95 h**, observed discarded 3,193 включён в затраты. Один coordinator и два workers выполняют следующую записанную волну, scientific code/config неизменны; reserved закрыты. [Журнал](monitoring/20261014_power_interruption.md).
 

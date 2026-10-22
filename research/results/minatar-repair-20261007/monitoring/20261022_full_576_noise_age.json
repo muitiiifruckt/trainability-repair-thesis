@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "audit_kind": "full_natural_576_noise_age",
+  "source_sha256": "85f373676d5ee12d3dbb32f60efa72123b67c037a0e0c4d539b6f7f89b297ced",
+  "selected_cohort_sha256": "55cf16b6b5e8aa86b559c4dbc2ce215ed1f7834f31ef828e43ebf05f124ecb86",
+  "analysis_script_sha256": "d611d2c5eaec6d8ae7946bf23664c87b337dfe6e70355d4d8c9355c13d7c1199",
+  "games": {
+    "asterix": {
+      "mean_sd_of_effect_across_repeat_pairs": 0.47616386273972344,
+      "mean_spread_of_action_means_per_checkpoint": 0.47430555555555554,
+      "effects_by_age": {
+        "50000": {
+          "optimizer_reset": -0.03055555555555556,
+          "head_reset": 0.06388888888888887,
+          "head_and_optimizer_reset": 0.12361111111111109
+        },
+        "200000": {
+          "optimizer_reset": 0.23750000000000002,
+          "head_reset": 0.18333333333333335,
+          "head_and_optimizer_reset": 0.3944444444444445
+        }
+      }
+    },
+    "breakout": {
+      "mean_sd_of_effect_across_repeat_pairs": 0.8187008016825768,
+      "mean_spread_of_action_means_per_checkpoint": 0.8368055555555554,
+      "effects_by_age": {
+        "50000": {
+          "optimizer_reset": 0.004166666666666652,
+          "head_reset": 0.07361111111111114,
+          "head_and_optimizer_reset": -0.26944444444444443
+        },
+        "200000": {
+          "optimizer_reset": 0.11527777777777774,
+          "head_reset": -0.43749999999999994,
+          "head_and_optimizer_reset": -0.7611111111111111
+        }
+      }
+    }
+  },
+  "note": "Computed after the T0 review; descriptive, not preregistered."
+}

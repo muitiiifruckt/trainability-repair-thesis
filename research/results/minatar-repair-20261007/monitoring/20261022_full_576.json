@@ -1,0 +1,929 @@
+{
+  "schema_version": 1,
+  "audit_kind": "full_natural_576",
+  "source": "runs/minatar-repair-20261007/outcomes.jsonl",
+  "source_rows": 576,
+  "source_sha256": "85f373676d5ee12d3dbb32f60efa72123b67c037a0e0c4d539b6f7f89b297ced",
+  "selected_cohort_sha256": "55cf16b6b5e8aa86b559c4dbc2ce215ed1f7834f31ef828e43ebf05f124ecb86",
+  "analysis_script_sha256": "4f8403c2cf837f59872ad6fc1308326ed01a0eff9cf63b4537b2422dffd8215d",
+  "cohorts": {
+    "r01": [
+      0,
+      1
+    ],
+    "r23": [
+      2,
+      3
+    ],
+    "r45": [
+      4,
+      5
+    ],
+    "pooled": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "games": {
+    "asterix": {
+      "cohorts": {
+        "r01": {
+          "complete_histories": 6,
+          "trajectory_ids": [
+            "natural_asterix_seed0",
+            "natural_asterix_seed1",
+            "natural_asterix_seed2",
+            "natural_asterix_seed3",
+            "natural_asterix_seed4",
+            "natural_asterix_seed5"
+          ],
+          "mean_j_final": {
+            "continue": 1.3583333333333334,
+            "optimizer_reset": 1.5270833333333333,
+            "head_reset": 1.4020833333333333,
+            "head_and_optimizer_reset": 1.8083333333333333
+          },
+          "mean_adaptation_auc": {
+            "continue": 1.29875,
+            "optimizer_reset": 1.4063541666666666,
+            "head_reset": 1.5052083333333333,
+            "head_and_optimizer_reset": 1.5960416666666668
+          },
+          "mean_effects": {
+            "optimizer_reset": 0.16875,
+            "head_reset": 0.04375000000000002,
+            "head_and_optimizer_reset": 0.45,
+            "interaction": 0.23750000000000002
+          },
+          "mean_auc_effects": {
+            "optimizer_reset": 0.10760416666666661,
+            "head_reset": 0.20645833333333333,
+            "head_and_optimizer_reset": 0.2972916666666667,
+            "interaction": -0.016770833333333315
+          },
+          "mean_curve_effects": {
+            "0": {
+              "optimizer_reset": 0.0,
+              "head_reset": -0.6291666666666667,
+              "head_and_optimizer_reset": -0.6291666666666667,
+              "interaction": 0.0
+            },
+            "5000": {
+              "optimizer_reset": -0.08541666666666667,
+              "head_reset": 0.21458333333333332,
+              "head_and_optimizer_reset": 0.21875000000000003,
+              "interaction": 0.08958333333333335
+            },
+            "20000": {
+              "optimizer_reset": 0.1645833333333333,
+              "head_reset": 0.4041666666666667,
+              "head_and_optimizer_reset": 0.3333333333333333,
+              "interaction": -0.23541666666666666
+            },
+            "50000": {
+              "optimizer_reset": 0.16875,
+              "head_reset": 0.04375000000000002,
+              "head_and_optimizer_reset": 0.45,
+              "interaction": 0.23750000000000002
+            }
+          }
+        },
+        "r23": {
+          "complete_histories": 6,
+          "trajectory_ids": [
+            "natural_asterix_seed0",
+            "natural_asterix_seed1",
+            "natural_asterix_seed2",
+            "natural_asterix_seed3",
+            "natural_asterix_seed4",
+            "natural_asterix_seed5"
+          ],
+          "mean_j_final": {
+            "continue": 1.5270833333333333,
+            "optimizer_reset": 1.5250000000000001,
+            "head_reset": 1.6645833333333333,
+            "head_and_optimizer_reset": 1.6041666666666665
+          },
+          "mean_adaptation_auc": {
+            "continue": 1.3434375,
+            "optimizer_reset": 1.388125,
+            "head_reset": 1.483125,
+            "head_and_optimizer_reset": 1.4882291666666667
+          },
+          "mean_effects": {
+            "optimizer_reset": -0.0020833333333333073,
+            "head_reset": 0.13750000000000004,
+            "head_and_optimizer_reset": 0.07708333333333332,
+            "interaction": -0.058333333333333376
+          },
+          "mean_auc_effects": {
+            "optimizer_reset": 0.04468750000000001,
+            "head_reset": 0.1396875,
+            "head_and_optimizer_reset": 0.14479166666666662,
+            "interaction": -0.039583333333333366
+          },
+          "mean_curve_effects": {
+            "0": {
+              "optimizer_reset": 0.0,
+              "head_reset": -0.6104166666666667,
+              "head_and_optimizer_reset": -0.6104166666666667,
+              "interaction": 0.0
+            },
+            "5000": {
+              "optimizer_reset": 0.02499999999999999,
+              "head_reset": 0.24166666666666667,
+              "head_and_optimizer_reset": 0.17499999999999996,
+              "interaction": -0.09166666666666672
+            },
+            "20000": {
+              "optimizer_reset": 0.08958333333333336,
+              "head_reset": 0.1791666666666667,
+              "head_and_optimizer_reset": 0.2604166666666667,
+              "interaction": -0.008333333333333318
+            },
+            "50000": {
+              "optimizer_reset": -0.0020833333333333073,
+              "head_reset": 0.13750000000000004,
+              "head_and_optimizer_reset": 0.07708333333333332,
+              "interaction": -0.058333333333333376
+            }
+          }
+        },
+        "r45": {
+          "complete_histories": 6,
+          "trajectory_ids": [
+            "natural_asterix_seed0",
+            "natural_asterix_seed1",
+            "natural_asterix_seed2",
+            "natural_asterix_seed3",
+            "natural_asterix_seed4",
+            "natural_asterix_seed5"
+          ],
+          "mean_j_final": {
+            "continue": 1.3895833333333334,
+            "optimizer_reset": 1.5333333333333332,
+            "head_reset": 1.5791666666666666,
+            "head_and_optimizer_reset": 1.6395833333333334
+          },
+          "mean_adaptation_auc": {
+            "continue": 1.2690625,
+            "optimizer_reset": 1.4085416666666666,
+            "head_reset": 1.4909375,
+            "head_and_optimizer_reset": 1.4663541666666666
+          },
+          "mean_effects": {
+            "optimizer_reset": 0.14375,
+            "head_reset": 0.18958333333333333,
+            "head_and_optimizer_reset": 0.25,
+            "interaction": -0.08333333333333334
+          },
+          "mean_auc_effects": {
+            "optimizer_reset": 0.13947916666666668,
+            "head_reset": 0.22187500000000002,
+            "head_and_optimizer_reset": 0.1972916666666667,
+            "interaction": -0.1640625
+          },
+          "mean_curve_effects": {
+            "0": {
+              "optimizer_reset": 0.0,
+              "head_reset": -0.5395833333333333,
+              "head_and_optimizer_reset": -0.5395833333333333,
+              "interaction": 0.0
+            },
+            "5000": {
+              "optimizer_reset": 0.10208333333333332,
+              "head_reset": 0.32708333333333334,
+              "head_and_optimizer_reset": 0.29166666666666663,
+              "interaction": -0.1375
+            },
+            "20000": {
+              "optimizer_reset": 0.16874999999999998,
+              "head_reset": 0.28125,
+              "head_and_optimizer_reset": 0.2020833333333333,
+              "interaction": -0.24791666666666662
+            },
+            "50000": {
+              "optimizer_reset": 0.14375,
+              "head_reset": 0.18958333333333333,
+              "head_and_optimizer_reset": 0.25,
+              "interaction": -0.08333333333333334
+            }
+          }
+        },
+        "pooled": {
+          "complete_histories": 6,
+          "trajectory_ids": [
+            "natural_asterix_seed0",
+            "natural_asterix_seed1",
+            "natural_asterix_seed2",
+            "natural_asterix_seed3",
+            "natural_asterix_seed4",
+            "natural_asterix_seed5"
+          ],
+          "mean_j_final": {
+            "continue": 1.425,
+            "optimizer_reset": 1.5284722222222222,
+            "head_reset": 1.5486111111111112,
+            "head_and_optimizer_reset": 1.6840277777777777
+          },
+          "mean_adaptation_auc": {
+            "continue": 1.30375,
+            "optimizer_reset": 1.4010069444444444,
+            "head_reset": 1.4930902777777777,
+            "head_and_optimizer_reset": 1.516875
+          },
+          "mean_effects": {
+            "optimizer_reset": 0.10347222222222222,
+            "head_reset": 0.12361111111111112,
+            "head_and_optimizer_reset": 0.2590277777777778,
+            "interaction": 0.03194444444444444
+          },
+          "mean_auc_effects": {
+            "optimizer_reset": 0.09725694444444444,
+            "head_reset": 0.1893402777777778,
+            "head_and_optimizer_reset": 0.213125,
+            "interaction": -0.07347222222222222
+          },
+          "mean_curve_effects": {
+            "0": {
+              "optimizer_reset": 0.0,
+              "head_reset": -0.5930555555555556,
+              "head_and_optimizer_reset": -0.5930555555555556,
+              "interaction": 0.0
+            },
+            "5000": {
+              "optimizer_reset": 0.013888888888888878,
+              "head_reset": 0.2611111111111111,
+              "head_and_optimizer_reset": 0.22847222222222222,
+              "interaction": -0.046527777777777786
+            },
+            "20000": {
+              "optimizer_reset": 0.14097222222222222,
+              "head_reset": 0.2881944444444444,
+              "head_and_optimizer_reset": 0.2652777777777778,
+              "interaction": -0.16388888888888886
+            },
+            "50000": {
+              "optimizer_reset": 0.10347222222222222,
+              "head_reset": 0.12361111111111112,
+              "head_and_optimizer_reset": 0.2590277777777778,
+              "interaction": 0.03194444444444444
+            }
+          }
+        }
+      },
+      "pooled_effect_intervals": {
+        "optimizer_reset": {
+          "mean": 0.10347222222222222,
+          "ci95": [
+            -0.12784735825057156,
+            0.33479180269501596
+          ],
+          "per_history": [
+            0.10416666666666663,
+            -0.1875,
+            0.37083333333333335,
+            0.22916666666666669,
+            -0.12916666666666668,
+            0.23333333333333334
+          ],
+          "positive_histories": 4
+        },
+        "head_reset": {
+          "mean": 0.12361111111111112,
+          "ci95": [
+            -0.09189732961518096,
+            0.33911955183740317
+          ],
+          "per_history": [
+            0.1666666666666667,
+            0.36666666666666664,
+            -0.17083333333333336,
+            0.10833333333333335,
+            -0.04166666666666668,
+            0.31250000000000006
+          ],
+          "positive_histories": 4
+        },
+        "head_and_optimizer_reset": {
+          "mean": 0.2590277777777778,
+          "ci95": [
+            0.10172381178390055,
+            0.41633174377165505
+          ],
+          "per_history": [
+            0.24999999999999997,
+            0.2833333333333333,
+            0.2791666666666667,
+            0.2833333333333333,
+            -0.00416666666666667,
+            0.4625
+          ],
+          "positive_histories": 5
+        },
+        "interaction": {
+          "mean": 0.03194444444444444,
+          "ci95": [
+            -0.07203513870156356,
+            0.13592402759045244
+          ],
+          "per_history": [
+            -0.020833333333333287,
+            0.10416666666666669,
+            0.07916666666666668,
+            -0.0541666666666667,
+            0.1666666666666667,
+            -0.08333333333333345
+          ],
+          "positive_histories": 3
+        }
+      },
+      "pooled_auc_effect_intervals": {
+        "optimizer_reset": {
+          "mean": 0.09725694444444444,
+          "ci95": [
+            0.002208558518171075,
+            0.1923053303707178
+          ],
+          "per_history": [
+            0.24937499999999993,
+            0.09562499999999995,
+            0.140625,
+            0.02270833333333333,
+            -0.00312499999999998,
+            0.07833333333333344
+          ],
+          "positive_histories": 5
+        },
+        "head_reset": {
+          "mean": 0.1893402777777778,
+          "ci95": [
+            -0.02266606020592457,
+            0.4013466157614801
+          ],
+          "per_history": [
+            0.18354166666666663,
+            0.4825,
+            -0.048958333333333326,
+            0.06374999999999999,
+            0.08166666666666668,
+            0.3735416666666667
+          ],
+          "positive_histories": 5
+        },
+        "head_and_optimizer_reset": {
+          "mean": 0.213125,
+          "ci95": [
+            0.06675010980068802,
+            0.359499890199312
+          ],
+          "per_history": [
+            0.2685416666666667,
+            0.35687499999999994,
+            0.3045833333333333,
+            0.11791666666666661,
+            -0.020624999999999977,
+            0.25145833333333345
+          ],
+          "positive_histories": 5
+        },
+        "interaction": {
+          "mean": -0.07347222222222222,
+          "ci95": [
+            -0.2490172414935623,
+            0.10207279704911787
+          ],
+          "per_history": [
+            -0.16437499999999988,
+            -0.22125,
+            0.21291666666666667,
+            0.0314583333333333,
+            -0.0991666666666667,
+            -0.2004166666666667
+          ],
+          "positive_histories": 2
+        }
+      },
+      "repeat_split_selection": {
+        "winner_vs_continue": {
+          "mean": 0.11423611111111111,
+          "ci95": [
+            -0.10914767511555977,
+            0.33761989733778197
+          ],
+          "per_history": [
+            0.024999999999999967,
+            0.18124999999999994,
+            -0.039583333333333325,
+            0.1812500000000001,
+            -0.13125000000000003,
+            0.46875
+          ],
+          "positive_histories": 4
+        },
+        "winner_vs_train_sbs": {
+          "mean": -0.06701388888888887,
+          "ci95": [
+            -0.17821522059528977,
+            0.04418744281751204
+          ],
+          "per_history": [
+            -0.075,
+            -0.22708333333333325,
+            0.012499999999999983,
+            -0.010416666666666685,
+            -0.15208333333333326,
+            0.049999999999999996
+          ],
+          "positive_histories": 2
+        },
+        "directions": [
+          {
+            "train": "r01",
+            "test": "r23",
+            "train_sbs": "head_and_optimizer_reset"
+          },
+          {
+            "train": "r01",
+            "test": "r45",
+            "train_sbs": "head_and_optimizer_reset"
+          },
+          {
+            "train": "r23",
+            "test": "r01",
+            "train_sbs": "head_reset"
+          },
+          {
+            "train": "r23",
+            "test": "r45",
+            "train_sbs": "head_reset"
+          },
+          {
+            "train": "r45",
+            "test": "r01",
+            "train_sbs": "head_and_optimizer_reset"
+          },
+          {
+            "train": "r45",
+            "test": "r23",
+            "train_sbs": "head_and_optimizer_reset"
+          }
+        ],
+        "note": "Outcome-label repeat split on the same histories, not a diagnostic selector; directions are dependent and do not add histories."
+      }
+    },
+    "breakout": {
+      "cohorts": {
+        "r01": {
+          "complete_histories": 6,
+          "trajectory_ids": [
+            "natural_breakout_seed0",
+            "natural_breakout_seed1",
+            "natural_breakout_seed2",
+            "natural_breakout_seed3",
+            "natural_breakout_seed4",
+            "natural_breakout_seed5"
+          ],
+          "mean_j_final": {
+            "continue": 7.135416666666666,
+            "optimizer_reset": 7.014583333333333,
+            "head_reset": 6.99375,
+            "head_and_optimizer_reset": 6.552083333333333
+          },
+          "mean_adaptation_auc": {
+            "continue": 6.461145833333333,
+            "optimizer_reset": 6.5008333333333335,
+            "head_reset": 5.9975000000000005,
+            "head_and_optimizer_reset": 5.658854166666667
+          },
+          "mean_effects": {
+            "optimizer_reset": -0.12083333333333346,
+            "head_reset": -0.14166666666666664,
+            "head_and_optimizer_reset": -0.5833333333333334,
+            "interaction": -0.3208333333333333
+          },
+          "mean_auc_effects": {
+            "optimizer_reset": 0.0396875000000001,
+            "head_reset": -0.46364583333333326,
+            "head_and_optimizer_reset": -0.8022916666666664,
+            "interaction": -0.37833333333333335
+          },
+          "mean_curve_effects": {
+            "0": {
+              "optimizer_reset": 0.0,
+              "head_reset": -3.3833333333333333,
+              "head_and_optimizer_reset": -3.3833333333333333,
+              "interaction": 0.0
+            },
+            "5000": {
+              "optimizer_reset": 0.3937500000000001,
+              "head_reset": -0.4770833333333334,
+              "head_and_optimizer_reset": -1.55,
+              "interaction": -1.4666666666666668
+            },
+            "20000": {
+              "optimizer_reset": -0.006249999999999904,
+              "head_reset": -0.34791666666666676,
+              "head_and_optimizer_reset": -0.3291666666666667,
+              "interaction": 0.024999999999999873
+            },
+            "50000": {
+              "optimizer_reset": -0.12083333333333346,
+              "head_reset": -0.14166666666666664,
+              "head_and_optimizer_reset": -0.5833333333333334,
+              "interaction": -0.3208333333333333
+            }
+          }
+        },
+        "r23": {
+          "complete_histories": 6,
+          "trajectory_ids": [
+            "natural_breakout_seed0",
+            "natural_breakout_seed1",
+            "natural_breakout_seed2",
+            "natural_breakout_seed3",
+            "natural_breakout_seed4",
+            "natural_breakout_seed5"
+          ],
+          "mean_j_final": {
+            "continue": 7.28125,
+            "optimizer_reset": 7.310416666666667,
+            "head_reset": 6.8375,
+            "head_and_optimizer_reset": 6.658333333333333
+          },
+          "mean_adaptation_auc": {
+            "continue": 6.59375,
+            "optimizer_reset": 6.570833333333334,
+            "head_reset": 6.081354166666666,
+            "head_and_optimizer_reset": 5.7960416666666665
+          },
+          "mean_effects": {
+            "optimizer_reset": 0.029166666666666823,
+            "head_reset": -0.44374999999999987,
+            "head_and_optimizer_reset": -0.6229166666666666,
+            "interaction": -0.20833333333333345
+          },
+          "mean_auc_effects": {
+            "optimizer_reset": -0.022916666666666658,
+            "head_reset": -0.5123958333333335,
+            "head_and_optimizer_reset": -0.7977083333333335,
+            "interaction": -0.2623958333333334
+          },
+          "mean_curve_effects": {
+            "0": {
+              "optimizer_reset": 0.0,
+              "head_reset": -3.4770833333333337,
+              "head_and_optimizer_reset": -3.4770833333333337,
+              "interaction": 0.0
+            },
+            "5000": {
+              "optimizer_reset": 0.04791666666666675,
+              "head_reset": -0.9520833333333334,
+              "head_and_optimizer_reset": -1.8895833333333334,
+              "interaction": -0.9854166666666668
+            },
+            "20000": {
+              "optimizer_reset": -0.09166666666666658,
+              "head_reset": -0.03333333333333327,
+              "head_and_optimizer_reset": -0.13124999999999995,
+              "interaction": -0.006250000000000144
+            },
+            "50000": {
+              "optimizer_reset": 0.029166666666666823,
+              "head_reset": -0.44374999999999987,
+              "head_and_optimizer_reset": -0.6229166666666666,
+              "interaction": -0.20833333333333345
+            }
+          }
+        },
+        "r45": {
+          "complete_histories": 6,
+          "trajectory_ids": [
+            "natural_breakout_seed0",
+            "natural_breakout_seed1",
+            "natural_breakout_seed2",
+            "natural_breakout_seed3",
+            "natural_breakout_seed4",
+            "natural_breakout_seed5"
+          ],
+          "mean_j_final": {
+            "continue": 7.222916666666666,
+            "optimizer_reset": 7.49375,
+            "head_reset": 7.2625,
+            "head_and_optimizer_reset": 6.883333333333334
+          },
+          "mean_adaptation_auc": {
+            "continue": 6.491979166666667,
+            "optimizer_reset": 6.5287500000000005,
+            "head_reset": 6.2742708333333335,
+            "head_and_optimizer_reset": 5.9640625
+          },
+          "mean_effects": {
+            "optimizer_reset": 0.2708333333333332,
+            "head_reset": 0.03958333333333327,
+            "head_and_optimizer_reset": -0.33958333333333335,
+            "interaction": -0.6499999999999998
+          },
+          "mean_auc_effects": {
+            "optimizer_reset": 0.036770833333333496,
+            "head_reset": -0.2177083333333333,
+            "head_and_optimizer_reset": -0.5279166666666667,
+            "interaction": -0.3469791666666669
+          },
+          "mean_curve_effects": {
+            "0": {
+              "optimizer_reset": 0.0,
+              "head_reset": -3.625,
+              "head_and_optimizer_reset": -3.625,
+              "interaction": 0.0
+            },
+            "5000": {
+              "optimizer_reset": -0.02083333333333322,
+              "head_reset": -0.6729166666666666,
+              "head_and_optimizer_reset": -1.5333333333333332,
+              "interaction": -0.8395833333333333
+            },
+            "20000": {
+              "optimizer_reset": -0.08958333333333313,
+              "head_reset": 0.1916666666666668,
+              "head_and_optimizer_reset": 0.13750000000000015,
+              "interaction": 0.035416666666666465
+            },
+            "50000": {
+              "optimizer_reset": 0.2708333333333332,
+              "head_reset": 0.03958333333333327,
+              "head_and_optimizer_reset": -0.33958333333333335,
+              "interaction": -0.6499999999999998
+            }
+          }
+        },
+        "pooled": {
+          "complete_histories": 6,
+          "trajectory_ids": [
+            "natural_breakout_seed0",
+            "natural_breakout_seed1",
+            "natural_breakout_seed2",
+            "natural_breakout_seed3",
+            "natural_breakout_seed4",
+            "natural_breakout_seed5"
+          ],
+          "mean_j_final": {
+            "continue": 7.2131944444444445,
+            "optimizer_reset": 7.272916666666666,
+            "head_reset": 7.03125,
+            "head_and_optimizer_reset": 6.697916666666667
+          },
+          "mean_adaptation_auc": {
+            "continue": 6.515625,
+            "optimizer_reset": 6.533472222222223,
+            "head_reset": 6.117708333333334,
+            "head_and_optimizer_reset": 5.806319444444444
+          },
+          "mean_effects": {
+            "optimizer_reset": 0.0597222222222222,
+            "head_reset": -0.1819444444444444,
+            "head_and_optimizer_reset": -0.5152777777777777,
+            "interaction": -0.3930555555555555
+          },
+          "mean_auc_effects": {
+            "optimizer_reset": 0.017847222222222316,
+            "head_reset": -0.3979166666666667,
+            "head_and_optimizer_reset": -0.7093055555555555,
+            "interaction": -0.32923611111111123
+          },
+          "mean_curve_effects": {
+            "0": {
+              "optimizer_reset": 0.0,
+              "head_reset": -3.495138888888889,
+              "head_and_optimizer_reset": -3.495138888888889,
+              "interaction": 0.0
+            },
+            "5000": {
+              "optimizer_reset": 0.14027777777777786,
+              "head_reset": -0.7006944444444445,
+              "head_and_optimizer_reset": -1.6576388888888889,
+              "interaction": -1.0972222222222223
+            },
+            "20000": {
+              "optimizer_reset": -0.062499999999999875,
+              "head_reset": -0.06319444444444443,
+              "head_and_optimizer_reset": -0.10763888888888885,
+              "interaction": 0.018055555555555415
+            },
+            "50000": {
+              "optimizer_reset": 0.0597222222222222,
+              "head_reset": -0.1819444444444444,
+              "head_and_optimizer_reset": -0.5152777777777777,
+              "interaction": -0.3930555555555555
+            }
+          }
+        }
+      },
+      "pooled_effect_intervals": {
+        "optimizer_reset": {
+          "mean": 0.0597222222222222,
+          "ci95": [
+            -0.20009798581202062,
+            0.319542430256465
+          ],
+          "per_history": [
+            -0.1416666666666666,
+            -0.07083333333333346,
+            -0.2250000000000001,
+            0.10000000000000002,
+            0.3541666666666665,
+            0.3416666666666668
+          ],
+          "positive_histories": 3
+        },
+        "head_reset": {
+          "mean": -0.1819444444444444,
+          "ci95": [
+            -0.5172289884572382,
+            0.15334009956834938
+          ],
+          "per_history": [
+            -0.3333333333333333,
+            -0.4666666666666664,
+            -0.03750000000000031,
+            -0.4833333333333332,
+            -0.12916666666666665,
+            0.35833333333333345
+          ],
+          "positive_histories": 1
+        },
+        "head_and_optimizer_reset": {
+          "mean": -0.5152777777777777,
+          "ci95": [
+            -0.7477886762250147,
+            -0.2827668793305408
+          ],
+          "per_history": [
+            -0.6416666666666667,
+            -0.5499999999999998,
+            -0.7833333333333333,
+            -0.4874999999999999,
+            -0.5083333333333334,
+            -0.12083333333333335
+          ],
+          "positive_histories": 0
+        },
+        "interaction": {
+          "mean": -0.3930555555555555,
+          "ci95": [
+            -0.7549636581887059,
+            -0.03114745292240506
+          ],
+          "per_history": [
+            -0.16666666666666652,
+            -0.012499999999999956,
+            -0.5208333333333329,
+            -0.10416666666666674,
+            -0.7333333333333333,
+            -0.8208333333333336
+          ],
+          "positive_histories": 0
+        }
+      },
+      "pooled_auc_effect_intervals": {
+        "optimizer_reset": {
+          "mean": 0.017847222222222316,
+          "ci95": [
+            -0.2665224744461686,
+            0.3022169188906132
+          ],
+          "per_history": [
+            0.3733333333333337,
+            -0.349375,
+            -0.16458333333333353,
+            -0.07895833333333317,
+            0.26562500000000017,
+            0.06104166666666674
+          ],
+          "positive_histories": 3
+        },
+        "head_reset": {
+          "mean": -0.3979166666666667,
+          "ci95": [
+            -0.7864936200158301,
+            -0.009339713317503329
+          ],
+          "per_history": [
+            -0.4379166666666669,
+            -1.0641666666666667,
+            -0.08000000000000007,
+            -0.4835416666666666,
+            -0.06270833333333314,
+            -0.2591666666666666
+          ],
+          "positive_histories": 0
+        },
+        "head_and_optimizer_reset": {
+          "mean": -0.7093055555555555,
+          "ci95": [
+            -1.1157737908018575,
+            -0.30283732030925353
+          ],
+          "per_history": [
+            -0.7891666666666667,
+            -1.4581250000000001,
+            -0.4370833333333332,
+            -0.4624999999999999,
+            -0.5514583333333332,
+            -0.5575000000000001
+          ],
+          "positive_histories": 0
+        },
+        "interaction": {
+          "mean": -0.32923611111111123,
+          "ci95": [
+            -0.6993518309653388,
+            0.0408796087431163
+          ],
+          "per_history": [
+            -0.7245833333333335,
+            -0.04458333333333342,
+            -0.1924999999999996,
+            0.09999999999999987,
+            -0.7543750000000002,
+            -0.3593750000000004
+          ],
+          "positive_histories": 1
+        }
+      },
+      "repeat_split_selection": {
+        "winner_vs_continue": {
+          "mean": -0.1996527777777779,
+          "ci95": [
+            -0.46665450317753165,
+            0.06734894762197585
+          ],
+          "per_history": [
+            -0.3729166666666668,
+            -0.2875000000000001,
+            -0.2875000000000003,
+            -0.4645833333333334,
+            0.008333333333333082,
+            0.20625000000000004
+          ],
+          "positive_histories": 2
+        },
+        "winner_vs_train_sbs": {
+          "mean": -0.20937499999999998,
+          "ci95": [
+            -0.39035062278835464,
+            -0.028399377211645316
+          ],
+          "per_history": [
+            -0.21666666666666665,
+            -0.13958333333333325,
+            -0.12291666666666685,
+            -0.5520833333333331,
+            -0.11874999999999991,
+            -0.10625000000000011
+          ],
+          "positive_histories": 0
+        },
+        "directions": [
+          {
+            "train": "r01",
+            "test": "r23",
+            "train_sbs": "continue"
+          },
+          {
+            "train": "r01",
+            "test": "r45",
+            "train_sbs": "continue"
+          },
+          {
+            "train": "r23",
+            "test": "r01",
+            "train_sbs": "optimizer_reset"
+          },
+          {
+            "train": "r23",
+            "test": "r45",
+            "train_sbs": "optimizer_reset"
+          },
+          {
+            "train": "r45",
+            "test": "r01",
+            "train_sbs": "optimizer_reset"
+          },
+          {
+            "train": "r45",
+            "test": "r23",
+            "train_sbs": "optimizer_reset"
+          }
+        ],
+        "note": "Outcome-label repeat split on the same histories, not a diagnostic selector; directions are dependent and do not add histories."
+      }
+    }
+  },
+  "estimand": "Paired final raw-return difference vs matched continue; equal weight of ages and repeats inside trajectory_id, then of the 6 histories per game; t-interval over histories.",
+  "limitations": "6 histories per game; repeats and ages are dependent within a history; no multiplicity correction; exploratory pilot, reserved games closed."
+}
