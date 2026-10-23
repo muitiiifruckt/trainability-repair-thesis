@@ -54,6 +54,11 @@ class LabTests(unittest.TestCase):
             self.assertEqual(set(verdict), {"value_params", "value_adam", "policy_params", "policy_adam"})
             self.assertTrue((Path(out) / "snapshots" / "lab_test.pt").exists())
             self.assertTrue((Path(out) / "telemetry" / "lab_test.jsonl").stat().st_size > 0)
+            # Lab telemetry rows carry the reference-batch metrics too.
+            import json
+            row = json.loads((Path(out) / "telemetry" / "lab_test.jsonl").read_text(encoding="utf-8").splitlines()[0])
+            self.assertIn("dead_fraction", row["layers"]["fc"])
+            self.assertIn("effective_rank", row["layers"]["fc"])
 
 
 if __name__ == "__main__":

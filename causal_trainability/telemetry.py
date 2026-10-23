@@ -3,7 +3,8 @@
 Reads parameters and optimizer state only: it never draws random numbers and never
 writes to the model or the optimizer, so training is bit-identical with or without it.
 Rows are serialised by a background thread into <root>/telemetry/<run_id>.jsonl and
-every run is registered in <root>/runs_index.jsonl, one format for all runs.
+every run is registered in <root>/runs_index.jsonl, one format for all runs.  Closed
+telemetry files and L3 snapshots get a sha256 row in <root>/artifacts.jsonl.
 """
 from __future__ import annotations
 
@@ -48,6 +49,16 @@ def code_revision():
 
 def config_hash(config):
     return hashlib.sha256(json.dumps(config, sort_keys=True).encode()).hexdigest()
+
+
+def record_artifact(root, path, kind):
+    """Append the sha256 of a finished artifact to <root>/artifacts.jsonl."""
+    root, path = Path(root), Path(path)
+    data = path.read_bytes()
+    row = {"path": path.relative_to(root).as_posix(), "kind": kind, "bytes": len(data),
+           "sha256": hashlib.sha256(data).hexdigest(), "time": time.time()}
+    with (root / "artifacts.jsonl").open("a", encoding="utf-8") as stream:
+        stream.write(json.dumps(row) + "\n")
 
 
 def _norm(tensors):
@@ -100,9 +111,12 @@ class TelemetryStore:
     def close(self):
         self.writer.items.put(None)
         self.writer.join()
+        record_artifact(self.root, self.root / self.path, "telemetry")
         if self.snapshots:
             (self.root / "snapshots").mkdir(parents=True, exist_ok=True)
-            torch.save(self.snapshots, self.root / "snapshots" / f"{self.name}.pt")
+            path = self.root / "snapshots" / f"{self.name}.pt"
+            torch.save(self.snapshots, path)
+            record_artifact(self.root, path, "snapshot_bundle")
 
 
 class Telemetry:
@@ -173,9 +187,11 @@ class Telemetry:
         folder.mkdir(parents=True, exist_ok=True)
         path = folder / f"{self.run_id}_u{update}.pt"
         torch.save({"model": model.state_dict(), "optimizer": optimizer.state_dict(), "update": update}, path)
+        record_artifact(self.root, path, "snapshot")
         return path
 
     def close(self):
         if self.enabled and self.store is None:
             self.writer.items.put(None)
             self.writer.join()
+            record_artifact(self.root, self.root / "telemetry" / f"{self.run_id}.jsonl", "telemetry")

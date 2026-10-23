@@ -33,7 +33,7 @@ import torch
 from torch import nn
 
 from causal_trainability import hybrids
-from causal_trainability.ppo_minatar import PPO, seed_of
+from causal_trainability.ppo_minatar import PPO, reference_batch, representation_metrics, seed_of
 from causal_trainability.telemetry import ROOT, Telemetry, TelemetryStore, code_revision, config_hash
 
 LAB = dict(batches=3, is_clip=1.0, clipfrac_ceiling=0.5, aged_tag="age1.00", fresh_tag="age0.00")
@@ -88,7 +88,7 @@ def surrogate(model, batch, anchor, weight, cfg, idx=None):
     return (weight[idx] * torch.min(ratio * adv, clipped * adv)).mean()
 
 
-def measure(model, optimizer, batch, order, kind, cfg, lab, telemetry):
+def measure(model, optimizer, batch, order, kind, cfg, lab, telemetry, reference=None):
     with torch.no_grad():
         anchor = log_prob(model, batch["obs"], batch["actions"])
         raw = torch.exp(anchor - batch["behaviour_logp"])
@@ -108,8 +108,9 @@ def measure(model, optimizer, batch, order, kind, cfg, lab, telemetry):
             return {"objective": float(surrogate(model, batch, anchor, weight, cfg)),
                     "clipfrac": float(((ratio - 1).abs() > cfg["clip"]).float().mean())}
 
+    extra = lambda: representation_metrics(model, reference) if reference is not None else None
     curve = [full()]
-    telemetry.step(0, force=True, metrics=curve[0])
+    telemetry.step(0, force=True, metrics=curve[0], layer_extra=extra())
     for k, idx in enumerate(order, 1):
         loss = value_loss(model, batch, cfg, idx) if kind == "value" else -surrogate(model, batch, anchor, weight, cfg, idx)
         optimizer.zero_grad()
@@ -118,7 +119,7 @@ def measure(model, optimizer, batch, order, kind, cfg, lab, telemetry):
         optimizer.step()
         curve.append(full())
         telemetry.step(k, force=True, metrics=dict(curve[-1], minibatch_loss=float(loss.detach()),
-                                                   grad_norm_preclip=grad_norm))
+                                                   grad_norm_preclip=grad_norm), layer_extra=extra())
     telemetry.snapshot(len(order), model, optimizer)
     with torch.no_grad():
         moved = log_prob(model, batch["obs"], batch["actions"]) - anchor
@@ -145,6 +146,7 @@ def run_history(folder, out, store, lab):
     cfg = aged["config"]
     history = f"{cfg['game']}_{cfg['arch']}_s{cfg['seed']}"
     critic = hybrids.model_from(fresh["model"], cfg)
+    reference = reference_batch(cfg)
     batches = [common_batch(r, critic, cfg) for r in fresh_batches(fresh, lab["batches"])]
     digests = [{k: hashlib.sha256(batch[k].numpy().tobytes()).hexdigest() for k in sorted(batch)} for batch in batches]
     results = {}
@@ -157,7 +159,7 @@ def run_history(folder, out, store, lab):
                               meta={"kind": "lab", "history": history, "hybrid": combo, "batch": b,
                                     "measure": kind, "config_hash": config_hash(cfg), "lab": lab})
         results.setdefault(combo, {}).setdefault(kind, []).append(
-            measure(model, optimizer, batch, order, kind, cfg, lab, telemetry))
+            measure(model, optimizer, batch, order, kind, cfg, lab, telemetry, reference))
     return history, results, digests
 
 

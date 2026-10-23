@@ -28,6 +28,16 @@ class PPOTests(unittest.TestCase):
             for x, y in zip(on.model.parameters(), off.model.parameters()):
                 self.assertTrue(torch.equal(on.optimizer.state[x]["exp_avg_sq"], off.optimizer.state[y]["exp_avg_sq"]))
             self.assertTrue((Path(a) / "telemetry").exists())
+            # Closed telemetry and every L3 snapshot carry a sha256 in artifacts.jsonl.
+            import hashlib, json
+            rows = [json.loads(line) for line in (Path(a) / "artifacts.jsonl").read_text(encoding="utf-8").splitlines()]
+            self.assertEqual({r["kind"] for r in rows}, {"telemetry", "snapshot"})
+            for r in rows:
+                self.assertEqual(hashlib.sha256((Path(a) / r["path"]).read_bytes()).hexdigest(), r["sha256"])
+            from scripts.build_runs_index import build
+            index = build(a)
+            self.assertEqual(len(index), 1)
+            self.assertTrue(index[0]["artifacts"])
 
     def test_hybrids(self):
         with tempfile.TemporaryDirectory() as folder:
