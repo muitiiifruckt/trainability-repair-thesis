@@ -86,11 +86,25 @@ class ActorCritic(nn.Module):
         return groups
 
 
-def observation(env, channels):
-    native = np.asarray(env.state())
-    obs = np.zeros((channels, 10, 10), dtype=np.uint8)
-    obs[:native.shape[2]] = native.transpose(2, 0, 1)
+def shift_of(cfg, kind):
+    """The permutation of a shift of this kind ('channels' or 'actions'), or None."""
+    shift = cfg.get("shift")
+    return shift["perm"] if shift and shift["kind"] == kind else None
+
+
+def observation(env, cfg):
+    native = np.asarray(env.state()).transpose(2, 0, 1)
+    perm = shift_of(cfg, "channels")
+    if perm is not None:  # changed conditions: the channels swap their meaning
+        native = native[perm]
+    obs = np.zeros((cfg["input_channels"], 10, 10), dtype=np.uint8)
+    obs[:native.shape[0]] = native
     return obs
+
+
+def env_action(cfg, action):
+    perm = shift_of(cfg, "actions")
+    return int(action) if perm is None else int(perm[int(action)])
 
 
 class VecMinAtar:
@@ -110,7 +124,7 @@ class VecMinAtar:
         self.finished = []  # (return, length, truncated) of completed episodes
 
     def observe(self, env):
-        return observation(env, self.cfg["input_channels"])
+        return observation(env, self.cfg)
 
     def observations(self):
         return np.stack([self.observe(env) for env in self.envs])
@@ -121,7 +135,7 @@ class VecMinAtar:
         dones = np.zeros(len(self.envs), dtype=bool)
         truncated_obs = {}
         for i, (env, action) in enumerate(zip(self.envs, actions)):
-            reward, terminal = env.act(int(action))
+            reward, terminal = env.act(env_action(self.cfg, action))
             rewards[i] = reward
             self.returns[i] += reward
             self.lengths[i] += 1
@@ -180,9 +194,9 @@ def evaluate(model, cfg, seeds, generator=None):
                 action = rng.randint(cfg["num_actions"])
             else:
                 with torch.no_grad():
-                    logits, _ = model(torch.tensor(observation(env, cfg["input_channels"])[None]))
+                    logits, _ = model(torch.tensor(observation(env, cfg)[None]))
                 action = int(torch.multinomial(torch.softmax(logits, -1), 1, generator=generator))
-            reward, done = env.act(action)
+            reward, done = env.act(env_action(cfg, action))
             total += reward
             if done:
                 break
@@ -205,6 +219,17 @@ class PPO:
         self.batch_size = cfg["num_envs"] * cfg["num_steps"]
         self.iterations = cfg["total_steps"] // self.batch_size
         self.last_rollout = None
+        self.curve = []  # per iteration: env steps and returns of the episodes finished in it
+
+    def restore(self, checkpoint):
+        """Take over the full state of a checkpoint (written after the rollout of its iteration)."""
+        self.model.load_state_dict(checkpoint["model"])
+        self.theta0 = checkpoint["theta0"]
+        self.optimizer.load_state_dict(checkpoint["optimizer"])
+        self.envs, self.obs = copy.deepcopy(checkpoint["envs"]), checkpoint["obs"].clone()
+        self.generator.set_state(checkpoint["generator"])
+        self.global_step, self.iteration = checkpoint["global_step"], checkpoint["iteration"]
+        self.last_rollout = checkpoint["rollout"]
 
     def rollout(self):
         cfg, n, t_max = self.cfg, self.cfg["num_envs"], self.cfg["num_steps"]
@@ -305,31 +330,38 @@ class PPO:
                                      "global_step": self.global_step, "iteration": self.iteration}) + "\n")
         return path
 
-    def train(self, telemetry_enabled=True):
+    def train(self, telemetry_enabled=True, resume=False):
+        """Train to the budget; with resume=True continue a restored checkpoint, starting with its rollout."""
         cfg = self.cfg
         self.out.mkdir(parents=True, exist_ok=True)
         reference = reference_batch(cfg)
-        run_id = f"ppo_{cfg['game']}_{cfg['arch']}_s{cfg['seed']}"
+        run_id = cfg.get("run_name") or f"ppo_{cfg['game']}_{cfg['arch']}_s{cfg['seed']}"
         telemetry = Telemetry(self.out, run_id, self.model.layers(), self.optimizer, every=cfg["telemetry_every"],
                               enabled=telemetry_enabled,
-                              meta={"kind": "ppo_source", "game": cfg["game"], "arch": cfg["arch"],
-                                    "seed": cfg["seed"], "config_hash": config_hash(cfg)})
+                              meta={"kind": cfg.get("run_kind", "ppo_source"), "game": cfg["game"], "arch": cfg["arch"],
+                                    "seed": cfg["seed"], "shift": cfg.get("shift"), "config_hash": config_hash(cfg)})
         snapshot_at = {round(f * self.iterations) for f in cfg["snapshot_fractions"]}
         # A checkpoint is taken after the rollout and before the update of its iteration, so its
         # weights, Adam state, data and critic all belong to the same moment (fresh = age 0.00).
         checkpoint_at = {}
         for f in cfg["checkpoint_fractions"]:
             checkpoint_at.setdefault(max(1, round(f * self.iterations)), []).append(f)
-        if 0 in snapshot_at:
+        start = self.iteration if resume else 1
+        if 0 in snapshot_at and not resume:
             telemetry.snapshot(0, self.model, self.optimizer)
         started = time.time()
-        for self.iteration in range(1, self.iterations + 1):
+        for self.iteration in range(start, self.iterations + 1):
             seen = len(self.envs.finished)
-            batch = self.rollout()
-            for fraction in checkpoint_at.get(self.iteration, []):
-                self.checkpoint(f"age{fraction:.2f}")
+            if resume and self.iteration == start:  # the restored rollout has not been learned from yet
+                batch = self.last_rollout
+            else:
+                batch = self.rollout()
+                for fraction in checkpoint_at.get(self.iteration, []):
+                    self.checkpoint(f"age{fraction:.2f}")
             stats = self.learn(batch)
             episodes = self.envs.finished[seen:]
+            self.curve.append({"iteration": self.iteration, "env_steps": self.global_step,
+                               "returns": [e[0] for e in episodes]})
             stats.update(env_steps=self.global_step, steps_per_sec=self.global_step / (time.time() - started),
                          episodes=len(episodes),
                          episode_return=float(np.mean([e[0] for e in episodes])) if episodes else None)

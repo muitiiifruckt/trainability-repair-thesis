@@ -18,11 +18,15 @@ from causal_trainability.ppo_minatar import ActorCritic
 PARTS = ("params", "adam", "data", "targets")
 
 
+def checkpoint_row(folder, tag):
+    rows = [json.loads(line) for line in (Path(folder) / "checkpoints.jsonl").read_text(encoding="utf-8").splitlines()]
+    return next(r for r in rows if r["tag"] == tag)
+
+
 def load(folder, tag):
     """Load a checkpoint and verify it against checkpoints.jsonl."""
     folder = Path(folder)
-    rows = [json.loads(line) for line in (folder / "checkpoints.jsonl").read_text(encoding="utf-8").splitlines()]
-    row = next(r for r in rows if r["tag"] == tag)
+    row = checkpoint_row(folder, tag)
     path = folder / row["path"]
     if hashlib.sha256(path.read_bytes()).hexdigest() != row["sha256"]:
         raise ValueError(f"Checkpoint checksum mismatch: {path}")
