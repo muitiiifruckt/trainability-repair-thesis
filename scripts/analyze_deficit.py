@@ -40,6 +40,8 @@ def analyze(runs):
     cells = collections.defaultdict(dict)
     for r in rows:
         cells[(r["shift"]["kind"], r["history"], r["repeat"])][r["arm"]] = r
+    if len({r["shift"]["round"] for r in rows}) != 1:
+        raise SystemExit("Branches of different rounds mixed in one analysis")
     shifts = {}
     for kind in sorted({k for k, _, _ in cells}):
         histories = sorted({h for k, h, _ in cells if k == kind})
@@ -50,6 +52,9 @@ def analyze(runs):
             pairs = [cells.get((kind, h, rep), {}) for rep in REPEATS]
             if any(set(p) != set(ARMS) for p in pairs):
                 raise SystemExit(f"{kind} {h}: incomplete pairs")
+            chains = {(p["aged"].get("chain") or {}).get("end", {}).get("sha256") for p in pairs}
+            if len(chains) != 1 or any(p["fresh"].get("chain") for p in pairs):
+                raise SystemExit(f"{kind} {h}: aged repeats must share one chain end; fresh branches have none")
             for p in pairs:
                 a, f = p["aged"], p["fresh"]
                 if (a["shift"]["perm"] != f["shift"]["perm"] or comparable(a["config"]) != comparable(f["config"])

@@ -88,6 +88,71 @@ class BranchTests(unittest.TestCase):
                 self.assertEqual(saved["config"]["run_kind"], "deficit_branch")
 
 
+class StageBTests(unittest.TestCase):
+    def test_every_round_changes_every_meaning(self):
+        cfg = resolve(dict(TINY))
+        for kind in deficit.SHIFTS:
+            previous = list(range(cfg["num_actions"] if kind == "actions" else cfg["input_channels"]))
+            seen = {deficit.function_of(previous, kind, cfg["game"])}
+            for r in range(1, 6):
+                mapping = deficit.shift_spec(cfg, kind, r)["perm"]
+                self.assertEqual(sorted(mapping), sorted(previous))
+                self.assertTrue(all(a != b for a, b in zip(mapping, previous)))
+                acts = deficit.function_of(mapping, kind, cfg["game"])
+                self.assertNotIn(acts, seen)  # never a task the agent has already met, incl. the original
+                seen.add(acts)
+                previous = mapping
+            # Round 1 is the stage A shift.
+            n = cfg["num_actions"] if kind == "actions" else cfg["input_channels"]
+            self.assertEqual(deficit.shift_spec(cfg, kind, 1)["perm"],
+                             deficit.derangement(n, (cfg["game"], cfg["seed"], kind, 1)))
+
+    def test_recorded_stage_a_branches_are_reproduced(self):
+        runs = Path(deficit.ROOT) / "runs" / "causal-trainability" / "deficit_A"
+        results = sorted(runs.glob("*/*/*/result.json"))
+        if not results:
+            self.skipTest("stage A runs are not on this machine")
+        added = ("total_steps", "shift", "run_kind", "run_name", "checkpoint_fractions", "snapshot_fractions")
+        for path in results:
+            r = json.loads(path.read_text(encoding="utf-8"))
+            kind, settings = r["shift"]["kind"], r["settings"]
+            key = (r["history"], kind, r["shift"]["round"], r["repeat"])
+            base = {k: v for k, v in r["config"].items() if k not in added}
+            shift = deficit.shift_spec(base, kind, 1)
+            self.assertEqual(shift["perm"], r["shift"]["perm"])
+            cfg = dict(base, total_steps=settings["steps"], shift=shift, run_kind="deficit_branch",
+                       run_name=f"deficit_{r['history']}_{kind}_r1_{r['arm']}_rep{r['repeat']}",
+                       checkpoint_fractions=[0.0], snapshot_fractions=[0.0, 0.5, 1.0])
+            self.assertEqual(deficit.config_hash(cfg), r["config_hash"])
+            self.assertEqual(deficit.seed_of("deficit-env", *key), r["seeds"]["env"])
+            self.assertEqual(deficit.seed_of("deficit-ppo", *key), r["seeds"]["ppo"])
+
+    def test_chain_and_branch_from_its_end(self):
+        chain_settings = dict(deficit.CHAIN, rounds=2, steps=64, windows=1)
+        settings = dict(deficit.BRANCH, steps=64, windows=1, eval_episodes=1, round=3)
+        with tempfile.TemporaryDirectory() as source, tempfile.TemporaryDirectory() as out:
+            train(source, False)
+            summary = deficit.chain(Path(source), "channels", Path(out) / "chain", chain_settings)
+            self.assertEqual([r["round"] for r in summary["rounds"]], [1, 2])
+            end, _ = deficit.chain_end(Path(out) / "chain")
+            aged = hybrids.load(source, "age1.00")
+            self.assertFalse(all(torch.equal(end["model"][k], aged["model"][k]) for k in aged["model"]))
+            result = deficit.branch(Path(source), "aged", "channels", 0, Path(out) / "aged", settings, Path(out) / "chain")
+            first = hybrids.load(Path(out) / "aged", "age0.00")
+            for name, tensor in first["model"].items():
+                self.assertTrue(torch.equal(tensor, end["model"][name]))
+            for i, state in end["optimizer"]["state"].items():
+                for key in ("exp_avg", "exp_avg_sq", "step"):
+                    self.assertTrue(torch.equal(first["optimizer"]["state"][i][key], state[key]))
+            with self.assertRaises(ValueError):  # an aged branch after round 1 needs its chain
+                deficit.branch(Path(source), "aged", "channels", 0, Path(out) / "nochain", settings)
+            self.assertEqual(result["chain"]["end"]["sha256"], summary["end"]["sha256"])
+            self.assertEqual(result["shift"]["round"], 3)
+            fresh = deficit.branch(Path(source), "fresh", "channels", 0, Path(out) / "fresh", settings, Path(out) / "chain")
+            self.assertIsNone(fresh["chain"])
+            self.assertEqual(fresh["seeds"], result["seeds"])
+
+
 class AnalysisTests(unittest.TestCase):
     def write(self, root, deficits, drop=None, perm=(1, 0)):
         for h, d in enumerate(deficits):
@@ -98,7 +163,7 @@ class AnalysisTests(unittest.TestCase):
                     folder = Path(root) / f"h{h}" / "channels_r1" / f"{arm}_rep{rep}"
                     folder.mkdir(parents=True)
                     row = {"history": f"h{h}", "arm": arm, "repeat": rep,
-                           "shift": {"kind": "channels", "perm": list(perm)}, "config": {"run_name": arm, "lr": 1},
+                           "shift": {"kind": "channels", "round": 1, "perm": list(perm)}, "config": {"run_name": arm, "lr": 1},
                            "revision": {"files": {}}, "seeds": {"env": rep}, "auc": value + 0.01 * rep,
                            "auc_windows": [value], "final_return": value, "start_return": 0.0}
                     (folder / "result.json").write_text(json.dumps(row), encoding="utf-8")
