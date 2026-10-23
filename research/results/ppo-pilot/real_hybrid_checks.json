@@ -1,0 +1,181 @@
+{
+  "rows": [
+    {
+      "run": "breakout_cnn_ln_s0",
+      "tag": "age0.25",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "breakout_cnn_ln_s0",
+      "tag": "age1.00",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "breakout_cnn_ln_s1",
+      "tag": "age0.25",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "breakout_cnn_ln_s1",
+      "tag": "age1.00",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "breakout_cnn_s0",
+      "tag": "age0.25",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "breakout_cnn_s0",
+      "tag": "age1.00",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "breakout_cnn_s1",
+      "tag": "age0.25",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "breakout_cnn_s1",
+      "tag": "age1.00",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "space_invaders_cnn_ln_s0",
+      "tag": "age0.25",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "space_invaders_cnn_ln_s0",
+      "tag": "age1.00",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "space_invaders_cnn_ln_s1",
+      "tag": "age0.25",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "space_invaders_cnn_ln_s1",
+      "tag": "age1.00",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "space_invaders_cnn_s0",
+      "tag": "age0.25",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "space_invaders_cnn_s0",
+      "tag": "age1.00",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "space_invaders_cnn_s1",
+      "tag": "age0.25",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    },
+    {
+      "run": "space_invaders_cnn_s1",
+      "tag": "age1.00",
+      "weights_equal": true,
+      "adam_equal": true,
+      "adam_bound_to_hybrid": true,
+      "max_abs_advantage_diff": 0.0,
+      "max_abs_return_diff": 0.0,
+      "truncated_episodes_in_rollout": 0
+    }
+  ],
+  "revision": {
+    "git_head": "ef252a187d4776f68bc43a9608d0fea7df9fdb13",
+    "dirty_causal_trainability": false,
+    "files": {
+      "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+      "causal_trainability/hybrids.py": "2a5eea9fc660db2a9601973a6edca6486c955517afea99d74fd62e9fcbabb5db",
+      "causal_trainability/lab.py": "021fb2c3a9123f23afc4fe41adc8adb7b15c8a8bdd1fa4524de85e7688a2df34",
+      "causal_trainability/pilot.py": "67a4684dcdfef50ec2a26fcb6212a3ef186f13cf57886ad3baf547e74eebb11a",
+      "causal_trainability/ppo_minatar.py": "0ab8123deb46c6852a62a92cac2f3a8c54c23b7dfd9c1ea361c26915487606fe",
+      "causal_trainability/telemetry.py": "457e2407bf4bb7548688269a58dbdd47cca12a53439f97dab74496dc9b0c263b",
+      "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1"
+    },
+    "python": "3.13.12",
+    "torch": "2.12.1+cu126",
+    "numpy": "2.4.4",
+    "MinAtar": "1.0.15"
+  }
+}
