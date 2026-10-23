@@ -4,7 +4,7 @@ Breakout and the `cnn` architecture are for development; Space Invaders and `cnn
 are held out, so on them only base learning is checked (no repair outcomes).
 Finished runs (result.json present) are skipped, so the queue can be restarted.
 
-Run:  .venv\\Scripts\\python.exe -m causal_trainability.pilot [--steps 1000000]
+Run:  .venv\\Scripts\\python.exe -m causal_trainability.pilot [--steps 1000000] [--games breakout --archs cnn --seeds 2 3 4 5]
 """
 from __future__ import annotations
 
@@ -28,9 +28,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--steps", type=int, default=1_000_000)
     parser.add_argument("--out", default=str(ROOT / "runs" / "causal-trainability" / "ppo_pilot"))
+    parser.add_argument("--games", nargs="+", default=list(GAMES))
+    parser.add_argument("--archs", nargs="+", default=list(ARCHS))
+    parser.add_argument("--seeds", nargs="+", type=int, default=list(SEEDS))
     args = parser.parse_args()
     out = Path(args.out)
-    for game, arch, seed in itertools.product(GAMES, ARCHS, SEEDS):
+    for game, arch, seed in itertools.product(args.games, args.archs, args.seeds):
         folder = out / f"{game}_{arch}_s{seed}"
         if (folder / "result.json").exists():
             print(f"skip {folder.name}", flush=True)
