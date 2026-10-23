@@ -34,7 +34,7 @@ def load(folder, tag):
 
 
 def model_from(state, cfg):
-    with torch.random.fork_rng():  # construction must not consume the caller's global RNG
+    with torch.random.fork_rng(devices=[]):  # construction must not consume the caller's global RNG
         model = ActorCritic(cfg)
     model.load_state_dict(state)
     return model

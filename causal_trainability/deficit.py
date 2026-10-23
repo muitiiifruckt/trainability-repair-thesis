@@ -71,22 +71,26 @@ def branch(source, arm, kind, repeat, out, settings=BRANCH):
     cfg = dict(base, total_steps=settings["steps"], shift=shift, checkpoint_fractions=[0.0],
                snapshot_fractions=[0.0, 0.5, 1.0], run_kind="deficit_branch",
                run_name=f"deficit_{history}_{kind}_r{settings['round']}_{arm}_rep{repeat}")
-    with torch.random.fork_rng():  # construction must not depend on or move the global RNG
+    with torch.random.fork_rng(devices=[]):  # construction must not depend on or move the global RNG
         ppo = PPO(cfg, out)
     start = aged if arm == "aged" else fresh
     ppo.model.load_state_dict(start["model"])
     ppo.theta0 = start["theta0"]
     if arm == "aged":
         ppo.optimizer.load_state_dict(aged["optimizer"])  # fresh keeps the empty Adam made by PPO()
-    ppo.envs = VecMinAtar(cfg, seed_of("deficit-env", *key))
+    seeds = {"env": seed_of("deficit-env", *key), "ppo": seed_of("deficit-ppo", *key),
+             "eval_policy": seed_of("deficit-eval-policy", *key)}
+    ppo.envs = VecMinAtar(cfg, seeds["env"])
     ppo.obs = torch.tensor(ppo.envs.observations())
-    ppo.generator = torch.Generator().manual_seed(seed_of("deficit-ppo", *key))
+    ppo.generator = torch.Generator().manual_seed(seeds["ppo"])
     eval_seeds = [seed_of("deficit-eval", history, kind, i) for i in range(settings["eval_episodes"])]
-    policy = lambda: torch.Generator().manual_seed(seed_of("deficit-eval-policy", *key))
+    policy = lambda: torch.Generator().manual_seed(seeds["eval_policy"])
     start_return = evaluate(ppo.model, cfg, eval_seeds, policy())
     seconds = ppo.train()
     area, windows = auc(ppo.curve, settings["steps"], settings["windows"])
     result = {"history": history, "arm": arm, "shift": shift, "repeat": repeat, "settings": settings,
+              "seeds": dict(seeds, eval_episodes=eval_seeds),
+              "minimal_action_set": [int(a) for a in ppo.envs.envs[0].minimal_action_set()],
               "config": cfg, "config_hash": config_hash(cfg), "revision": code_revision(),
               "sources": {tag: hybrids.checkpoint_row(source, tag) for tag in ("age0.00", "age1.00")},
               "start_return": start_return, "auc": area, "auc_windows": windows,

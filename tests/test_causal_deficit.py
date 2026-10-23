@@ -88,5 +88,41 @@ class BranchTests(unittest.TestCase):
                 self.assertEqual(saved["config"]["run_kind"], "deficit_branch")
 
 
+class AnalysisTests(unittest.TestCase):
+    def write(self, root, deficits, drop=None, perm=(1, 0)):
+        for h, d in enumerate(deficits):
+            for rep in (0, 1):
+                for arm, value in (("aged", 5.0 - d), ("fresh", 5.0)):
+                    if drop == (h, rep, arm):
+                        continue
+                    folder = Path(root) / f"h{h}" / "channels_r1" / f"{arm}_rep{rep}"
+                    folder.mkdir(parents=True)
+                    row = {"history": f"h{h}", "arm": arm, "repeat": rep,
+                           "shift": {"kind": "channels", "perm": list(perm)}, "config": {"run_name": arm, "lr": 1},
+                           "revision": {"files": {}}, "seeds": {"env": rep}, "auc": value + 0.01 * rep,
+                           "auc_windows": [value], "final_return": value, "start_return": 0.0}
+                    (folder / "result.json").write_text(json.dumps(row), encoding="utf-8")
+
+    def test_verdicts(self):
+        from scripts.analyze_deficit import analyze
+        with tempfile.TemporaryDirectory() as a, tempfile.TemporaryDirectory() as b, tempfile.TemporaryDirectory() as c:
+            self.write(a, [1.0, 1.1, 0.9, 1.2, 1.0, 0.8])
+            self.assertEqual(analyze(a)["shifts"]["channels"]["verdict"], "deficit")
+            self.write(b, [0.01, -0.02, 0.0, 0.02, -0.01, 0.01])
+            self.assertEqual(analyze(b)["shifts"]["channels"]["verdict"], "practically_none")
+            self.write(c, [2.0, -1.5, 1.0, -0.5, 1.5, -1.0])
+            self.assertEqual(analyze(c)["shifts"]["channels"]["verdict"], "undetermined")
+
+    def test_incomplete_or_unpaired_data_is_refused(self):
+        from scripts.analyze_deficit import analyze
+        with tempfile.TemporaryDirectory() as a, tempfile.TemporaryDirectory() as b:
+            self.write(a, [1.0] * 6, drop=(2, 1, "fresh"))
+            with self.assertRaises(SystemExit):
+                analyze(a)
+            self.write(b, [1.0] * 5)
+            with self.assertRaises(SystemExit):
+                analyze(b)
+
+
 if __name__ == "__main__":
     unittest.main()
