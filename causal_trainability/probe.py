@@ -1,10 +1,11 @@
 """Offline trainability probe (sprint 03, S3; notes/ppo_probe.md, criteria in notes/sprint03_criteria.md).
 
 The body (conv, fc) of an aged or a fresh network of one history gets the same new head with
-zero weights and fits random targets - the standardised outputs of a fixed random network - on
-the same game states with a fresh Adam; the whole network is trained.  Old game knowledge neither
-helps nor hurts, and every run starts from loss 1 exactly.  Outcomes: the mean log full-data loss
-over the logged points after step 0 (primary) and the final log loss.
+zero weights and fits random labels - independent Gaussian targets for every distinct game state,
+standardised - with a fresh Adam; the whole network is trained.  There are far more distinct
+states than features, so the head alone cannot fit the labels and the body has to change.  Old
+game knowledge neither helps nor hurts, and every run starts from loss 1 exactly.  Outcomes: the
+mean log full-data loss over the logged points after step 0 (primary) and the final log loss.
 
 Arms: `fresh` (theta0 of the history), `aged_actions_chain` (end of the stage B chain of action
 permutations, where T7 found an adaptation deficit; primary), `aged_1M` (the 1M checkpoint) and
@@ -32,7 +33,7 @@ from causal_trainability import deficit, hybrids
 from causal_trainability.ppo_minatar import VecMinAtar, reference_batch, representation_metrics, seed_of
 from causal_trainability.telemetry import ROOT, Telemetry, TelemetryStore, code_revision
 
-PROBE = dict(data_envs=8, states_per_env=1024, outputs=16, target_hidden=128, steps=4000, batch=256,
+PROBE = dict(data_envs=8, states_per_env=2048, random_action_share=0.5, outputs=16, steps=4000, batch=256,
              lr=2.5e-4, adam_eps=1e-8, log_every=100, seeds=3, eval_chunk=2048)
 ARMS = ("fresh", "aged_actions_chain", "aged_1M", "aged_channels_chain")
 PRIMARY = "aged_actions_chain"
@@ -57,49 +58,32 @@ def bodies(source, chains):
 
 
 def collect_states(policy_state, cfg, history, probe):
-    """Native-game states visited by the source agent's sampling policy; the same for every arm."""
+    """Distinct native-game states visited by the source agent's sampling policy with a share of
+    uniform random actions (the trained policy alone revisits a few hundred states); the same for
+    every arm, in a fixed (sorted) order."""
     data_cfg = dict(cfg, num_envs=probe["data_envs"], shift=None)
     model = hybrids.model_from(policy_state, cfg)
-    with torch.random.fork_rng(devices=[]):
-        envs = VecMinAtar(data_cfg, seed_of("probe-data", history))
-        generator = torch.Generator().manual_seed(seed_of("probe-data-policy", history))
-        rows = []
-        for _ in range(probe["states_per_env"]):
-            obs = torch.tensor(envs.observations())
-            rows.append(obs)
-            with torch.no_grad():
-                logits, _ = model(obs)
-            envs.step(torch.multinomial(torch.softmax(logits, -1), 1, generator=generator).squeeze(1).numpy())
-    return torch.cat(rows)
+    generator = torch.Generator().manual_seed(seed_of("probe-data-policy", history))
+    envs = VecMinAtar(data_cfg, seed_of("probe-data", history))
+    rows = []
+    for _ in range(probe["states_per_env"]):
+        obs = torch.tensor(envs.observations())
+        rows.append(obs)
+        with torch.no_grad():
+            logits, _ = model(obs)
+        action = torch.multinomial(torch.softmax(logits, -1), 1, generator=generator).squeeze(1)
+        explore = torch.rand(len(action), generator=generator) < probe["random_action_share"]
+        action[explore] = torch.randint(cfg["num_actions"], (int(explore.sum()),), generator=generator)
+        envs.step(action.numpy())
+    states = torch.cat(rows)
+    return torch.unique(states.flatten(1), dim=0).reshape(-1, *states.shape[1:])
 
 
-class TargetNet(nn.Module):
-    def __init__(self, cfg, probe):
-        super().__init__()
-        c = cfg["conv_channels"]
-        self.conv = nn.Conv2d(cfg["input_channels"], c, 3)
-        self.fc = nn.Linear(c * 8 * 8, probe["target_hidden"])
-        self.out = nn.Linear(probe["target_hidden"], probe["outputs"])
-        for layer, gain in ((self.conv, math.sqrt(2)), (self.fc, math.sqrt(2)), (self.out, 1.0)):
-            nn.init.orthogonal_(layer.weight, gain)
-            nn.init.zeros_(layer.bias)
-
-    def forward(self, obs):
-        x = torch.relu(self.conv(obs.float())).flatten(1)
-        return self.out(torch.relu(self.fc(x)))
-
-
-def random_targets(states, cfg, probe, key):
-    """Outputs of a random network seeded by `key`, standardised per output over the states."""
-    with torch.random.fork_rng(devices=[]):
-        torch.manual_seed(seed_of("probe-target", *key))
-        net = TargetNet(cfg, probe)
-    with torch.no_grad():
-        y = net(states)
-    sd = y.std(0, unbiased=False)
-    if float(sd.min()) < 1e-6:
-        raise ValueError("A target output is constant on the states")
-    return (y - y.mean(0)) / sd
+def random_targets(states, probe, key):
+    """Independent Gaussian labels for every distinct state, seeded by `key`, standardised per output."""
+    generator = torch.Generator().manual_seed(seed_of("probe-target", *key))
+    y = torch.randn(len(states), probe["outputs"], generator=generator)
+    return (y - y.mean(0)) / y.std(0, unbiased=False)
 
 
 class ProbeNet(nn.Module):
@@ -167,7 +151,7 @@ def run_history(source, chains, out, probe=PROBE, arms=ARMS):
     store = TelemetryStore(out, f"probe_{history}")
     runs, targets_sha = {arm: [] for arm in arms}, []
     for seed in range(probe["seeds"]):
-        y = random_targets(states, cfg, probe, (history, seed))
+        y = random_targets(states, probe, (history, seed))
         targets_sha.append(digest(y))
         for arm in arms:
             model = ProbeNet(cfg, starts[arm], probe["outputs"])

@@ -8,8 +8,8 @@ import torch
 from causal_trainability import deficit, hybrids, probe
 from tests.test_causal_ppo import train
 
-SMALL = dict(probe.PROBE, data_envs=2, states_per_env=32, outputs=4, target_hidden=8, steps=20, batch=16,
-             log_every=10, seeds=2, eval_chunk=16)
+SMALL = dict(probe.PROBE, data_envs=2, states_per_env=32, outputs=4, steps=20, batch=16, log_every=10, seeds=2,
+             eval_chunk=16)
 
 
 def chains(source, folder):
