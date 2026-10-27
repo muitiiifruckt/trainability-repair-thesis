@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "campaign": "minatar-repair-20261007",
+  "outcomes": {
+    "path": "outcomes.jsonl",
+    "rows": 576,
+    "sha256": "85f373676d5ee12d3dbb32f60efa72123b67c037a0e0c4d539b6f7f89b297ced",
+    "failures": 0,
+    "finished_utc": [
+      "2026-10-07T21:42:31+00:00",
+      "2026-10-22T19:48:22+00:00"
+    ]
+  },
+  "previous_export": {
+    "rows": 504,
+    "sha256": "bf8cafb02c081787d0a436ce87905d7f9b74cdcb40b7abf588324290e7bfbbd3",
+    "is_prefix": true
+  },
+  "t0_report_source_sha256": "85f373676d5ee12d3dbb32f60efa72123b67c037a0e0c4d539b6f7f89b297ced",
+  "code": {
+    "git_commit": "fd1c991cabe1178443a7269578d780e5bb05b007",
+    "committed_utc": "2026-10-07T19:48:17+00:00",
+    "files": {
+      "experiments/controlled_probe.py": {
+        "manifest": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+        "commit": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b",
+        "working_tree": "71706026ff6e2b7dc857a4656682ad52ac758920a8df49fb71e82388cd7e7d9b"
+      },
+      "experiments/mechanism_analysis.py": {
+        "manifest": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+        "commit": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159",
+        "working_tree": "b192353cb4dd2730bbec2ae5d32d8956b97fe788b66059cb5cf4c1ced3abb159"
+      },
+      "experiments/rl_analysis.py": {
+        "manifest": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+        "commit": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851",
+        "working_tree": "76315e1904017f37ff0374b3d7fd48ed4beca3bd6c4ae28e9ee6f8da61ad2851"
+      },
+      "experiments/rl_core.py": {
+        "manifest": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+        "commit": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5",
+        "working_tree": "4808a24d3693167f96ccfeeae3cc67bd4c5856a116eb94e4981124f036f3d8f5"
+      },
+      "experiments/rl_mechanisms.py": {
+        "manifest": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+        "commit": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc",
+        "working_tree": "87655a865da420b1ecc7b73c775267d5486c31573eb8ed3def839265e8cab5bc"
+      },
+      "experiments/rl_runner.py": {
+        "manifest": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+        "commit": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3",
+        "working_tree": "9315c0aa5afa66cf0ec6df4eba70a2c28cade0d1cb76dedad6b2f37186d8f2c3"
+      },
+      "experiments/rl_scheduler.py": {
+        "manifest": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+        "commit": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a",
+        "working_tree": "eb8555b3a390d37b1b44a5f797d3298b04bf25a2b293a0c861403bf2cdcfa48a"
+      },
+      "experiments/rl_transfer.py": {
+        "manifest": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+        "commit": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a",
+        "working_tree": "41704a451941f0b5f2ff317b012eab48092425b0e743ff7d79b4c148f885c76a"
+      },
+      "experiments/synthetic_lr_sweep.py": {
+        "manifest": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577",
+        "commit": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577",
+        "working_tree": "84e62105a01d5c994929049b1402fdf3a80b50620af6e9ca73c3350e9c35e577"
+      }
+    },
+    "python": "3.13.12",
+    "packages": {
+      "torch": "2.12.1+cu126",
+      "numpy": "2.4.4",
+      "MinAtar": "1.0.15",
+      "scikit-learn": "1.9.0",
+      "pandas": "3.0.2",
+      "pyarrow": "24.0.0",
+      "matplotlib": "3.11.0",
+      "scipy": "1.18.0",
+      "seaborn": "0.13.2",
+      "pytz": "2026.5"
+    }
+  },
+  "checkpoints": {
+    "rows_matching_checkpoints_jsonl": 576,
+    "checkpoints_jsonl_sha256": "b0b95c17c5264442684d1609531514afb6bff6de15ba39614fce172223df2cb1"
+  },
+  "script_sha256": "f055f7e24fdb844d3f05d339326e4f8469c2738700bae2b0c067a81df7cff1c7"
+}

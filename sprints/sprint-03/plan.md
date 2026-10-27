@@ -27,8 +27,8 @@
 
 ### S1. Экспорт 576 исходов DQN (шаг 1 руководителя)
 
-- [ ] `research/results/minatar-repair-20261007/outcomes.jsonl` содержит все 576 строк, а не 504.
-- [ ] Хеши файлов `experiments/` сверены с `runs/minatar-repair-20261007/dependency_manifest.json` скриптом. Записаны sha256 экспорта и коммит кода кампании.
+- [x] `research/results/minatar-repair-20261007/outcomes.jsonl` содержит все 576 строк, а не 504. Старый снимок совпадает с первыми 504 строками.
+- [x] Хеши файлов `experiments/` сверены с `runs/minatar-repair-20261007/dependency_manifest.json` скриптом. Записаны sha256 экспорта и коммит кода кампании. Код — `fd1c991`, все исходы посчитаны после него; sha256 совпадает с источником отчёта T0. Подробности — [outcomes_export.json](../../research/results/minatar-repair-20261007/outcomes_export.json), `scripts/export_dqn_outcomes.py`.
 
 Готово, когда скрипт сверки проходит, а в отчёте T0 есть ссылка на экспорт.
 
