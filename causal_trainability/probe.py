@@ -282,19 +282,27 @@ def summarize(results):
     descriptive = {name: compare(results, *arms) for name, arms in DESCRIPTIVE.items()
                    if all(a in results[0]["runs"] for a in arms)}
     c1, c2 = main["chain_vs_fresh"]["verdict"], main["chain_vs_1M"]["verdict"]
-    reading = ("body_slower_specific_to_chain" if c1 == "worse" and c2 == "worse" else
-               "body_slower_not_specific_to_chain" if c1 == "worse" else
-               "body_not_slower" if c1 in ("practically_not_worse", "better") else "undetermined")
+    not_worse = ("practically_not_worse", "better")
+    if c1 == "worse":
+        reading = ("body_slower_specific_to_chain" if c2 == "worse" else
+                   "body_slower_not_specific_to_chain" if c2 in not_worse else "body_slower_specificity_undetermined")
+    else:
+        reading = ("body_slower_but_small" if c1 == "worse_but_small" else
+                   "body_not_slower" if c1 in not_worse else "undetermined")
     scale_dependent = [name for name, c in main.items()
                        if c["verdict"] == "worse" and sensitivity[name]["verdict"] != "worse"]
+    scale_masks = [name for name, c in main.items()
+                   if c["verdict"] != "worse" and sensitivity[name]["verdict"] == "worse"]
     return {"schema_version": 1, "relative_threshold": RELATIVE, "comparisons": main, "sensitivity": sensitivity,
             "descriptive": descriptive, "reading": reading, "scale_dependent": scale_dependent,
-            "rule": "notes/ppo_probe.md"}
+            "scale_masks": scale_masks, "rule": "notes/ppo_probe.md"}
 
 
 def load_results(folder):
     paths = sorted(Path(folder).glob("*/result.json"))
     results = [json.loads(p.read_text(encoding="utf-8")) for p in paths]
+    if len({r["history"] for r in results}) != len(results):
+        raise SystemExit("A history is present twice")
     for key in ("probe", "runs_spec"):
         if len({json.dumps(r[key], sort_keys=True) for r in results}) != 1:
             raise SystemExit(f"Histories differ in {key}")
@@ -333,10 +341,11 @@ def main():
     parser.add_argument("--source")
     parser.add_argument("--chains")
     parser.add_argument("--out")
-    parser.add_argument("--output", type=Path)
+    parser.add_argument("--output", type=Path, default=ROOT / "research" / "results" / "ppo-probe" / "summary.json")
     args = parser.parse_args()
     torch.set_num_threads(1)
-    out = Path(args.out or ROOT / "runs" / "causal-trainability" / "probe")
+    default = "probe_calibration" if args.calibrate else "probe"
+    out = Path(args.out or ROOT / "runs" / "causal-trainability" / default)
     if args.queue:
         if code_revision()["dirty_causal_trainability"]:
             raise SystemExit("causal_trainability has uncommitted changes; commit before the queue")

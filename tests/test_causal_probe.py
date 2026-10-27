@@ -103,9 +103,14 @@ class SummaryTests(unittest.TestCase):
         s = probe.summarize(self.results(big, big))
         self.assertEqual(s["comparisons"]["chain_vs_1M"]["verdict"], "practically_not_worse")
         self.assertEqual(s["reading"], "body_slower_not_specific_to_chain")
+        # The chain body is worse than fresh; against 1M the evidence is mixed: specificity is not shown either way.
+        s = probe.summarize(self.results(big, [0.2, -0.15, 0.25, -0.2, 0.3, -0.1]))
+        self.assertEqual(s["comparisons"]["chain_vs_1M"]["verdict"], "undetermined")
+        self.assertEqual(s["reading"], "body_slower_specificity_undetermined")
         small = [0.02, 0.025, 0.021, 0.022, 0.024, 0.023]  # significant but r about 0.08
-        self.assertEqual(probe.summarize(self.results(small, [0.0] * 6, noise=0.001))["comparisons"]["chain_vs_fresh"]["verdict"],
-                         "worse_but_small")
+        s = probe.summarize(self.results(small, [0.0] * 6, noise=0.001))
+        self.assertEqual(s["comparisons"]["chain_vs_fresh"]["verdict"], "worse_but_small")
+        self.assertEqual(s["reading"], "body_slower_but_small")
         neg = [-x for x in big]
         s = probe.summarize(self.results(neg, [0.0] * 6))
         self.assertEqual(s["comparisons"]["chain_vs_fresh"]["verdict"], "better")
