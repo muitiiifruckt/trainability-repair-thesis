@@ -1,6 +1,11 @@
 # NEXT — читать первым в каждой сессии
 
-Обновлено: 2026-10-22. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+Обновлено: 2026-10-27. Практики: [docs/agent_research_practices.md](../docs/agent_research_practices.md).
+
+## 27 октября — T7 закрыт, начат спринт 03
+
+- **T7, дефицит адаптации PPO.** Этап A — дефицита нет; этап B — «дефицит есть» на `actions`, «практически нет» на `channels` ([ppo_deficit.md](../notes/ppo_deficit.md)). Это дефицит адаптации, а не показанная потеря обучаемости (замечание руководителя, [decisions.md](decisions.md)). Запусков нет.
+- **Текущий спринт** — [sprint-03/plan.md](../sprints/sprint-03/plan.md): ответ руководителю на три вопроса, затем малые предрегистрированные проверки.
 
 ## 22 октября — DQN-пилот закрыт
 

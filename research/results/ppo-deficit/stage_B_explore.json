@@ -1,0 +1,1412 @@
+{
+  "schema_version": 1,
+  "runs": "runs/causal-trainability/deficit_B",
+  "exploratory": true,
+  "rule": "notes/ppo_deficit.md",
+  "rows": [
+    {
+      "history": "breakout_cnn_s0",
+      "kind": "channels",
+      "chain_auc": [
+        3.7388650568540065,
+        3.725094857832945,
+        4.558399144179173,
+        4.791350647273857
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 1.3181204510231812,
+          "explained_variance_start": 0.5309396294085749,
+          "fc_dead_start": 0.4830729166666667,
+          "fc_rank_start": 29.878391127697384,
+          "entropy_end": 1.2838147555788357,
+          "explained_variance_end": 0.9036203669346108,
+          "fc_dead_end": 0.4270833333333333,
+          "fc_rank_end": 30.0638206240996
+        },
+        {
+          "entropy_start": 1.240580227226019,
+          "explained_variance_start": 0.13439325362402418,
+          "fc_dead_start": 0.5247395833333334,
+          "fc_rank_start": 26.873489608597193,
+          "entropy_end": 1.3075392991304398,
+          "explained_variance_end": 0.9017375300810904,
+          "fc_dead_end": 0.546875,
+          "fc_rank_end": 25.763109436397652
+        },
+        {
+          "entropy_start": 1.2822792616983254,
+          "explained_variance_start": 0.9480737609055515,
+          "fc_dead_start": 0.4114583333333333,
+          "fc_rank_start": 24.85374535261704,
+          "entropy_end": 1.223793864250183,
+          "explained_variance_end": 0.9592632948035853,
+          "fc_dead_end": 0.4140625,
+          "fc_rank_end": 28.420763236032954
+        },
+        {
+          "entropy_start": 1.2879220073421795,
+          "explained_variance_start": 0.792195922620493,
+          "fc_dead_start": 0.53125,
+          "fc_rank_start": 26.32721632535,
+          "entropy_end": 1.3011502549052238,
+          "explained_variance_end": 0.938746856031338,
+          "fc_dead_end": 0.5481770833333334,
+          "fc_rank_end": 25.496955376003545
+        }
+      ],
+      "stage_a_deficit_auc": -0.18040168160540837,
+      "auc": {
+        "aged": 5.293908218659094,
+        "fresh": 4.185284052062483
+      },
+      "final_return": {
+        "aged": 5.550000000000001,
+        "fresh": 5.116666666666667
+      },
+      "start_return": {
+        "aged": 0.5333333333333333,
+        "fresh": 0.45
+      },
+      "deficit_auc": -1.1086241665966101,
+      "first_250k_auc": {
+        "aged": 4.82224302319783,
+        "fresh": 3.4585780344525228
+      },
+      "coincidences": {
+        "any_earlier": 3,
+        "original": 0,
+        "positions": 4
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 1.3024092745035887,
+          "explained_variance_start": 0.7437931651626626,
+          "fc_dead_start": 0.4778645833333333,
+          "fc_rank_start": 30.786934536025708,
+          "entropy_end": 1.1775980424135923,
+          "explained_variance_end": 0.9458172806043567,
+          "fc_dead_end": 0.4674479166666667,
+          "fc_rank_end": 32.28912719276629
+        },
+        "aged_rep1": {
+          "entropy_start": 1.3542186866203945,
+          "explained_variance_start": 0.7168965370462361,
+          "fc_dead_start": 0.4772135416666667,
+          "fc_rank_start": 29.993640253867973,
+          "entropy_end": 1.2221475622306268,
+          "explained_variance_end": 0.931943440470666,
+          "fc_dead_end": 0.4817708333333333,
+          "fc_rank_end": 31.237556584806388
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.643931210661928,
+          "explained_variance_start": 0.49911938995411553,
+          "fc_dead_start": 0.22395833333333334,
+          "fc_rank_start": 35.30440497539431,
+          "entropy_end": 1.2490502117822568,
+          "explained_variance_end": 0.9202745235226806,
+          "fc_dead_end": 0.18294270833333334,
+          "fc_rank_end": 28.893022716098088
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.665628945454955,
+          "explained_variance_start": 0.4879319240594695,
+          "fc_dead_start": 0.23307291666666666,
+          "fc_rank_start": 36.09082953497713,
+          "entropy_end": 1.287179031719764,
+          "explained_variance_end": 0.912957321492175,
+          "fc_dead_end": 0.2109375,
+          "fc_rank_end": 28.599399558626935
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s0",
+      "kind": "actions",
+      "chain_auc": [
+        3.1632807170999846,
+        0.4984714467512578,
+        0.7658085282535909,
+        4.695809134374284
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 0.5784635369976362,
+          "explained_variance_start": 0.6990989001009789,
+          "fc_dead_start": 0.22395833333333334,
+          "fc_rank_start": 30.50426176810712,
+          "entropy_end": 0.6592711564153433,
+          "explained_variance_end": 0.7943467432801694,
+          "fc_dead_end": 0.19661458333333334,
+          "fc_rank_end": 31.761088785311347
+        },
+        {
+          "entropy_start": 0.39135472600658733,
+          "explained_variance_start": 0.9632423072976429,
+          "fc_dead_start": 0.1953125,
+          "fc_rank_start": 32.19791912371534,
+          "entropy_end": 0.6669595781713724,
+          "explained_variance_end": 0.9937087750614515,
+          "fc_dead_end": 0.1875,
+          "fc_rank_end": 34.012183842594375
+        },
+        {
+          "entropy_start": 0.6263358456393083,
+          "explained_variance_start": 0.9926704500286149,
+          "fc_dead_start": 0.1953125,
+          "fc_rank_start": 35.20016715683203,
+          "entropy_end": 0.9375068085889021,
+          "explained_variance_end": 0.9547541553215964,
+          "fc_dead_end": 0.17317708333333334,
+          "fc_rank_end": 38.92395693484207
+        },
+        {
+          "entropy_start": 0.7734833738456169,
+          "explained_variance_start": 0.6187838846302378,
+          "fc_dead_start": 0.16666666666666666,
+          "fc_rank_start": 35.259574369453276,
+          "entropy_end": 0.7174580879509449,
+          "explained_variance_end": 0.9514983503188168,
+          "fc_dead_end": 0.171875,
+          "fc_rank_end": 34.66315296142397
+        }
+      ],
+      "stage_a_deficit_auc": -0.5875454833102958,
+      "auc": {
+        "aged": 2.397229488362085,
+        "fresh": 4.0443085809305295
+      },
+      "final_return": {
+        "aged": 2.0,
+        "fresh": 5.15
+      },
+      "start_return": {
+        "aged": 0.3333333333333333,
+        "fresh": 0.5333333333333333
+      },
+      "deficit_auc": 1.6470790925684446,
+      "first_250k_auc": {
+        "aged": 2.1370244776757583,
+        "fresh": 3.3260093630042933
+      },
+      "coincidences": {
+        "any_earlier": 2,
+        "original": 0,
+        "positions": 2
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 0.39815333640823763,
+          "explained_variance_start": 0.8701592801618077,
+          "fc_dead_start": 0.185546875,
+          "fc_rank_start": 35.826422344174944,
+          "entropy_end": 1.0613071878130238,
+          "explained_variance_end": 0.9274474469496243,
+          "fc_dead_end": 0.162109375,
+          "fc_rank_end": 41.67692131985103
+        },
+        "aged_rep1": {
+          "entropy_start": 0.39194715255871415,
+          "explained_variance_start": 0.8629636528511697,
+          "fc_dead_start": 0.1796875,
+          "fc_rank_start": 36.01819209581831,
+          "entropy_end": 1.0583908312643568,
+          "explained_variance_end": 0.9369437489581417,
+          "fc_dead_end": 0.15755208333333334,
+          "fc_rank_end": 42.76987671220002
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.6082910566280286,
+          "explained_variance_start": 0.5469951262495593,
+          "fc_dead_start": 0.2578125,
+          "fc_rank_start": 32.413023792854965,
+          "entropy_end": 1.2848543114960194,
+          "explained_variance_end": 0.92210101742555,
+          "fc_dead_end": 0.208984375,
+          "fc_rank_end": 27.812713991631902
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.5986046971132357,
+          "explained_variance_start": 0.5190611128092696,
+          "fc_dead_start": 0.2623697916666667,
+          "fc_rank_start": 33.208012459058374,
+          "entropy_end": 1.2083216508229573,
+          "explained_variance_end": 0.9519773399687809,
+          "fc_dead_end": 0.20703125,
+          "fc_rank_end": 29.233548739934935
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s1",
+      "kind": "channels",
+      "chain_auc": [
+        2.7470429117603024,
+        3.962166068342134,
+        4.912080322194155,
+        4.803194531596923
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 1.340079991767804,
+          "explained_variance_start": 0.5255276449100916,
+          "fc_dead_start": 0.5130208333333334,
+          "fc_rank_start": 28.25758135880305,
+          "entropy_end": 1.2025977447628975,
+          "explained_variance_end": 0.8635336824549864,
+          "fc_dead_end": 0.515625,
+          "fc_rank_end": 28.070353745480038
+        },
+        {
+          "entropy_start": 1.3108768264452617,
+          "explained_variance_start": 0.5003964694035061,
+          "fc_dead_start": 0.5078125,
+          "fc_rank_start": 26.766911831422288,
+          "entropy_end": 1.254531265546878,
+          "explained_variance_end": 0.8994299089023401,
+          "fc_dead_end": 0.4921875,
+          "fc_rank_end": 27.59232002188735
+        },
+        {
+          "entropy_start": 1.262331695606311,
+          "explained_variance_start": 0.80366124022711,
+          "fc_dead_start": 0.5182291666666666,
+          "fc_rank_start": 27.593033075242403,
+          "entropy_end": 1.2388932804266612,
+          "explained_variance_end": 0.980791113725102,
+          "fc_dead_end": 0.51953125,
+          "fc_rank_end": 27.20369137862709
+        },
+        {
+          "entropy_start": 1.0854842892537515,
+          "explained_variance_start": 0.8244985975337221,
+          "fc_dead_start": 0.4713541666666667,
+          "fc_rank_start": 28.300241798939325,
+          "entropy_end": 1.2740762593845527,
+          "explained_variance_end": 0.9469226542605326,
+          "fc_dead_end": 0.4765625,
+          "fc_rank_end": 32.15351494730933
+        }
+      ],
+      "stage_a_deficit_auc": 0.21068476981426554,
+      "auc": {
+        "aged": 4.955009701715058,
+        "fresh": 4.066751043615686
+      },
+      "final_return": {
+        "aged": 5.2,
+        "fresh": 4.9
+      },
+      "start_return": {
+        "aged": 2.833333333333333,
+        "fresh": 0.43333333333333335
+      },
+      "deficit_auc": -0.8882586580993719,
+      "first_250k_auc": {
+        "aged": 4.778958837982045,
+        "fresh": 3.344883907217628
+      },
+      "coincidences": {
+        "any_earlier": 4,
+        "original": 2,
+        "positions": 4
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 0.9600124629214406,
+          "explained_variance_start": 0.8542727714092724,
+          "fc_dead_start": 0.453125,
+          "fc_rank_start": 28.696031875883225,
+          "entropy_end": 1.2199536083887021,
+          "explained_variance_end": 0.9709157677723497,
+          "fc_dead_end": 0.4069010416666667,
+          "fc_rank_end": 32.73094188358034
+        },
+        "aged_rep1": {
+          "entropy_start": 0.9096207466597358,
+          "explained_variance_start": 0.8421819675816351,
+          "fc_dead_start": 0.43359375,
+          "fc_rank_start": 28.777213971258206,
+          "entropy_end": 1.2453050346424182,
+          "explained_variance_end": 0.9603012536061808,
+          "fc_dead_end": 0.361328125,
+          "fc_rank_end": 32.82951827630768
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.6461410497625668,
+          "explained_variance_start": 0.4829176865427729,
+          "fc_dead_start": 0.3235677083333333,
+          "fc_rank_start": 33.70904317921957,
+          "entropy_end": 1.3271773761759202,
+          "explained_variance_end": 0.8945738030042366,
+          "fc_dead_end": 0.3118489583333333,
+          "fc_rank_end": 27.25093879406492
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.647893148784836,
+          "explained_variance_start": 0.49668562848852266,
+          "fc_dead_start": 0.294921875,
+          "fc_rank_start": 34.35172790101573,
+          "entropy_end": 1.2792868670076132,
+          "explained_variance_end": 0.9141316502527425,
+          "fc_dead_end": 0.2571614583333333,
+          "fc_rank_end": 29.623106727507025
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s1",
+      "kind": "actions",
+      "chain_auc": [
+        4.133060925725974,
+        1.4672076391543962,
+        2.5844716265999574,
+        1.8230179096691095
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 0.9609799577544132,
+          "explained_variance_start": 0.4948842160407374,
+          "fc_dead_start": 0.1640625,
+          "fc_rank_start": 34.17426872496098,
+          "entropy_end": 0.8587248399853706,
+          "explained_variance_end": 0.9052863636100417,
+          "fc_dead_end": 0.1640625,
+          "fc_rank_end": 34.906120860431265
+        },
+        {
+          "entropy_start": 0.4710427885875106,
+          "explained_variance_start": 0.760058156991404,
+          "fc_dead_start": 0.1484375,
+          "fc_rank_start": 30.311483778732395,
+          "entropy_end": 0.5638072754566869,
+          "explained_variance_end": 0.9660066635701166,
+          "fc_dead_end": 0.16276041666666666,
+          "fc_rank_end": 32.60046563804445
+        },
+        {
+          "entropy_start": 0.7071455847471952,
+          "explained_variance_start": 0.7695644410547186,
+          "fc_dead_start": 0.15755208333333334,
+          "fc_rank_start": 34.10450478506325,
+          "entropy_end": 0.4982315848271052,
+          "explained_variance_end": 0.8041046615027415,
+          "fc_dead_end": 0.1484375,
+          "fc_rank_end": 36.271862088917494
+        },
+        {
+          "entropy_start": 0.41359373088926077,
+          "explained_variance_start": 0.5635114916026072,
+          "fc_dead_start": 0.1484375,
+          "fc_rank_start": 32.75712162312821,
+          "entropy_end": 0.35572280331204337,
+          "explained_variance_end": 0.8022438414301265,
+          "fc_dead_end": 0.1484375,
+          "fc_rank_end": 36.42147116003541
+        }
+      ],
+      "stage_a_deficit_auc": -0.745389062746058,
+      "auc": {
+        "aged": 2.698599911907091,
+        "fresh": 4.096581996744517
+      },
+      "final_return": {
+        "aged": 4.983333333333333,
+        "fresh": 5.183333333333334
+      },
+      "start_return": {
+        "aged": 0.6,
+        "fresh": 0.5666666666666667
+      },
+      "deficit_auc": 1.3979820848374258,
+      "first_250k_auc": {
+        "aged": 1.8820208175157056,
+        "fresh": 3.296331482904616
+      },
+      "coincidences": {
+        "any_earlier": 1,
+        "original": 0,
+        "positions": 2
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 0.2156864848608772,
+          "explained_variance_start": 0.9243562480599808,
+          "fc_dead_start": 0.1484375,
+          "fc_rank_start": 42.32713141649714,
+          "entropy_end": 0.6967490802829465,
+          "explained_variance_end": 0.7941923956484898,
+          "fc_dead_end": 0.14778645833333334,
+          "fc_rank_end": 45.24990584638333
+        },
+        "aged_rep1": {
+          "entropy_start": 0.2616897424062093,
+          "explained_variance_start": 0.9000312808229224,
+          "fc_dead_start": 0.1484375,
+          "fc_rank_start": 42.66809627361675,
+          "entropy_end": 0.8792784387866656,
+          "explained_variance_end": 0.890645501868616,
+          "fc_dead_end": 0.150390625,
+          "fc_rank_end": 44.630855971514784
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.6248926222324371,
+          "explained_variance_start": 0.5381675680599862,
+          "fc_dead_start": 0.2701822916666667,
+          "fc_rank_start": 33.737282956257445,
+          "entropy_end": 1.240492107346654,
+          "explained_variance_end": 0.9104902606594594,
+          "fc_dead_end": 0.22395833333333334,
+          "fc_rank_end": 27.264073907753236
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.662011672432224,
+          "explained_variance_start": 0.4840045610656654,
+          "fc_dead_start": 0.23307291666666666,
+          "fc_rank_start": 34.28498517823674,
+          "entropy_end": 1.2333756598333518,
+          "explained_variance_end": 0.887097566842673,
+          "fc_dead_end": 0.19270833333333334,
+          "fc_rank_end": 27.375065769101408
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s2",
+      "kind": "channels",
+      "chain_auc": [
+        4.546956152843279,
+        5.350432585354193,
+        4.080250705876273,
+        4.61050851692111
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 1.430029255648454,
+          "explained_variance_start": 0.5478826680289508,
+          "fc_dead_start": 0.5286458333333334,
+          "fc_rank_start": 26.523233995103915,
+          "entropy_end": 1.2801073603332043,
+          "explained_variance_end": 0.8814929175069101,
+          "fc_dead_end": 0.4739583333333333,
+          "fc_rank_end": 26.73307566695755
+        },
+        {
+          "entropy_start": 1.3440828261276085,
+          "explained_variance_start": 0.7711636203439483,
+          "fc_dead_start": 0.32421875,
+          "fc_rank_start": 33.97013636883696,
+          "entropy_end": 1.2988882934053738,
+          "explained_variance_end": 0.9030918127719838,
+          "fc_dead_end": 0.3216145833333333,
+          "fc_rank_end": 36.1498266657375
+        },
+        {
+          "entropy_start": 1.204202293107907,
+          "explained_variance_start": 0.5596009209719205,
+          "fc_dead_start": 0.5377604166666666,
+          "fc_rank_start": 25.22310095223144,
+          "entropy_end": 1.2333930792907875,
+          "explained_variance_end": 0.9004556865653578,
+          "fc_dead_end": 0.5182291666666666,
+          "fc_rank_end": 27.91122141354249
+        },
+        {
+          "entropy_start": 1.211247194558382,
+          "explained_variance_start": 0.7443478411528951,
+          "fc_dead_start": 0.484375,
+          "fc_rank_start": 22.40723088186374,
+          "entropy_end": 1.237357313434283,
+          "explained_variance_end": 0.9500137092976386,
+          "fc_dead_end": 0.47265625,
+          "fc_rank_end": 24.872396029518942
+        }
+      ],
+      "stage_a_deficit_auc": -1.005522840446587,
+      "auc": {
+        "aged": 5.699453547941817,
+        "fresh": 4.173162440660388
+      },
+      "final_return": {
+        "aged": 5.933333333333334,
+        "fresh": 5.083333333333333
+      },
+      "start_return": {
+        "aged": 3.3833333333333337,
+        "fresh": 0.41666666666666663
+      },
+      "deficit_auc": -1.5262911072814296,
+      "first_250k_auc": {
+        "aged": 5.521936685466348,
+        "fresh": 3.3293711584826795
+      },
+      "coincidences": {
+        "any_earlier": 3,
+        "original": 1,
+        "positions": 4
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 1.2689126338809729,
+          "explained_variance_start": 0.8482389411859624,
+          "fc_dead_start": 0.3600260416666667,
+          "fc_rank_start": 34.88023929828876,
+          "entropy_end": 1.2852849885821342,
+          "explained_variance_end": 0.949937994472625,
+          "fc_dead_end": 0.337890625,
+          "fc_rank_end": 38.2231798860197
+        },
+        "aged_rep1": {
+          "entropy_start": 1.2491471127917368,
+          "explained_variance_start": 0.8569060767554378,
+          "fc_dead_start": 0.375,
+          "fc_rank_start": 34.05547920972381,
+          "entropy_end": 1.2280383594334126,
+          "explained_variance_end": 0.9583859353912388,
+          "fc_dead_end": 0.3216145833333333,
+          "fc_rank_end": 38.9572223001054
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.5859764286627371,
+          "explained_variance_start": 0.5004053319431855,
+          "fc_dead_start": 0.3248697916666667,
+          "fc_rank_start": 33.23847929626598,
+          "entropy_end": 1.3006464249143999,
+          "explained_variance_end": 0.8807890040509226,
+          "fc_dead_end": 0.29296875,
+          "fc_rank_end": 29.67853356096483
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.6435483923802774,
+          "explained_variance_start": 0.4912704452830427,
+          "fc_dead_start": 0.2975260416666667,
+          "fc_rank_start": 34.59453122444324,
+          "entropy_end": 1.314129409690698,
+          "explained_variance_end": 0.9172891190704334,
+          "fc_dead_end": 0.2708333333333333,
+          "fc_rank_end": 29.73359130399879
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s2",
+      "kind": "actions",
+      "chain_auc": [
+        3.7823969844396594,
+        4.2753232866103685,
+        3.3554534423898708,
+        0.713045514815849
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 0.8397283405065536,
+          "explained_variance_start": 0.5810735099003322,
+          "fc_dead_start": 0.3072916666666667,
+          "fc_rank_start": 26.70670761752473,
+          "entropy_end": 0.7637220962593952,
+          "explained_variance_end": 0.8763195950761578,
+          "fc_dead_end": 0.3229166666666667,
+          "fc_rank_end": 24.50682347874053
+        },
+        {
+          "entropy_start": 0.4707703997070591,
+          "explained_variance_start": 0.7386504812990716,
+          "fc_dead_start": 0.3463541666666667,
+          "fc_rank_start": 23.21571372635642,
+          "entropy_end": 0.6587517938266197,
+          "explained_variance_end": 0.9131580567339341,
+          "fc_dead_end": 0.33203125,
+          "fc_rank_end": 25.536950830450085
+        },
+        {
+          "entropy_start": 0.6236708673338095,
+          "explained_variance_start": 0.4496768017965065,
+          "fc_dead_start": 0.35546875,
+          "fc_rank_start": 26.601937514016512,
+          "entropy_end": 0.5552440999696652,
+          "explained_variance_end": 0.8529813700951767,
+          "fc_dead_end": 0.328125,
+          "fc_rank_end": 29.184639540176637
+        },
+        {
+          "entropy_start": 0.1248178204211096,
+          "explained_variance_start": 0.9133140619969055,
+          "fc_dead_start": 0.3294270833333333,
+          "fc_rank_start": 29.691218623087604,
+          "entropy_end": 0.558748509734869,
+          "explained_variance_end": 0.9686892284487849,
+          "fc_dead_end": 0.3671875,
+          "fc_rank_end": 30.905115625854275
+        }
+      ],
+      "stage_a_deficit_auc": -0.3814429622568589,
+      "auc": {
+        "aged": 3.7305987806630774,
+        "fresh": 4.0508953927546525
+      },
+      "final_return": {
+        "aged": 5.516666666666667,
+        "fresh": 4.833333333333334
+      },
+      "start_return": {
+        "aged": 0.06666666666666667,
+        "fresh": 0.7833333333333334
+      },
+      "deficit_auc": 0.3202966120915751,
+      "first_250k_auc": {
+        "aged": 2.5831495677308993,
+        "fresh": 3.3874146898454853
+      },
+      "coincidences": {
+        "any_earlier": 1,
+        "original": 1,
+        "positions": 2
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 0.541681602752457,
+          "explained_variance_start": 0.691064726965828,
+          "fc_dead_start": 0.3671875,
+          "fc_rank_start": 30.16079499771044,
+          "entropy_end": 0.41272216523066163,
+          "explained_variance_end": 0.9243034347371872,
+          "fc_dead_end": 0.3515625,
+          "fc_rank_end": 31.612937080486308
+        },
+        "aged_rep1": {
+          "entropy_start": 0.6009965520352125,
+          "explained_variance_start": 0.633243748081211,
+          "fc_dead_start": 0.3645833333333333,
+          "fc_rank_start": 30.4977942081236,
+          "entropy_end": 0.3953348927510281,
+          "explained_variance_end": 0.9579771078447826,
+          "fc_dead_end": 0.3658854166666667,
+          "fc_rank_end": 31.1029822476668
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.613197493677338,
+          "explained_variance_start": 0.5486337316470015,
+          "fc_dead_start": 0.2942708333333333,
+          "fc_rank_start": 29.633676012598073,
+          "entropy_end": 1.2941855589548747,
+          "explained_variance_end": 0.9377940719946909,
+          "fc_dead_end": 0.265625,
+          "fc_rank_end": 25.520958458518255
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.6529427158335845,
+          "explained_variance_start": 0.48287833809222885,
+          "fc_dead_start": 0.2838541666666667,
+          "fc_rank_start": 31.107387020235425,
+          "entropy_end": 1.3339597942928474,
+          "explained_variance_end": 0.9221321892955481,
+          "fc_dead_end": 0.2643229166666667,
+          "fc_rank_end": 25.94188119366477
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s3",
+      "kind": "channels",
+      "chain_auc": [
+        3.292602043635724,
+        5.3034851569305825,
+        0.00016851215391509226,
+        0.4699331526543741
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 0.38740947221716243,
+          "explained_variance_start": -111.85132091645102,
+          "fc_dead_start": 0.39453125,
+          "fc_rank_start": 25.82205306480304,
+          "entropy_end": 1.165006224066019,
+          "explained_variance_end": 0.9175824763808805,
+          "fc_dead_end": 0.3723958333333333,
+          "fc_rank_end": 32.49525761075634
+        },
+        {
+          "entropy_start": 1.2939677474399407,
+          "explained_variance_start": 0.6817667882985522,
+          "fc_dead_start": 0.25390625,
+          "fc_rank_start": 39.25034138948821,
+          "entropy_end": 1.2674909594158332,
+          "explained_variance_end": 0.918396553349333,
+          "fc_dead_end": 0.23828125,
+          "fc_rank_end": 40.51836620169969
+        },
+        {
+          "entropy_start": 0.4291600752621889,
+          "explained_variance_start": -42.46552579991384,
+          "fc_dead_start": 0.5833333333333334,
+          "fc_rank_start": 26.12157589580383,
+          "entropy_end": 0.2949489566187064,
+          "explained_variance_end": -12.243069152884116,
+          "fc_dead_end": 0.5924479166666666,
+          "fc_rank_end": 24.109462487314087
+        },
+        {
+          "entropy_start": 0.4245005347765982,
+          "explained_variance_start": -59.6138485951145,
+          "fc_dead_start": 0.61328125,
+          "fc_rank_start": 20.230864967184754,
+          "entropy_end": 0.7634145325670639,
+          "explained_variance_end": 0.6735648278109717,
+          "fc_dead_end": 0.640625,
+          "fc_rank_end": 20.20099228110535
+        }
+      ],
+      "stage_a_deficit_auc": -0.34621840330025,
+      "auc": {
+        "aged": 5.598237171955876,
+        "fresh": 4.221511280115585
+      },
+      "final_return": {
+        "aged": 6.583333333333334,
+        "fresh": 5.550000000000001
+      },
+      "start_return": {
+        "aged": 0.31666666666666665,
+        "fresh": 0.4166666666666667
+      },
+      "deficit_auc": -1.376725891840291,
+      "first_250k_auc": {
+        "aged": 5.046152901661783,
+        "fresh": 3.5289513417440723
+      },
+      "coincidences": {
+        "any_earlier": 4,
+        "original": 2,
+        "positions": 4
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 1.2097756589452426,
+          "explained_variance_start": 0.7089760049415305,
+          "fc_dead_start": 0.4283854166666667,
+          "fc_rank_start": 31.551784170231986,
+          "entropy_end": 1.0816185328488548,
+          "explained_variance_end": 0.8644504281541288,
+          "fc_dead_end": 0.3515625,
+          "fc_rank_end": 38.69672516019909
+        },
+        "aged_rep1": {
+          "entropy_start": 1.2099412139505148,
+          "explained_variance_start": 0.7085971813169926,
+          "fc_dead_start": 0.4466145833333333,
+          "fc_rank_start": 31.224722432787917,
+          "entropy_end": 1.230674535036087,
+          "explained_variance_end": 0.918330645469705,
+          "fc_dead_end": 0.3736979166666667,
+          "fc_rank_end": 37.94214524502626
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.6213623781998951,
+          "explained_variance_start": 0.5166876916705383,
+          "fc_dead_start": 0.15885416666666666,
+          "fc_rank_start": 38.637808376075526,
+          "entropy_end": 1.311328485608101,
+          "explained_variance_end": 0.8986473109392173,
+          "fc_dead_end": 0.130859375,
+          "fc_rank_end": 36.656899326655115
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.6492893155664206,
+          "explained_variance_start": 0.48939667966513833,
+          "fc_dead_start": 0.14388020833333334,
+          "fc_rank_start": 39.43531007052083,
+          "entropy_end": 1.2646851638952892,
+          "explained_variance_end": 0.9046087609974579,
+          "fc_dead_end": 0.107421875,
+          "fc_rank_end": 36.24030817699497
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s3",
+      "kind": "actions",
+      "chain_auc": [
+        1.361434463980599,
+        4.2343351834869996,
+        2.7199076102662483,
+        5.0898565251924435
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 1.0045845930775006,
+          "explained_variance_start": 0.7251554215265483,
+          "fc_dead_start": 0.18359375,
+          "fc_rank_start": 31.177809849200827,
+          "entropy_end": 1.1298762783408165,
+          "explained_variance_end": 0.9903937744534734,
+          "fc_dead_end": 0.23177083333333334,
+          "fc_rank_end": 29.170004030079603
+        },
+        {
+          "entropy_start": 0.8200625758618116,
+          "explained_variance_start": 0.5890719900924732,
+          "fc_dead_start": 0.23177083333333334,
+          "fc_rank_start": 27.097638759061482,
+          "entropy_end": 0.44864712717632454,
+          "explained_variance_end": 0.8759882115941076,
+          "fc_dead_end": 0.19661458333333334,
+          "fc_rank_end": 28.11303967174814
+        },
+        {
+          "entropy_start": 0.42170272798587877,
+          "explained_variance_start": 0.917640699066671,
+          "fc_dead_start": 0.19401041666666666,
+          "fc_rank_start": 28.92424049754805,
+          "entropy_end": 0.7951390060285727,
+          "explained_variance_end": 0.7602315341357542,
+          "fc_dead_end": 0.16145833333333334,
+          "fc_rank_end": 32.984944354131656
+        },
+        {
+          "entropy_start": 0.7777137625962496,
+          "explained_variance_start": 0.6155905418245514,
+          "fc_dead_start": 0.15234375,
+          "fc_rank_start": 34.9506768869678,
+          "entropy_end": 0.5879915294547876,
+          "explained_variance_end": 0.9759721648031348,
+          "fc_dead_end": 0.140625,
+          "fc_rank_end": 36.141785622077684
+        }
+      ],
+      "stage_a_deficit_auc": 2.7137759263623593,
+      "auc": {
+        "aged": 1.4596954839987863,
+        "fresh": 4.0853662674896425
+      },
+      "final_return": {
+        "aged": 1.9666666666666666,
+        "fresh": 5.5
+      },
+      "start_return": {
+        "aged": 0.5166666666666666,
+        "fresh": 0.5166666666666666
+      },
+      "deficit_auc": 2.625670783490856,
+      "first_250k_auc": {
+        "aged": 0.9758521333210831,
+        "fresh": 3.3406731965696417
+      },
+      "coincidences": {
+        "any_earlier": 0,
+        "original": 0,
+        "positions": 2
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 0.41915486520156264,
+          "explained_variance_start": 0.9799107909115936,
+          "fc_dead_start": 0.13997395833333334,
+          "fc_rank_start": 35.602865982565746,
+          "entropy_end": 0.5466586813951532,
+          "explained_variance_end": 0.8518622287908433,
+          "fc_dead_end": 0.13216145833333334,
+          "fc_rank_end": 37.78791912867942
+        },
+        "aged_rep1": {
+          "entropy_start": 0.4050695047092934,
+          "explained_variance_start": 0.9807811336165589,
+          "fc_dead_start": 0.14388020833333334,
+          "fc_rank_start": 35.06281227839817,
+          "entropy_end": 0.7801385453591744,
+          "explained_variance_end": 0.9874782582028259,
+          "fc_dead_end": 0.150390625,
+          "fc_rank_end": 36.60827891417272
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.6169997608910005,
+          "explained_variance_start": 0.5323048128596413,
+          "fc_dead_start": 0.2545572916666667,
+          "fc_rank_start": 31.513046353214094,
+          "entropy_end": 1.294999557857712,
+          "explained_variance_end": 0.887394462830398,
+          "fc_dead_end": 0.19596354166666666,
+          "fc_rank_end": 27.794604052798288
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.650556057691574,
+          "explained_variance_start": 0.48351350982459207,
+          "fc_dead_start": 0.22200520833333334,
+          "fc_rank_start": 31.803285124790737,
+          "entropy_end": 1.290555131311218,
+          "explained_variance_end": 0.9234889935165455,
+          "fc_dead_end": 0.17057291666666666,
+          "fc_rank_end": 28.66560742267044
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s4",
+      "kind": "channels",
+      "chain_auc": [
+        0.3594339917306132,
+        5.5014942599681245,
+        2.8620665284243443,
+        6.076468020648423
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 0.48846904778232175,
+          "explained_variance_start": -16.436261989989063,
+          "fc_dead_start": 0.3671875,
+          "fc_rank_start": 27.470492002349264,
+          "entropy_end": 1.2782210558652878,
+          "explained_variance_end": 0.5464372945391949,
+          "fc_dead_end": 0.4440104166666667,
+          "fc_rank_end": 28.49077434042091
+        },
+        {
+          "entropy_start": 1.2646975206832092,
+          "explained_variance_start": 0.5959438984700152,
+          "fc_dead_start": 0.25,
+          "fc_rank_start": 36.629005701041926,
+          "entropy_end": 1.1965164902309577,
+          "explained_variance_end": 0.8213719042192682,
+          "fc_dead_end": 0.24088541666666666,
+          "fc_rank_end": 40.364511598413756
+        },
+        {
+          "entropy_start": 1.1159816700965166,
+          "explained_variance_start": 0.6373691172200522,
+          "fc_dead_start": 0.5442708333333334,
+          "fc_rank_start": 25.577954387519473,
+          "entropy_end": 1.2344325458010037,
+          "explained_variance_end": 0.8412716293340996,
+          "fc_dead_end": 0.5625,
+          "fc_rank_end": 25.6483065987854
+        },
+        {
+          "entropy_start": 1.1208029898504417,
+          "explained_variance_start": 0.6689582204169862,
+          "fc_dead_start": 0.4205729166666667,
+          "fc_rank_start": 31.59163229903386,
+          "entropy_end": 1.0587602170805137,
+          "explained_variance_end": 0.8443820520689839,
+          "fc_dead_end": 0.4153645833333333,
+          "fc_rank_end": 34.523843542624235
+        }
+      ],
+      "stage_a_deficit_auc": 0.34151785181081173,
+      "auc": {
+        "aged": 4.489546777084046,
+        "fresh": 4.140106240168583
+      },
+      "final_return": {
+        "aged": 5.283333333333333,
+        "fresh": 4.699999999999999
+      },
+      "start_return": {
+        "aged": 0.35,
+        "fresh": 0.3333333333333333
+      },
+      "deficit_auc": -0.34944053691546273,
+      "first_250k_auc": {
+        "aged": 3.9585617693073543,
+        "fresh": 3.3541289664972793
+      },
+      "coincidences": {
+        "any_earlier": 3,
+        "original": 0,
+        "positions": 4
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 1.1022287489225466,
+          "explained_variance_start": 0.6360729915555137,
+          "fc_dead_start": 0.5481770833333334,
+          "fc_rank_start": 27.17953713336153,
+          "entropy_end": 1.2549354421595733,
+          "explained_variance_end": 0.9048240833160708,
+          "fc_dead_end": 0.5403645833333334,
+          "fc_rank_end": 30.5922208540975
+        },
+        "aged_rep1": {
+          "entropy_start": 1.1017076317220926,
+          "explained_variance_start": 0.5966065262564695,
+          "fc_dead_start": 0.5364583333333334,
+          "fc_rank_start": 26.420783328372995,
+          "entropy_end": 1.2580719490845997,
+          "explained_variance_end": 0.8507590322562928,
+          "fc_dead_end": 0.5403645833333334,
+          "fc_rank_end": 30.16968182038939
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.625469886387388,
+          "explained_variance_start": 0.4912531766506095,
+          "fc_dead_start": 0.2766927083333333,
+          "fc_rank_start": 34.659727070686884,
+          "entropy_end": 1.2021111529320478,
+          "explained_variance_end": 0.9064555715551538,
+          "fc_dead_end": 0.22916666666666666,
+          "fc_rank_end": 31.6421040348016
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.6639229394495487,
+          "explained_variance_start": 0.463166048061243,
+          "fc_dead_start": 0.2584635416666667,
+          "fc_rank_start": 34.8067328185797,
+          "entropy_end": 1.3154606247941654,
+          "explained_variance_end": 0.927034298066832,
+          "fc_dead_end": 0.208984375,
+          "fc_rank_end": 31.460073731958136
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s4",
+      "kind": "actions",
+      "chain_auc": [
+        4.072759525089003,
+        4.16532253775434,
+        0.5032987906483716,
+        3.4662618658767044
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 0.949864129225413,
+          "explained_variance_start": 0.5439966701984209,
+          "fc_dead_start": 0.20572916666666666,
+          "fc_rank_start": 34.25109596346774,
+          "entropy_end": 0.8154080441842476,
+          "explained_variance_end": 0.8948346715057501,
+          "fc_dead_end": 0.21875,
+          "fc_rank_end": 32.42962264084643
+        },
+        {
+          "entropy_start": 0.53754179024448,
+          "explained_variance_start": 0.23886974355503382,
+          "fc_dead_start": 0.22265625,
+          "fc_rank_start": 29.375655789499834,
+          "entropy_end": 0.46797529111305874,
+          "explained_variance_end": 0.8427937986518954,
+          "fc_dead_end": 0.20833333333333334,
+          "fc_rank_end": 29.955820874735622
+        },
+        {
+          "entropy_start": 0.2774476512956123,
+          "explained_variance_start": 0.9671876655343098,
+          "fc_dead_start": 0.21875,
+          "fc_rank_start": 30.991979519233887,
+          "entropy_end": 0.22712278040125966,
+          "explained_variance_end": 0.9984431013926014,
+          "fc_dead_end": 0.21614583333333334,
+          "fc_rank_end": 32.565494922025245
+        },
+        {
+          "entropy_start": 0.3651326907177766,
+          "explained_variance_start": 0.5342910102908514,
+          "fc_dead_start": 0.22265625,
+          "fc_rank_start": 32.336160884823926,
+          "entropy_end": 0.5930755734443665,
+          "explained_variance_end": 0.7115955817289372,
+          "fc_dead_end": 0.21875,
+          "fc_rank_end": 36.367423145875854
+        }
+      ],
+      "stage_a_deficit_auc": -0.8513149844423142,
+      "auc": {
+        "aged": 2.7815548655115947,
+        "fresh": 4.16366556469558
+      },
+      "final_return": {
+        "aged": 4.1000000000000005,
+        "fresh": 5.083333333333333
+      },
+      "start_return": {
+        "aged": 0.016666666666666666,
+        "fresh": 0.55
+      },
+      "deficit_auc": 1.3821106991839853,
+      "first_250k_auc": {
+        "aged": 1.9036063142898256,
+        "fresh": 3.4174559587262046
+      },
+      "coincidences": {
+        "any_earlier": 1,
+        "original": 0,
+        "positions": 2
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 0.29584564245305955,
+          "explained_variance_start": 0.793237523161767,
+          "fc_dead_start": 0.21875,
+          "fc_rank_start": 33.88737148906162,
+          "entropy_end": 0.9048294288416704,
+          "explained_variance_end": 0.8951009045498733,
+          "fc_dead_end": 0.20768229166666666,
+          "fc_rank_end": 40.343463760759775
+        },
+        "aged_rep1": {
+          "entropy_start": 0.39339709701016545,
+          "explained_variance_start": 0.7393162892591904,
+          "fc_dead_start": 0.21354166666666666,
+          "fc_rank_start": 34.37216720153433,
+          "entropy_end": 0.8792790221050382,
+          "explained_variance_end": 0.9269624385966213,
+          "fc_dead_end": 0.20247395833333334,
+          "fc_rank_end": 38.595927523650175
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.5640287169565756,
+          "explained_variance_start": 0.4917170228216837,
+          "fc_dead_start": 0.23567708333333334,
+          "fc_rank_start": 32.03445300857098,
+          "entropy_end": 1.2229592415193717,
+          "explained_variance_end": 0.8951808740808636,
+          "fc_dead_end": 0.177734375,
+          "fc_rank_end": 25.25232222932451
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.6464072099576395,
+          "explained_variance_start": 0.5085365386514602,
+          "fc_dead_start": 0.22265625,
+          "fc_rank_start": 33.356232960286256,
+          "entropy_end": 1.2815050948411226,
+          "explained_variance_end": 0.8974652627444811,
+          "fc_dead_end": 0.171875,
+          "fc_rank_end": 26.46574951930313
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s5",
+      "kind": "channels",
+      "chain_auc": [
+        4.517539813182158,
+        5.031870189815578,
+        5.388489044354914,
+        6.875213447753369
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 1.3826444769899051,
+          "explained_variance_start": 0.6850580856612507,
+          "fc_dead_start": 0.46875,
+          "fc_rank_start": 29.91933792038321,
+          "entropy_end": 1.2279636872311432,
+          "explained_variance_end": 0.9219208250376983,
+          "fc_dead_end": 0.4283854166666667,
+          "fc_rank_end": 30.06566768637391
+        },
+        {
+          "entropy_start": 1.1830175047119458,
+          "explained_variance_start": 0.8187609757157548,
+          "fc_dead_start": 0.12239583333333333,
+          "fc_rank_start": 39.69171624012993,
+          "entropy_end": 1.0919152709345024,
+          "explained_variance_end": 0.9721438722262628,
+          "fc_dead_end": 0.109375,
+          "fc_rank_end": 42.79815576169111
+        },
+        {
+          "entropy_start": 1.4000235497951508,
+          "explained_variance_start": 0.4995687717072556,
+          "fc_dead_start": 0.5390625,
+          "fc_rank_start": 26.63677159190071,
+          "entropy_end": 1.0403147066632907,
+          "explained_variance_end": 0.9193997205247268,
+          "fc_dead_end": 0.50390625,
+          "fc_rank_end": 29.532089198371054
+        },
+        {
+          "entropy_start": 1.158128981788953,
+          "explained_variance_start": 0.8780424892121531,
+          "fc_dead_start": 0.18229166666666666,
+          "fc_rank_start": 41.84874570703881,
+          "entropy_end": 1.1642485745251179,
+          "explained_variance_end": 0.9490746577662491,
+          "fc_dead_end": 0.20182291666666666,
+          "fc_rank_end": 45.528694244164626
+        }
+      ],
+      "stage_a_deficit_auc": -0.9689825694558296,
+      "auc": {
+        "aged": 7.471411234292994,
+        "fresh": 4.171448006029307
+      },
+      "final_return": {
+        "aged": 8.133333333333333,
+        "fresh": 4.616666666666667
+      },
+      "start_return": {
+        "aged": 1.1166666666666667,
+        "fresh": 0.5166666666666666
+      },
+      "deficit_auc": -3.299963228263687,
+      "first_250k_auc": {
+        "aged": 6.739868240731662,
+        "fresh": 3.528253677596088
+      },
+      "coincidences": {
+        "any_earlier": 3,
+        "original": 2,
+        "positions": 4
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 1.1370072563489277,
+          "explained_variance_start": 0.6450180106337372,
+          "fc_dead_start": 0.4036458333333333,
+          "fc_rank_start": 34.21838192087697,
+          "entropy_end": 1.0768754094218214,
+          "explained_variance_end": 0.8238128012444422,
+          "fc_dead_end": 0.3932291666666667,
+          "fc_rank_end": 38.378481156195356
+        },
+        "aged_rep1": {
+          "entropy_start": 1.1227033883333206,
+          "explained_variance_start": 0.6948902121160591,
+          "fc_dead_start": 0.4270833333333333,
+          "fc_rank_start": 34.062563069285204,
+          "entropy_end": 1.0936198374256492,
+          "explained_variance_end": 0.8180184669873996,
+          "fc_dead_end": 0.392578125,
+          "fc_rank_end": 38.14597712446688
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.6404003985226154,
+          "explained_variance_start": 0.5435942707468479,
+          "fc_dead_start": 0.19140625,
+          "fc_rank_start": 37.57584315646434,
+          "entropy_end": 1.2181232285996277,
+          "explained_variance_end": 0.8893496210270334,
+          "fc_dead_end": 0.134765625,
+          "fc_rank_end": 36.81870602916293
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.6428834901501734,
+          "explained_variance_start": 0.5511045858942049,
+          "fc_dead_start": 0.18619791666666666,
+          "fc_rank_start": 36.51972877276252,
+          "entropy_end": 1.2900953404605389,
+          "explained_variance_end": 0.909037882005216,
+          "fc_dead_end": 0.140625,
+          "fc_rank_end": 36.51903000761158
+        }
+      }
+    },
+    {
+      "history": "breakout_cnn_s5",
+      "kind": "actions",
+      "chain_auc": [
+        4.050830344761424,
+        1.397026776430178,
+        4.799339430955464,
+        3.077721006776815
+      ],
+      "chain_telemetry": [
+        {
+          "entropy_start": 0.5613306121279796,
+          "explained_variance_start": 0.6631830921191777,
+          "fc_dead_start": 0.13671875,
+          "fc_rank_start": 35.378381788890366,
+          "entropy_end": 0.6219622312734524,
+          "explained_variance_end": 0.8844935526944324,
+          "fc_dead_end": 0.125,
+          "fc_rank_end": 35.71989637186766
+        },
+        {
+          "entropy_start": 0.6186633252849182,
+          "explained_variance_start": 0.7149165446272103,
+          "fc_dead_start": 0.13151041666666666,
+          "fc_rank_start": 35.60986650788463,
+          "entropy_end": 0.6954670070360104,
+          "explained_variance_end": 0.9938917827228642,
+          "fc_dead_end": 0.1328125,
+          "fc_rank_end": 35.026501040944005
+        },
+        {
+          "entropy_start": 0.607992329634726,
+          "explained_variance_start": 0.590492645174233,
+          "fc_dead_start": 0.13932291666666666,
+          "fc_rank_start": 39.11608891921287,
+          "entropy_end": 0.6304914901653925,
+          "explained_variance_end": 0.9109585870652316,
+          "fc_dead_end": 0.14713541666666666,
+          "fc_rank_end": 42.05303654812497
+        },
+        {
+          "entropy_start": 0.48959730938076973,
+          "explained_variance_start": 0.8790578217965211,
+          "fc_dead_start": 0.1484375,
+          "fc_rank_start": 38.78248482036011,
+          "entropy_end": 0.5161030665040016,
+          "explained_variance_end": 0.8825512164271722,
+          "fc_dead_end": 0.13932291666666666,
+          "fc_rank_end": 40.32668311931293
+        }
+      ],
+      "stage_a_deficit_auc": -0.6902963463381817,
+      "auc": {
+        "aged": 2.906030902142737,
+        "fresh": 4.171065516561962
+      },
+      "final_return": {
+        "aged": 4.533333333333333,
+        "fresh": 4.7
+      },
+      "start_return": {
+        "aged": 0.5333333333333333,
+        "fresh": 0.3833333333333333
+      },
+      "deficit_auc": 1.2650346144192248,
+      "first_250k_auc": {
+        "aged": 1.678215306406884,
+        "fresh": 3.5499066765770513
+      },
+      "coincidences": {
+        "any_earlier": 1,
+        "original": 1,
+        "positions": 2
+      },
+      "branch_telemetry": {
+        "aged_rep0": {
+          "entropy_start": 0.5549017319766184,
+          "explained_variance_start": 0.9179601370052091,
+          "fc_dead_start": 0.14453125,
+          "fc_rank_start": 36.311976103351725,
+          "entropy_end": 0.4371171551756561,
+          "explained_variance_end": 0.8412314590229786,
+          "fc_dead_end": 0.15690104166666666,
+          "fc_rank_end": 38.90443186808893
+        },
+        "aged_rep1": {
+          "entropy_start": 0.47989129135385156,
+          "explained_variance_start": 0.9418018153377932,
+          "fc_dead_start": 0.13932291666666666,
+          "fc_rank_start": 36.68019936055895,
+          "entropy_end": 0.47991182856882614,
+          "explained_variance_end": 0.8529044486799012,
+          "fc_dead_end": 0.16536458333333334,
+          "fc_rank_end": 40.831157525406375
+        },
+        "fresh_rep0": {
+          "entropy_start": 1.5926073044538498,
+          "explained_variance_start": 0.5229822301473392,
+          "fc_dead_start": 0.20963541666666666,
+          "fc_rank_start": 31.400898741741813,
+          "entropy_end": 1.2272862798223894,
+          "explained_variance_end": 0.9160552714110004,
+          "fc_dead_end": 0.158203125,
+          "fc_rank_end": 29.273037724299893
+        },
+        "fresh_rep1": {
+          "entropy_start": 1.6367947018394868,
+          "explained_variance_start": 0.5466091503431127,
+          "fc_dead_start": 0.17643229166666666,
+          "fc_rank_start": 31.81805803178189,
+          "entropy_end": 1.292829850067695,
+          "explained_variance_end": 0.924810058896802,
+          "fc_dead_end": 0.14192708333333334,
+          "fc_rank_end": 31.167693574097456
+        }
+      }
+    }
+  ]
+}
