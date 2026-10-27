@@ -1,0 +1,51 @@
+{
+  "run": "breakout_cnn_s0",
+  "snapshot": "ppo_breakout_cnn_s0_u976.pt",
+  "shift": null,
+  "resumed": [
+    {
+      "checkpoint": {
+        "tag": "age0.00",
+        "path": "checkpoints/age0.00.pt",
+        "sha256": "8f23a508912d75d6f95dbda590f6b1cc8ecb99257f825fe4f96c43240aaa4b9f",
+        "global_step": 1024,
+        "iteration": 1
+      },
+      "weights_equal": true,
+      "adam_equal": true,
+      "global_step": 999424,
+      "iterations": 976
+    },
+    {
+      "checkpoint": {
+        "tag": "age0.25",
+        "path": "checkpoints/age0.25.pt",
+        "sha256": "6e82aa88051f30e27da5533edc0c1d6c4d6ecde4cad7e03660d20a10ded25f4f",
+        "global_step": 249856,
+        "iteration": 244
+      },
+      "weights_equal": true,
+      "adam_equal": true,
+      "global_step": 999424,
+      "iterations": 976
+    }
+  ],
+  "revision": {
+    "git_head": "c7d379e18b9f79a0283f4e290834b661520e0fd3",
+    "dirty_causal_trainability": false,
+    "files": {
+      "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+      "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+      "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+      "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+      "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+      "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+      "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+      "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1"
+    },
+    "python": "3.13.12",
+    "torch": "2.12.1+cu126",
+    "numpy": "2.4.4",
+    "MinAtar": "1.0.15"
+  }
+}
