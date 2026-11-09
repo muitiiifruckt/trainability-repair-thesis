@@ -1,0 +1,285 @@
+{
+  "config_hash": "bc421c79e3faf942be10670ef661159de79785014950ee1c045af4cb867e5815",
+  "manifest_sha256": "d5dc51c7f37f81592fc2a87e288efa955074e06a174ae3ab8ce373bff9f7e45c",
+  "results_sha256": {
+    "history0": "830bf93ed68a05c0e4820a4def3fedec45e8e35a22c93ea0c074f73f8fd83fad",
+    "history1": "cd817c88e19f1d6c8e2564366ffd2fddaf07c82b05f8232ebb5ca4c48a31f239",
+    "history2": "6f24162f20890fd31f5fe425e71a4329cce6b940db91aa5ba06d4d1700a17fcb",
+    "history3": "684ee8d9b8c7ab772e363f06d07feb4f6bb39db2e52c19603e2b572b444a6b35",
+    "history4": "ac661512abf8f80bc34621aced074b0f09bdf34adaf85ae993e6c7bf5f9984d5",
+    "history5": "b49acc3d1f4e070cba888052368def6d1996a7e7833ea2d085933faa9e03b8d4",
+    "history6": "f3bca9d5044ae319a4132b6e4525f4629700c2d421dc555c7b72aacaf613aedd",
+    "history7": "86aab41a0957f4108853105fef53479837339aec3c2b8b682d7c0051b3dd7f9d"
+  },
+  "verdict": "not_demonstrated",
+  "histories": 8,
+  "distinct_winners": 0,
+  "heldout_regret": {
+    "mean": 0.0,
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "per_history": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "optimizer_continue_interaction": {
+    "mean": -3.813142398044871,
+    "ci95": [
+      -4.6454416388642175,
+      -2.9808431572255243
+    ],
+    "per_history": [
+      -3.990120548471014,
+      -5.691578967665366,
+      -3.5470031700186486,
+      -3.25272504574934,
+      -4.700256239007975,
+      -3.7862465896031083,
+      -2.6660025909264564,
+      -2.8712060329170592
+    ]
+  },
+  "per_history": [
+    {
+      "history": 0,
+      "scores": {
+        "live": {
+          "continue": 4.121306601941329,
+          "optimizer_reset": 3.437857324934322,
+          "parameter_reset": 6.501316848460727
+        },
+        "frozen": {
+          "continue": 0.10879813731514561,
+          "optimizer_reset": 3.415469408779152,
+          "parameter_reset": 6.507044028991382
+        }
+      },
+      "winners": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "choices": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "heldout_live_scores": {
+        "continue": 3.4031052382423077,
+        "optimizer_reset": 3.4550362515715065,
+        "parameter_reset": 6.5030228897555595
+      },
+      "heldout_regret": 0.0
+    },
+    {
+      "history": 1,
+      "scores": {
+        "live": {
+          "continue": 5.864450870033714,
+          "optimizer_reset": 3.435073536365069,
+          "parameter_reset": 6.490486420257486
+        },
+        "frozen": {
+          "continue": 0.1515687610756757,
+          "optimizer_reset": 3.413770395072396,
+          "parameter_reset": 6.500539468888183
+        }
+      },
+      "winners": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "choices": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "heldout_live_scores": {
+        "continue": 6.460877159434937,
+        "optimizer_reset": 3.438602944700248,
+        "parameter_reset": 6.4812688029523855
+      },
+      "heldout_regret": 0.0
+    },
+    {
+      "history": 2,
+      "scores": {
+        "live": {
+          "continue": 3.6329729261082635,
+          "optimizer_reset": 3.425104246288646,
+          "parameter_reset": 6.490121484285783
+        },
+        "frozen": {
+          "continue": 0.07810497094810137,
+          "optimizer_reset": 3.4172394611471324,
+          "parameter_reset": 6.505666402426343
+        }
+      },
+      "winners": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "choices": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "heldout_live_scores": {
+        "continue": 3.5552256969804525,
+        "optimizer_reset": 3.4235138313188465,
+        "parameter_reset": 6.498342683835613
+      },
+      "heldout_regret": 0.0
+    },
+    {
+      "history": 3,
+      "scores": {
+        "live": {
+          "continue": 3.3738344543440553,
+          "optimizer_reset": 3.423603771302038,
+          "parameter_reset": 6.506928279243062
+        },
+        "frozen": {
+          "continue": 0.1131815886695776,
+          "optimizer_reset": 3.4156759513769006,
+          "parameter_reset": 6.501746622877629
+        }
+      },
+      "winners": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "choices": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "heldout_live_scores": {
+        "continue": 3.3580472018987573,
+        "optimizer_reset": 3.4135219301941166,
+        "parameter_reset": 6.505480043739286
+      },
+      "heldout_regret": 0.0
+    },
+    {
+      "history": 4,
+      "scores": {
+        "live": {
+          "continue": 6.4781125169058065,
+          "optimizer_reset": 3.416775667089621,
+          "parameter_reset": 6.498647226788236
+        },
+        "frozen": {
+          "continue": 0.0352100118586331,
+          "optimizer_reset": 1.6741294010504224,
+          "parameter_reset": 6.498502524603842
+        }
+      },
+      "winners": {
+        "live": "tie",
+        "frozen": "parameter_reset"
+      },
+      "choices": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "heldout_live_scores": {
+        "continue": 6.469691317062461,
+        "optimizer_reset": 3.396256057270792,
+        "parameter_reset": 6.495139940624808
+      },
+      "heldout_regret": 0.0
+    },
+    {
+      "history": 5,
+      "scores": {
+        "live": {
+          "continue": 5.166497564153376,
+          "optimizer_reset": 4.772933601606863,
+          "parameter_reset": 6.489842458359053
+        },
+        "frozen": {
+          "continue": 0.13523711142463873,
+          "optimizer_reset": 3.527919738481234,
+          "parameter_reset": 6.5013403296502545
+        }
+      },
+      "winners": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "choices": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "heldout_live_scores": {
+        "continue": 4.5002747469301765,
+        "optimizer_reset": 5.838494067350022,
+        "parameter_reset": 6.493300215393864
+      },
+      "heldout_regret": 0.0
+    },
+    {
+      "history": 6,
+      "scores": {
+        "live": {
+          "continue": 5.155525443767219,
+          "optimizer_reset": 5.765445105402879,
+          "parameter_reset": 6.495392828683825
+        },
+        "frozen": {
+          "continue": 0.21393963503530455,
+          "optimizer_reset": 3.4898618875974208,
+          "parameter_reset": 6.506550553918442
+        }
+      },
+      "winners": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "choices": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "heldout_live_scores": {
+        "continue": 5.027895338893374,
+        "optimizer_reset": 5.74346492195663,
+        "parameter_reset": 6.504966116667417
+      },
+      "heldout_regret": 0.0
+    },
+    {
+      "history": 7,
+      "scores": {
+        "live": {
+          "continue": 4.494017757114311,
+          "optimizer_reset": 4.995111283789363,
+          "parameter_reset": 6.498216516206228
+        },
+        "frozen": {
+          "continue": 0.1146992842258279,
+          "optimizer_reset": 3.4869988438179393,
+          "parameter_reset": 6.506181545172999
+        }
+      },
+      "winners": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "choices": {
+        "live": "parameter_reset",
+        "frozen": "parameter_reset"
+      },
+      "heldout_live_scores": {
+        "continue": 5.551172889933964,
+        "optimizer_reset": 5.093526931513717,
+        "parameter_reset": 6.497119596372058
+      },
+      "heldout_regret": 0.0
+    }
+  ]
+}

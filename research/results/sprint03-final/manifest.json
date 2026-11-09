@@ -1,0 +1,18 @@
+{
+  "research\\results\\sprint03-final\\sprint03_live_20261109.json": {
+    "source": "runs/causal-trainability/sprint03_live_20261109/summary.json",
+    "sha256": "b0bebb28ba6e58be27a3cd3bdaaff85f33ae0dfa839f1f73b4c78089e8067467"
+  },
+  "research\\results\\sprint03-final\\substantive_shift_20261109.json": {
+    "source": "runs/causal-trainability/substantive_shift_20261109/summary.json",
+    "sha256": "7218345bd0bb9c4f068b622dd09653b61d5380759778a51705d5208f7108b0f6"
+  },
+  "research\\results\\sprint03-final\\two_state_v2_20261109.json": {
+    "source": "runs/causal-trainability/two_state_v2_20261109/summary.json",
+    "sha256": "906b01b7baaf13d9485d9e33f4f5ceb063589b4a9c596eab2c38a2cf5f2355b5"
+  },
+  "research\\results\\sprint03-final\\ppo-probe-v3.json": {
+    "source": "research/results/ppo-probe-v3/summary.json",
+    "sha256": "8b8d1f0264ae25d5597b6b4e941c0481f987d6b7fbc609110fc55e03efa5dedf"
+  }
+}
