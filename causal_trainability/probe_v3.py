@@ -22,7 +22,7 @@ from causal_trainability import deficit, probe
 from causal_trainability.ppo_minatar import reference_batch, seed_of
 from causal_trainability.telemetry import ROOT, Telemetry, code_revision, config_hash, record_artifact
 
-SPEC = dict(probe.PROBE, steps=8000, late_start=4000, telemetry_every=400,
+SPEC = dict(probe.PROBE, steps=8000, late_start=4000, telemetry_every=800,
             snapshot_steps=[0, 1000, 4000, 6000, 8000], seed_namespace="probe-v3")
 BODIES = ("fresh", "aged_actions_chain", "aged_1M", "aged_actions_chain_scaled", "aged_1M_scaled",
           "fresh_chain_factor", "fresh_1M_factor")
