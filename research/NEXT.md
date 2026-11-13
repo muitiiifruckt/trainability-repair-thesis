@@ -1,5 +1,9 @@
 # NEXT — читать первым в каждой сессии
 
+## 2026-11-13 — Sprint 04 в работе
+
+Разбор готовых данных завершён: `notes/sprint04_diagnosis.md`. Нулевые головы и свежий Adam обеспечили одинаковые исходные выходы и первый rollout на двух development-историях. Пилот завершён, процессов очереди нет; logging/resume побитово совпали. Overhead gate FAIL (fresh mean 7.3763% > 5%); научные серии не запущены. Протокол и решение: `notes/sprint04_prereg.md`, `notes/sprint04_pilot_result.md`; сводка: `research/results/sprint04/technical_pilot.json`. Код freeze `d4fa6dc`, output root `runs/causal-trainability/sprint04_pilot_20261113` не переиспользовать. Далее — новая фиксированная калибровка наблюдаемости и отдельный научный протокол контроля на общем batch с фиксированными targets; параметры и пороги ещё предстоит зафиксировать. Тяжёлые ревью не запускать.
+
 ## Sprint 03: проверки завершены
 
 Итоги: `sprints/sprint-03/review.md`. Сводки с SHA256: `research/results/sprint03-final/manifest.json`. Все серии и анализ v3 завершены. Selector не запускается; потеря обучаемости в RL не установлена. Следующий шаг — разбор сопоставимости actor/critic до нового пилота. Ниже сохранены исторические инструкции запуска.
