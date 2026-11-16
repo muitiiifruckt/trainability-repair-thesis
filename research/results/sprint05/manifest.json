@@ -1,0 +1,12 @@
+{
+  "research\\results\\sprint05\\calibration_v1.json": {
+    "source": "runs\\causal-trainability\\sprint05_calibration_v1_20261116\\summary.json",
+    "sha256": "81fc28415cc485a92b8447f3cc767c464a648c129a10b220fbaffa480e9f169f",
+    "verified_cells": 32
+  },
+  "research\\results\\sprint05\\calibration_v2.json": {
+    "source": "runs\\causal-trainability\\sprint05_calibration_v2_20261116\\summary.json",
+    "sha256": "9bd6088d72c31e69d94e02072f83482e1ff8c80d42d4f2b82eefdd2d3f0b6be6",
+    "verified_cells": 32
+  }
+}

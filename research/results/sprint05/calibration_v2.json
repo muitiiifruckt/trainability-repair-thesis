@@ -1,0 +1,152 @@
+{
+  "kind": "technical_only",
+  "identity": {
+    "files": {
+      "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+      "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+      "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+      "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+      "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+      "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+      "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+      "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+      "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+      "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+      "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+      "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+      "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+      "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+      "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+      "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+    },
+    "protocols": {
+      "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+      "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+    }
+  },
+  "revision": {
+    "git_head": "dba0a455d5af287cd81cd3424ff3d01e33e686d7",
+    "dirty_causal_trainability": false,
+    "files": {
+      "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+      "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+      "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+      "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+      "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+      "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+      "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+      "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+      "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+      "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+      "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+      "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+      "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+      "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+      "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+      "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+    },
+    "python": "3.13.12",
+    "torch": "2.12.1+cu126",
+    "numpy": "2.4.4",
+    "MinAtar": "1.0.15"
+  },
+  "cells": {
+    "fresh_full": {
+      "pairs": [
+        {
+          "on": 0.1881952999974601,
+          "off": 0.14225159998750314,
+          "overhead": 0.32297492621519286,
+          "bit_equal": true
+        },
+        {
+          "on": 0.19053750002058223,
+          "off": 0.14290620002429932,
+          "overhead": 0.33330464310284524,
+          "bit_equal": true
+        },
+        {
+          "on": 0.18774600001052022,
+          "off": 0.14379900001222268,
+          "overhead": 0.30561408629101816,
+          "bit_equal": true
+        }
+      ],
+      "mean_overhead": 0.32063121853635207,
+      "median_overhead": 0.32297492621519286
+    },
+    "fresh_head_only": {
+      "pairs": [
+        {
+          "on": 0.12220619997242466,
+          "off": 0.10518649994628504,
+          "overhead": 0.16180498481108274,
+          "bit_equal": true
+        },
+        {
+          "on": 0.11984830000437796,
+          "off": 0.09220170002663508,
+          "overhead": 0.2998491347746992,
+          "bit_equal": true
+        },
+        {
+          "on": 0.12454150000121444,
+          "off": 0.0915662000188604,
+          "overhead": 0.3601252424536776,
+          "bit_equal": true
+        }
+      ],
+      "mean_overhead": 0.2739264540131532,
+      "median_overhead": 0.2998491347746992
+    },
+    "aged_full": {
+      "pairs": [
+        {
+          "on": 0.19683009997243062,
+          "off": 0.1429760999744758,
+          "overhead": 0.37666435164736534,
+          "bit_equal": true
+        },
+        {
+          "on": 0.2487699000048451,
+          "off": 0.1820379999699071,
+          "overhead": 0.3665822523097899,
+          "bit_equal": true
+        },
+        {
+          "on": 0.21785739995539188,
+          "off": 0.1515897999634035,
+          "overhead": 0.4371507846041527,
+          "bit_equal": true
+        }
+      ],
+      "mean_overhead": 0.39346579618710265,
+      "median_overhead": 0.37666435164736534
+    },
+    "aged_head_only": {
+      "pairs": [
+        {
+          "on": 0.13431639998452738,
+          "off": 0.09751190000679344,
+          "overhead": 0.3774359844815849,
+          "bit_equal": true
+        },
+        {
+          "on": 0.13139450002927333,
+          "off": 0.09656079998239875,
+          "overhead": 0.36074369778651505,
+          "bit_equal": true
+        },
+        {
+          "on": 0.13776620000135154,
+          "off": 0.12215529999230057,
+          "overhead": 0.12779551939240386,
+          "bit_equal": true
+        }
+      ],
+      "mean_overhead": 0.2886584005535013,
+      "median_overhead": 0.36074369778651505
+    }
+  },
+  "passed": false
+}
