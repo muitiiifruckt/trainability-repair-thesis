@@ -65,3 +65,19 @@ def test_artifact_corruption_is_detected(fixture,tmp_path):
     cell(cfg,batch,rng,batch['obs'][:16],body,'full',tmp_path/'run',False)
     with (tmp_path/'run/final.pt').open('ab') as stream:stream.write(b'changed')
     with pytest.raises(AssertionError):verified(tmp_path/'run/result.json')
+
+
+def test_background_telemetry_matches_synchronous(fixture,tmp_path):
+    import json
+    from causal_trainability.common_batch_v2 import cell as background_cell
+    cfg,body,batch,rng=fixture
+    sync=cell(cfg,batch,rng,batch['obs'][:16],body,'full',tmp_path/'sync',True)
+    background=background_cell(cfg,batch,rng,batch['obs'][:16],body,'full',tmp_path/'background',True)
+    assert sync['final_sha256']==background['final_sha256']
+    assert sync['before']==background['before'] and sync['after']==background['after']
+    def metrics(folder):
+        return [(r['update'],r['layers']) for r in [json.loads(s) for s in (folder/'telemetry/cell.jsonl').read_text().splitlines()]]
+    assert metrics(tmp_path/'sync')==metrics(tmp_path/'background')
+    snapshots=[torch.load(tmp_path/name/'snapshots/cell.pt',weights_only=False) for name in ('sync','background')]
+    assert fingerprint(snapshots[0])==fingerprint(snapshots[1])
+    assert verified(tmp_path/'background/result.json')['final_sha256']==background['final_sha256']
