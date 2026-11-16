@@ -1,0 +1,2312 @@
+{
+  "run_manifest": {
+    "identity": {
+      "files": {
+        "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+        "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+        "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+        "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+        "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+        "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+        "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+        "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+        "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+        "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+        "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+        "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+        "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+        "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+        "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+        "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+      },
+      "protocols": {
+        "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+        "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+      }
+    },
+    "runner_sha256": "4cfa3b2da5c0aadee37a6436ec7f154f2f02e4aca06bbdac70f9f203ce2f05d2",
+    "exception_sha256": "ed34f891713e183d3a644f67eb84c535617f0ee4d344f845fb74c5d120740bcf",
+    "original_gate_sha256": "9bd6088d72c31e69d94e02072f83482e1ff8c80d42d4f2b82eefdd2d3f0b6be6",
+    "original_gate_passed": false,
+    "overhead_exception": true,
+    "histories": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "repeats": [
+      0,
+      1,
+      2
+    ],
+    "cells": [
+      "fresh_full",
+      "fresh_head_only",
+      "aged_full",
+      "aged_head_only"
+    ],
+    "revision": {
+      "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+      "dirty_causal_trainability": false,
+      "files": {
+        "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+        "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+        "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+        "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+        "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+        "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+        "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+        "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+        "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+        "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+        "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+        "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+        "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+        "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+        "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+        "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+      },
+      "python": "3.13.12",
+      "torch": "2.12.1+cu126",
+      "numpy": "2.4.4",
+      "MinAtar": "1.0.15"
+    }
+  },
+  "groups": {
+    "breakout_cnn_s0\\repeat0": {
+      "manifest": {
+        "history": "breakout_cnn_s0",
+        "repeat": 0,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 0,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              2,
+              1,
+              4,
+              5,
+              3,
+              0
+            ]
+          }
+        },
+        "config_hash": "34890440713af222a9c069ea927a86d51fdbf68479fef38a9d4c4581befc2bd7",
+        "seeds": {
+          "env": 4120519317,
+          "ppo": 3234460701
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "8f23a508912d75d6f95dbda590f6b1cc8ecb99257f825fe4f96c43240aaa4b9f",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "55cc534dc74ef3e65de01a117456844cf534cfa870026f83c24ca86f4deaef33"
+        },
+        "batch_sha256": "a185c1f62cb9f5314cc50c022f44864102e40655b65ec2065febaa50f2b05b00",
+        "targets_sha256": "5deb4a1eb2e2740ea3c9a4f134518333e0d5590d112865f1178cb092664600b4",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "0bbc454022fa9fee056d4b34517f0d6ca109bd9be517b6771802356df72f6f0e",
+          "time": 1794829353.7793422
+        }
+      ]
+    },
+    "breakout_cnn_s0\\repeat1": {
+      "manifest": {
+        "history": "breakout_cnn_s0",
+        "repeat": 1,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 0,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              2,
+              1,
+              4,
+              5,
+              3,
+              0
+            ]
+          }
+        },
+        "config_hash": "34890440713af222a9c069ea927a86d51fdbf68479fef38a9d4c4581befc2bd7",
+        "seeds": {
+          "env": 54252677,
+          "ppo": 4088415047
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "8f23a508912d75d6f95dbda590f6b1cc8ecb99257f825fe4f96c43240aaa4b9f",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "55cc534dc74ef3e65de01a117456844cf534cfa870026f83c24ca86f4deaef33"
+        },
+        "batch_sha256": "cb5fde31cf5f733704a886a5ad17fbd379e33edd5abe2ab399d701730d6fb03d",
+        "targets_sha256": "1d9d1dd2dc85ce8762f6f1f1c7207415d6f988577a472df3e501897c0a58f9d6",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "ad4ab8568a7094fd7cee8ec55396367421c6e4aa091db7991e38d66fa36dcf97",
+          "time": 1794829355.887773
+        }
+      ]
+    },
+    "breakout_cnn_s0\\repeat2": {
+      "manifest": {
+        "history": "breakout_cnn_s0",
+        "repeat": 2,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 0,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              2,
+              1,
+              4,
+              5,
+              3,
+              0
+            ]
+          }
+        },
+        "config_hash": "34890440713af222a9c069ea927a86d51fdbf68479fef38a9d4c4581befc2bd7",
+        "seeds": {
+          "env": 155787301,
+          "ppo": 1083727191
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "8f23a508912d75d6f95dbda590f6b1cc8ecb99257f825fe4f96c43240aaa4b9f",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "55cc534dc74ef3e65de01a117456844cf534cfa870026f83c24ca86f4deaef33"
+        },
+        "batch_sha256": "165d557cd150cdfa8db76c88df2b0bbf300d4bf68623fd5bfeb624b4b57e55a1",
+        "targets_sha256": "dda71db2b8ddfb2ca1731da0fb8afa4b24218b6abe2f66f7c14ba7ad9556e72a",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "e02ccf9b33a9c6957ae370d676c2f30a6529a3a3158f1301a528ad1f069f9eb7",
+          "time": 1794829356.739383
+        }
+      ]
+    },
+    "breakout_cnn_s1\\repeat0": {
+      "manifest": {
+        "history": "breakout_cnn_s1",
+        "repeat": 0,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 1,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              4,
+              5,
+              2,
+              1,
+              3,
+              0
+            ]
+          }
+        },
+        "config_hash": "16e2ff96b9bccaba4986ccf3cc77517bd0d9fa8ff2dd1662b414b1062f88dd0f",
+        "seeds": {
+          "env": 3365693193,
+          "ppo": 2177602056
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "3c93754e1db0aa65acd0e24d3855703332a9a1484efa4d5c261bc3f94337be04",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "f3af596f1f0a2b64c69b3c3940afc234892a71eabc2edfcc410c8a527ff96137"
+        },
+        "batch_sha256": "492d88595692474c7698afdf99a0bead11b7ce3fced698cd9e55f1286e3b6188",
+        "targets_sha256": "41e70c133f1e455c7d62d987e28daf75f24c86a1b6454deeb07e561e256302a0",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "bd25db72643bd618eb1ffdb9e9df3fe3357fb5e7f3d4bb0abb2da10883175a78",
+          "time": 1794829357.604757
+        }
+      ]
+    },
+    "breakout_cnn_s1\\repeat1": {
+      "manifest": {
+        "history": "breakout_cnn_s1",
+        "repeat": 1,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 1,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              4,
+              5,
+              2,
+              1,
+              3,
+              0
+            ]
+          }
+        },
+        "config_hash": "16e2ff96b9bccaba4986ccf3cc77517bd0d9fa8ff2dd1662b414b1062f88dd0f",
+        "seeds": {
+          "env": 175876021,
+          "ppo": 1333616536
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "3c93754e1db0aa65acd0e24d3855703332a9a1484efa4d5c261bc3f94337be04",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "f3af596f1f0a2b64c69b3c3940afc234892a71eabc2edfcc410c8a527ff96137"
+        },
+        "batch_sha256": "67db2c082ff4712ec55d6c2bffb4180336f642c122c2c873c3230e9a6de87fad",
+        "targets_sha256": "1de2f09ab78c441c3975586a254ccca3bbded4a3cd3b9a336db0d821ad94f6da",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "85a5a30acfbfa7359b88dd330caef24739d537a209cd4605b965ade7f78b6f61",
+          "time": 1794829358.437014
+        }
+      ]
+    },
+    "breakout_cnn_s1\\repeat2": {
+      "manifest": {
+        "history": "breakout_cnn_s1",
+        "repeat": 2,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 1,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              4,
+              5,
+              2,
+              1,
+              3,
+              0
+            ]
+          }
+        },
+        "config_hash": "16e2ff96b9bccaba4986ccf3cc77517bd0d9fa8ff2dd1662b414b1062f88dd0f",
+        "seeds": {
+          "env": 4056919528,
+          "ppo": 2951251696
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "3c93754e1db0aa65acd0e24d3855703332a9a1484efa4d5c261bc3f94337be04",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "f3af596f1f0a2b64c69b3c3940afc234892a71eabc2edfcc410c8a527ff96137"
+        },
+        "batch_sha256": "16f74f5c057f7281fe1ad63f8782a163a33a30078fbc4ff7d5d956612825943c",
+        "targets_sha256": "167671c93af1ae1cb193b84b07fa8715db3851124566042055318c12ed2affe8",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "d22c27b7f5b4a0e7bc0150a7bb6197bf2e2fdc362ddc507f81891bd30c24b941",
+          "time": 1794829359.2788534
+        }
+      ]
+    },
+    "breakout_cnn_s2\\repeat0": {
+      "manifest": {
+        "history": "breakout_cnn_s2",
+        "repeat": 0,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 2,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              3,
+              4,
+              0,
+              2,
+              5,
+              1
+            ]
+          }
+        },
+        "config_hash": "8f6657849f008bbf4b6a848303f22802a87be39a5a81f6a734ea881f9ce9f2c9",
+        "seeds": {
+          "env": 1733461600,
+          "ppo": 572855986
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "3aa35d91f4e076095ba8a335c6608af48c36aebecd164954e4371e965561ab69",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "a57af3dfb1a3fbf5a9013ff7b0ba4c4f80265d131c8240d0404efac96c13661c"
+        },
+        "batch_sha256": "d6c1442348902c590ee8a1c73bb3145e8dfe95f54efc6ea57e38592111a97c0c",
+        "targets_sha256": "dcd48c8280f1f2f6831d5ae4601bedea9c0ede83fb518d06220beca53918b87e",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "693c1fb52c5ab802f781bfdaa004607590b85696e12c6022994937f702b70835",
+          "time": 1794829360.1484056
+        }
+      ]
+    },
+    "breakout_cnn_s2\\repeat1": {
+      "manifest": {
+        "history": "breakout_cnn_s2",
+        "repeat": 1,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 2,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              3,
+              4,
+              0,
+              2,
+              5,
+              1
+            ]
+          }
+        },
+        "config_hash": "8f6657849f008bbf4b6a848303f22802a87be39a5a81f6a734ea881f9ce9f2c9",
+        "seeds": {
+          "env": 2371571165,
+          "ppo": 1060666853
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "3aa35d91f4e076095ba8a335c6608af48c36aebecd164954e4371e965561ab69",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "a57af3dfb1a3fbf5a9013ff7b0ba4c4f80265d131c8240d0404efac96c13661c"
+        },
+        "batch_sha256": "d6cdd745777929df042b3311f7487e9c82555e3d54c0b15aea817d38bd5a8ed2",
+        "targets_sha256": "935a5502770735cdea114550704cf44961c472aae807a21286d0d3279ff265c3",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "4b6e1ee0154d211239c558fb6651febf598b0bdb8474a2b92249760034fbaef6",
+          "time": 1794829360.996029
+        }
+      ]
+    },
+    "breakout_cnn_s2\\repeat2": {
+      "manifest": {
+        "history": "breakout_cnn_s2",
+        "repeat": 2,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 2,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              3,
+              4,
+              0,
+              2,
+              5,
+              1
+            ]
+          }
+        },
+        "config_hash": "8f6657849f008bbf4b6a848303f22802a87be39a5a81f6a734ea881f9ce9f2c9",
+        "seeds": {
+          "env": 1148807260,
+          "ppo": 2077317984
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "3aa35d91f4e076095ba8a335c6608af48c36aebecd164954e4371e965561ab69",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "a57af3dfb1a3fbf5a9013ff7b0ba4c4f80265d131c8240d0404efac96c13661c"
+        },
+        "batch_sha256": "58124eae898cdbf1843e9fed9aa071b5276e91337dcdc4b2c4b2920a6f06472f",
+        "targets_sha256": "468c8d56c11e593fbea26b5fc17f78436ec0bb34d8837cebe469b0725bb3112d",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "0965b80177538a7962bd67d20c110400298063a7224963281bee8b7e38afd6de",
+          "time": 1794829361.8130567
+        }
+      ]
+    },
+    "breakout_cnn_s3\\repeat0": {
+      "manifest": {
+        "history": "breakout_cnn_s3",
+        "repeat": 0,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 3,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              1,
+              0,
+              5,
+              4,
+              2,
+              3
+            ]
+          }
+        },
+        "config_hash": "743ec261d1346a130345e963fc2ab31ca3aa17f4258ff77c870a47a0c42b589a",
+        "seeds": {
+          "env": 3853252939,
+          "ppo": 1749525811
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "e22be4298da3f24323e5e847fa648931f78010cd51c1ef3d8f3792d37d70eb8d",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "868b0e9ad6a60bf14f45bbe226b813a4d4a9611ea383a3c4b9d7c7c5b59667d1"
+        },
+        "batch_sha256": "239105f7deaf58e1e2112884c4de4a4bcbd8185625aefb752e65c7f5b71b9800",
+        "targets_sha256": "d5035f177a8eac96bc5ee673db5aaeacf088d4e8036632a13560b8bc90dd40b4",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "5b6032de3f1bad00e8c6db4bcb7f6bdc9a7ad2b2e115c768d12e3bc94f359028",
+          "time": 1794829362.6733155
+        }
+      ]
+    },
+    "breakout_cnn_s3\\repeat1": {
+      "manifest": {
+        "history": "breakout_cnn_s3",
+        "repeat": 1,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 3,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              1,
+              0,
+              5,
+              4,
+              2,
+              3
+            ]
+          }
+        },
+        "config_hash": "743ec261d1346a130345e963fc2ab31ca3aa17f4258ff77c870a47a0c42b589a",
+        "seeds": {
+          "env": 249456559,
+          "ppo": 4225652495
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "e22be4298da3f24323e5e847fa648931f78010cd51c1ef3d8f3792d37d70eb8d",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "868b0e9ad6a60bf14f45bbe226b813a4d4a9611ea383a3c4b9d7c7c5b59667d1"
+        },
+        "batch_sha256": "004c9c84785a552cb0c491141eadf3b97bfdcaf31759c5f94f85a41385858a5e",
+        "targets_sha256": "0cc4135d2f0a2e9ff7cafae93b9aaf49a97295819fea335bb5d044a4ed993972",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "7f1387059c6149e9cc102d5a3cc7cc242c0a632bb85107dfb19c3edc6cddba5e",
+          "time": 1794829363.5575771
+        }
+      ]
+    },
+    "breakout_cnn_s3\\repeat2": {
+      "manifest": {
+        "history": "breakout_cnn_s3",
+        "repeat": 2,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 3,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              1,
+              0,
+              5,
+              4,
+              2,
+              3
+            ]
+          }
+        },
+        "config_hash": "743ec261d1346a130345e963fc2ab31ca3aa17f4258ff77c870a47a0c42b589a",
+        "seeds": {
+          "env": 1514713789,
+          "ppo": 1908490760
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "e22be4298da3f24323e5e847fa648931f78010cd51c1ef3d8f3792d37d70eb8d",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "868b0e9ad6a60bf14f45bbe226b813a4d4a9611ea383a3c4b9d7c7c5b59667d1"
+        },
+        "batch_sha256": "09740ab9f27738dc26530305e614f6a9de2af58d4952b8de004c98c287869a47",
+        "targets_sha256": "05aa21cf02a6711d9225dd6207e3f7576120ba0ff280fa1c336d3de4ab118005",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "ee4eaaab3517b0528decd6e3fab93c4b0aabc65c5fc621a89c92d01df27573cd",
+          "time": 1794829364.3994126
+        }
+      ]
+    },
+    "breakout_cnn_s4\\repeat0": {
+      "manifest": {
+        "history": "breakout_cnn_s4",
+        "repeat": 0,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 4,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              3,
+              0,
+              2,
+              5,
+              4,
+              1
+            ]
+          }
+        },
+        "config_hash": "c90af49e2307cf594da65e66b3877f05a4f6237207dc43418aae03253d43ef3a",
+        "seeds": {
+          "env": 463037939,
+          "ppo": 2913251190
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "bf70be2f3a4e41140ce98cf4be19bd468874187fb6a9573aa951bdc309e493ed",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "d5a5702f21001a59a51626f5a7389ea591f72533bb109785b920e68c701db261"
+        },
+        "batch_sha256": "e982e12032529bb8575e63b5765c9416af8c23dba725dece382b50c8feb2d5b2",
+        "targets_sha256": "cab2f43d9430c6c70c88f73046b1b6873c7404ceb903ab5ca7ac2bd1ecb13b38",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "2e6382f566fe11b506bce58fdb14aa81a36159553c1b53181d10fafbe60fc5a9",
+          "time": 1794829365.2430947
+        }
+      ]
+    },
+    "breakout_cnn_s4\\repeat1": {
+      "manifest": {
+        "history": "breakout_cnn_s4",
+        "repeat": 1,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 4,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              3,
+              0,
+              2,
+              5,
+              4,
+              1
+            ]
+          }
+        },
+        "config_hash": "c90af49e2307cf594da65e66b3877f05a4f6237207dc43418aae03253d43ef3a",
+        "seeds": {
+          "env": 1487709598,
+          "ppo": 1801935652
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "bf70be2f3a4e41140ce98cf4be19bd468874187fb6a9573aa951bdc309e493ed",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "d5a5702f21001a59a51626f5a7389ea591f72533bb109785b920e68c701db261"
+        },
+        "batch_sha256": "aa6e2e1d549eb2699e32d7275eda38937058ed2e25cdb839194e4dfcf88d5c77",
+        "targets_sha256": "82950cdc72d7e06d84ed6c244939e985a299ebef4bc09e7eac3bf8861178dcb8",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "0edd9e0ffd9c7365a4fa0c37b70b0f1dd5c1fa7bdd98b89d0e4fcf3d29246b28",
+          "time": 1794829366.0649056
+        }
+      ]
+    },
+    "breakout_cnn_s4\\repeat2": {
+      "manifest": {
+        "history": "breakout_cnn_s4",
+        "repeat": 2,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 4,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              3,
+              0,
+              2,
+              5,
+              4,
+              1
+            ]
+          }
+        },
+        "config_hash": "c90af49e2307cf594da65e66b3877f05a4f6237207dc43418aae03253d43ef3a",
+        "seeds": {
+          "env": 3709403190,
+          "ppo": 696987656
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "bf70be2f3a4e41140ce98cf4be19bd468874187fb6a9573aa951bdc309e493ed",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "d5a5702f21001a59a51626f5a7389ea591f72533bb109785b920e68c701db261"
+        },
+        "batch_sha256": "190f0568abdac3ef7889f641adf707ef7cd88e334568cd589f6a136d291eada0",
+        "targets_sha256": "c8e2b581dec2d60b6e14266147771f8edbbd339abc6e19221901a30b4159e50d",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "fd6bfc505ffb6188d5459d8fc6174174f8487aa0887181217aaab6e408845d8d",
+          "time": 1794829366.9151103
+        }
+      ]
+    },
+    "breakout_cnn_s5\\repeat0": {
+      "manifest": {
+        "history": "breakout_cnn_s5",
+        "repeat": 0,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 5,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              0,
+              5,
+              3,
+              2,
+              4,
+              1
+            ]
+          }
+        },
+        "config_hash": "166a58c58457a41e95280de5e33cd9f93022b464cd81c537e2be85028e3d2996",
+        "seeds": {
+          "env": 3630421352,
+          "ppo": 2463935736
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "fb3b2d115dd7392143dcec82283e71f7439b561c9b04627e6d62c31a0b5435b7",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "841717d1bfcdb1258ee7d7c8246232949f2388f55c671f8f5f58a104541b05ec"
+        },
+        "batch_sha256": "2c1de0fa09ea26a1fe85e75b00a411f647799c901c071be1516a29c1bdd53ef1",
+        "targets_sha256": "b7aa0fda75949207c9d302e3109dfd0ec50c1f17ebe0f9149fa6d8f714eb0f82",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "24a6c871b922f98ad824b1e7bbcf18f4b8cddb8f24a715e5e51e9bc3b2028991",
+          "time": 1794829367.8130426
+        }
+      ]
+    },
+    "breakout_cnn_s5\\repeat1": {
+      "manifest": {
+        "history": "breakout_cnn_s5",
+        "repeat": 1,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 5,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              0,
+              5,
+              3,
+              2,
+              4,
+              1
+            ]
+          }
+        },
+        "config_hash": "166a58c58457a41e95280de5e33cd9f93022b464cd81c537e2be85028e3d2996",
+        "seeds": {
+          "env": 998358131,
+          "ppo": 1625105255
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "fb3b2d115dd7392143dcec82283e71f7439b561c9b04627e6d62c31a0b5435b7",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "841717d1bfcdb1258ee7d7c8246232949f2388f55c671f8f5f58a104541b05ec"
+        },
+        "batch_sha256": "013500b70c9e944a9934fa4976ccadeb99ad67e9db954fe4d9158359a6bf3a02",
+        "targets_sha256": "d31d6c0ceb795aa9306638523d01b326d0234452972630de34a35054c80eb5a7",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "80e434670dd8fe3a3602b8ff3789d633d3d03f37c6fd63fde5cda78015ed9b91",
+          "time": 1794829368.654022
+        }
+      ]
+    },
+    "breakout_cnn_s5\\repeat2": {
+      "manifest": {
+        "history": "breakout_cnn_s5",
+        "repeat": 2,
+        "config": {
+          "game": "breakout",
+          "arch": "cnn",
+          "seed": 5,
+          "total_steps": 1024,
+          "num_envs": 8,
+          "num_steps": 128,
+          "lr": 0.00025,
+          "adam_eps": 1e-08,
+          "gamma": 0.99,
+          "gae_lambda": 0.95,
+          "update_epochs": 4,
+          "num_minibatches": 4,
+          "clip": 0.1,
+          "ent_coef": 0.01,
+          "vf_coef": 0.5,
+          "max_grad_norm": 0.5,
+          "sticky_action_prob": 0.25,
+          "difficulty_ramping": true,
+          "episode_cap": 10000,
+          "input_channels": 4,
+          "conv_channels": 16,
+          "hidden": 128,
+          "num_actions": 6,
+          "reference_size": 256,
+          "eval_episodes": 30,
+          "telemetry_every": 4,
+          "snapshot_fractions": [],
+          "checkpoint_fractions": [],
+          "shift": {
+            "kind": "actions",
+            "round": 4,
+            "perm": [
+              0,
+              5,
+              3,
+              2,
+              4,
+              1
+            ]
+          }
+        },
+        "config_hash": "166a58c58457a41e95280de5e33cd9f93022b464cd81c537e2be85028e3d2996",
+        "seeds": {
+          "env": 1724637564,
+          "ppo": 2218268346
+        },
+        "sources": {
+          "fresh": {
+            "tag": "age0.00",
+            "path": "checkpoints/age0.00.pt",
+            "sha256": "fb3b2d115dd7392143dcec82283e71f7439b561c9b04627e6d62c31a0b5435b7",
+            "global_step": 1024,
+            "iteration": 1
+          },
+          "chain_sha256": "841717d1bfcdb1258ee7d7c8246232949f2388f55c671f8f5f58a104541b05ec"
+        },
+        "batch_sha256": "aa8c93f4b24b9c40efeb40ede3d534fac0bbac4beb8ffda354de8f537a49c388",
+        "targets_sha256": "73cc9abe06c45dd3ce7d7d175bf041d36461688c89ecc29b93754749dee647af",
+        "identity": {
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "protocols": {
+            "notes/sprint04_common_batch_prereg.md": "f6ad4d95f1c4b4af040033161f580fe8731941fbe1c2a47cb1121b712eb2f2c0",
+            "notes/sprint05_execution_v2.md": "c1707d1fc1e920945dba04d9ee61ba424351366f3f644a921ea59970b80932f3"
+          }
+        },
+        "revision": {
+          "git_head": "eea5cbd56e07d23200a99d0a3abbb5c7c8425a15",
+          "dirty_causal_trainability": false,
+          "files": {
+            "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+            "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+            "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+            "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+            "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+            "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+            "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+            "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+            "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+            "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+            "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+            "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+            "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+            "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+            "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+            "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+          },
+          "python": "3.13.12",
+          "torch": "2.12.1+cu126",
+          "numpy": "2.4.4",
+          "MinAtar": "1.0.15"
+        }
+      },
+      "input_artifacts": [
+        {
+          "path": "inputs.pt",
+          "kind": "common_batch_theta0_reference",
+          "bytes": 1094055,
+          "sha256": "e09dc96eb2b1915f4ee4fba1fc6ed0e6e3aadeaaabe1fb0d8d0ef001e6d796bd",
+          "time": 1794829369.4936435
+        }
+      ]
+    }
+  }
+}

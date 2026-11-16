@@ -8,5 +8,14 @@
     "source": "runs\\causal-trainability\\sprint05_calibration_v2_20261116\\summary.json",
     "sha256": "9bd6088d72c31e69d94e02072f83482e1ff8c80d42d4f2b82eefdd2d3f0b6be6",
     "verified_cells": 32
+  },
+  "research\\results\\sprint05\\common_batch_summary.json": {
+    "source": "runs\\causal-trainability\\sprint05_common_exception_20261116\\summary.json",
+    "sha256": "d69096f7d6b90f9b83d0b1d1f26db65a10b0a5de8810663602bf58734e094f84",
+    "verified_cells": 72
+  },
+  "research\\results\\sprint05\\provenance.json": {
+    "source": "runs\\causal-trainability\\sprint05_common_exception_20261116",
+    "sha256": "72ae24417d3745c246d70a828c4a2d9051e85abb5bcd6198ca7a8490717282b4"
   }
 }
