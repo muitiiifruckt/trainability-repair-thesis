@@ -1,0 +1,101 @@
+{
+  "identity": {
+    "files": {
+      "causal_trainability/__init__.py": "6e0a3fb77552ecb4e4b2d0311c6a2d586d34ebf20ff88d6e7c3346d926e77a9b",
+      "causal_trainability/behavior_match.py": "7af5fcdca5f648e11cc09598456daadd915a95985001d43a32955848d40e162b",
+      "causal_trainability/common_batch.py": "cd3a2031aab4de5e14a52655864b37577da5483f6b5d64dd58a610f754b0ff35",
+      "causal_trainability/common_batch_v2.py": "97b9a9acbbb6b8272e6840d171f98a78b698a453f30a65ea0da3b68247d10a18",
+      "causal_trainability/deficit.py": "7c0e20eb930632d24e130e4e07378ff5405a66eba2b6f425f3aae5309dd2fc9c",
+      "causal_trainability/head_reset_factorial.py": "750d8bab88afef14d72a8355cb9bdeebf514da8bf1251c1d3e071c9c4213f239",
+      "causal_trainability/hybrids.py": "007618da90cccdd881a0327f97baced0424533ef5eb93e15de60643d656dd649",
+      "causal_trainability/lab.py": "a56db9fd4aa99c0af04a974921b048cea9a7c1af41afa117676a96c7443862dc",
+      "causal_trainability/pilot.py": "0784a855f462f999ef3f06be7a1a6cd0a4ef8a4b14b39f4ae502e44e171c8dc8",
+      "causal_trainability/ppo_minatar.py": "8ecf727dedb8454a3528509e73c7782bd71b988bc5a694420d2e0f770a3f85f4",
+      "causal_trainability/probe.py": "c3bb94866a9702694741d9ddf3a7fe32ffe288b6b9708e32ba90dfca722ee647",
+      "causal_trainability/probe_v3.py": "5673ab878406193b88f4a6c20f5e32ef0c48be2c9f3742a86e34bed662141b45",
+      "causal_trainability/sprint03_live.py": "28610c35ffd88cfef1fc1cbc50da5f7e326c7294e79b614390a3c4c9a7866e7f",
+      "causal_trainability/sprint04_calibration_v2.py": "0a03f50c1a3a49995a1e6b3045f6af9136ea29c4ddfb1eb04e261a6f27f4a78d",
+      "causal_trainability/sprint04_pilot.py": "13b2bc5e5cedf25c8c0e57e3ca3358265066163215cb68dd51eeeb0b0ab9da9a",
+      "causal_trainability/telemetry.py": "dbdc3416ef755dd265d3e00f109d2418de10f9b8a413161e6874ef4600e631c8",
+      "causal_trainability/two_state.py": "ed551a2030de479f9732376a7c871a55b42e9af7fe56e47ee78413bbcf784bb1",
+      "causal_trainability/two_state_v2.py": "419929eb57cadab9e70a27bbfb15a1cb5a996a674b933854475d4445e65b2f71"
+    },
+    "protocol_sha256": "e95d4c7d144e66e7858a5a81d0772d00e88846d89d80616335024f265eccd451",
+    "steps": 131072
+  },
+  "cells": {
+    "neither": {
+      "pairs": [
+        {
+          "on": 26.822521399999914,
+          "off": 26.984912399999757,
+          "overhead": -0.00601784425284424,
+          "bit_equal": true
+        },
+        {
+          "on": 27.599514200000158,
+          "off": 27.85264240000015,
+          "overhead": -0.009088121563647023,
+          "bit_equal": true
+        },
+        {
+          "on": 27.242864300000292,
+          "off": 26.58152770000015,
+          "overhead": 0.024879555737503223,
+          "bit_equal": true
+        }
+      ],
+      "mean_overhead": 0.0032578633070039866,
+      "median_overhead": -0.00601784425284424
+    },
+    "reset": {
+      "pairs": [
+        {
+          "on": 27.921199800000068,
+          "off": 27.03326900000002,
+          "overhead": 0.032845853751540366,
+          "bit_equal": true
+        },
+        {
+          "on": 26.650702099999762,
+          "off": 27.0112081999996,
+          "overhead": -0.013346537382946222,
+          "bit_equal": true
+        },
+        {
+          "on": 26.976385400000254,
+          "off": 27.06639740000037,
+          "overhead": -0.0033255995864494015,
+          "bit_equal": true
+        }
+      ],
+      "mean_overhead": 0.005391238927381581,
+      "median_overhead": -0.0033255995864494015
+    },
+    "matched": {
+      "pairs": [
+        {
+          "on": 37.15539919999992,
+          "off": 36.07499330000019,
+          "overhead": 0.029948887059106477,
+          "bit_equal": true
+        },
+        {
+          "on": 36.261404400000174,
+          "off": 36.84774779999998,
+          "overhead": -0.01591259805571632,
+          "bit_equal": true
+        },
+        {
+          "on": 36.17063499999995,
+          "off": 36.19285570000011,
+          "overhead": -0.0006139526591752986,
+          "bit_equal": true
+        }
+      ],
+      "mean_overhead": 0.004474112114738286,
+      "median_overhead": -0.0006139526591752986
+    }
+  },
+  "passed": true
+}
