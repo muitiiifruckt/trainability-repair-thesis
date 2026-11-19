@@ -1,0 +1,10 @@
+{
+  "summary.json": {
+    "source": "runs/causal-trainability/sprint07_pulse_live_v1/summary.json",
+    "sha256": "a20a59ed4befa26abf73cd952ea54121aa0fb985cf4e7fc35eb76374368f546e"
+  },
+  "calibration.json": {
+    "source": "runs/causal-trainability/sprint07_pulse_cal_v1/summary.json",
+    "sha256": "41204b7ac8b091799da4ce88e54b5bd2a847f390aef424bc62e240509c60ce19"
+  }
+}
