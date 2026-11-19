@@ -27,7 +27,9 @@ def read(path):
 
 
 def identity():
-    return dict(files=code_revision()["files"], script_sha256=digest(Path(__file__)),
+    revision = code_revision()
+    runtime = {k: revision[k] for k in ("python", "torch", "numpy", "MinAtar")}
+    return dict(files=revision["files"], runtime=runtime, script_sha256=digest(Path(__file__)),
                 protocol_sha256=digest(PROTOCOL), old_manifest_sha256=digest(EXPORT / "manifest.json"))
 
 
@@ -53,6 +55,16 @@ def control(history, repeat, arm, hashes):
     assert digest(path) == wrapper["sha256"] == hashes[str(path.relative_to(match.OUT))]
     row = read(path)
     assert (row["history"], row["repeat"], row["arm"]) == (history, repeat, arm)
+    current = identity()
+    assert row["revision"]["files"] == current["files"]
+    assert all(row["revision"][k] == v for k, v in current["runtime"].items())
+    artifacts_path = attempt / "artifacts.jsonl"
+    assert digest(artifacts_path) == row["artifacts_sha256"]
+    artifacts = [json.loads(line) for line in artifacts_path.read_text().splitlines()]
+    snapshot, = [a for a in artifacts if a["kind"] == "snapshot" and a["path"].endswith("_u0.pt")]
+    snapshot_path = attempt / snapshot["path"]
+    assert digest(snapshot_path) == snapshot["sha256"]
+    start = torch.load(snapshot_path, weights_only=True, map_location="cpu")
     entry, = [json.loads(line) for line in (attempt / "checkpoints.jsonl").read_text().splitlines()
               if json.loads(line)["tag"] == "age0.00"]
     checkpoint = attempt / entry["path"]
@@ -61,11 +73,14 @@ def control(history, repeat, arm, hashes):
     assert batch_state["config"] == row["config"]
     assert batch_state["iteration"] == 1 and batch_state["global_step"] == 1024
     assert batch_state["optimizer"]["state"] == {}
+    for key in ("model", "optimizer"):
+        assert fingerprint(batch_state[key]) == fingerprint(start[key])
     batch = batch_state["rollout"]
     assert match.behavior_hash(batch) == row["first"]["behavior_sha256"]
     assert fingerprint(batch_state["generator"]) == row["first"]["generator_sha256"]
     assert fingerprint([batch[k] for k in ("values", "advantages", "returns")]) == row["first"]["targets_sha256"]
-    origin = dict(result_sha256=wrapper["sha256"], checkpoint_sha256=entry["sha256"])
+    origin = dict(result_sha256=wrapper["sha256"], checkpoint_sha256=entry["sha256"],
+                  anchored_snapshot_sha256=snapshot["sha256"])
     return row, batch_state, origin
 
 
@@ -78,7 +93,8 @@ def run(history, repeat, checkpoint, expected_seeds, out, enabled, steps=HORIZON
         k: v for k, v in checkpoint["config"].items() if k not in excluded}
     assert fingerprint(ppo.model.state_dict()) == fingerprint(checkpoint["model"])
     assert fingerprint(ppo.optimizer.state_dict()) == fingerprint(checkpoint["optimizer"])
-    cfg.update(snapshot_fractions=[0., .5, 1.], telemetry_every=16, run_name="pulse")
+    cfg.update(snapshot_fractions=[0., .5, 1.], telemetry_every=16, run_name="pulse",
+               pulse_switch_iteration=1)
     torch.save({"theta0": ppo.theta0}, out / "theta0.pt")
     record_artifact(out, out / "theta0.pt", "theta0")
     global_rng = torch.get_rng_state().clone()
@@ -103,6 +119,7 @@ def run(history, repeat, checkpoint, expected_seeds, out, enabled, steps=HORIZON
             with torch.no_grad():
                 corrected = ppo.model(reference)[0].softmax(-1)
                 ppo.model.arm = "neither"
+                cfg["behavior_arm"] = ppo.model.arm
                 raw = ppo.model(reference)[0].softmax(-1)
             switch["policy_tv"] = float((corrected - raw).abs().sum(-1).mean() / 2)
         return stats
@@ -122,11 +139,12 @@ def run(history, repeat, checkpoint, expected_seeds, out, enabled, steps=HORIZON
     final = fingerprint(weights(ppo))
     torch.save(weights(ppo), out / "final.pt")
     record_artifact(out, out / "final.pt", "final_state")
+    last = torch.load(out / "checkpoints/age1.00.pt", weights_only=False, map_location="cpu")
+    assert last["config"]["behavior_arm"] == "neither" and last["config"]["pulse_switch_iteration"] == 1
     with torch.random.fork_rng(devices=[]):
-        replay = PPO(dict(cfg), out / "resume")
-    match.wrap(replay, fresh["theta0"], "matched")
-    replay.restore(torch.load(out / "checkpoints/age1.00.pt", weights_only=False, map_location="cpu"))
-    replay.model.arm = "neither"
+        replay = PPO(dict(last["config"]), out / "resume")
+    match.wrap(replay, fresh["theta0"], last["config"]["behavior_arm"])
+    replay.restore(last)
     replay.learn(replay.last_rollout)
     assert fingerprint(weights(replay)) == final
     result = dict(history=history, repeat=repeat, config=cfg, source=source, seeds=seeds,
