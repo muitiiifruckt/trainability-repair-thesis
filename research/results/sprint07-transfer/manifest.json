@@ -1,0 +1,14 @@
+{
+  "summary.json": {
+    "source": "runs/causal-trainability/sprint07_transfer_v1/summary.json",
+    "sha256": "bbd091df9c4dd940baee74f39544cdd7968d169b87403e76fd36533895c5e6d7"
+  },
+  "calibration.json": {
+    "source": "runs/causal-trainability/sprint07_transfer_v1/calibration/summary.json",
+    "sha256": "4cf280b159ae48e8871f96aa4b0a8c021598f66c6ddd201d208ec3eecbde4d1d"
+  },
+  "dependency_manifest.json": {
+    "source": "runs/causal-trainability/sprint07_transfer_v1/dependency_manifest.json",
+    "sha256": "3da04fd7682139728487b871843ccf069c7915876796a9362ea3eef4124b2399"
+  }
+}

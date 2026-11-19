@@ -1,8 +1,8 @@
 # NEXT — читать первым в каждой сессии
 
-## 2026-11-19 — Sprint 07, новые истории
+## 2026-11-19 — Sprint 07 завершён
 
-Шесть новых историй PPO Breakout cnn, seeds 100–105. На каждом конечном состоянии сравниваются reset actor и сохранение весов со свежим Adam после sticky 0,10 → 0,25. Два парных повтора на историю, 24 ветки. Калибровка `-m scripts.sprint07_transfer calibrate`, после PASS `-m scripts.sprint07_transfer queue`. Корень `runs/causal-trainability/sprint07_transfer_v1`. Очередь с двумя однопоточными workers, завершённые ветки проверяются и переиспользуются. Файл STOP в корне останавливает выдачу новых задач. [План](../sprints/sprint-07/plan.md) · [Протокол](../notes/sprint07_transfer_prereg.md)
+Обучены шесть новых агентов PPO Breakout cnn, seeds 100–105. Проверены 24 ветки после sticky 0,10 → 0,25, свежий Adam, два повтора на историю. Reset−keep −1,4406, 95% CI [−1,7009; −1,1804], отрицательный знак в 6/6. Результат относится к раннему AUC. Обе причины изменения эффекта между спринтами, тип смены и история обучения, пока не разделены. Следующий вопрос — сравнить виды смены из одних checkpoints. Активных очередей нет. Freeze `a9e9efc`. Команды воспроизведения `-m scripts.sprint07_transfer calibrate`, после PASS `-m scripts.sprint07_transfer queue`. Исходный корень `runs/causal-trainability/sprint07_transfer_v1` занят завершёнными артефактами. [Итоги](../sprints/sprint-07/review.md)
 
 ## 2026-11-19 — Дополнение к спринту 06 завершено
 
